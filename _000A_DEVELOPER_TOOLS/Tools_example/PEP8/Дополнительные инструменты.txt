@@ -1,0 +1,6 @@
+Pyflakes (https://launchpad.net/pyflakes/): расширяется через плагины.
+
+Pylint (https://pypi.org/projeet/pylint/): проверяет не только на наличие ошибок,
+но и на совместимость с РЕР 8; расширяется через плагины.
+
+Проект flake8 (https://pypi.org/projectjflake8/) уже сочетает pyflakes и рер8.
