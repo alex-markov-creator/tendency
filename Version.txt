@@ -1,0 +1,13 @@
+tendency 0.1a
+See the Developer's journal.
+The file is updated when changed...
+Software upgrade versioning:
+N[.N)+[{a|b|c|rc}N][.postN}[.devN]
+The example:
+- 1.2.0a1 - alfa version;
+- 2.3.1b2 - beta version;
+- 0.4rc1 - pre-realise version;
+- 1.2 - realise version;
+- 1.4.post2 - post-realise version;
+- 2.3.4.dev3 - version in development.
+

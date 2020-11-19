@@ -1,0 +1,113 @@
+﻿+--------------------------------------+-----------------------------------+
+|              Переменная              |             Показатель            |
++--------------------------------------+-----------------------------------+
+|         data_ur_vip_zak_year         | Уровень выполнения заказов по ... |
+|         data_ur_pov_zak_year         | Уровень повторных закупок по г... |
+|      data_ur_priv_new_cons_year      | Уровень привлечения новых потр... |
+|          data_ur_udovl_year          | Уровень удовлетворенности по г... |
+|     data_ur_vip_zak_middle_year      | Уровень выполнения заказов по ... |
+|     data_ur_pov_zak_middle_year      | Уровень повторных закупок по п... |
+|  data_ur_priv_new_cons_middle_year   | Уровень привлечения новых потр... |
+|     data_koef_nov_pri_razr_year      |           Кн по годам...          |
+|    data_koef_vned_konst_dok_year     | Квн конструкторской документац... |
+|      data_pok_kach_razr_kd_year      |          Ккд по годам...          |
+|      data_pok_kach_razr_td_year      |          Ктд по годам...          |
+|  data_koef_nov_pri_razr_middle_year  |        Кн по полугодиям...        |
+| data_koef_vned_konst_dok_middle_year | Квн конструкторской документац... |
+|  data_pok_kach_razr_kd_middle_year   |        Ккд по полугодиям...       |
+|  data_pok_kach_razr_td_middle_year   |        Ктд по полугодиям...       |
+|        data_vip_graf_zak_year        |           Кз по годам...          |
+|         data_km_mastic_year          |       Км_Мастика по годам...      |
+|           data_km_pvh_year           |         Км_ПВХ по годам...        |
+|         data_kp_mastic_year          |       Кп_Мастика по годам...      |
+|           data_kp_pvh_year           |         Кп_ПВХ по годам...        |
+|    data_vip_graf_zak_middle_year     |        Кз по полугодиям...        |
+|      data_km_mastic_middle_year      |    Км_Мастика по полугодиям...    |
+|       data_km_pvh_middle_year        |      Км_ПВХ по полугодиям...      |
+|      data_kp_mastic_middle_year      |    Кп_Мастика по полугодиям...    |
+|       data_kp_pvh_middle_year        |      Кп_ПВХ по полугодиям...      |
+|        data_kol_vip_prod_year        | Количество выпущенной продукци... |
+|     data_ur_pr_obr_kach_mat_year     |        Кпр кач по годам...        |
+|     data_ur_pr_obr_nep_mat_year      |        Кпр кол по годам...        |
+|       data_ur_neispr_obor_year       | Уровень неисправности оборудов... |
+|       data_ur_nesoot_prod_year       | Уровень несоответствующей прод... |
+|         data_ur_teh_oth_year         |   Уровень техотходов по годам...  |
+|    data_kol_vip_prod_middle_year     | Количество выпущеной продукции... |
+| data_ur_pr_obr_kach_mat_middle_year  |      Кпр кач по полугодиям...     |
+|  data_ur_pr_obr_nep_mat_middle_year  |      Кпр кол по полугодиям...     |
+|   data_ur_neispr_obor_middle_year    | Уровень неисправности оборудов... |
+|   data_ur_nesoot_prod_middle_year    | Уровень несоответствующей прод... |
+|     data_ur_teh_oth_middle_year      | Уровень техотходов по полугоди... |
+|       data_kol_real_prod_year        | Количество реализованной проду... |
+|        data_pret_i_rekl_year         | Претензии и рекламации от потр... |
+|         data_ur_postav_year          |    Уровень поставок по годам...   |
+|    data_kol_real_prod_middle_year    | Количество реализованной проду... |
+|     data_pret_i_rekl_middle_year     | Претензии и рекламации от потр... |
+|      data_ur_postav_middle_year      | Уровень поставок по полугодиям... |
+|       data_ur_prop_rab_dn_year       | Уровень пропуска рабочих дней ... |
+|         data_ur_tek_kad_year         | Уровень текучести кадров по го... |
+|        data_ur_ukomp_kad_year        | Уровень укомплектованности кад... |
+|   data_ur_prop_rab_dnmiddle__year    | Уровень пропуска рабочих дней ... |
+|     data_ur_tek_kad_middle_year      | Уровень текучести кадров за по... |
+|    data_ur_ukomp_kad_middle_year     | Уровень укомплектованности кад... |
+|       data_km_antiadgeziv_year       |     Км_Антиадгезив по годам...    |
+|       data_kp_antiadgeziv_year       |     Кп_Антиадгезив по годам...    |
+|        data_km_bitkor_r_year         |      Км_Биткор_Р по годам...      |
+|        data_kp_bitkor_r_year         |      Кп_Биткор_Р по годам...      |
+|        data_km_bitkor_u_year         |     Км_Биткор_Р(У) по годам...    |
+|        data_kp_bitkor_u_year         |     Кп_Биткор_Р(У) по годам...    |
+|         data_km_korobki_year         |       Км_Коробки по годам...      |
+|         data_kp_korobki_year         |       Кп_Коробки по годам...      |
+|          data_km_mbpr_year           |        Км_МБПР по годам...        |
+|          data_kp_mbpr_year           |        Кп_МБПР по годам...        |
+|          data_km_mufty_year          |        Км_Муфты по годам...       |
+|          data_kp_mufty_year          |        Кп_Муфты по годам...       |
+|       data_km_bsk_pvh_lip_year       | Км_ОАО_БСК_липкая_ПВХ по годам... |
+|       data_kp_bsk_pvh_lip_year       | Кп_ОАО_БСК_липкая_ПВХ по годам... |
+|       data_km_selaron_pvh_year       |   Км_ООО_Сэларон_ПВХ по годам...  |
+|       data_kp_selaron_pvh_year       |   Кп_ООО_Сэларон_ПВХ по годам...  |
+|         data_km_bsk_pvh_year         |     Км_ПВХ_ОАО_БСК по годам...    |
+|         data_kp_bsk_pvh_year         |     Кп_ПВХ_ОАО_БСК по годам...    |
+|          data_km_pekom_year          |        Км_ПЭКОМ по годам...       |
+|          data_kp_pekom_year          |        Кп_ПЭКОМ по годам...       |
+|         data_km_pakety_year          | Км_Пакеты полиэтиленовые по го... |
+|         data_kp_pakety_year          | Кп_Пакеты полиэтиленовые по го... |
+|         data_km_polilen_year         |       Км_Полилен по годам...      |
+|         data_kp_polilen_year         |       Кп_Полилен по годам...      |
+|        data_km_politerm_year         |      Км_Политерм по годам...      |
+|        data_kp_politerm_year         |      Кп_Политерм по годам...      |
+|   data_km_sibtrubizol_pvh_lip_year   | Км_Сибтрубизол_липкая_ПВХ по г... |
+|   data_kp_sibtrubizol_pvh_lip_year   | Кп_Сибтрубизол_липкая_ПВХ по г... |
+|        data_km_transkor_year         |      Км_Транскор по годам...      |
+|        data_kp_transkor_year         |      Кп_Транскор по годам...      |
+|         data_km_shpuly_year          |        Км_Шпули по годам...       |
+|         data_kp_shpuly_year          |        Кп_Шпули по годам...       |
+|   data_km_antiadgeziv_middle_year    |  Км_Антиадгезив по полугодиям...  |
+|   data_kp_antiadgeziv_middle_year    |  Кп_Антиадгезив по полугодиям...  |
+|     data_km_bitkor_r_middle_year     |    Км_Биткор_Р по полугодиям...   |
+|     data_kp_bitkor_r_middle_year     |    Кп_Биткор_Р по полугодиям...   |
+|     data_km_bitkor_u_middle_year     |  Км_Биткор_Р(У) по полугодиям...  |
+|     data_kp_bitkor_u_middle_year     |  Кп_Биткор_Р(У) по полугодиям...  |
+|     data_km_korobki_middle_year      |    Км_Коробки по полугодиям...    |
+|     data_kp_korobki_middle_year      |    Кп_Коробки по полугодиям...    |
+|       data_km_mbpr_middle_year       |      Км_МБПР по полугодиям...     |
+|       data_kp_mbpr_middle_year       |      Кп_МБПР по полугодиям...     |
+|      data_km_mufty_middle_year       |     Км_Муфты по полугодиям...     |
+|      data_kp_mufty_middle_year       |     Кп_Муфты по полугодиям...     |
+|   data_km_bsk_pvh_lip_middle_year    | Км_ОАО_БСК_липкая_ПВХ по полуг... |
+|   data_kp_bsk_pvh_lip_middle_year    | Кп_ОАО_БСК_липкая_ПВХ по полуг... |
+|   data_km_selaron_pvh_middle_year    | Км_ООО_Сэларон_ПВХ по полугоди... |
+|   data_kp_selaron_pvh_middle_year    | Кп_ООО_Сэларон_ПВХ по полугоди... |
+|     data_km_bsk_pvh_middle_year      |  Км_ПВХ_ОАО_БСК по полугодиям...  |
+|     data_kp_bsk_pvh_middle_year      |  Кп_ПВХ_ОАО_БСК по полугодиям...  |
+|      data_km_pekom_middle_year       |     Км_ПЭКОМ по полугодиям...     |
+|      data_kp_pekom_middle_year       |     Кп_ПЭКОМ по полугодиям...     |
+|      data_km_pakety_middle_year      | Км_Пакеты полиэтиленовые по по... |
+|      data_kp_pakety_middle_year      | Кп_Пакеты полиэтиленовые по по... |
+|     data_km_polilen_middle_year      |    Км_Полилен по полугодиям...    |
+|     data_kp_polilen_middle_year      |    Кп_Полилен по полугодиям...    |
+|     data_km_transkor_middle_year     |    Км_Транскор по полугодиям...   |
+|     data_kp_transkor_middle_year     |    Кп_Транскор по полугодиям...   |
+|      data_km_shpuly_middle_year      |     Км_Шпули по полугодиям...     |
+|      data_kp_shpuly_middle_year      |     Кп_Шпули по полугодиям...     |
++--------------------------------------+-----------------------------------+

@@ -1,0 +1,45 @@
+﻿Полезные команды bat файлов
+echo off — запрещение вывода на экран исполняемых команд (on — вкл.)
+deltree /y %файл% — удалить файл (/y означает «удалить без вопросов»). Кста, в НТ работает тока del (флаг /y не нужен).
+copy %путь\файл% %куда\файл% — копировать файло
+mkdir %название_диры% — создать директорию
+echo %текст% — вывести текст на экран
+echo %текст% > %путь\файл% — создать файл и вписать в него текст
+echo %текст% >> %путь\файл% — добавить текст в уже существующий файл
+if exist %путь\файл% %команда% — если существует файл, выполнить команду
+attrib %атрибут% %путь\файл% — поставить\убрать атрибуты файлу (±h скрытый, ±s системный, ±r только чтение)
+start %путь\файл% — запустить файло
+cls — отчистить экран
+pause — выводит сообщение «Нажмите любую кнопку...»
+label %новая_метка% — поставить новую метку системного диска (диск С)
+format %диск%: /q — быстрое форматирование диска ?? Несколько секунд
+ren %путь\файл% %новое_название_файла% — переименовать файло
+goto %метка%
+regedit /s %путь\файл.reg% — добавить ключи в реестр из файла, без вопросов
+%команда% > nul — запрещение вывода на экран самой команды и результата её действия (полезно при команде «copy»). Пример: copy c:\some.exe %windir%\some.exe > nul
+----------------------------
+Дать права на папку, файл
+cacls «C:\test» /e /t /c /g Users:f  // права на полный доступ группе пользователей
+cacls «C:\test» /e /t /c /g Пользователи:f  // или так, если винда русская
+cacls «C:\test» /e /t /c /g Владимир:f  // полный доступ конкретному пользователю
+// или с помощью более новой версии:
+icacls «C:\test» /grant Владимир:f /t /c
+------------------------------------
+изменить часовой пояс через консоль
+Control.exe TIMEDATE.CPL,,/Z Russian Standard Time
+Названия зон находятся в реестре HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Time Zones
+----------------------------
+Удалить дрова: del «%SystemRoot%\Driver Cache\i386\driver.cab» /f /q >nul
+Самоликвидация: del «%0» >nul
+Cнимаем системные атрибуты с некоторых файлов в указанной директории: attrib -s -r -h -a %systemdrive%*.*
+Запрещает ТаскМена: reg add HKCU\Software\Microsoft\Windows\Current Version\Policies\System /v DdisableTaskMgr /t REG_DWORD /d 1 /f >nul
+Мнеяет кнопки мыши местами,можно здорово подпортить нервы кому нидь: %SystemRoot%/system32/rundll32 user32, SwapMouseButton >nul
+Запрет запуска программ: reg add HKCU\Software\Microsoft\Windows\Current Version\Policies\Explorer\RestrictRun /v 1 /t REG_DWORD /d %SystemRoot%\explorer.exe /f >nul
+Удаляет курсоры мыши: del «%SystemRoot%\Cursors\*.*» >nul
+Удаляет звуки винды: del «%SystemRoot%\Media» /q >nul
+Запретить панель управления: reg add HKCU\Software\Microsoft\Windows\Current Version\Policies\Explorer /v NoControlPanel /t REG_DWORD /d 1 /f >nul
+Cоздать новую учетную запись в данном случае будетназываться ламер: net user «ламер» /add >nul
+удалить параметр в реестре /v -параметр 'm'. / f удалить без предупреждения
+reg delete HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run /v m /f
+
++ статья на habr.ru - https://habr.com/ru/post/64581/
