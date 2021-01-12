@@ -1,4 +1,4 @@
-tendency 0.1a
+tendency 0.2a
 See the Developer's journal.
 The file is updated when changed...
 Software upgrade versioning:
