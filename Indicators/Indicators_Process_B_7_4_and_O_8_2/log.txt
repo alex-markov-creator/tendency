@@ -4,3 +4,4 @@ Tue Jan 12 10:34:20 2021 Benchmark_Data_Error:  (<class 'NameError'>, NameError(
 Tue Jan 12 10:35:05 2021 Benchmark_Data_Error:  (<class 'NameError'>, NameError("name 'lnn_1_0' is not defined"))
 Tue Jan 12 11:06:27 2021 Run_Error:  (<class 'OSError'>, OSError(22, 'Invalid argument'))
 Tue Jan 12 14:30:31 2021 Run_Error:  (<class 'OSError'>, OSError(22, 'Invalid argument'))
+Thu Jan 14 14:40:22 2021 Run_Error:  (<class 'OSError'>, OSError(22, 'Invalid argument'))
