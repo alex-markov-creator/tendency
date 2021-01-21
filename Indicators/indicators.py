@@ -5,7 +5,7 @@
 import sys
 import os
 import time
-sys.path.append(os.path.realpath('../..'))
+sys.path.append(os.path.realpath('..'))
 
 import Indicators.Indicators_Process_B_7_2.consumer as cm
 
