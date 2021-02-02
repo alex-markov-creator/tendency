@@ -1,23 +1,52 @@
 #-*- coding: utf-8 -*-
-# version 0.1a
-# author: andrew.bezzubov - 11/11/2020 year
+# version 0.2a
+# author: andrew.bezzubov - 02/02/2020 year
 """
 ===============================================================
 production.py - модуль для статистических подсчетов и построения графиков  по показателям качества:
-- Уровень тех. отходов Кто (Критерий >=2.0) - отношение количества тех. отходов к общему количеству выпущенной продукции, %;
-- Уровень несоответствующей продукции в процессе производства Кн (Криткрий <=5) - отношение количества забракованной продукции к количеству выпущенной, %;
+- Количество выпущенной продукции Квып (Критерия нет) - фактическое количество
+выпущенной продукции, т:
+    - п/б ленты;
+    - муфты;
+    - комплекты ЛИТКОР КМ;
+    - резка п/б ленты;
+    - резка ПВХ липкой.
+- Уровень несоответствующей продукции в процессе производства Кн (Критерий <=5) - отношение количества забракованной продукции к количеству выпущенной, %;
+- Уровень отклонений продукции Котк (Критерий <10%) - отношение количества продукции с отклонением от ТУ к общему количеству выпущенной продукции, %;
+- Уровень расхода материалов Крм (Критерий <=100%) - отношение коэффициента фактического расхода материалов (отношение количества затраченного материала к количеству выпущенной продукции) к коэффициенту нормативного расхода, %;
+- Уровень тех. отходов Кто (Критерий <=2.0%) - отношение количества тех. отходов к общему количеству выпущенной продукции, %;
+- Уровень простоя оборудования из-за несоответствующего качества расходных материалов Кпр кач (Критерий <5%) - отношение времени простоя оборудования к общему времени работы, %;
+- Уровень простоя оборудования из-за непоставки расходных материалов Кпр кол (Критерий <5%)- отношение времени простоя оборудования к общему времени работы, %;
 - Уровень неисправности оборудования Кно (Критерий <=5) - отношение количества времени простоя по причине поломки оборудования к общему времени работы, %.
 
-ИСХОДНЫЕ ДАННЫЕ - ФАЙЛ __init__.py в ../Data::
+ИСХОДНЫЕ ДАННЫЕ - ФАЙЛ __init__.py в ../Data:
 +--------------------------------------+-----------------------------------+
 |              Переменная              |             Показатель            |
 +--------------------------------------+-----------------------------------+
+|        data_kol_vip_prod_year        | Количество выпущенной продукци... |
 |       data_ur_neispr_obor_year       | Уровень неисправности оборудов... |
 |       data_ur_nesoot_prod_year       | Уровень несоответствующей прод... |
 |         data_ur_teh_oth_year         |   Уровень техотходов по годам...  |
+|      data_kol_vip_mufty_year         |   Количество выпущенных муфт...   |
+|      data_kol_vip_kompl_year         |Количество выпущенных комплектов...|
+|      data_kol_narezki_year           |   Количество нарезки пб ленты...  |
+|      data_kol_rezki_pvh_lip_year     |   Количество резки ПВХ липкой...  |
+|       data_ur_rash_mater_year        | Уровень расхода материалов Крм... |
+|        data_ur_otkl_prod_year        |Уровень отклонений продукции Котк..|
+|      data_ur_prost_kach_year         | Уровень простоя обор. Кпр кач...  |
+|      data_ur_prost_nepost_year       | Уровень простоя обор. Кпр кол...  |
 |   data_ur_neispr_obor_middle_year    | Уровень неисправности оборудов... |
 |   data_ur_nesoot_prod_middle_year    | Уровень несоответствующей прод... |
 |     data_ur_teh_oth_middle_year      | Уровень техотходов по полугоди... |
+|    data_kol_vip_prod_middle_year     | Количество выпущеной продукции... |
+|  data_kol_vip_mufty_middle_year      |   Количество выпущенных муфт...   |
+|  data_kol_vip_kompl_middle_year      |Количество выпущенных комплектов...|
+|  data_kol_narezki_middle_year        |   Количество нарезки пб ленты...  |
+|  data_kol_rezki_pvh_lip_middle_year  |   Количество резки ПВХ липкой...  |
+|  data_ur_rash_mater_middle_year      | Уровень расхода материалов Крм... |
+|  data_ur_otkl_prod_middle_year       |Уровень отклонений продукции Котк..|
+|  data_ur_prost_kach_middle_year      | Уровень простоя обор. Кпр кач...  |
+|  data_ur_prost_nepost_middle_year    | Уровень простоя обор. Кпр кол...  |
 +--------------------------------------+-----------------------------------+
 Инструкции при импорте:
 -----------------------
@@ -76,7 +105,7 @@ import Tools.Abstract_Parents as Abstract
 # универсальный модуль для выполнения контракта
 from scipy.stats import linregress
 # модуль для построения линейной регрессии
-from Data import data_ur_neispr_obor_year, data_ur_nesoot_prod_year,data_ur_teh_oth_year, data_ur_neispr_obor_middle_year, data_ur_nesoot_prod_middle_year, data_ur_teh_oth_middle_year
+from Data import data_kol_vip_prod_year, data_ur_neispr_obor_year,data_ur_nesoot_prod_year, data_ur_teh_oth_year, data_kol_vip_mufty_year, data_kol_vip_kompl_year, data_kol_narezki_year, data_kol_rezki_pvh_lip_year, data_ur_rash_mater_year, data_ur_otkl_prod_year, data_ur_prost_kach_year,data_ur_prost_nepost_year, data_ur_neispr_obor_middle_year, data_ur_nesoot_prod_middle_year, data_ur_teh_oth_middle_year,data_kol_vip_prod_middle_year, data_kol_vip_mufty_middle_year,data_kol_vip_kompl_middle_year, data_kol_narezki_middle_year,data_kol_rezki_pvh_lip_middle_year, data_ur_rash_mater_middle_year,data_ur_otkl_prod_middle_year, data_ur_prost_kach_middle_year,data_ur_prost_nepost_middle_year
 # импорт DataFrame объектов с исходными данными
 from prettytable import PrettyTable
 # импорт библиотеки для вывода табличных данных в консоли(терминале)
@@ -87,21 +116,58 @@ from abc import ABC, abstractmethod
 ##################################################
 try:
     INDICATOR_NAME = [
-                'Уровень неисправности оборудования по годам',
-                'Уровень несоответствующей продукции по годам',
-                'Уровень техотходов по годам',
-                'Уровень неисправности оборудование по полугодиям',
-                'Уровень несоответствующей продукции по полугодиям',
-                'Уровень техотходов по полугодиям'
+                    "Количество выпущенной продукции (ленты) Квып",
+                    "Уровень неисправности оборудования Кно",
+                    "Уровень несоответствующей прод. в проц. произв. Кн",
+                    "Уровень техотходов по годам",
+                    "Количество выпущенных муфт",
+                    "Количество выпущенных комплектов",
+                    "Количество нарезки пб ленты",
+                    "Количество резки ПВХ липкой",
+                    "Уровень расхода материалов Крм",
+                    "Уровень отклонений продукции Котк",
+                    "Уровень простоя обор. Кпр кач",
+                    "Уровень простоя обор. Кпр кол",
+                    "Уровень неисправности оборудов по полугодиям",
+                    "Уровень несоответствующей прод. по полугодиям",
+                    "Уровень техотходов по полугодиям",
+                    "Количество выпущенной продукции Квып по полугодиям",
+                    "Количество выпущенных муфт по полугодиям",
+                    "Количество выпущенных комплектов по полугодиям",
+                    "Количество нарезки пб ленты по полугодиям",
+                    "Количество резки ПВХ липкой по полугодиям",
+                    # "Уровень расхода материалов Крм по полугодиям",
+                    "Уровень отклонений продукции Котк по полугодиям",
+                    "Уровень простоя обор. Кпр кач по полугодиям",
+                    "Уровень простоя обор. Кпр кол по полугодиям"
                  ]#запись наименований
 
     NAME_INPUT = {
-                    '001':data_ur_neispr_obor_year,
-                    '002':data_ur_nesoot_prod_year,
-                    '003':data_ur_teh_oth_year,
-                    '004':data_ur_neispr_obor_middle_year,
-                    '005':data_ur_nesoot_prod_middle_year,
-                    '006':data_ur_teh_oth_middle_year,
+                    '001': data_kol_vip_prod_year,
+                    '002': data_ur_neispr_obor_year,
+                    '003': data_ur_nesoot_prod_year,
+                    '004': data_ur_teh_oth_year,
+                    '005': data_kol_vip_mufty_year,
+                    '006': data_kol_vip_kompl_year,
+                    '007': data_kol_narezki_year,
+                    '008': data_kol_rezki_pvh_lip_year,
+                    '009': data_ur_rash_mater_year,
+                    '010': data_ur_otkl_prod_year,
+                    '011': data_ur_prost_kach_year,
+                    '012': data_ur_prost_nepost_year,
+                    '013': data_ur_neispr_obor_middle_year,
+                    '014': data_ur_nesoot_prod_middle_year,
+                    '015': data_ur_teh_oth_middle_year,
+                    '016': data_kol_vip_prod_middle_year,
+                    '017': data_kol_vip_mufty_middle_year,
+                    '018':data_kol_vip_kompl_middle_year,
+                    '019': data_kol_narezki_middle_year,
+                    '020': data_kol_rezki_pvh_lip_middle_year,
+                    '021': data_ur_rash_mater_middle_year,
+                    '022': data_ur_otkl_prod_middle_year,
+                    # другой подсчёт статистики
+                    #'023': data_ur_prost_kach_middle_year,
+                    '024': data_ur_prost_nepost_middle_year,
                     } #идентификатор
 
     lst_name = [data_ur_neispr_obor_year, data_ur_nesoot_prod_year,data_ur_teh_oth_year, data_ur_neispr_obor_middle_year, data_ur_nesoot_prod_middle_year, data_ur_teh_oth_middle_year]
