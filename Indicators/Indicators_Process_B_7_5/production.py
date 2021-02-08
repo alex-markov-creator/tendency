@@ -1,6 +1,9 @@
 #-*- coding: utf-8 -*-
 # version 0.2a
-# author: andrew.bezzubov - 02/02/2020 year
+# author: andrew.bezzubov - 02/02/2020
+# email: ruizcontrol@yandex.ru
+# https://github.com/alex-markov-creator/tendency.git
+# GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007
 """
 ===============================================================
 production.py - модуль для статистических подсчетов и построения графиков  по показателям качества:
@@ -11,15 +14,18 @@ production.py - модуль для статистических подсчет�
     - комплекты ЛИТКОР КМ;
     - резка п/б ленты;
     - резка ПВХ липкой.
-- Уровень несоответствующей продукции в процессе производства Кн (Критерий <=5) - отношение количества забракованной продукции к количеству выпущенной, %;
+- Уровень несоответствующей продукции в процессе производства Кн (Критерий <=5%) - отношение количества забракованной продукции к количеству выпущенной, %;
 - Уровень отклонений продукции Котк (Критерий <10%) - отношение количества продукции с отклонением от ТУ к общему количеству выпущенной продукции, %;
 - Уровень расхода материалов Крм (Критерий <=100%) - отношение коэффициента фактического расхода материалов (отношение количества затраченного материала к количеству выпущенной продукции) к коэффициенту нормативного расхода, %;
 - Уровень тех. отходов Кто (Критерий <=2.0%) - отношение количества тех. отходов к общему количеству выпущенной продукции, %;
 - Уровень простоя оборудования из-за несоответствующего качества расходных материалов Кпр кач (Критерий <5%) - отношение времени простоя оборудования к общему времени работы, %;
 - Уровень простоя оборудования из-за непоставки расходных материалов Кпр кол (Критерий <5%)- отношение времени простоя оборудования к общему времени работы, %;
-- Уровень неисправности оборудования Кно (Критерий <=5) - отношение количества времени простоя по причине поломки оборудования к общему времени работы, %.
+- Уровень неисправности оборудования Кно (Критерий <=5%) - отношение количества времени простоя по причине поломки оборудования к общему времени работы, %.
+===============================================================
+Процесс Б (7.5) "Производство продукции"
+===============================================================
 
-ИСХОДНЫЕ ДАННЫЕ - ФАЙЛ __init__.py в ../Data:
+ИСХОДНЫЕ ДАННЫЕ - ФАЙЛ database.py в ../Data:
 +--------------------------------------+-----------------------------------+
 |              Переменная              |             Показатель            |
 +--------------------------------------+-----------------------------------+
@@ -48,6 +54,7 @@ production.py - модуль для статистических подсчет�
 |  data_ur_prost_kach_middle_year      | Уровень простоя обор. Кпр кач...  |
 |  data_ur_prost_nepost_middle_year    | Уровень простоя обор. Кпр кол...  |
 +--------------------------------------+-----------------------------------+
+
 Инструкции при импорте:
 -----------------------
 import pandas as pd
@@ -78,12 +85,12 @@ print(x.st_d())
 
 Построение графиков:
 --------------------
-a = pr.First_Graphics(pr.data_ur_neispr_obor_year, name= 'Уровень неисправности оборудования по годам')
-b = pr.First_Graphics(pr.data_ur_neispr_obor_middle_year, name= 'Уровень неисправности оборудования по полугодиям')
-c = pr.First_Graphics(pr.data_ur_nesoot_prod_year, name= 'Уровень несоответствующей продукции по годам')
-d = pr.First_Graphics(pr.data_ur_nesoot_prod_middle_year, name= 'Уровень несоответствующей продукции по полугодиям')
-e = pr.First_Graphics(pr.data_ur_teh_oth_year, name= 'Уровень техотходов по годам', critery=2)
-f = pr.First_Graphics(pr.data_ur_teh_oth_middle_year, name= 'Уровень техотходов по полугодиям', critery=2)
+a = pr.Graphics_Indicators_Production(pr.data_ur_neispr_obor_year, name= 'Уровень неисправности оборудования по годам')
+b = pr.Graphics_Indicators_Production(pr.data_ur_neispr_obor_middle_year, name= 'Уровень неисправности оборудования по полугодиям')
+c = pr.Graphics_Indicators_Production(pr.data_ur_nesoot_prod_year, name= 'Уровень несоответствующей продукции по годам')
+d = pr.Graphics_Indicators_Production(pr.data_ur_nesoot_prod_middle_year, name= 'Уровень несоответствующей продукции по полугодиям')
+e = pr.Graphics_Indicators_Production(pr.data_ur_teh_oth_year, name= 'Уровень техотходов по годам', critery=2)
+f = pr.Graphics_Indicators_Production(pr.data_ur_teh_oth_middle_year, name= 'Уровень техотходов по полугодиям', critery=2)
 plt.show()
 
 СОХРАНЕНИЕ графиков и результатов
@@ -93,38 +100,39 @@ pr.Save_Data()
 import sys
 import os
 import time
-sys.path.append(os.path.realpath('../..'))
-# субродительский каталог в sys.path
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sb
-from tabulate import tabulate
 # модуль для вывода табличных данных
-import Tools.Abstract_Parents as Abstract
+from tabulate import tabulate
+# субродительский каталог в sys.path
+sys.path.append(os.path.realpath('../..'))
 # универсальный модуль для выполнения контракта
-from scipy.stats import linregress
+import Tools.Abstract_Parents as Abstract
+import Tools.Singleton_Pattern as Singleton
 # модуль для построения линейной регрессии
-from Data import data_kol_vip_prod_year, data_ur_neispr_obor_year,data_ur_nesoot_prod_year, data_ur_teh_oth_year, data_kol_vip_mufty_year, data_kol_vip_kompl_year, data_kol_narezki_year, data_kol_rezki_pvh_lip_year, data_ur_rash_mater_year, data_ur_otkl_prod_year, data_ur_prost_kach_year,data_ur_prost_nepost_year, data_ur_neispr_obor_middle_year, data_ur_nesoot_prod_middle_year, data_ur_teh_oth_middle_year,data_kol_vip_prod_middle_year, data_kol_vip_mufty_middle_year,data_kol_vip_kompl_middle_year, data_kol_narezki_middle_year,data_kol_rezki_pvh_lip_middle_year, data_ur_rash_mater_middle_year,data_ur_otkl_prod_middle_year, data_ur_prost_kach_middle_year,data_ur_prost_nepost_middle_year
+from scipy.stats import linregress
 # импорт DataFrame объектов с исходными данными
-from prettytable import PrettyTable
+from Data import data_kol_vip_prod_year, data_ur_neispr_obor_year,data_ur_nesoot_prod_year, data_ur_teh_oth_year, data_kol_vip_mufty_year, data_kol_vip_kompl_year, data_kol_narezki_year, data_kol_rezki_pvh_lip_year, data_ur_rash_mater_year, data_ur_otkl_prod_year, data_ur_prost_kach_year,data_ur_prost_nepost_year, data_ur_neispr_obor_middle_year, data_ur_nesoot_prod_middle_year, data_ur_teh_oth_middle_year,data_kol_vip_prod_middle_year, data_kol_vip_mufty_middle_year,data_kol_vip_kompl_middle_year, data_kol_narezki_middle_year,data_kol_rezki_pvh_lip_middle_year, data_ur_rash_mater_middle_year,data_ur_otkl_prod_middle_year, data_ur_prost_kach_middle_year,data_ur_prost_nepost_middle_year
 # импорт библиотеки для вывода табличных данных в консоли(терминале)
-from abc import ABC, abstractmethod
+from prettytable import PrettyTable
 # импорт модуля для абстрактных классов
+from abc import ABC, abstractmethod
 
 # ИСХОДНЫЕ ДАННЫЕ (ДОПОЛНИТЕЛЬНОЕ ФОРМАТИРОВАНИЕ):
 ##################################################
 try:
     INDICATOR_NAME = [
-                    "Количество выпущенной продукции (ленты) Квып",
+                    "Количество выпущенной продукции (ленты) Квып",#???график
                     "Уровень неисправности оборудования Кно",
                     "Уровень несоответствующей прод. в проц. произв. Кн",
                     "Уровень техотходов по годам",
-                    "Количество выпущенных муфт",
-                    "Количество выпущенных комплектов",
-                    "Количество нарезки пб ленты",
-                    "Количество резки ПВХ липкой",
-                    "Уровень расхода материалов Крм",
+                    "Количество выпущенных муфт",#???????? Отдельный график
+                    "Количество выпущенных комплектов",#???? Отдельный график
+                    "Количество нарезки пб ленты",#?????????? Отдельный график
+                    "Количество резки ПВХ липкой",#????????? Отдельный график
+                    #"Уровень расхода материалов Крм",
                     "Уровень отклонений продукции Котк",
                     "Уровень простоя обор. Кпр кач",
                     "Уровень простоя обор. Кпр кол",
@@ -132,10 +140,10 @@ try:
                     "Уровень несоответствующей прод. по полугодиям",
                     "Уровень техотходов по полугодиям",
                     "Количество выпущенной продукции Квып по полугодиям",
-                    "Количество выпущенных муфт по полугодиям",
-                    "Количество выпущенных комплектов по полугодиям",
-                    "Количество нарезки пб ленты по полугодиям",
-                    "Количество резки ПВХ липкой по полугодиям",
+                    "Количество выпущенных муфт по полугодиям",#?????график
+                    "Количество выпущенных комплектов по полугодиям",#???график
+                    "Количество нарезки пб ленты по полугодиям",#????график
+                    "Количество резки ПВХ липкой по полугодиям",#????график
                     # "Уровень расхода материалов Крм по полугодиям",
                     "Уровень отклонений продукции Котк по полугодиям",
                     "Уровень простоя обор. Кпр кач по полугодиям",
@@ -143,15 +151,16 @@ try:
                  ]#запись наименований
 
     NAME_INPUT = {
-                    '001': data_kol_vip_prod_year,
+                    '001': data_kol_vip_prod_year,#???график
                     '002': data_ur_neispr_obor_year,
                     '003': data_ur_nesoot_prod_year,
                     '004': data_ur_teh_oth_year,
-                    '005': data_kol_vip_mufty_year,
-                    '006': data_kol_vip_kompl_year,
-                    '007': data_kol_narezki_year,
-                    '008': data_kol_rezki_pvh_lip_year,
-                    '009': data_ur_rash_mater_year,
+                    '005': data_kol_vip_mufty_year,#????????график
+                    '006': data_kol_vip_kompl_year,#?????график
+                    '007': data_kol_narezki_year,#?????график
+                    '008': data_kol_rezki_pvh_lip_year,#?????график
+                    # другой подсчёт статистики
+                    #'009': data_ur_rash_mater_year,
                     '010': data_ur_otkl_prod_year,
                     '011': data_ur_prost_kach_year,
                     '012': data_ur_prost_nepost_year,
@@ -159,22 +168,22 @@ try:
                     '014': data_ur_nesoot_prod_middle_year,
                     '015': data_ur_teh_oth_middle_year,
                     '016': data_kol_vip_prod_middle_year,
-                    '017': data_kol_vip_mufty_middle_year,
-                    '018':data_kol_vip_kompl_middle_year,
-                    '019': data_kol_narezki_middle_year,
-                    '020': data_kol_rezki_pvh_lip_middle_year,
-                    '021': data_ur_rash_mater_middle_year,
-                    '022': data_ur_otkl_prod_middle_year,
+                    '017': data_kol_vip_mufty_middle_year,#?????график
+                    '018':data_kol_vip_kompl_middle_year,#?????график
+                    '019': data_kol_narezki_middle_year,#?????график
+                    '020': data_kol_rezki_pvh_lip_middle_year,#?????график
                     # другой подсчёт статистики
-                    #'023': data_ur_prost_kach_middle_year,
+                    #'021': data_ur_rash_mater_middle_year,
+                    '022': data_ur_otkl_prod_middle_year,
+                    '023': data_ur_prost_kach_middle_year,
                     '024': data_ur_prost_nepost_middle_year,
                     } #идентификатор
 
-    lst_name = [data_ur_neispr_obor_year, data_ur_nesoot_prod_year,data_ur_teh_oth_year, data_ur_neispr_obor_middle_year, data_ur_nesoot_prod_middle_year, data_ur_teh_oth_middle_year]
+    lst_name = [data_kol_vip_prod_year,data_ur_neispr_obor_year,data_ur_nesoot_prod_year,data_ur_teh_oth_year,data_kol_vip_mufty_year, data_kol_vip_kompl_year, data_kol_narezki_year, data_kol_rezki_pvh_lip_year, data_ur_otkl_prod_year,data_ur_prost_kach_year,data_ur_prost_nepost_year,data_ur_neispr_obor_middle_year,data_ur_nesoot_prod_middle_year,data_ur_teh_oth_middle_year,data_kol_vip_prod_middle_year,data_kol_vip_mufty_middle_year,data_kol_vip_kompl_middle_year,data_kol_narezki_middle_year,data_kol_rezki_pvh_lip_middle_year,data_ur_otkl_prod_middle_year,data_ur_prost_kach_middle_year,data_ur_prost_nepost_middle_year]
 
     # ИСХОДНЫЕ ДАННЫЕ (ДОПОЛНИТЕЛЬНОЕ ФОРМАТИРОВАНИЕ ДЛЯ СОХРАНЕНИЯ):
     #################################################################
-    data_add = pd.concat([data_ur_neispr_obor_year, data_ur_nesoot_prod_year,data_ur_teh_oth_year, data_ur_neispr_obor_middle_year, data_ur_nesoot_prod_middle_year, data_ur_teh_oth_middle_year], axis=1)
+    data_add = pd.concat([data_kol_vip_prod_year,data_ur_neispr_obor_year,data_ur_nesoot_prod_year,data_ur_teh_oth_year,data_kol_vip_mufty_year, data_kol_vip_kompl_year, data_kol_narezki_year, data_kol_rezki_pvh_lip_year, data_ur_otkl_prod_year,data_ur_prost_kach_year,data_ur_prost_nepost_year,data_ur_neispr_obor_middle_year,data_ur_nesoot_prod_middle_year,data_ur_teh_oth_middle_year,data_kol_vip_prod_middle_year,data_kol_vip_mufty_middle_year,data_kol_vip_kompl_middle_year,data_kol_narezki_middle_year,data_kol_rezki_pvh_lip_middle_year,data_ur_otkl_prod_middle_year,data_ur_prost_kach_middle_year,data_ur_prost_nepost_middle_year], axis=1)
     # Конкатенация
 
 except Exception:
@@ -301,17 +310,17 @@ except Exception:
     print(time.ctime(), 'Statistic_Error: ', sys.exc_info()[:2], file = open('log.txt', 'a'))
 
 try:
-    class First_Graphics(Abstract.Graphic):
+    class Graphics_Indicators_Production(Abstract.Graphic):
         """
-        Класс запуска графического отображения
+        Класс запуска графического отображения показателей качества
+        Процесса Б(7.5) "Производство продукции", за исключением показателей
+        количества выпущенной продукции
         """
-        # Процесс Б(7.5)
-        # Производственные показатели
         def __init__(self, data, name='Название графика', critery = 0):
             super().__init__(data)
             plt.style.use('bmh')
             fig, ax = plt.subplots()
-            fig.canvas.set_window_title('Производство продукции')
+            fig.canvas.set_window_title('Процесс Б (7.5) "Производство продукции"')
             x = self.data.index.tolist()
             x = np.array(x)
             y = self.data.transpose().iloc[0]
@@ -345,6 +354,7 @@ try:
             ----------
             data - наименование переменной (см.таблицу выше);
             """
+
             # ЗАПИСЬ ДАННЫХ В .xlsx файл
             print('Сохранение в файл формата *.xlsx ...')
             save_data_1 = data_add
@@ -353,27 +363,53 @@ try:
                 save_data_1.to_excel(
                                     writer, sheet_name='Исходные данные'
                                     )
+
             # ЗАПИСЬ СТАТИСТИЧЕСКОЙ ИНФОРМАЦИИ в *.txt файл
             print('Сохранение в файл формата *.txt ...')
             print('...files/*.txt')
             for i_name in lst_name:
                 x = Statistic_Table(i_name)
                 print('{}\n{}\n{}\n{}\n{}'.format(x.score(),x.middle(),x.max(), x.min(),x.st_d()), file=open('files/{}.txt'.format(i_name.columns[0]), 'w'))
+
             # СОХРАНЕНИЕ ГРАФИКОВ
             print('Сохранение в файл формата *.png ...')
             print('...files/*.png')
-            a = First_Graphics(data_ur_neispr_obor_year, name= 'Уровень неисправности оборудования по годам')
-            a.save_graphic('files/{}'.format(data_ur_neispr_obor_year.columns[0]))
-            b = First_Graphics(data_ur_neispr_obor_middle_year, name= 'Уровень неисправности оборудования по полугодиям')
-            b.save_graphic('files/{}'.format(data_ur_neispr_obor_middle_year.columns[0]))
-            c = First_Graphics(data_ur_nesoot_prod_year, name= 'Уровень несоответствующей продукции по годам')
-            c.save_graphic('files/{}'.format(data_ur_nesoot_prod_year.columns[0]))
-            d = First_Graphics(data_ur_nesoot_prod_middle_year, name= 'Уровень несоответствующей продукции по полугодиям')
-            d.save_graphic('files/{}'.format(data_ur_nesoot_prod_middle_year.columns[0]))
-            e = First_Graphics(data_ur_teh_oth_year, name= 'Уровень техотходов по годам', critery=2)
-            e.save_graphic('files/{}'.format(data_ur_teh_oth_year.columns[0]))
-            f = First_Graphics(data_ur_teh_oth_middle_year, name= 'Уровень техотходов по полугодиям', critery=2)
-            f.save_graphic('files/{}'.format(data_ur_teh_oth_middle_year.columns[0]))
+            graphic_year_one = Graphics_Indicators_Production(data_ur_neispr_obor_year, name= 'Уровень неисправности оборудования по годам')
+            graphic_year_one.save_graphic('files/{}'.format(data_ur_neispr_obor_year.columns[0]))
+
+            graphic_year_two = Graphics_Indicators_Production(data_ur_nesoot_prod_year, name= 'Уровень несоответствующей продукции по годам')
+            graphic_year_two.save_graphic('files/{}'.format(data_ur_nesoot_prod_year.columns[0]))
+
+            graphic_year_three = Graphics_Indicators_Production(data_ur_teh_oth_year, name= 'Уровень техотходов по годам', critery=2)
+            graphic_year_three.save_graphic('files/{}'.format(data_ur_teh_oth_year.columns[0]))
+
+            graphic_year_four = Graphics_Indicators_Production(data_ur_otkl_prod_year, name= 'Уровень отклонений продукции Котк по годам')
+            graphic_year_four.save_graphic('files/{}'.format(data_ur_otkl_prod_year.columns[0]))
+
+            graphic_year_five = Graphics_Indicators_Production(data_ur_prost_kach_year, name= 'Уровень простоя оборудования из-за несоответствующего качества расходных материалов Кпр кач')
+            graphic_year_five.save_graphic('files/{}'.format(data_ur_prost_kach_year.columns[0]))
+
+            graphic_year_six = Graphics_Indicators_Production(data_ur_prost_nepost_year, name= 'Уровень простоя оборудования из-за непоставки расходных материалов Кпр кол')
+            graphic_year_six.save_graphic('files/{}'.format(data_ur_prost_nepost_year.columns[0]))
+            # Полугодовые показатели
+            graphic_middle_one = Graphics_Indicators_Production(data_ur_neispr_obor_middle_year, name= 'Уровень неисправности оборудования по полугодиям')
+            graphic_middle_one.save_graphic('files/{}'.format(data_ur_neispr_obor_middle_year.columns[0]))
+
+            graphic_middle_two = Graphics_Indicators_Production(data_ur_nesoot_prod_middle_year, name= 'Уровень несоответствующей продукции по полугодиям')
+            graphic_middle_two.save_graphic('files/{}'.format(data_ur_nesoot_prod_middle_year.columns[0]))
+
+            graphic_middle_three = Graphics_Indicators_Production(data_ur_teh_oth_middle_year, name= 'Уровень техотходов по полугодиям', critery=2)
+            graphic_middle_three.save_graphic('files/{}'.format(data_ur_teh_oth_middle_year.columns[0]))
+
+            graphic_middle_four = Graphics_Indicators_Production(data_ur_otkl_prod_middle_year, name= 'Уровень отклонений продукции Котк по полугодиям')
+            graphic_middle_four.save_graphic('files/{}'.format(data_ur_otkl_prod_middle_year.columns[0]))
+
+            graphic_middle_five = Graphics_Indicators_Production(data_ur_prost_kach_middle_year, name= 'Уровень простоя оборудования из-за несоответствующего качества расходных материалов Кпр кач по полугодиям')
+            graphic_middle_five.save_graphic('files/{}'.format(data_ur_prost_kach_middle_year.columns[0]))
+
+            graphic_middle_six = Graphics_Indicators_Production(data_ur_prost_nepost_middle_year, name= 'Уровень простоя оборудования из-за непоставки расходных материалов Кпр кол по полугодиям')
+            graphic_middle_six.save_graphic('files/{}'.format(data_ur_prost_nepost_middle_year.columns[0]))
+
 
 except Exception:
     print(time.ctime(), 'Save_Error: ', sys.exc_info()[:2], file = open('log.txt', 'a'))
@@ -558,13 +594,21 @@ if __name__ == '__main__':
             return 'Графики-3'
 
         def perform(self, object, *args, **kwargs):
-            #ГРАФИКИ
-            a = First_Graphics(data_ur_neispr_obor_year, name= 'Уровень неисправности оборудования по годам')
-            b = First_Graphics(data_ur_neispr_obor_middle_year, name= 'Уровень неисправности оборудования по полугодиям')
-            c = First_Graphics(data_ur_nesoot_prod_year, name= 'Уровень несоответствующей продукции по годам')
-            d = First_Graphics(data_ur_nesoot_prod_middle_year, name= 'Уровень несоответствующей продукции по полугодиям')
-            e = First_Graphics(data_ur_teh_oth_year, name= 'Уровень техотходов по годам', critery=2)
-            f = First_Graphics(data_ur_teh_oth_middle_year, name= 'Уровень техотходов по полугодиям', critery=2)
+            # Графики Процесса Б(7.5) "Производство продукции"
+            # Годовые показатели
+            graphic_year_one = Graphics_Indicators_Production(data_ur_neispr_obor_year, name= 'Уровень неисправности оборудования по годам')
+            graphic_year_two = Graphics_Indicators_Production(data_ur_nesoot_prod_year, name= 'Уровень несоответствующей продукции по годам')
+            graphic_year_three = Graphics_Indicators_Production(data_ur_teh_oth_year, name= 'Уровень техотходов по годам', critery=2)
+            graphic_year_four = Graphics_Indicators_Production(data_ur_otkl_prod_year, name= 'Уровень отклонений продукции Котк по годам')
+            graphic_year_five = Graphics_Indicators_Production(data_ur_prost_kach_year, name= 'Уровень простоя оборудования из-за несоответствующего качества расходных материалов Кпр кач')
+            graphic_year_six = Graphics_Indicators_Production(data_ur_prost_nepost_year, name= 'Уровень простоя оборудования из-за непоставки расходных материалов Кпр кол')
+            # Полугодовые показатели
+            graphic_middle_one = Graphics_Indicators_Production(data_ur_neispr_obor_middle_year, name= 'Уровень неисправности оборудования по полугодиям')
+            graphic_middle_two = Graphics_Indicators_Production(data_ur_nesoot_prod_middle_year, name= 'Уровень несоответствующей продукции по полугодиям')
+            graphic_middle_three = Graphics_Indicators_Production(data_ur_teh_oth_middle_year, name= 'Уровень техотходов по полугодиям', critery=2)
+            graphic_middle_four = Graphics_Indicators_Production(data_ur_otkl_prod_middle_year, name= 'Уровень отклонений продукции Котк по полугодиям')
+            graphic_middle_five = Graphics_Indicators_Production(data_ur_prost_kach_middle_year, name= 'Уровень простоя оборудования из-за несоответствующего качества расходных материалов Кпр кач по полугодиям')
+            graphic_middle_six = Graphics_Indicators_Production(data_ur_prost_nepost_middle_year, name= 'Уровень простоя оборудования из-за непоставки расходных материалов Кпр кол по полугодиям')
             plt.show()
 
     class FourCommand(BaseCommand):
