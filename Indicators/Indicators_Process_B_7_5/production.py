@@ -103,14 +103,17 @@ import time
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+# импорт для построения нескольких графиков на одном уровне слоя
+from matplotlib.gridspec import GridSpec
+# дополнительная библиотека визуализации графиков
 import seaborn as sb
 # модуль для вывода табличных данных
 from tabulate import tabulate
 # субродительский каталог в sys.path
 sys.path.append(os.path.realpath('../..'))
-# универсальный модуль для выполнения контракта
+# универсальный модуль для выполнения контракта(контрактов)
 import Tools.Abstract_Parents as Abstract
-import Tools.Singleton_Pattern as Singleton
+#import Tools.Singleton_Pattern as Singleton
 # модуль для построения линейной регрессии
 from scipy.stats import linregress
 # импорт DataFrame объектов с исходными данными
@@ -181,13 +184,18 @@ try:
 
     lst_name = [data_kol_vip_prod_year,data_ur_neispr_obor_year,data_ur_nesoot_prod_year,data_ur_teh_oth_year,data_kol_vip_mufty_year, data_kol_vip_kompl_year, data_kol_narezki_year, data_kol_rezki_pvh_lip_year, data_ur_otkl_prod_year,data_ur_prost_kach_year,data_ur_prost_nepost_year,data_ur_neispr_obor_middle_year,data_ur_nesoot_prod_middle_year,data_ur_teh_oth_middle_year,data_kol_vip_prod_middle_year,data_kol_vip_mufty_middle_year,data_kol_vip_kompl_middle_year,data_kol_narezki_middle_year,data_kol_rezki_pvh_lip_middle_year,data_ur_otkl_prod_middle_year,data_ur_prost_kach_middle_year,data_ur_prost_nepost_middle_year]
 
+    # ИСХОДНЫЕ ДАННЫЕ (ДОПОЛНИТЕЛЬНОЕ ФОРМАТИРОВАНИЕ ДЛЯ ПОСТРОЕНИЯ ГРАФИКА):
+    #########################################################################
+    data_number_year = pd.concat([data_kol_vip_prod_year, data_kol_vip_mufty_year,data_kol_vip_kompl_year, data_kol_narezki_year,data_kol_rezki_pvh_lip_year], axis=1)
+    data_number_middle_year = pd.concat([data_kol_vip_prod_middle_year,data_kol_vip_mufty_middle_year, data_kol_vip_kompl_middle_year,data_kol_narezki_middle_year, data_kol_rezki_pvh_lip_middle_year], axis=1)
+
     # ИСХОДНЫЕ ДАННЫЕ (ДОПОЛНИТЕЛЬНОЕ ФОРМАТИРОВАНИЕ ДЛЯ СОХРАНЕНИЯ):
     #################################################################
     data_add = pd.concat([data_kol_vip_prod_year,data_ur_neispr_obor_year,data_ur_nesoot_prod_year,data_ur_teh_oth_year,data_kol_vip_mufty_year, data_kol_vip_kompl_year, data_kol_narezki_year, data_kol_rezki_pvh_lip_year, data_ur_otkl_prod_year,data_ur_prost_kach_year,data_ur_prost_nepost_year,data_ur_neispr_obor_middle_year,data_ur_nesoot_prod_middle_year,data_ur_teh_oth_middle_year,data_kol_vip_prod_middle_year,data_kol_vip_mufty_middle_year,data_kol_vip_kompl_middle_year,data_kol_narezki_middle_year,data_kol_rezki_pvh_lip_middle_year,data_ur_otkl_prod_middle_year,data_ur_prost_kach_middle_year,data_ur_prost_nepost_middle_year], axis=1)
     # Конкатенация
 
 except Exception:
-    print(time.ctime(), 'Benchmark_Data_Error: ', sys.exc_info()[:2], file = open('log.txt', 'a'))
+    print(time.ctime(), 'Benchmark_Data_Error: ', sys.exc_info()[:2], file = open('warning.log', 'a'))
 
 try:
     class Info(object):
@@ -204,7 +212,7 @@ try:
             return '{}'.format(self.x)
 
 except Exception:
-    print(time.ctime(), 'Info_Error: ', sys.exc_info()[:2], file = open('log.txt', 'a'))
+    print(time.ctime(), 'Info_Error: ', sys.exc_info()[:2], file = open('warning.log', 'a'))
 
 try:
     class Data_Table(object):
@@ -235,11 +243,11 @@ try:
             """
             Открытие и запись временного файла для отображения всех значений
             """
-            print(tabulate(self.data, headers = 'keys', tablefmt = 'psql'), file=open(r'temp_data_production.txt', 'w', encoding = 'utf-8'))
-            os.system('temp_data_production.txt')
+            print(tabulate(self.data, headers = 'keys', tablefmt = 'psql'), file=open(r'data_production.temp', 'w', encoding = 'utf-8'))
+            os.system('data_production.temp')
 
 except Exception:
-    print(time.ctime(), 'Data_Table_Error: ', sys.exc_info()[:2], file = open('log.txt', 'a'))
+    print(time.ctime(), 'Data_Table_Error: ', sys.exc_info()[:2], file = open('warning.log', 'a'))
 
 try:
     class Statistic_Table(Abstract.Statistic):
@@ -307,7 +315,7 @@ try:
             return "Отклонение результатов:\n{}".format(self.Astd)
 
 except Exception:
-    print(time.ctime(), 'Statistic_Error: ', sys.exc_info()[:2], file = open('log.txt', 'a'))
+    print(time.ctime(), 'Statistic_Error: ', sys.exc_info()[:2], file = open('warning.log', 'a'))
 
 try:
     class Graphics_Indicators_Production(Abstract.Graphic):
@@ -319,7 +327,7 @@ try:
         def __init__(self, data, name='Название графика', critery = 0):
             super().__init__(data)
             plt.style.use('bmh')
-            fig, ax = plt.subplots()
+            fig, ax = plt.subplots(figsize=(12,10), dpi= 80)
             fig.canvas.set_window_title('Процесс Б (7.5) "Производство продукции"')
             x = self.data.index.tolist()
             x = np.array(x)
@@ -337,7 +345,86 @@ try:
             plt.grid(axis='both', color='black', linestyle='dotted',linewidth=1)
 
 except Exception:
-    print(time.ctime(), 'Graphics_Error: ', sys.exc_info()[:2], file = open('log.txt', 'a'))
+    print(time.ctime(), 'Graphics_Indicators_Production_Error: ', sys.exc_info()[:2], file = open('warning.log', 'a'))
+
+try:
+    class Graphics_Number_Production(Abstract.Graphic):
+        """
+        Класс запуска графического отображения показателя количества выпущенной продукции Процесса Б(7.5) "Производство продукции".
+        """
+        def __init__(self, data, name='Название графика', critery = 0):
+            super().__init__(data)
+            plt.style.use('bmh')
+            fig = plt.figure(constrained_layout=True, figsize=(12,10), dpi= 80)
+            fig.canvas.set_window_title('Процесс Б (7.5) "Производство продукции"')
+            gs = GridSpec(3,3, figure=fig) # выбор сетки слоя
+            # График слоя ax1
+            ax1 = fig.add_subplot(gs[0, :])
+            data_ax1 = self.data.iloc[:, 0]
+            x_ax1 = data_ax1.index.tolist()
+            x_ax1 = np.array(x_ax1)
+            y_ax1 = data_ax1.transpose()
+            y_ax1 = np.array(y_ax1)
+            stats = linregress(x_ax1, y_ax1)
+            m_ax1 = stats.slope
+            b_ax1 = stats.intercept
+            ax1 = plt.bar(x_ax1,y_ax1,label='Значение показателя', color='red', alpha=0.5)
+            ax1 = plt.plot(x_ax1,y_ax1,label='Значение показателя',marker = 'D', color='black', alpha=0.5)
+            ax1 = plt.plot(x_ax1, b_ax1 + m_ax1 * x_ax1 ,linestyle='dashed', color="blue", label='Регрессия')   # I've added a color argument here
+            ax1 = plt.title(data_ax1.name, fontsize=12, y=1.05)
+            ax1 = plt.grid(axis='both', color='black', linestyle='dotted',linewidth=1)
+            ax1 = plt.legend(fontsize=6, shadow=True, framealpha=1, edgecolor='r', title='', loc='best')
+            # График слоя ax2
+            ax2 = fig.add_subplot(gs[1, :-1])
+            data_ax2 = self.data.iloc[:, 1]
+            x_ax2 = data_ax2.index.tolist()
+            x_ax2 = np.array(x_ax2)
+            y_ax2 = data_ax2.transpose()
+            y_ax2 = np.array(y_ax2)
+            ax2 = plt.bar(x_ax2,y_ax2,label='Значение показателя', color='red', alpha=0.5)
+            ax2 = plt.plot(x_ax2,y_ax2,label='Значение показателя',marker = 'D', color='black', alpha=0.5)
+            ax2 = plt.title(data_ax2.name, fontsize=10, y=1.05)
+            ax2 = plt.grid(axis='both', color='black', linestyle='dotted',linewidth=1)
+            ax2 = plt.legend(fontsize=4, shadow=True, framealpha=1, edgecolor='r', title='', loc='best')
+            # График слоя ax3
+            ax3 = fig.add_subplot(gs[1:, -1])
+            data_ax3 = self.data.iloc[:, 2]
+            x_ax3 = data_ax3.index.tolist()
+            x_ax3 = np.array(x_ax3)
+            y_ax3 = data_ax3.transpose()
+            y_ax3 = np.array(y_ax3)
+            ax3 = plt.bar(x_ax3,y_ax3,label='Значение показателя', color='red', alpha=0.5)
+            ax3 = plt.plot(x_ax3,y_ax3,label='Значение показателя',marker = 'D', color='black', alpha=0.5)
+            ax3 = plt.title(data_ax3.name, fontsize=4, y=1.05)
+            ax3 = plt.grid(axis='both', color='black', linestyle='dotted',linewidth=1)
+            ax3 = plt.legend(fontsize=4, shadow=True, framealpha=1, edgecolor='r', title='', loc='best')
+            # График слоя ax4
+            ax4 = fig.add_subplot(gs[-1, 0])
+            data_ax4 = self.data.iloc[:, 3]
+            x_ax4 = data_ax4.index.tolist()
+            x_ax4 = np.array(x_ax4)
+            y_ax4 = data_ax4.transpose()
+            y_ax4 = np.array(y_ax4)
+            ax4 = plt.bar(x_ax4,y_ax4,label='Значение показателя', color='red', alpha=0.5)
+            ax4 = plt.plot(x_ax4,y_ax4,label='Значение показателя',marker = 'D', color='black', alpha=0.5)
+            ax4 = plt.title(data_ax4.name, fontsize=5, y=1.05)
+            ax4 = plt.grid(axis='both', color='black', linestyle='dotted',linewidth=1)
+            ax4 = plt.legend(fontsize=4, shadow=True, framealpha=1, edgecolor='r', title='', loc='best')
+            # График слоя ax5
+            ax5 = fig.add_subplot(gs[-1, -2])
+            data_ax5 = self.data.iloc[:, 4]
+            x_ax5 = data_ax5.index.tolist()
+            x_ax5 = np.array(x_ax5)
+            y_ax5 = data_ax5.transpose()
+            y_ax5 = np.array(y_ax5)
+            ax5 = plt.bar(x_ax5,y_ax5,label='Значение показателя', color='red', alpha=0.5)
+            ax5 = plt.plot(x_ax5,y_ax5,label='Значение показателя',marker = 'D', color='black', alpha=0.5)
+            ax5 = plt.title(data_ax5.name, fontsize=5, y=1.05)
+            ax5 = plt.grid(axis='both', color='black', linestyle='dotted',linewidth=1)
+            ax5 = plt.legend(fontsize=4, shadow=True, framealpha=1, edgecolor='r', title='', loc='best')
+
+except Exception:
+    print(time.ctime(), 'Исключение в классе Graphics_Number_Production() модуля production.py: ', sys.exc_info()[:2], file = open('warning.log', 'a'))
 
 try:
     class Save_Data(object):
@@ -365,11 +452,11 @@ try:
                                     )
 
             # ЗАПИСЬ СТАТИСТИЧЕСКОЙ ИНФОРМАЦИИ в *.txt файл
-            print('Сохранение в файл формата *.txt ...')
-            print('...files/*.txt')
-            for i_name in lst_name:
-                x = Statistic_Table(i_name)
-                print('{}\n{}\n{}\n{}\n{}'.format(x.score(),x.middle(),x.max(), x.min(),x.st_d()), file=open('files/{}.txt'.format(i_name.columns[0]), 'w'))
+            #print('Сохранение в файл формата *.txt ...')
+            #print('...files/*.txt')
+            #for i_name in lst_name:
+                #x = Statistic_Table(i_name)
+                #print('{}\n{}\n{}\n{}\n{}'.format(x.score(),x.middle(),x.max(), x.min(),x.st_d()), file=open('files/{}.txt'.format(i_name.columns[0]), 'w'))
 
             # СОХРАНЕНИЕ ГРАФИКОВ
             print('Сохранение в файл формата *.png ...')
@@ -391,6 +478,10 @@ try:
 
             graphic_year_six = Graphics_Indicators_Production(data_ur_prost_nepost_year, name= 'Уровень простоя оборудования из-за непоставки расходных материалов Кпр кол')
             graphic_year_six.save_graphic('files/{}'.format(data_ur_prost_nepost_year.columns[0]))
+
+            graphic_year_seven = Graphics_Number_Production(data_number_year, name= 'Количество выпущенной п/б ленты по годам')
+            graphic_year_seven.save_graphic('files/{}'.format(data_number_year.columns[0]))
+
             # Полугодовые показатели
             graphic_middle_one = Graphics_Indicators_Production(data_ur_neispr_obor_middle_year, name= 'Уровень неисправности оборудования по полугодиям')
             graphic_middle_one.save_graphic('files/{}'.format(data_ur_neispr_obor_middle_year.columns[0]))
@@ -404,15 +495,18 @@ try:
             graphic_middle_four = Graphics_Indicators_Production(data_ur_otkl_prod_middle_year, name= 'Уровень отклонений продукции Котк по полугодиям')
             graphic_middle_four.save_graphic('files/{}'.format(data_ur_otkl_prod_middle_year.columns[0]))
 
-            graphic_middle_five = Graphics_Indicators_Production(data_ur_prost_kach_middle_year, name= 'Уровень простоя оборудования из-за несоответствующего качества расходных материалов Кпр кач по полугодиям')
+            graphic_middle_five = Graphics_Indicators_Production(data_ur_prost_kach_middle_year, name= 'Уровень простоя оборудования в Кпр кач по полугодиям')
             graphic_middle_five.save_graphic('files/{}'.format(data_ur_prost_kach_middle_year.columns[0]))
 
             graphic_middle_six = Graphics_Indicators_Production(data_ur_prost_nepost_middle_year, name= 'Уровень простоя оборудования из-за непоставки расходных материалов Кпр кол по полугодиям')
             graphic_middle_six.save_graphic('files/{}'.format(data_ur_prost_nepost_middle_year.columns[0]))
 
+            graphic_middle_seven = Graphics_Number_Production(data_number_middle_year, name= 'Количество выпущенной п/б ленты  по полугодиям')
+            graphic_middle_seven.save_graphic('files/{}'.format(data_number_middle_year.columns[0]))
+
 
 except Exception:
-    print(time.ctime(), 'Save_Error: ', sys.exc_info()[:2], file = open('log.txt', 'a'))
+    print(time.ctime(), 'Save_Error: ', sys.exc_info()[:2], file = open('warning.log', 'a'))
 
 if __name__ == '__main__':
     class New_object(object):  # new_object = New_object()
@@ -600,15 +694,23 @@ if __name__ == '__main__':
             graphic_year_two = Graphics_Indicators_Production(data_ur_nesoot_prod_year, name= 'Уровень несоответствующей продукции по годам')
             graphic_year_three = Graphics_Indicators_Production(data_ur_teh_oth_year, name= 'Уровень техотходов по годам', critery=2)
             graphic_year_four = Graphics_Indicators_Production(data_ur_otkl_prod_year, name= 'Уровень отклонений продукции Котк по годам')
-            graphic_year_five = Graphics_Indicators_Production(data_ur_prost_kach_year, name= 'Уровень простоя оборудования из-за несоответствующего качества расходных материалов Кпр кач')
-            graphic_year_six = Graphics_Indicators_Production(data_ur_prost_nepost_year, name= 'Уровень простоя оборудования из-за непоставки расходных материалов Кпр кол')
+            # НУЛЕВЫЕ ЗНАЧЕНИЯ
+            #graphic_year_five = Graphics_Indicators_Production(data_ur_prost_kach_year, name= 'Уровень простоя оборудования из-за несоответствующего качества расходных материалов Кпр кач')
+            # НУЛЕВЫЕ ЗНАЧЕНИЯ
+            #graphic_year_six = Graphics_Indicators_Production(data_ur_prost_nepost_year, name= 'Уровень простоя оборудования из-за непоставки расходных материалов Кпр кол')
+            graphic_year_seven = Graphics_Number_Production(data_number_year, name= 'Количество выпущенной п/б ленты  по годам')
+
             # Полугодовые показатели
             graphic_middle_one = Graphics_Indicators_Production(data_ur_neispr_obor_middle_year, name= 'Уровень неисправности оборудования по полугодиям')
             graphic_middle_two = Graphics_Indicators_Production(data_ur_nesoot_prod_middle_year, name= 'Уровень несоответствующей продукции по полугодиям')
             graphic_middle_three = Graphics_Indicators_Production(data_ur_teh_oth_middle_year, name= 'Уровень техотходов по полугодиям', critery=2)
-            graphic_middle_four = Graphics_Indicators_Production(data_ur_otkl_prod_middle_year, name= 'Уровень отклонений продукции Котк по полугодиям')
-            graphic_middle_five = Graphics_Indicators_Production(data_ur_prost_kach_middle_year, name= 'Уровень простоя оборудования из-за несоответствующего качества расходных материалов Кпр кач по полугодиям')
-            graphic_middle_six = Graphics_Indicators_Production(data_ur_prost_nepost_middle_year, name= 'Уровень простоя оборудования из-за непоставки расходных материалов Кпр кол по полугодиям')
+            # НУЛЕВЫЕ ЗНАЧЕНИЯ
+            #graphic_middle_four = Graphics_Indicators_Production(data_ur_otkl_prod_middle_year, name= 'Уровень отклонений продукции Котк по полугодиям')
+            # НУЛЕВЫЕ ЗНАЧЕНИЯ
+            #graphic_middle_five = Graphics_Indicators_Production(data_ur_prost_kach_middle_year, name= 'Уровень простоя оборудования из-за несоответствующего качества расходных материалов Кпр кач по полугодиям')
+            # НУЛЕВЫЕ ЗНАЧЕНИЯ
+            #graphic_middle_six = Graphics_Indicators_Production(data_ur_prost_nepost_middle_year, name= 'Уровень простоя оборудования из-за непоставки расходных материалов Кпр кол по полугодиям')
+            graphic_middle_seven = Graphics_Number_Production(data_number_middle_year, name= 'Количество выпущенной п/б ленты  по полугодиям')
             plt.show()
 
     class FourCommand(BaseCommand):
