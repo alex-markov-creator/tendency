@@ -61,7 +61,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import production as pr
 
-СПРАВКА
+СПРАВКА (ОБНОВИТЬ!!!!!)
 -------
 print(pr.__doc__)
 
@@ -131,10 +131,10 @@ try:
                     "Уровень неисправности оборудования Кно",
                     "Уровень несоответствующей прод. в проц. произв. Кн",
                     "Уровень техотходов по годам",
-                    "Количество выпущенных муфт",#???????? Отдельный график
-                    "Количество выпущенных комплектов",#???? Отдельный график
-                    "Количество нарезки пб ленты",#?????????? Отдельный график
-                    "Количество резки ПВХ липкой",#????????? Отдельный график
+                    "Количество выпущенных муфт",
+                    "Количество выпущенных комплектов",
+                    "Количество нарезки пб ленты",
+                    "Количество резки ПВХ липкой",
                     #"Уровень расхода материалов Крм",
                     "Уровень отклонений продукции Котк",
                     "Уровень простоя обор. Кпр кач",
@@ -143,10 +143,10 @@ try:
                     "Уровень несоответствующей прод. по полугодиям",
                     "Уровень техотходов по полугодиям",
                     "Количество выпущенной продукции Квып по полугодиям",
-                    "Количество выпущенных муфт по полугодиям",#?????график
-                    "Количество выпущенных комплектов по полугодиям",#???график
-                    "Количество нарезки пб ленты по полугодиям",#????график
-                    "Количество резки ПВХ липкой по полугодиям",#????график
+                    "Количество выпущенных муфт по полугодиям",
+                    "Количество выпущенных комплектов по полугодиям",
+                    "Количество нарезки пб ленты по полугодиям",
+                    "Количество резки ПВХ липкой по полугодиям",
                     # "Уровень расхода материалов Крм по полугодиям",
                     "Уровень отклонений продукции Котк по полугодиям",
                     "Уровень простоя обор. Кпр кач по полугодиям",
@@ -154,14 +154,14 @@ try:
                  ]#запись наименований
 
     NAME_INPUT = {
-                    '001': data_kol_vip_prod_year,#???график
+                    '001': data_kol_vip_prod_year,
                     '002': data_ur_neispr_obor_year,
                     '003': data_ur_nesoot_prod_year,
                     '004': data_ur_teh_oth_year,
-                    '005': data_kol_vip_mufty_year,#????????график
-                    '006': data_kol_vip_kompl_year,#?????график
-                    '007': data_kol_narezki_year,#?????график
-                    '008': data_kol_rezki_pvh_lip_year,#?????график
+                    '005': data_kol_vip_mufty_year,
+                    '006': data_kol_vip_kompl_year,
+                    '007': data_kol_narezki_year,
+                    '008': data_kol_rezki_pvh_lip_year,
                     # другой подсчёт статистики
                     #'009': data_ur_rash_mater_year,
                     '010': data_ur_otkl_prod_year,
@@ -171,10 +171,10 @@ try:
                     '014': data_ur_nesoot_prod_middle_year,
                     '015': data_ur_teh_oth_middle_year,
                     '016': data_kol_vip_prod_middle_year,
-                    '017': data_kol_vip_mufty_middle_year,#?????график
-                    '018':data_kol_vip_kompl_middle_year,#?????график
-                    '019': data_kol_narezki_middle_year,#?????график
-                    '020': data_kol_rezki_pvh_lip_middle_year,#?????график
+                    '017': data_kol_vip_mufty_middle_year,
+                    '018':data_kol_vip_kompl_middle_year,
+                    '019': data_kol_narezki_middle_year,
+                    '020': data_kol_rezki_pvh_lip_middle_year,
                     # другой подсчёт статистики
                     #'021': data_ur_rash_mater_middle_year,
                     '022': data_ur_otkl_prod_middle_year,
@@ -381,7 +381,7 @@ try:
             x_ax2 = np.array(x_ax2)
             y_ax2 = data_ax2.transpose()
             y_ax2 = np.array(y_ax2)
-            ax2 = plt.bar(x_ax2,y_ax2,label='Значение показателя', color='red', alpha=0.5)
+            ax2 = plt.bar(x_ax2,y_ax2,label='Значение показателя', color='yellow', alpha=0.5)
             ax2 = plt.plot(x_ax2,y_ax2,label='Значение показателя',marker = 'D', color='black', alpha=0.5)
             ax2 = plt.title(data_ax2.name, fontsize=10, y=1.05)
             ax2 = plt.grid(axis='both', color='black', linestyle='dotted',linewidth=1)
@@ -393,7 +393,7 @@ try:
             x_ax3 = np.array(x_ax3)
             y_ax3 = data_ax3.transpose()
             y_ax3 = np.array(y_ax3)
-            ax3 = plt.bar(x_ax3,y_ax3,label='Значение показателя', color='red', alpha=0.5)
+            ax3 = plt.bar(x_ax3,y_ax3,label='Значение показателя', color='blue', alpha=0.5)
             ax3 = plt.plot(x_ax3,y_ax3,label='Значение показателя',marker = 'D', color='black', alpha=0.5)
             ax3 = plt.title(data_ax3.name, fontsize=4, y=1.05)
             ax3 = plt.grid(axis='both', color='black', linestyle='dotted',linewidth=1)
@@ -405,7 +405,7 @@ try:
             x_ax4 = np.array(x_ax4)
             y_ax4 = data_ax4.transpose()
             y_ax4 = np.array(y_ax4)
-            ax4 = plt.bar(x_ax4,y_ax4,label='Значение показателя', color='red', alpha=0.5)
+            ax4 = plt.bar(x_ax4,y_ax4,label='Значение показателя', color='orange', alpha=0.5)
             ax4 = plt.plot(x_ax4,y_ax4,label='Значение показателя',marker = 'D', color='black', alpha=0.5)
             ax4 = plt.title(data_ax4.name, fontsize=5, y=1.05)
             ax4 = plt.grid(axis='both', color='black', linestyle='dotted',linewidth=1)
@@ -417,7 +417,7 @@ try:
             x_ax5 = np.array(x_ax5)
             y_ax5 = data_ax5.transpose()
             y_ax5 = np.array(y_ax5)
-            ax5 = plt.bar(x_ax5,y_ax5,label='Значение показателя', color='red', alpha=0.5)
+            ax5 = plt.bar(x_ax5,y_ax5,label='Значение показателя', color='green', alpha=0.5)
             ax5 = plt.plot(x_ax5,y_ax5,label='Значение показателя',marker = 'D', color='black', alpha=0.5)
             ax5 = plt.title(data_ax5.name, fontsize=5, y=1.05)
             ax5 = plt.grid(axis='both', color='black', linestyle='dotted',linewidth=1)
@@ -425,6 +425,32 @@ try:
 
 except Exception:
     print(time.ctime(), 'Исключение в классе Graphics_Number_Production() модуля production.py: ', sys.exc_info()[:2], file = open('warning.log', 'a'))
+
+try:
+    class Comparise(object):# В РАЗРАБОТКЕ!!!!!!!!!!!!!!!!!!!!!!
+        """
+        Класс сравнительного анализа с результатами предыдущего отчётного периода
+        #################################################################
+        НЕОБХОДИМЫ ГОДА ПО ФАКТУ ИЗМЕНЕНИЙ И ОКРУГЛЕНИЕ объекта numpy.float64 до 2 знаков!!!! возможно отдельной функцией
+        """
+        def __init__(self, data: pd.DataFrame):
+            self.data = data.tail(2)
+
+        def __str__(self):
+            """
+            Строковое представление данных
+            """
+            return tabulate(self.data, headers = 'keys', tablefmt = 'psql')
+
+        def score(self):
+            """
+            Изменение послених двух значений
+            """
+            sc = self.data.iloc[1, 0] - self.data.iloc[0, 0]
+            return "Изменение двух последних значений:\n{}".format(sc)
+
+except Exception:
+    print(time.ctime(), 'Исключение в классе Comparise() модуля production.py: ', sys.exc_info()[:2], file = open('warning.log', 'a'))
 
 try:
     class Save_Data(object):
@@ -568,6 +594,7 @@ if __name__ == '__main__':
                     SecondCommand.label(): SecondCommand,
                     ThreeCommand.label(): ThreeCommand,
                     FourCommand.label(): FourCommand,
+                    FiveCommand.label(): FiveCommand,
                     #NewCommand.label(): NewCommand,
                     # NEW COMMANDs
                     ExitCommand.label(): ExitCommand,
@@ -585,6 +612,7 @@ if __name__ == '__main__':
                     '2': SecondCommand,
                     '3': ThreeCommand,
                     '4': FourCommand,
+                    '5': FiveCommand,
                     '0': NewCommand,
                     # NEW COMMANDs
                     'exit': ExitCommand
@@ -715,12 +743,35 @@ if __name__ == '__main__':
 
     class FourCommand(BaseCommand):
         def label():
-            return 'В файл-4'
+            return 'Сравнение-4'
+
+        def perform(self, object, *args, **kwargs):
+            #СРАВНЕНИЕ
+            info = Info()
+            print(info)
+            while True:
+                try:
+                    a = input("Укажите идентификатор|exit-выход: ")
+                    if a =='exit':
+                        break
+                    reading = NAME_INPUT[a] # ВЫБОР НАИМЕНОВАНИЯ ЛЕНТЫ
+                    df = reading
+                    x = Comparise(df)
+                    print(x)
+                    print(x.score())
+                except KeyboardInterrupt:
+                    print('Выход...')
+                    break
+                except:
+                    print("Неправильный идентификатор, попробуйте снова!!!")
+
+    class FiveCommand(BaseCommand):
+        def label():
+            return 'В файл-5'
 
         def perform(self, object, *args, **kwargs):
             #СОХРАНЕНИЕ
             Save_Data()
-
 
     class NewCommand(BaseCommand):
         def label():
