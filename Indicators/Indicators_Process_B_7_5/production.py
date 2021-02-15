@@ -127,7 +127,7 @@ from abc import ABC, abstractmethod
 ##################################################
 try:
     INDICATOR_NAME = [
-                    "Количество выпущенной продукции (ленты) Квып",#???график
+                    "Количество выпущенной продукции (ленты) Квып",
                     "Уровень неисправности оборудования Кно",
                     "Уровень несоответствующей прод. в проц. произв. Кн",
                     "Уровень техотходов по годам",
@@ -151,6 +151,11 @@ try:
                     "Уровень отклонений продукции Котк по полугодиям",
                     "Уровень простоя обор. Кпр кач по полугодиям",
                     "Уровень простоя обор. Кпр кол по полугодиям"
+                 ]#запись наименований
+
+    INDICATOR_NAME_ADD = [
+                    "Уровень расхода материалов Крм",
+                    "Уровень расхода материалов Крм по полугодиям",
                  ]#запись наименований
 
     NAME_INPUT = {
@@ -182,17 +187,23 @@ try:
                     '024': data_ur_prost_nepost_middle_year,
                     } #идентификатор
 
-    lst_name = [data_kol_vip_prod_year,data_ur_neispr_obor_year,data_ur_nesoot_prod_year,data_ur_teh_oth_year,data_kol_vip_mufty_year, data_kol_vip_kompl_year, data_kol_narezki_year, data_kol_rezki_pvh_lip_year, data_ur_otkl_prod_year,data_ur_prost_kach_year,data_ur_prost_nepost_year,data_ur_neispr_obor_middle_year,data_ur_nesoot_prod_middle_year,data_ur_teh_oth_middle_year,data_kol_vip_prod_middle_year,data_kol_vip_mufty_middle_year,data_kol_vip_kompl_middle_year,data_kol_narezki_middle_year,data_kol_rezki_pvh_lip_middle_year,data_ur_otkl_prod_middle_year,data_ur_prost_kach_middle_year,data_ur_prost_nepost_middle_year]
+    NAME_INPUT_ADD = {
+                    # другой подсчёт статистики
+                    '009': data_ur_rash_mater_year,
+                    # другой подсчёт статистики
+                    '021': data_ur_rash_mater_middle_year,
+                    } #идентификатор
+
+    lst_name = [data_kol_vip_prod_year,data_ur_neispr_obor_year,data_ur_nesoot_prod_year,data_ur_teh_oth_year,data_kol_vip_mufty_year, data_kol_vip_kompl_year, data_kol_narezki_year, data_kol_rezki_pvh_lip_year, data_ur_otkl_prod_year,data_ur_prost_kach_year,data_ur_prost_nepost_year,data_ur_neispr_obor_middle_year,data_ur_nesoot_prod_middle_year,data_ur_teh_oth_middle_year,data_kol_vip_prod_middle_year,data_kol_vip_mufty_middle_year,data_kol_vip_kompl_middle_year,data_kol_narezki_middle_year,data_kol_rezki_pvh_lip_middle_year,data_ur_otkl_prod_middle_year,data_ur_prost_kach_middle_year,data_ur_prost_nepost_middle_year] #список для сохранения стаистических расчетов
 
     # ИСХОДНЫЕ ДАННЫЕ (ДОПОЛНИТЕЛЬНОЕ ФОРМАТИРОВАНИЕ ДЛЯ ПОСТРОЕНИЯ ГРАФИКА):
     #########################################################################
-    data_number_year = pd.concat([data_kol_vip_prod_year, data_kol_vip_mufty_year,data_kol_vip_kompl_year, data_kol_narezki_year,data_kol_rezki_pvh_lip_year], axis=1)
-    data_number_middle_year = pd.concat([data_kol_vip_prod_middle_year,data_kol_vip_mufty_middle_year, data_kol_vip_kompl_middle_year,data_kol_narezki_middle_year, data_kol_rezki_pvh_lip_middle_year], axis=1)
+    data_number_year = pd.concat([data_kol_vip_prod_year, data_kol_vip_mufty_year,data_kol_vip_kompl_year, data_kol_narezki_year,data_kol_rezki_pvh_lip_year], axis=1)# Конкатенация pd.DataFrame объектов
+    data_number_middle_year = pd.concat([data_kol_vip_prod_middle_year,data_kol_vip_mufty_middle_year, data_kol_vip_kompl_middle_year,data_kol_narezki_middle_year, data_kol_rezki_pvh_lip_middle_year], axis=1)# Конкатенация pd.DataFrame объектов
 
     # ИСХОДНЫЕ ДАННЫЕ (ДОПОЛНИТЕЛЬНОЕ ФОРМАТИРОВАНИЕ ДЛЯ СОХРАНЕНИЯ):
     #################################################################
-    data_add = pd.concat([data_kol_vip_prod_year,data_ur_neispr_obor_year,data_ur_nesoot_prod_year,data_ur_teh_oth_year,data_kol_vip_mufty_year, data_kol_vip_kompl_year, data_kol_narezki_year, data_kol_rezki_pvh_lip_year, data_ur_otkl_prod_year,data_ur_prost_kach_year,data_ur_prost_nepost_year,data_ur_neispr_obor_middle_year,data_ur_nesoot_prod_middle_year,data_ur_teh_oth_middle_year,data_kol_vip_prod_middle_year,data_kol_vip_mufty_middle_year,data_kol_vip_kompl_middle_year,data_kol_narezki_middle_year,data_kol_rezki_pvh_lip_middle_year,data_ur_otkl_prod_middle_year,data_ur_prost_kach_middle_year,data_ur_prost_nepost_middle_year], axis=1)
-    # Конкатенация
+    data_add = pd.concat([data_kol_vip_prod_year,data_ur_neispr_obor_year,data_ur_nesoot_prod_year,data_ur_teh_oth_year,data_kol_vip_mufty_year, data_kol_vip_kompl_year, data_kol_narezki_year, data_kol_rezki_pvh_lip_year, data_ur_otkl_prod_year,data_ur_prost_kach_year,data_ur_prost_nepost_year,data_ur_neispr_obor_middle_year,data_ur_nesoot_prod_middle_year,data_ur_teh_oth_middle_year,data_kol_vip_prod_middle_year,data_kol_vip_mufty_middle_year,data_kol_vip_kompl_middle_year,data_kol_narezki_middle_year,data_kol_rezki_pvh_lip_middle_year,data_ur_otkl_prod_middle_year,data_ur_prost_kach_middle_year,data_ur_prost_nepost_middle_year], axis=1)# Конкатенация pd.DataFrame объектов
 
 except Exception:
     print(time.ctime(), 'Benchmark_Data_Error: ', sys.exc_info()[:2], file = open('warning.log', 'a'))
@@ -453,6 +464,24 @@ except Exception:
     print(time.ctime(), 'Исключение в классе Comparise() модуля production.py: ', sys.exc_info()[:2], file = open('warning.log', 'a'))
 
 try:
+    class MaterialConsumption(object):# В РАЗРАБОТКЕ!!!!!!!!!!!!!!!!!!!!!!
+        """
+        Класс просмотра превышения критерия уровня расхода материалов Крм (Критерий <=100%) и просмотра данных показателя.
+        #################################################################
+        """
+        def __init__(self, data: pd.DataFrame):
+            self.data = data
+
+        def __str__(self):
+            """
+            Строковое представление данных
+            """
+            return tabulate(self.data, headers = 'keys', tablefmt = 'psql')
+
+except Exception:
+    print(time.ctime(), 'Исключение в классе MaterialConsumption() модуля production.py: ', sys.exc_info()[:2], file = open('warning.log', 'a'))
+
+try:
     class Save_Data(object):
         """
         Класс сохранения статистических данных и графиков визуализации
@@ -595,6 +624,7 @@ if __name__ == '__main__':
                     ThreeCommand.label(): ThreeCommand,
                     FourCommand.label(): FourCommand,
                     FiveCommand.label(): FiveCommand,
+                    SixCommand.label(): SixCommand,
                     #NewCommand.label(): NewCommand,
                     # NEW COMMANDs
                     ExitCommand.label(): ExitCommand,
@@ -613,6 +643,7 @@ if __name__ == '__main__':
                     '3': ThreeCommand,
                     '4': FourCommand,
                     '5': FiveCommand,
+                    '6': SixCommand,
                     '0': NewCommand,
                     # NEW COMMANDs
                     'exit': ExitCommand
@@ -767,7 +798,32 @@ if __name__ == '__main__':
 
     class FiveCommand(BaseCommand):
         def label():
-            return 'В файл-5'
+            return 'Расход-5'
+
+        def perform(self, object, *args, **kwargs):
+            #СРАВНЕНИЕ
+            info = Info()
+            print(info)
+            while True:
+                try:
+                    a = input("Укажите идентификатор|exit-выход: ")
+                    if a =='exit':
+                        break
+                    reading = NAME_INPUT_ADD[a] # ВЫБОР НАИМЕНОВАНИЯ ЛЕНТЫ
+                    df = reading
+                    x = MaterialConsumption(df)
+                    print(x)
+                except KeyboardInterrupt:
+                    print('Выход...')
+                    break
+                except:
+                    print("Неправильный идентификатор, попробуйте снова!!!")
+
+
+
+    class SixCommand(BaseCommand):
+        def label():
+            return 'В файл-6'
 
         def perform(self, object, *args, **kwargs):
             #СОХРАНЕНИЕ
