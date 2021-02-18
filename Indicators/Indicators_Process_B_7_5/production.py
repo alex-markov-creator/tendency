@@ -190,7 +190,6 @@ try:
     NAME_INPUT_ADD = {
                     # другой подсчёт статистики
                     '009': data_ur_rash_mater_year,
-                    # другой подсчёт статистики
                     '021': data_ur_rash_mater_middle_year,
                     } #идентификатор
 
@@ -218,6 +217,19 @@ try:
             field_names = ['Идентификатор', 'Наименование']
             self.x.add_column(field_names[1], INDICATOR_NAME)
             self.x.add_column(field_names[0], list(NAME_INPUT.keys()))
+
+        def __str__(self):
+            return '{}'.format(self.x)
+
+    class Info_add(object):
+        """
+        Класс вывода дополнительной таблицы на экран для выбора идентификатора
+        """
+        def __init__(self):
+            self.x = PrettyTable()
+            field_names = ['Идентификатор', 'Наименование']
+            self.x.add_column(field_names[1], INDICATOR_NAME_ADD)
+            self.x.add_column(field_names[0], list(NAME_INPUT_ADD.keys()))
 
         def __str__(self):
             return '{}'.format(self.x)
@@ -476,7 +488,14 @@ try:
             """
             Строковое представление данных
             """
+            self.data['КРИТЕРИЙ!!!'] = self.data.iloc[:, 1:2]<100
             return tabulate(self.data, headers = 'keys', tablefmt = 'psql')
+
+        def excess(self):
+            """
+            Превышение критерия показателя ВЫВОД ПО КРИТЕРИЮ???????
+            """
+            pass
 
 except Exception:
     print(time.ctime(), 'Исключение в классе MaterialConsumption() модуля production.py: ', sys.exc_info()[:2], file = open('warning.log', 'a'))
@@ -802,7 +821,7 @@ if __name__ == '__main__':
 
         def perform(self, object, *args, **kwargs):
             #СРАВНЕНИЕ
-            info = Info()
+            info = Info_add() # РЕШИТЬ ПРОБЛЕМУ С ИДЕНТИФИКАТОРАМИ!!!!!!!!!!!!!!
             print(info)
             while True:
                 try:
@@ -818,8 +837,6 @@ if __name__ == '__main__':
                     break
                 except:
                     print("Неправильный идентификатор, попробуйте снова!!!")
-
-
 
     class SixCommand(BaseCommand):
         def label():
