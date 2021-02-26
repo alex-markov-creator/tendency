@@ -99,9 +99,12 @@ pr.Save_Data()
 """
 import sys
 import os
-import time
+import time # ????????отключить?
 import numpy as np
 import pandas as pd
+# модуль для логирования(журналирования)
+import logging
+import logging.config
 import matplotlib.pyplot as plt
 # импорт для построения нескольких графиков на одном уровне слоя
 from matplotlib.gridspec import GridSpec
@@ -116,16 +119,30 @@ import Tools.Abstract_Parents as Abstract
 #import Tools.Singleton_Pattern as Singleton
 # модуль для построения линейной регрессии
 from scipy.stats import linregress
-# импорт DataFrame объектов с исходными данными
-from Data import data_kol_vip_prod_year, data_ur_neispr_obor_year,data_ur_nesoot_prod_year, data_ur_teh_oth_year, data_kol_vip_mufty_year, data_kol_vip_kompl_year, data_kol_narezki_year, data_kol_rezki_pvh_lip_year, data_ur_rash_mater_year, data_ur_otkl_prod_year, data_ur_prost_kach_year,data_ur_prost_nepost_year, data_ur_neispr_obor_middle_year, data_ur_nesoot_prod_middle_year, data_ur_teh_oth_middle_year,data_kol_vip_prod_middle_year, data_kol_vip_mufty_middle_year,data_kol_vip_kompl_middle_year, data_kol_narezki_middle_year,data_kol_rezki_pvh_lip_middle_year, data_ur_rash_mater_middle_year,data_ur_otkl_prod_middle_year, data_ur_prost_kach_middle_year,data_ur_prost_nepost_middle_year
 # импорт библиотеки для вывода табличных данных в консоли(терминале)
 from prettytable import PrettyTable
 # импорт модуля для абстрактных классов
 from abc import ABC, abstractmethod
 
+# LOGGING !!!
+# add filemode='w' to overwrite
+#logging.basicConfig(filename="info.log", level=logging.INFO, format='%(asctime)s %(message)s')
+# logging.basicConfig(filename="info.log", encoding='utf-8', level=logging.DEBUG) # в версии Python 3.9 поддерживается кодировка
+
+logging.config.fileConfig('logging.conf')
+logger = logging.getLogger('production.py') # возвращает объект логгера
+
+try:
+# импорт DataFrame объектов с исходными данными
+    from Data import data_kol_vip_prod_year, data_ur_neispr_obor_year,data_ur_nesoot_prod_year, data_ur_teh_oth_year, data_kol_vip_mufty_year, data_kol_vip_kompl_year, data_kol_narezki_year, data_kol_rezki_pvh_lip_year, data_ur_rash_mater_year, data_ur_otkl_prod_year, data_ur_prost_kach_year,data_ur_prost_nepost_year, data_ur_neispr_obor_middle_year, data_ur_nesoot_prod_middle_year, data_ur_teh_oth_middle_year,data_kol_vip_prod_middle_year, data_kol_vip_mufty_middle_year,data_kol_vip_kompl_middle_year, data_kol_narezki_middle_year,data_kol_rezki_pvh_lip_middle_year, data_ur_rash_mater_middle_year,data_ur_otkl_prod_middle_year, data_ur_prost_kach_middle_year,data_ur_prost_nepost_middle_year
+except:
+    logger.critical(f'FAILED! Import Data: {sys.exc_info()[:2]}') # logging
+
 # ИСХОДНЫЕ ДАННЫЕ (ДОПОЛНИТЕЛЬНОЕ ФОРМАТИРОВАНИЕ):
 ##################################################
 try:
+    logger.debug("start initial assignment") # logging
+
     INDICATOR_NAME = [
                     "Количество выпущенной продукции (ленты) Квып",
                     "Уровень неисправности оборудования Кно",
@@ -186,26 +203,28 @@ try:
                     '023': data_ur_prost_kach_middle_year,
                     '024': data_ur_prost_nepost_middle_year,
                     } #идентификатор
-
+    logger.info("OK! Load Data") # logging
     NAME_INPUT_ADD = {
                     # другой подсчёт статистики
                     '009': data_ur_rash_mater_year,
                     '021': data_ur_rash_mater_middle_year,
                     } #идентификатор
-
+    logger.info("OK! Load Data") # logging
     lst_name = [data_kol_vip_prod_year,data_ur_neispr_obor_year,data_ur_nesoot_prod_year,data_ur_teh_oth_year,data_kol_vip_mufty_year, data_kol_vip_kompl_year, data_kol_narezki_year, data_kol_rezki_pvh_lip_year, data_ur_otkl_prod_year,data_ur_prost_kach_year,data_ur_prost_nepost_year,data_ur_neispr_obor_middle_year,data_ur_nesoot_prod_middle_year,data_ur_teh_oth_middle_year,data_kol_vip_prod_middle_year,data_kol_vip_mufty_middle_year,data_kol_vip_kompl_middle_year,data_kol_narezki_middle_year,data_kol_rezki_pvh_lip_middle_year,data_ur_otkl_prod_middle_year,data_ur_prost_kach_middle_year,data_ur_prost_nepost_middle_year] #список для сохранения стаистических расчетов
-
+    logger.info("OK! Load Data") # logging
     # ИСХОДНЫЕ ДАННЫЕ (ДОПОЛНИТЕЛЬНОЕ ФОРМАТИРОВАНИЕ ДЛЯ ПОСТРОЕНИЯ ГРАФИКА):
     #########################################################################
     data_number_year = pd.concat([data_kol_vip_prod_year, data_kol_vip_mufty_year,data_kol_vip_kompl_year, data_kol_narezki_year,data_kol_rezki_pvh_lip_year], axis=1)# Конкатенация pd.DataFrame объектов
     data_number_middle_year = pd.concat([data_kol_vip_prod_middle_year,data_kol_vip_mufty_middle_year, data_kol_vip_kompl_middle_year,data_kol_narezki_middle_year, data_kol_rezki_pvh_lip_middle_year], axis=1)# Конкатенация pd.DataFrame объектов
-
+    logger.info("OK! Calculation Data") # logging
     # ИСХОДНЫЕ ДАННЫЕ (ДОПОЛНИТЕЛЬНОЕ ФОРМАТИРОВАНИЕ ДЛЯ СОХРАНЕНИЯ):
     #################################################################
     data_add = pd.concat([data_kol_vip_prod_year,data_ur_neispr_obor_year,data_ur_nesoot_prod_year,data_ur_teh_oth_year,data_kol_vip_mufty_year, data_kol_vip_kompl_year, data_kol_narezki_year, data_kol_rezki_pvh_lip_year, data_ur_otkl_prod_year,data_ur_prost_kach_year,data_ur_prost_nepost_year,data_ur_neispr_obor_middle_year,data_ur_nesoot_prod_middle_year,data_ur_teh_oth_middle_year,data_kol_vip_prod_middle_year,data_kol_vip_mufty_middle_year,data_kol_vip_kompl_middle_year,data_kol_narezki_middle_year,data_kol_rezki_pvh_lip_middle_year,data_ur_otkl_prod_middle_year,data_ur_prost_kach_middle_year,data_ur_prost_nepost_middle_year], axis=1)# Конкатенация pd.DataFrame объектов
+    logger.info("OK! Calculation Data") # logging
+    logger.debug('OK! end initial assignment ') # logging
 
 except Exception:
-    print(time.ctime(), 'Benchmark_Data_Error: ', sys.exc_info()[:2], file = open('warning.log', 'a'))
+    logger.error(f'FAILED! Data_Launch_Error: {sys.exc_info()[:2]}') # logging
 
 try:
     class Info(object):
@@ -221,6 +240,8 @@ try:
         def __str__(self):
             return '{}'.format(self.x)
 
+    logger.info("OK! Load object class") # logging
+
     class Info_add(object):
         """
         Класс вывода дополнительной таблицы на экран для выбора идентификатора
@@ -234,8 +255,10 @@ try:
         def __str__(self):
             return '{}'.format(self.x)
 
+    logger.info("OK! Load object class") # logging
+
 except Exception:
-    print(time.ctime(), 'Info_Error: ', sys.exc_info()[:2], file = open('warning.log', 'a'))
+    logger.error(f'FAILED! Info_Error: {sys.exc_info()[:2]}') # logging
 
 try:
     class Data_Table(object):
@@ -269,8 +292,10 @@ try:
             print(tabulate(self.data, headers = 'keys', tablefmt = 'psql'), file=open(r'data_production.temp', 'w', encoding = 'utf-8'))
             os.system('data_production.temp')
 
+    logger.info("OK! Load object class") # logging
+
 except Exception:
-    print(time.ctime(), 'Data_Table_Error: ', sys.exc_info()[:2], file = open('warning.log', 'a'))
+    logger.error(f'FAILED! Data_Table_Error: {sys.exc_info()[:2]}') # logging
 
 try:
     class Statistic_Table(Abstract.Statistic):
@@ -337,8 +362,10 @@ try:
             """
             return "Отклонение результатов:\n{}".format(self.Astd)
 
+        logger.info("OK! Load object class") # logging
+
 except Exception:
-    print(time.ctime(), 'Statistic_Error: ', sys.exc_info()[:2], file = open('warning.log', 'a'))
+    logger.error(f'FAILED! Statistic_Error: {sys.exc_info()[:2]}') # logging
 
 try:
     class Graphics_Indicators_Production(Abstract.Graphic):
@@ -347,8 +374,11 @@ try:
         Процесса Б(7.5) "Производство продукции", за исключением показателей
         количества выпущенной продукции
         """
+        num_instances = 0 # переменная счётчика экземпляров класса
+
         def __init__(self, data, name='Название графика', critery = 0):
             super().__init__(data)
+            self.__class__.num_instances += 1 # счётчик экземпляров класса
             plt.style.use('bmh')
             fig, ax = plt.subplots(figsize=(12,10), dpi= 80)
             fig.canvas.set_window_title('Процесс Б (7.5) "Производство продукции"')
@@ -366,9 +396,10 @@ try:
             plt.title(name, fontsize=16, y=1.05)
             plt.legend(fontsize=8, shadow=True, framealpha=1, edgecolor='r', title='', loc='best')
             plt.grid(axis='both', color='black', linestyle='dotted',linewidth=1)
+    logger.info("OK! Load object class") # logging
 
 except Exception:
-    print(time.ctime(), 'Graphics_Indicators_Production_Error: ', sys.exc_info()[:2], file = open('warning.log', 'a'))
+    logger.error(f'FAILED! Graphics_Indicators_Production_Error: {sys.exc_info()[:2]}') # logging
 
 try:
     class Graphics_Number_Production(Abstract.Graphic):
@@ -446,8 +477,10 @@ try:
             ax5 = plt.grid(axis='both', color='black', linestyle='dotted',linewidth=1)
             ax5 = plt.legend(fontsize=4, shadow=True, framealpha=1, edgecolor='r', title='', loc='best')
 
+    logger.info("OK! Load object class") # logging
+
 except Exception:
-    print(time.ctime(), 'Исключение в классе Graphics_Number_Production() модуля production.py: ', sys.exc_info()[:2], file = open('warning.log', 'a'))
+    logger.error(f'FAILED! Graphics_Number_Production(): {sys.exc_info()[:2]}') # logging
 
 try:
     class Comparise(object):# В РАЗРАБОТКЕ!!!!!!!!!!!!!!!!!!!!!!
@@ -472,8 +505,10 @@ try:
             sc = self.data.iloc[1, 0] - self.data.iloc[0, 0]
             return "Изменение двух последних значений:\n{}".format(sc)
 
+    logger.info("OK! Load object class") # logging
+
 except Exception:
-    print(time.ctime(), 'Исключение в классе Comparise() модуля production.py: ', sys.exc_info()[:2], file = open('warning.log', 'a'))
+    logger.error(f'FAILED! Comparise(): {sys.exc_info()[:2]}') # logging
 
 try:
     class MaterialConsumption(object):# В РАЗРАБОТКЕ!!!!!!!!!!!!!!!!!!!!!!
@@ -497,8 +532,10 @@ try:
             """
             pass
 
+    logger.info("OK! Load object class") # logging
+
 except Exception:
-    print(time.ctime(), 'Исключение в классе MaterialConsumption() модуля production.py: ', sys.exc_info()[:2], file = open('warning.log', 'a'))
+    logger.error(f'FAILED! MaterialConsumption(): {sys.exc_info()[:2]}') # logging
 
 try:
     class Save_Data(object):
@@ -578,9 +615,10 @@ try:
             graphic_middle_seven = Graphics_Number_Production(data_number_middle_year, name= 'Количество выпущенной п/б ленты  по полугодиям')
             graphic_middle_seven.save_graphic('files/{}'.format(data_number_middle_year.columns[0]))
 
+    logger.info("OK! Load object class") # logging
 
 except Exception:
-    print(time.ctime(), 'Save_Error: ', sys.exc_info()[:2], file = open('warning.log', 'a'))
+    logger.error(f'FAILED! Save_Error: {sys.exc_info()[:2]}') # logging
 
 if __name__ == '__main__':
     class New_object(object):  # new_object = New_object()
@@ -851,6 +889,7 @@ if __name__ == '__main__':
             return 'Комманда-0'
 
         def perform(self, object, *args, **kwargs):
+            print(f'Кол-во экземпляров класса {Graphics_Indicators_Production.__name__} = {Graphics_Indicators_Production.num_instances}')
             print("Новая комманда")
             return 'LoL'
 
