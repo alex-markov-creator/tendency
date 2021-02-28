@@ -1,0 +1,39 @@
+[27/February/2021 09:34] - log.production - DEBUG - start initial assignment
+[27/February/2021 09:34] - log.production - INFO - OK! Load Data
+[27/February/2021 09:34] - log.production - INFO - OK! Load Data
+[27/February/2021 09:34] - log.production - INFO - OK! Load Data
+[27/February/2021 09:34] - log.production - INFO - OK! Calculation Data
+[27/February/2021 09:34] - log.production - ERROR - FAILED! Data_Launch_Error: Traceback (most recent call last):
+  File "/home/bezzubov/tendency/Indicators/Indicators_Process_B_7_5/production.py", line 222, in <module>
+    1/0
+ZeroDivisionError: division by zero
+
+[27/February/2021 09:34] - log.production - INFO - OK! Load object class
+[27/February/2021 09:34] - log.production - INFO - OK! Load object class
+[27/February/2021 09:34] - log.production - INFO - OK! Load object class
+[27/February/2021 09:34] - log.production - INFO - OK! Load object class
+[27/February/2021 09:34] - log.production - INFO - OK! Load object class
+[27/February/2021 09:34] - log.production - INFO - OK! Load object class
+[27/February/2021 09:34] - log.production - INFO - OK! Load object class
+[27/February/2021 09:34] - log.production - INFO - OK! Load object class
+[27/February/2021 09:34] - log.production - INFO - OK! Load object class
+[27/February/2021 09:34] - log.production - INFO - OK! Module
+[27/February/2021 09:34] - log.project_and_develop - DEBUG - start initial assignment
+[27/February/2021 13:55] - indicators.production - DEBUG - start initial assignment
+[27/February/2021 13:55] - indicators.production - INFO - OK! Load Data
+[27/February/2021 13:55] - indicators.production - INFO - OK! Load Data
+[27/February/2021 13:55] - indicators.production - INFO - OK! Load Data
+[27/February/2021 13:55] - indicators.production - INFO - OK! Calculation Data
+[27/February/2021 13:55] - indicators.production - INFO - OK! Calculation Data
+[27/February/2021 13:55] - indicators.production - DEBUG - OK! end initial assignment 
+[27/February/2021 13:55] - indicators.production - INFO - OK! Load object class
+[27/February/2021 13:55] - indicators.production - INFO - OK! Load object class
+[27/February/2021 13:55] - indicators.production - INFO - OK! Load object class
+[27/February/2021 13:55] - indicators.production - INFO - OK! Load object class
+[27/February/2021 13:55] - indicators.production - INFO - OK! Load object class
+[27/February/2021 13:55] - indicators.production - INFO - OK! Load object class
+[27/February/2021 13:55] - indicators.production - INFO - OK! Load object class
+[27/February/2021 13:55] - indicators.production - INFO - OK! Load object class
+[27/February/2021 13:55] - indicators.production - INFO - OK! Load object class
+[27/February/2021 13:55] - indicators.production - INFO - OK! Module
+[27/February/2021 13:55] - indicators.project_and_develop - DEBUG - start initial assignment

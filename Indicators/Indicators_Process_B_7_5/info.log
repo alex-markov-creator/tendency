@@ -1,118 +1,262 @@
-DEBUG:root:This is a debug message
-INFO:root:Informational message
-ERROR:root:An error has happened!
-ERROR:root:Исключение при дополнительном форматировании и присвоении
-2021-02-26 13:37:25,172 This is a debug message
-2021-02-26 13:37:25,178 Informational message
-2021-02-26 13:37:25,178 An error has happened!
-2021-02-26 13:37:25,262 Исключение при дополнительном форматировании и присвоении
-2021-02-26 13:39:20,219 This is a debug message
-2021-02-26 13:39:20,220 Informational message
-2021-02-26 13:39:20,220 An error has happened!
-2021-02-26 13:39:58,404 This is a debug message
-2021-02-26 13:39:58,405 Informational message
-2021-02-26 13:39:58,405 An error has happened!
-2021-02-26 13:40:50,132 This is a debug message
-2021-02-26 13:40:50,132 Informational message
-2021-02-26 13:40:50,132 An error has happened!
-2021-02-26 13:40:50,171 (<class 'ZeroDivisionError'>, ZeroDivisionError('division by zero'))
-2021-02-26 13:43:04,795 This is a debug message
-2021-02-26 13:43:04,795 Informational message
-2021-02-26 13:43:04,796 An error has happened!
-2021-02-26 13:43:04,835 Исходные данные: (<class 'ZeroDivisionError'>, ZeroDivisionError('division by zero'))
-02/26/2021 01:54:36 PM run Benchmark_Data_
-02/26/2021 02:09:57 PM <Logger __main__ (DEBUG)>
-02/26/2021 02:09:57 PM start initial assignment
-02/26/2021 02:09:57 PM end initial assignment
-2021-02-26 14:44:26,906 - production - DEBUG - start initial assignment
-2021-02-26 14:44:26,946 - production - DEBUG - OK! end initial assignment 
-2021-02-26 14:45:35,673 - production - DEBUG - start initial assignment
-2021-02-26 14:45:35,713 - production - DEBUG - OK! end initial assignment 
-2021-02-26 14:47:41,865 - production - DEBUG - start initial assignment
-2021-02-26 14:47:41,905 - production - DEBUG - OK! end initial assignment 
-2021-02-26 14:48:36,036 - production - DEBUG - start initial assignment
-2021-02-26 14:48:36,075 - production - DEBUG - OK! end initial assignment 
-2021-02-26 14:49:20,943 - production - DEBUG - start initial assignment
-2021-02-26 14:49:20,982 - production - ERROR -  WARNING! Data_Launch_Error: (<class 'ZeroDivisionError'>, ZeroDivisionError('division by zero'))
-2021-02-26 15:04:37,256 - production - DEBUG - start initial assignment
-2021-02-26 15:04:37,257 - production - INFO - OK! INDICATOR_NAME
-2021-02-26 15:04:37,257 - production - INFO - OK! INDICATOR_NAME_ADD
-2021-02-26 15:04:37,302 - production - DEBUG - OK! end initial assignment 
-2021-02-26 15:09:08,182 - production - DEBUG - start initial assignment
-2021-02-26 15:09:08,182 - production - INFO - OK! Load Data
-2021-02-26 15:09:08,183 - production - INFO - OK! Load Data
-2021-02-26 15:09:08,183 - production - INFO - OK! Load Data
-2021-02-26 15:09:08,196 - production - INFO - OK! Calculation Data
-2021-02-26 15:09:08,225 - production - INFO - OK! Calculation Data
-2021-02-26 15:09:08,225 - production - DEBUG - OK! end initial assignment 
-2021-02-26 15:12:17,565 - production - DEBUG - start initial assignment
-2021-02-26 15:12:17,565 - production - INFO - OK! Load Data
-2021-02-26 15:12:17,566 - production - INFO - OK! Load Data
-2021-02-26 15:12:17,566 - production - INFO - OK! Load Data
-2021-02-26 15:12:17,580 - production - ERROR - FAILED! Data_Launch_Error: (<class 'ZeroDivisionError'>, ZeroDivisionError('division by zero'))
-2021-02-26 15:13:25,138 - production - DEBUG - start initial assignment
-2021-02-26 15:13:25,139 - production - INFO - OK! Load Data
-2021-02-26 15:13:25,139 - production - INFO - OK! Load Data
-2021-02-26 15:13:25,140 - production - INFO - OK! Load Data
-2021-02-26 15:13:25,148 - production - ERROR - FAILED! Data_Launch_Error: (<class 'NameError'>, NameError("name 'data_kol_vi_kompl_middle_year' is not defined"))
-2021-02-26 15:14:33,560 - production - DEBUG - start initial assignment
-2021-02-26 15:14:33,561 - production - INFO - OK! Load Data
-2021-02-26 15:14:33,561 - production - INFO - OK! Load Data
-2021-02-26 15:14:33,562 - production - INFO - OK! Load Data
-2021-02-26 15:14:33,634 - production - INFO - OK! Calculation Data
-2021-02-26 15:14:33,702 - production - INFO - OK! Calculation Data
-2021-02-26 15:14:33,703 - production - DEBUG - OK! end initial assignment 
-2021-02-26 15:16:12,064 - production - DEBUG - start initial assignment
-2021-02-26 15:16:12,065 - production - INFO - OK! Load Data
-2021-02-26 15:16:12,065 - production - INFO - OK! Load Data
-2021-02-26 15:16:12,066 - production - INFO - OK! Load Data
-2021-02-26 15:16:12,080 - production - INFO - OK! Calculation Data
-2021-02-26 15:16:12,106 - production - INFO - OK! Calculation Data
-2021-02-26 15:16:12,107 - production - DEBUG - OK! end initial assignment 
-2021-02-26 15:19:37,535 - production - ERROR - FAILED! Import Data: (<class 'pandas.errors.ParserError'>, ParserError('Error tokenizing data. C error: Expected 2 fields in line 14, saw 6\n'))
-2021-02-26 15:19:37,536 - production - DEBUG - start initial assignment
-2021-02-26 15:19:37,536 - production - ERROR - FAILED! Data_Launch_Error: (<class 'NameError'>, NameError("name 'data_kol_vip_prod_year' is not defined"))
-2021-02-26 15:21:59,226 - production - DEBUG - start initial assignment
-2021-02-26 15:21:59,226 - production - INFO - OK! Load Data
-2021-02-26 15:21:59,226 - production - INFO - OK! Load Data
-2021-02-26 15:21:59,227 - production - INFO - OK! Load Data
-2021-02-26 15:21:59,240 - production - INFO - OK! Calculation Data
-2021-02-26 15:21:59,268 - production - INFO - OK! Calculation Data
-2021-02-26 15:21:59,268 - production - DEBUG - OK! end initial assignment 
-2021-02-26 15:24:07,969 - production - DEBUG - start initial assignment
-2021-02-26 15:24:07,969 - production - INFO - OK! Load Data
-2021-02-26 15:24:07,970 - production - INFO - OK! Load Data
-2021-02-26 15:24:07,971 - production - INFO - OK! Load Data
-2021-02-26 15:24:07,984 - production - INFO - OK! Calculation Data
-2021-02-26 15:24:08,011 - production - INFO - OK! Calculation Data
-2021-02-26 15:24:08,011 - production - DEBUG - OK! end initial assignment 
-2021-02-26 15:25:36,657 - production - DEBUG - start initial assignment
-2021-02-26 15:25:36,658 - production - INFO - OK! Load Data
-2021-02-26 15:25:36,658 - production - INFO - OK! Load Data
-2021-02-26 15:25:36,658 - production - INFO - OK! Load Data
-2021-02-26 15:25:36,671 - production - INFO - OK! Calculation Data
-2021-02-26 15:25:36,697 - production - INFO - OK! Calculation Data
-2021-02-26 15:25:36,698 - production - DEBUG - OK! end initial assignment 
-2021-02-26 15:38:11,336 - production.py - DEBUG - start initial assignment
-2021-02-26 15:38:11,337 - production.py - INFO - OK! Load Data
-2021-02-26 15:38:11,337 - production.py - INFO - OK! Load Data
-2021-02-26 15:38:11,338 - production.py - INFO - OK! Load Data
-2021-02-26 15:38:11,351 - production.py - INFO - OK! Calculation Data
-2021-02-26 15:38:11,383 - production.py - INFO - OK! Calculation Data
-2021-02-26 15:38:11,383 - production.py - DEBUG - OK! end initial assignment 
-2021-02-26 15:52:42,037 - production.py - DEBUG - start initial assignment
-2021-02-26 15:52:42,037 - production.py - INFO - OK! Load Data
-2021-02-26 15:52:42,039 - production.py - INFO - OK! Load Data
-2021-02-26 15:52:42,039 - production.py - INFO - OK! Load Data
-2021-02-26 15:52:42,052 - production.py - INFO - OK! Calculation Data
-2021-02-26 15:52:42,084 - production.py - INFO - OK! Calculation Data
-2021-02-26 15:52:42,084 - production.py - DEBUG - OK! end initial assignment 
-2021-02-26 15:52:42,085 - production.py - INFO - OK! Load object class
-2021-02-26 15:52:42,086 - production.py - INFO - OK! Load object class
-2021-02-26 15:52:42,086 - production.py - INFO - OK! Load object class
-2021-02-26 15:52:42,087 - production.py - INFO - OK! Load object class
-2021-02-26 15:52:42,087 - production.py - INFO - OK! Load object class
-2021-02-26 15:52:42,088 - production.py - INFO - OK! Load object class
-2021-02-26 15:52:42,089 - production.py - INFO - OK! Load object class
-2021-02-26 15:52:42,089 - production.py - INFO - OK! Load object class
-2021-02-26 15:52:42,090 - production.py - INFO - OK! Load object class
+[27/February/2021 14:47] - indicators.production - DEBUG - start initial assignment
+[27/February/2021 14:47] - indicators.production - INFO - OK! Load Data
+[27/February/2021 14:47] - indicators.production - INFO - OK! Load Data
+[27/February/2021 14:47] - indicators.production - INFO - OK! Load Data
+[27/February/2021 14:47] - indicators.production - INFO - OK! Calculation Data
+[27/February/2021 14:47] - indicators.production - INFO - OK! Calculation Data
+[27/February/2021 14:47] - indicators.production - DEBUG - OK! end initial assignment 
+[27/February/2021 14:47] - indicators.production - INFO - OK! Load object class
+[27/February/2021 14:47] - indicators.production - INFO - OK! Load object class
+[27/February/2021 14:47] - indicators.production - INFO - OK! Load object class
+[27/February/2021 14:47] - indicators.production - INFO - OK! Load object class
+[27/February/2021 14:47] - indicators.production - INFO - OK! Load object class
+[27/February/2021 14:47] - indicators.production - INFO - OK! Load object class
+[27/February/2021 14:47] - indicators.production - INFO - OK! Load object class
+[27/February/2021 14:47] - indicators.production - INFO - OK! Load object class
+[27/February/2021 14:47] - indicators.production - INFO - OK! Load object class
+[27/February/2021 14:47] - indicators.production - INFO - OK! Module
+[27/February/2021 14:47] - indicators.production - DEBUG - start initial assignment
+[27/February/2021 14:47] - indicators.production - INFO - OK! Load Data
+[27/February/2021 14:47] - indicators.production - INFO - OK! Load Data
+[27/February/2021 14:47] - indicators.production - INFO - OK! Load Data
+[27/February/2021 14:47] - indicators.production - INFO - OK! Calculation Data
+[27/February/2021 14:47] - indicators.production - INFO - OK! Calculation Data
+[27/February/2021 14:47] - indicators.production - DEBUG - OK! end initial assignment 
+[27/February/2021 14:47] - indicators.production - INFO - OK! Load object class
+[27/February/2021 14:47] - indicators.production - INFO - OK! Load object class
+[27/February/2021 14:47] - indicators.production - INFO - OK! Load object class
+[27/February/2021 14:47] - indicators.production - INFO - OK! Load object class
+[27/February/2021 14:47] - indicators.production - INFO - OK! Load object class
+[27/February/2021 14:47] - indicators.production - INFO - OK! Load object class
+[27/February/2021 14:47] - indicators.production - INFO - OK! Load object class
+[27/February/2021 14:47] - indicators.production - INFO - OK! Load object class
+[27/February/2021 14:47] - indicators.production - INFO - OK! Load object class
+[27/February/2021 14:47] - indicators.production - INFO - OK! Module
+[27/February/2021 14:47] - indicators.production.Info - DEBUG - __Init__ Info
+[27/February/2021 14:47] - indicators.production.Info - DEBUG - __Init__ Info
+[27/February/2021 14:48] - indicators.production - DEBUG - start initial assignment
+[27/February/2021 14:48] - indicators.production - INFO - OK! Load Data
+[27/February/2021 14:48] - indicators.production - INFO - OK! Load Data
+[27/February/2021 14:48] - indicators.production - INFO - OK! Load Data
+[27/February/2021 14:48] - indicators.production - INFO - OK! Calculation Data
+[27/February/2021 14:48] - indicators.production - INFO - OK! Calculation Data
+[27/February/2021 14:48] - indicators.production - DEBUG - OK! end initial assignment 
+[27/February/2021 14:48] - indicators.production - INFO - OK! Load object class
+[27/February/2021 14:48] - indicators.production - INFO - OK! Load object class
+[27/February/2021 14:48] - indicators.production - INFO - OK! Load object class
+[27/February/2021 14:48] - indicators.production - INFO - OK! Load object class
+[27/February/2021 14:48] - indicators.production - INFO - OK! Load object class
+[27/February/2021 14:48] - indicators.production - INFO - OK! Load object class
+[27/February/2021 14:48] - indicators.production - INFO - OK! Load object class
+[27/February/2021 14:48] - indicators.production - INFO - OK! Load object class
+[27/February/2021 14:48] - indicators.production - INFO - OK! Load object class
+[27/February/2021 14:48] - indicators.production - INFO - OK! Module
+[27/February/2021 14:48] - indicators.production - DEBUG - start initial assignment
+[27/February/2021 14:48] - indicators.production - INFO - OK! Load Data
+[27/February/2021 14:48] - indicators.production - INFO - OK! Load Data
+[27/February/2021 14:48] - indicators.production - INFO - OK! Load Data
+[27/February/2021 14:48] - indicators.production - INFO - OK! Calculation Data
+[27/February/2021 14:48] - indicators.production - INFO - OK! Calculation Data
+[27/February/2021 14:48] - indicators.production - DEBUG - OK! end initial assignment 
+[27/February/2021 14:48] - indicators.production - INFO - OK! Load object class
+[27/February/2021 14:48] - indicators.production - INFO - OK! Load object class
+[27/February/2021 14:48] - indicators.production - INFO - OK! Load object class
+[27/February/2021 14:48] - indicators.production - INFO - OK! Load object class
+[27/February/2021 14:48] - indicators.production - INFO - OK! Load object class
+[27/February/2021 14:48] - indicators.production - INFO - OK! Load object class
+[27/February/2021 14:48] - indicators.production - INFO - OK! Load object class
+[27/February/2021 14:48] - indicators.production - INFO - OK! Load object class
+[27/February/2021 14:48] - indicators.production - INFO - OK! Load object class
+[27/February/2021 14:48] - indicators.production - INFO - OK! Module
+[27/February/2021 14:48] - indicators.production - DEBUG - start initial assignment
+[27/February/2021 14:48] - indicators.production - INFO - OK! Load Data
+[27/February/2021 14:48] - indicators.production - INFO - OK! Load Data
+[27/February/2021 14:48] - indicators.production - INFO - OK! Load Data
+[27/February/2021 14:48] - indicators.production - INFO - OK! Calculation Data
+[27/February/2021 14:48] - indicators.production - INFO - OK! Calculation Data
+[27/February/2021 14:48] - indicators.production - DEBUG - OK! end initial assignment 
+[27/February/2021 14:48] - indicators.production - INFO - OK! Load object class
+[27/February/2021 14:48] - indicators.production - INFO - OK! Load object class
+[27/February/2021 14:48] - indicators.production - INFO - OK! Load object class
+[27/February/2021 14:48] - indicators.production - INFO - OK! Load object class
+[27/February/2021 14:48] - indicators.production - INFO - OK! Load object class
+[27/February/2021 14:48] - indicators.production - INFO - OK! Load object class
+[27/February/2021 14:48] - indicators.production - INFO - OK! Load object class
+[27/February/2021 14:48] - indicators.production - INFO - OK! Load object class
+[27/February/2021 14:48] - indicators.production - INFO - OK! Load object class
+[27/February/2021 14:48] - indicators.production - INFO - OK! Module
+[27/February/2021 14:50] - indicators.production - DEBUG - start initial assignment
+[27/February/2021 14:50] - indicators.production - INFO - OK! Load Data
+[27/February/2021 14:50] - indicators.production - INFO - OK! Load Data
+[27/February/2021 14:50] - indicators.production - INFO - OK! Load Data
+[27/February/2021 14:50] - indicators.production - INFO - OK! Calculation Data
+[27/February/2021 14:50] - indicators.production - INFO - OK! Calculation Data
+[27/February/2021 14:50] - indicators.production - DEBUG - OK! end initial assignment 
+[27/February/2021 14:50] - indicators.production - INFO - OK! Load object class
+[27/February/2021 14:50] - indicators.production - INFO - OK! Load object class
+[27/February/2021 14:50] - indicators.production - INFO - OK! Load object class
+[27/February/2021 14:50] - indicators.production - INFO - OK! Load object class
+[27/February/2021 14:50] - indicators.production - INFO - OK! Load object class
+[27/February/2021 14:50] - indicators.production - INFO - OK! Load object class
+[27/February/2021 14:50] - indicators.production - INFO - OK! Load object class
+[27/February/2021 14:50] - indicators.production - INFO - OK! Load object class
+[27/February/2021 14:50] - indicators.production - INFO - OK! Load object class
+[27/February/2021 14:50] - indicators.production - INFO - OK! Module
+[27/February/2021 15:09] - indicators.production - DEBUG - start initial assignment
+[27/February/2021 15:09] - indicators.production - INFO - OK! Load Data
+[27/February/2021 15:09] - indicators.production - INFO - OK! Load Data
+[27/February/2021 15:09] - indicators.production - INFO - OK! Load Data
+[27/February/2021 15:09] - indicators.production - INFO - OK! Calculation Data
+[27/February/2021 15:09] - indicators.production - INFO - OK! Calculation Data
+[27/February/2021 15:09] - indicators.production - DEBUG - OK! end initial assignment 
+[27/February/2021 15:09] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:09] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:09] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:09] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:09] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:09] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:09] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:09] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:09] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:09] - indicators.production - INFO - OK! Module
+[27/February/2021 15:10] - indicators.production - DEBUG - start initial assignment
+[27/February/2021 15:10] - indicators.production - INFO - OK! Load Data
+[27/February/2021 15:10] - indicators.production - INFO - OK! Load Data
+[27/February/2021 15:10] - indicators.production - INFO - OK! Load Data
+[27/February/2021 15:10] - indicators.production - INFO - OK! Calculation Data
+[27/February/2021 15:10] - indicators.production - INFO - OK! Calculation Data
+[27/February/2021 15:10] - indicators.production - DEBUG - OK! end initial assignment 
+[27/February/2021 15:10] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:10] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:10] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:10] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:10] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:10] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:10] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:10] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:10] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:10] - indicators.production - INFO - OK! Module
+[27/February/2021 15:11] - indicators.production - DEBUG - start initial assignment
+[27/February/2021 15:11] - indicators.production - INFO - OK! Load Data
+[27/February/2021 15:11] - indicators.production - INFO - OK! Load Data
+[27/February/2021 15:11] - indicators.production - INFO - OK! Load Data
+[27/February/2021 15:11] - indicators.production - INFO - OK! Calculation Data
+[27/February/2021 15:11] - indicators.production - INFO - OK! Calculation Data
+[27/February/2021 15:11] - indicators.production - DEBUG - OK! end initial assignment 
+[27/February/2021 15:11] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:11] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:11] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:11] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:11] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:11] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:11] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:11] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:11] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:11] - indicators.production - INFO - OK! Module
+[27/February/2021 15:12] - indicators.production - DEBUG - start initial assignment
+[27/February/2021 15:12] - indicators.production - INFO - OK! Load Data
+[27/February/2021 15:12] - indicators.production - INFO - OK! Load Data
+[27/February/2021 15:12] - indicators.production - INFO - OK! Load Data
+[27/February/2021 15:12] - indicators.production - INFO - OK! Calculation Data
+[27/February/2021 15:12] - indicators.production - INFO - OK! Calculation Data
+[27/February/2021 15:12] - indicators.production - DEBUG - OK! end initial assignment 
+[27/February/2021 15:12] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:12] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:12] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:12] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:12] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:12] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:12] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:12] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:12] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:12] - indicators.production - INFO - OK! Module
+[27/February/2021 15:25] - indicators.production - DEBUG - start initial assignment
+[27/February/2021 15:25] - indicators.production - INFO - OK! Load Data
+[27/February/2021 15:25] - indicators.production - INFO - OK! Load Data
+[27/February/2021 15:25] - indicators.production - INFO - OK! Load Data
+[27/February/2021 15:25] - indicators.production - INFO - OK! Calculation Data
+[27/February/2021 15:25] - indicators.production - INFO - OK! Calculation Data
+[27/February/2021 15:25] - indicators.production - DEBUG - OK! end initial assignment 
+[27/February/2021 15:25] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:25] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:25] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:25] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:25] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:25] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:25] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:25] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:25] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:25] - indicators.production - INFO - OK! Module on Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[27/February/2021 15:27] - indicators.production - DEBUG - Start on platform Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[27/February/2021 15:27] - indicators.production - DEBUG - Start on platform Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[27/February/2021 15:27] - indicators.production - DEBUG - start initial assignment
+[27/February/2021 15:27] - indicators.production - INFO - OK! Load Data
+[27/February/2021 15:27] - indicators.production - INFO - OK! Load Data
+[27/February/2021 15:27] - indicators.production - INFO - OK! Load Data
+[27/February/2021 15:27] - indicators.production - INFO - OK! Calculation Data
+[27/February/2021 15:27] - indicators.production - INFO - OK! Calculation Data
+[27/February/2021 15:27] - indicators.production - DEBUG - OK! end initial assignment 
+[27/February/2021 15:27] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:27] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:27] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:27] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:27] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:27] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:27] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:27] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:27] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:27] - indicators.production - INFO - OK! Module on Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[27/February/2021 15:28] - indicators.production - INFO - Start on platform Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[27/February/2021 15:28] - indicators.production - DEBUG - start initial assignment
+[27/February/2021 15:28] - indicators.production - INFO - OK! Load Data
+[27/February/2021 15:28] - indicators.production - INFO - OK! Load Data
+[27/February/2021 15:28] - indicators.production - INFO - OK! Load Data
+[27/February/2021 15:28] - indicators.production - INFO - OK! Calculation Data
+[27/February/2021 15:28] - indicators.production - INFO - OK! Calculation Data
+[27/February/2021 15:28] - indicators.production - DEBUG - OK! end initial assignment 
+[27/February/2021 15:28] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:28] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:28] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:28] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:28] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:28] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:28] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:28] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:28] - indicators.production - INFO - OK! Load object class
+[27/February/2021 15:28] - indicators.production - INFO - OK! Module on Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[27/February/2021 17:03] - indicators.production - INFO - Started on platform Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[27/February/2021 17:03] - indicators.production - DEBUG - start initial assignment
+[27/February/2021 17:03] - indicators.production - INFO - OK! Load Data
+[27/February/2021 17:03] - indicators.production - INFO - OK! Load Data
+[27/February/2021 17:03] - indicators.production - INFO - OK! Load Data
+[27/February/2021 17:03] - indicators.production - INFO - OK! Calculation Data
+[27/February/2021 17:03] - indicators.production - INFO - OK! Calculation Data
+[27/February/2021 17:03] - indicators.production - DEBUG - OK! end initial assignment 
+[27/February/2021 17:03] - indicators.production - INFO - OK! Load object class
+[27/February/2021 17:03] - indicators.production - INFO - OK! Load object class
+[27/February/2021 17:03] - indicators.production - INFO - OK! Load object class
+[27/February/2021 17:03] - indicators.production - INFO - OK! Load object class
+[27/February/2021 17:03] - indicators.production - INFO - OK! Load object class
+[27/February/2021 17:03] - indicators.production - INFO - OK! Load object class
+[27/February/2021 17:03] - indicators.production - INFO - OK! Load object class
+[27/February/2021 17:03] - indicators.production - INFO - OK! Load object class
+[27/February/2021 17:03] - indicators.production - INFO - OK! Load object class
+[27/February/2021 17:03] - indicators.production - INFO - OK! Module on Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[27/February/2021 17:04] - indicators.production - INFO - Started on platform Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[27/February/2021 17:04] - indicators.production - DEBUG - start initial assignment
+[27/February/2021 17:04] - indicators.production - INFO - OK! Load Data
+[27/February/2021 17:04] - indicators.production - INFO - OK! Load Data
+[27/February/2021 17:04] - indicators.production - INFO - OK! Load Data
+[27/February/2021 17:04] - indicators.production - INFO - OK! Calculation Data
+[27/February/2021 17:04] - indicators.production - INFO - OK! Calculation Data
+[27/February/2021 17:04] - indicators.production - DEBUG - OK! end initial assignment 
+[27/February/2021 17:04] - indicators.production - INFO - OK! Load object class
+[27/February/2021 17:04] - indicators.production - INFO - OK! Load object class
+[27/February/2021 17:04] - indicators.production - INFO - OK! Load object class
+[27/February/2021 17:04] - indicators.production - INFO - OK! Load object class
+[27/February/2021 17:04] - indicators.production - INFO - OK! Load object class
+[27/February/2021 17:04] - indicators.production - INFO - OK! Load object class
+[27/February/2021 17:04] - indicators.production - INFO - OK! Load object class
+[27/February/2021 17:04] - indicators.production - INFO - OK! Load object class
+[27/February/2021 17:04] - indicators.production - INFO - OK! Load object class
+[27/February/2021 17:04] - indicators.production - INFO - OK! Module on Linux-5.4.0-58-generic-x86_64-with-glibc2.29

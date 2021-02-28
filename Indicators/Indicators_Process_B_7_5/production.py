@@ -104,7 +104,11 @@ import numpy as np
 import pandas as pd
 # модуль для логирования(журналирования)
 import logging
-import logging.config
+import logging.config # файл конфигурации
+import logging.handlers # ротация логов
+import traceback # трасировка сообщений об исключениях
+import platform # информация о версии оси
+
 import matplotlib.pyplot as plt
 # импорт для построения нескольких графиков на одном уровне слоя
 from matplotlib.gridspec import GridSpec
@@ -129,18 +133,16 @@ from abc import ABC, abstractmethod
 #logging.basicConfig(filename="info.log", level=logging.INFO, format='%(asctime)s %(message)s')
 # logging.basicConfig(filename="info.log", encoding='utf-8', level=logging.DEBUG) # в версии Python 3.9 поддерживается кодировка
 
-logging.config.fileConfig('logging.conf')
-logger = logging.getLogger('production.py') # возвращает объект логгера
+logging.config.fileConfig('logging.conf') # файл конфишурации
+logger = logging.getLogger('indicators.production') # возвращает объект логгера
 
+logger.info(f'Started on platform {platform.platform()}') # logging
 try:
 # импорт DataFrame объектов с исходными данными
     from Data import data_kol_vip_prod_year, data_ur_neispr_obor_year,data_ur_nesoot_prod_year, data_ur_teh_oth_year, data_kol_vip_mufty_year, data_kol_vip_kompl_year, data_kol_narezki_year, data_kol_rezki_pvh_lip_year, data_ur_rash_mater_year, data_ur_otkl_prod_year, data_ur_prost_kach_year,data_ur_prost_nepost_year, data_ur_neispr_obor_middle_year, data_ur_nesoot_prod_middle_year, data_ur_teh_oth_middle_year,data_kol_vip_prod_middle_year, data_kol_vip_mufty_middle_year,data_kol_vip_kompl_middle_year, data_kol_narezki_middle_year,data_kol_rezki_pvh_lip_middle_year, data_ur_rash_mater_middle_year,data_ur_otkl_prod_middle_year, data_ur_prost_kach_middle_year,data_ur_prost_nepost_middle_year
-except:
-    logger.critical(f'FAILED! Import Data: {sys.exc_info()[:2]}') # logging
 
 # ИСХОДНЫЕ ДАННЫЕ (ДОПОЛНИТЕЛЬНОЕ ФОРМАТИРОВАНИЕ):
 ##################################################
-try:
     logger.debug("start initial assignment") # logging
 
     INDICATOR_NAME = [
@@ -223,8 +225,14 @@ try:
     logger.info("OK! Calculation Data") # logging
     logger.debug('OK! end initial assignment ') # logging
 
-except Exception:
-    logger.error(f'FAILED! Data_Launch_Error: {sys.exc_info()[:2]}') # logging
+except ImportError:
+    logger.error(f'FAILED! Data_Launch_Error: {sys.exc_info()[:2]}', exc_info=True) # logging
+
+except TypeError:
+    logger.error(f'FAILED! Data_Launch_Error: {sys.exc_info()[:2]}', exc_info=True) # logging
+
+except:
+    logger.error("FAILED! Data_Launch_Error: %s", traceback.format_exc()) # logging
 
 try:
     class Info(object):
@@ -232,6 +240,8 @@ try:
         Класс вывода таблицы на экран для выбора идентификатора
         """
         def __init__(self):
+            self.logger = logging.getLogger('indicators.production.Info')
+            self.logger.debug('__Init__ Info')
             self.x = PrettyTable()
             field_names = ['Идентификатор', 'Наименование']
             self.x.add_column(field_names[1], INDICATOR_NAME)
@@ -620,10 +630,12 @@ try:
 except Exception:
     logger.error(f'FAILED! Save_Error: {sys.exc_info()[:2]}') # logging
 
+logger.info(f"OK! Module on {platform.platform()}") # logging
+
 if __name__ == '__main__':
     class New_object(object):  # new_object = New_object()
         """
-        Обычно метакласс переопределяет метод __new__ или __init__ класса type, с целью взять на себя управление созданием или инициализацией нового объекта класса. Как и при использовании декораторов классов, суть состоит в том, чтобы определить программный код, который будет вызываться автоматически на этапе создания класса. Оба способа позволяют расширять классы или возвращать произвольные объекты для его замены – протокол с практически неограниченными возможностями.
+        Обычно метакласс переопределяет метод __new__ или __init__ класса type, с целью взять на себя управление созданием или инициализацией нового объекта класса. Как и при использовании декораторов классов, суть состоит в том, чтобы определить программный код, который будет вызываться автоматически на этапе создания класса. Оба способа позволяют расширять классы или возвращать произвольные объекты для его замены – протокол с практически неограниченными возaiможностями.
         """
         obj = None
         items = None

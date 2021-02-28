@@ -77,6 +77,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sb
 from tabulate import tabulate
+# модуль для логирования(журналирования)
+import logging
 # модуль для вывода табличных данных
 import Tools.Abstract_Parents as Abstract
 # универсальный модуль для выполнения контракта
@@ -88,10 +90,12 @@ from prettytable import PrettyTable
 # импорт библиотеки для вывода табличных данных в консоли(терминале)
 from abc import ABC, abstractmethod
 # импорт модуля для абстрактных классов
-
+logging.config.fileConfig('logging.conf')
+logger = logging.getLogger('indicators.project_and_develop') # возвращает объект логгера
 # ИСХОДНЫЕ ДАННЫЕ (ДОПОЛНИТЕЛЬНОЕ ФОРМАТИРОВАНИЕ):
 ##################################################
 try:
+    logger.debug("start initial assignment") # logging
     INDICATOR_NAME = [
                 'Кн по годам',
                 'Квн конструкторской документации',
