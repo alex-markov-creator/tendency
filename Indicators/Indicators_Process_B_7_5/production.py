@@ -97,18 +97,18 @@ plt.show()
 ---------------------------------
 pr.Save_Data()
 """
-import sys
 import os
-import time # ????????отключить?
-import numpy as np
-import pandas as pd
+import sys
+import platform # информация о версии оси
+#-------------------------------------------------------
 # модуль для логирования(журналирования)
 import logging
 import logging.config # файл конфигурации
 import logging.handlers # ротация логов
 import traceback # трасировка сообщений об исключениях
-import platform # информация о версии оси
-
+#-------------------------------------------------------
+import numpy as np
+import pandas as pd
 import matplotlib.pyplot as plt
 # импорт для построения нескольких графиков на одном уровне слоя
 from matplotlib.gridspec import GridSpec
@@ -131,19 +131,19 @@ from abc import ABC, abstractmethod
 # LOGGING !!!
 # add filemode='w' to overwrite
 #logging.basicConfig(filename="info.log", level=logging.INFO, format='%(asctime)s %(message)s')
-# logging.basicConfig(filename="info.log", encoding='utf-8', level=logging.DEBUG) # в версии Python 3.9 поддерживается кодировка
+# logging.basicConfig(filename="info.log", encoding='utf-8', level=logging.INFO) # в версии Python 3.9 поддерживается кодировка
 
-logging.config.fileConfig('logging.conf') # файл конфишурации
+logging.config.fileConfig('logging.conf') # файл конфигурации
 logger = logging.getLogger('indicators.production') # возвращает объект логгера
-
 logger.info(f'Started on platform {platform.platform()}') # logging
+
 try:
 # импорт DataFrame объектов с исходными данными
     from Data import data_kol_vip_prod_year, data_ur_neispr_obor_year,data_ur_nesoot_prod_year, data_ur_teh_oth_year, data_kol_vip_mufty_year, data_kol_vip_kompl_year, data_kol_narezki_year, data_kol_rezki_pvh_lip_year, data_ur_rash_mater_year, data_ur_otkl_prod_year, data_ur_prost_kach_year,data_ur_prost_nepost_year, data_ur_neispr_obor_middle_year, data_ur_nesoot_prod_middle_year, data_ur_teh_oth_middle_year,data_kol_vip_prod_middle_year, data_kol_vip_mufty_middle_year,data_kol_vip_kompl_middle_year, data_kol_narezki_middle_year,data_kol_rezki_pvh_lip_middle_year, data_ur_rash_mater_middle_year,data_ur_otkl_prod_middle_year, data_ur_prost_kach_middle_year,data_ur_prost_nepost_middle_year
 
 # ИСХОДНЫЕ ДАННЫЕ (ДОПОЛНИТЕЛЬНОЕ ФОРМАТИРОВАНИЕ):
 ##################################################
-    logger.debug("start initial assignment") # logging
+    logger.info("start initial assignment") # logging
 
     INDICATOR_NAME = [
                     "Количество выпущенной продукции (ленты) Квып",
@@ -223,7 +223,7 @@ try:
     #################################################################
     data_add = pd.concat([data_kol_vip_prod_year,data_ur_neispr_obor_year,data_ur_nesoot_prod_year,data_ur_teh_oth_year,data_kol_vip_mufty_year, data_kol_vip_kompl_year, data_kol_narezki_year, data_kol_rezki_pvh_lip_year, data_ur_otkl_prod_year,data_ur_prost_kach_year,data_ur_prost_nepost_year,data_ur_neispr_obor_middle_year,data_ur_nesoot_prod_middle_year,data_ur_teh_oth_middle_year,data_kol_vip_prod_middle_year,data_kol_vip_mufty_middle_year,data_kol_vip_kompl_middle_year,data_kol_narezki_middle_year,data_kol_rezki_pvh_lip_middle_year,data_ur_otkl_prod_middle_year,data_ur_prost_kach_middle_year,data_ur_prost_nepost_middle_year], axis=1)# Конкатенация pd.DataFrame объектов
     logger.info("OK! Calculation Data") # logging
-    logger.debug('OK! end initial assignment ') # logging
+    logger.info('OK! end initial assignment ') # logging
 
 except ImportError:
     logger.error(f'FAILED! Data_Launch_Error: {sys.exc_info()[:2]}', exc_info=True) # logging
@@ -241,7 +241,7 @@ try:
         """
         def __init__(self):
             self.logger = logging.getLogger('indicators.production.Info')
-            self.logger.debug('__Init__ Info')
+            self.logger.info('__Init__ Info')
             self.x = PrettyTable()
             field_names = ['Идентификатор', 'Наименование']
             self.x.add_column(field_names[1], INDICATOR_NAME)
@@ -257,6 +257,8 @@ try:
         Класс вывода дополнительной таблицы на экран для выбора идентификатора
         """
         def __init__(self):
+            self.logger = logging.getLogger('indicators.production.Info_add')
+            self.logger.info('__Init__ Info_add')
             self.x = PrettyTable()
             field_names = ['Идентификатор', 'Наименование']
             self.x.add_column(field_names[1], INDICATOR_NAME_ADD)
@@ -287,6 +289,8 @@ try:
             ----------
             data - нименование переменной (см.таблицу выше);
             """
+            self.logger = logging.getLogger('indicators.production.Data_Table')
+            self.logger.info('__Init__ Data_Table')
             self.data = data
 
         def __str__(self):
@@ -328,6 +332,8 @@ try:
             ----------
             data - нименование переменной (см.таблицу выше);
             """
+            self.logger = logging.getLogger('indicators.production.Statistic_Table')
+            self.logger.info('__Init__ Statistic_Table')
             self.data = data
             self.Ascr = data.count() # количество значений
             self.Asr = data.mean()  # среднее значение df.mean(n), где n - номер оси
@@ -388,6 +394,8 @@ try:
 
         def __init__(self, data, name='Название графика', critery = 0):
             super().__init__(data)
+            self.logger = logging.getLogger('indicators.production.Graphics_Indicators_Production')
+            self.logger.info('__Init__ Graphics_Indicators_Production')
             self.__class__.num_instances += 1 # счётчик экземпляров класса
             plt.style.use('bmh')
             fig, ax = plt.subplots(figsize=(12,10), dpi= 80)
@@ -418,6 +426,8 @@ try:
         """
         def __init__(self, data, name='Название графика', critery = 0):
             super().__init__(data)
+            self.logger = logging.getLogger('indicators.production.Graphics_Number_Production')
+            self.logger.info('__Init__ Graphics_Number_Production')
             plt.style.use('bmh')
             fig = plt.figure(constrained_layout=True, figsize=(12,10), dpi= 80)
             fig.canvas.set_window_title('Процесс Б (7.5) "Производство продукции"')
@@ -500,6 +510,8 @@ try:
         НЕОБХОДИМЫ ГОДА ПО ФАКТУ ИЗМЕНЕНИЙ И ОКРУГЛЕНИЕ объекта numpy.float64 до 2 знаков!!!! возможно отдельной функцией
         """
         def __init__(self, data: pd.DataFrame):
+            self.logger = logging.getLogger('indicators.production.Comparise')
+            self.logger.info('__Init__ Comparise')
             self.data = data.tail(2)
 
         def __str__(self):
@@ -527,6 +539,8 @@ try:
         #################################################################
         """
         def __init__(self, data: pd.DataFrame):
+            self.logger = logging.getLogger('indicators.production.MaterialConsumption')
+            self.logger.info('__Init__ MaterialConsumption')
             self.data = data
 
         def __str__(self):
@@ -562,7 +576,8 @@ try:
             ----------
             data - наименование переменной (см.таблицу выше);
             """
-
+            self.logger = logging.getLogger('indicators.production.Save_Data')
+            self.logger.info('__Init__ Save_Data')
             # ЗАПИСЬ ДАННЫХ В .xlsx файл
             print('Сохранение в файл формата *.xlsx ...')
             save_data_1 = data_add

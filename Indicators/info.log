@@ -37,3 +37,22 @@ ZeroDivisionError: division by zero
 [27/February/2021 13:55] - indicators.production - INFO - OK! Load object class
 [27/February/2021 13:55] - indicators.production - INFO - OK! Module
 [27/February/2021 13:55] - indicators.project_and_develop - DEBUG - start initial assignment
+[01/March/2021 15:48] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/March/2021 15:48] - indicators.production - DEBUG - start initial assignment
+[01/March/2021 15:48] - indicators.production - INFO - OK! Load Data
+[01/March/2021 15:48] - indicators.production - INFO - OK! Load Data
+[01/March/2021 15:48] - indicators.production - INFO - OK! Load Data
+[01/March/2021 15:48] - indicators.production - INFO - OK! Calculation Data
+[01/March/2021 15:48] - indicators.production - INFO - OK! Calculation Data
+[01/March/2021 15:48] - indicators.production - DEBUG - OK! end initial assignment 
+[01/March/2021 15:48] - indicators.production - INFO - OK! Load object class
+[01/March/2021 15:48] - indicators.production - INFO - OK! Load object class
+[01/March/2021 15:48] - indicators.production - INFO - OK! Load object class
+[01/March/2021 15:48] - indicators.production - INFO - OK! Load object class
+[01/March/2021 15:48] - indicators.production - INFO - OK! Load object class
+[01/March/2021 15:48] - indicators.production - INFO - OK! Load object class
+[01/March/2021 15:48] - indicators.production - INFO - OK! Load object class
+[01/March/2021 15:48] - indicators.production - INFO - OK! Load object class
+[01/March/2021 15:48] - indicators.production - INFO - OK! Load object class
+[01/March/2021 15:48] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/March/2021 15:48] - indicators.project_and_develop - DEBUG - start initial assignment
