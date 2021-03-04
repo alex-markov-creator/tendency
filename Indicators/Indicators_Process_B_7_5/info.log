@@ -446,3 +446,379 @@
 [02/March/2021 14:43] - indicators.production - INFO - OK! Load object class
 [02/March/2021 14:43] - indicators.production - INFO - OK! Load object class
 [02/March/2021 14:43] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[03/March/2021 08:35] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/March/2021 08:35] - indicators.production - INFO - start initial assignment
+[03/March/2021 08:35] - indicators.production - INFO - OK! Load Data
+[03/March/2021 08:35] - indicators.production - INFO - OK! Load Data
+[03/March/2021 08:35] - indicators.production - INFO - OK! Load Data
+[03/March/2021 08:35] - indicators.production - INFO - OK! Calculation Data
+[03/March/2021 08:35] - indicators.production - ERROR - FAILED! Data_Launch_Error: (<class 'TypeError'>, TypeError("cannot concatenate object of type '<class 'str'>'; only Series and DataFrame objs are valid"))
+Traceback (most recent call last):
+  File "production.py", line 224, in <module>
+    data_add = pd.concat([data_kol_vip_prod_year,data_ur_neispr_obor_year,data_ur_nesoot_prod_year,data_ur_teh_oth_year,data_kol_vip_mufty_year, data_kol_vip_kompl_year, data_kol_narezki_year, data_kol_rezki_pvh_lip_year, data_ur_otkl_prod_year,data_ur_prost_kach_year,data_ur_prost_nepost_year,data_ur_neispr_obor_middle_year,data_ur_nesoot_prod_middle_year,data_ur_teh_oth_middle_year,data_kol_vip_prod_middle_year,data_kol_vip_mufty_middle_year,data_kol_vip_kompl_middle_year,data_kol_narezki_middle_year,data_kol_rezki_pvh_lip_middle_year,data_ur_otkl_prod_middle_year,data_ur_prost_kach_middle_year,data_ur_prost_nepost_middle_year], axis=1)# Конкатенация pd.DataFrame объектов
+  File "C:\Users\a.bezzubov\AppData\Local\Programs\Python\Python38-32\lib\site-packages\pandas\core\reshape\concat.py", line 274, in concat
+    op = _Concatenator(
+  File "C:\Users\a.bezzubov\AppData\Local\Programs\Python\Python38-32\lib\site-packages\pandas\core\reshape\concat.py", line 359, in __init__
+    raise TypeError(msg)
+TypeError: cannot concatenate object of type '<class 'str'>'; only Series and DataFrame objs are valid
+[03/March/2021 08:35] - indicators.production - INFO - OK! Load object class
+[03/March/2021 08:35] - indicators.production - INFO - OK! Load object class
+[03/March/2021 08:35] - indicators.production - INFO - OK! Load object class
+[03/March/2021 08:35] - indicators.production - INFO - OK! Load object class
+[03/March/2021 08:35] - indicators.production - INFO - OK! Load object class
+[03/March/2021 08:35] - indicators.production - INFO - OK! Load object class
+[03/March/2021 08:35] - indicators.production - INFO - OK! Load object class
+[03/March/2021 08:35] - indicators.production - INFO - OK! Load object class
+[03/March/2021 08:35] - indicators.production - INFO - OK! Load object class
+[03/March/2021 08:35] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[03/March/2021 08:41] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/March/2021 08:41] - indicators.production - INFO - start initial assignment
+[03/March/2021 08:41] - indicators.production - INFO - OK! Load Data
+[03/March/2021 08:41] - indicators.production - INFO - OK! Load Data
+[03/March/2021 08:41] - indicators.production - INFO - OK! Load Data
+[03/March/2021 08:41] - indicators.production - INFO - OK! Calculation Data
+[03/March/2021 08:41] - indicators.production - ERROR - FAILED! Data_Launch_Error: (<class 'TypeError'>, TypeError("cannot concatenate object of type '<class 'str'>'; only Series and DataFrame objs are valid"))
+Traceback (most recent call last):
+  File "C:\Users\a.bezzubov\Desktop\tendency\Indicators\Indicators_Process_B_7_5\production.py", line 224, in <module>
+    data_add = pd.concat([data_kol_vip_prod_year,data_ur_neispr_obor_year,data_ur_nesoot_prod_year,data_ur_teh_oth_year,data_kol_vip_mufty_year, data_kol_vip_kompl_year, data_kol_narezki_year, data_kol_rezki_pvh_lip_year, data_ur_otkl_prod_year,data_ur_prost_kach_year,data_ur_prost_nepost_year,data_ur_neispr_obor_middle_year,data_ur_nesoot_prod_middle_year,data_ur_teh_oth_middle_year,data_kol_vip_prod_middle_year,data_kol_vip_mufty_middle_year,data_kol_vip_kompl_middle_year,data_kol_narezki_middle_year,data_kol_rezki_pvh_lip_middle_year,data_ur_otkl_prod_middle_year,data_ur_prost_kach_middle_year,data_ur_prost_nepost_middle_year], axis=1)# Конкатенация pd.DataFrame объектов
+  File "c:\users\a.bezzubov\appdata\local\programs\python\python38-32\lib\site-packages\pandas\core\reshape\concat.py", line 274, in concat
+    op = _Concatenator(
+  File "c:\users\a.bezzubov\appdata\local\programs\python\python38-32\lib\site-packages\pandas\core\reshape\concat.py", line 359, in __init__
+    raise TypeError(msg)
+TypeError: cannot concatenate object of type '<class 'str'>'; only Series and DataFrame objs are valid
+[03/March/2021 08:41] - indicators.production - INFO - OK! Load object class
+[03/March/2021 08:41] - indicators.production - INFO - OK! Load object class
+[03/March/2021 08:41] - indicators.production - INFO - OK! Load object class
+[03/March/2021 08:41] - indicators.production - INFO - OK! Load object class
+[03/March/2021 08:41] - indicators.production - INFO - OK! Load object class
+[03/March/2021 08:41] - indicators.production - INFO - OK! Load object class
+[03/March/2021 08:41] - indicators.production - INFO - OK! Load object class
+[03/March/2021 08:41] - indicators.production - INFO - OK! Load object class
+[03/March/2021 08:41] - indicators.production - INFO - OK! Load object class
+[03/March/2021 08:41] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[03/March/2021 08:42] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/March/2021 08:42] - indicators.production - INFO - start initial assignment
+[03/March/2021 08:42] - indicators.production - INFO - OK! Load Data
+[03/March/2021 08:42] - indicators.production - INFO - OK! Load Data
+[03/March/2021 08:42] - indicators.production - INFO - OK! Load Data
+[03/March/2021 08:42] - indicators.production - INFO - OK! Calculation Data
+[03/March/2021 08:42] - indicators.production - ERROR - FAILED! Data_Launch_Error: (<class 'TypeError'>, TypeError("cannot concatenate object of type '<class 'str'>'; only Series and DataFrame objs are valid"))
+Traceback (most recent call last):
+  File "C:\Users\a.bezzubov\Desktop\tendency\Indicators\Indicators_Process_B_7_5\production.py", line 226, in <module>
+    data_add = pd.concat([data_kol_vip_prod_year,data_ur_neispr_obor_year,data_ur_nesoot_prod_year,data_ur_teh_oth_year,data_kol_vip_mufty_year, data_kol_vip_kompl_year, data_kol_narezki_year, data_kol_rezki_pvh_lip_year, data_ur_otkl_prod_year,data_ur_prost_kach_year,data_ur_prost_nepost_year,data_ur_neispr_obor_middle_year,data_ur_nesoot_prod_middle_year,data_ur_teh_oth_middle_year,data_kol_vip_prod_middle_year,data_kol_vip_mufty_middle_year,data_kol_vip_kompl_middle_year,data_kol_narezki_middle_year,data_kol_rezki_pvh_lip_middle_year,data_ur_otkl_prod_middle_year,data_ur_prost_kach_middle_year,data_ur_prost_nepost_middle_year], axis=1)# Конкатенация pd.DataFrame объектов
+  File "c:\users\a.bezzubov\appdata\local\programs\python\python38-32\lib\site-packages\pandas\core\reshape\concat.py", line 274, in concat
+    op = _Concatenator(
+  File "c:\users\a.bezzubov\appdata\local\programs\python\python38-32\lib\site-packages\pandas\core\reshape\concat.py", line 359, in __init__
+    raise TypeError(msg)
+TypeError: cannot concatenate object of type '<class 'str'>'; only Series and DataFrame objs are valid
+[03/March/2021 08:42] - indicators.production - INFO - OK! Load object class
+[03/March/2021 08:42] - indicators.production - INFO - OK! Load object class
+[03/March/2021 08:42] - indicators.production - INFO - OK! Load object class
+[03/March/2021 08:42] - indicators.production - INFO - OK! Load object class
+[03/March/2021 08:42] - indicators.production - INFO - OK! Load object class
+[03/March/2021 08:42] - indicators.production - INFO - OK! Load object class
+[03/March/2021 08:42] - indicators.production - INFO - OK! Load object class
+[03/March/2021 08:42] - indicators.production - INFO - OK! Load object class
+[03/March/2021 08:42] - indicators.production - INFO - OK! Load object class
+[03/March/2021 08:42] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[03/March/2021 08:43] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/March/2021 08:43] - indicators.production - INFO - start initial assignment
+[03/March/2021 08:43] - indicators.production - INFO - OK! Load Data
+[03/March/2021 08:43] - indicators.production - INFO - OK! Load Data
+[03/March/2021 08:43] - indicators.production - INFO - OK! Load Data
+[03/March/2021 08:43] - indicators.production - INFO - OK! Calculation Data
+[03/March/2021 08:43] - indicators.production - ERROR - FAILED! Data_Launch_Error: (<class 'TypeError'>, TypeError("cannot concatenate object of type '<class 'str'>'; only Series and DataFrame objs are valid"))
+Traceback (most recent call last):
+  File "C:\Users\a.bezzubov\Desktop\tendency\Indicators\Indicators_Process_B_7_5\production.py", line 226, in <module>
+    data_add = pd.concat([data_kol_vip_prod_year,data_ur_neispr_obor_year,data_ur_nesoot_prod_year,data_ur_teh_oth_year,data_kol_vip_mufty_year, data_kol_vip_kompl_year, data_kol_narezki_year, data_kol_rezki_pvh_lip_year, data_ur_otkl_prod_year,data_ur_prost_kach_year,data_ur_prost_nepost_year,data_ur_neispr_obor_middle_year,data_ur_nesoot_prod_middle_year,data_ur_teh_oth_middle_year,data_kol_vip_prod_middle_year,data_kol_vip_mufty_middle_year,data_kol_vip_kompl_middle_year,data_kol_narezki_middle_year,data_kol_rezki_pvh_lip_middle_year,data_ur_otkl_prod_middle_year,data_ur_prost_kach_middle_year,data_ur_prost_nepost_middle_year], axis=1)# Конкатенация pd.DataFrame объектов
+  File "c:\users\a.bezzubov\appdata\local\programs\python\python38-32\lib\site-packages\pandas\core\reshape\concat.py", line 274, in concat
+    op = _Concatenator(
+  File "c:\users\a.bezzubov\appdata\local\programs\python\python38-32\lib\site-packages\pandas\core\reshape\concat.py", line 359, in __init__
+    raise TypeError(msg)
+TypeError: cannot concatenate object of type '<class 'str'>'; only Series and DataFrame objs are valid
+[03/March/2021 08:43] - indicators.production - INFO - OK! Load object class
+[03/March/2021 08:43] - indicators.production - INFO - OK! Load object class
+[03/March/2021 08:43] - indicators.production - INFO - OK! Load object class
+[03/March/2021 08:43] - indicators.production - INFO - OK! Load object class
+[03/March/2021 08:43] - indicators.production - INFO - OK! Load object class
+[03/March/2021 08:43] - indicators.production - INFO - OK! Load object class
+[03/March/2021 08:43] - indicators.production - INFO - OK! Load object class
+[03/March/2021 08:43] - indicators.production - INFO - OK! Load object class
+[03/March/2021 08:43] - indicators.production - INFO - OK! Load object class
+[03/March/2021 08:43] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[03/March/2021 08:44] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/March/2021 08:44] - indicators.production - INFO - start initial assignment
+[03/March/2021 08:44] - indicators.production - INFO - OK! Load Data
+[03/March/2021 08:44] - indicators.production - INFO - OK! Load Data
+[03/March/2021 08:44] - indicators.production - INFO - OK! Load Data
+[03/March/2021 08:44] - indicators.production - INFO - OK! Calculation Data
+[03/March/2021 08:44] - indicators.production - ERROR - FAILED! Data_Launch_Error: (<class 'TypeError'>, TypeError("cannot concatenate object of type '<class 'str'>'; only Series and DataFrame objs are valid"))
+Traceback (most recent call last):
+  File "C:\Users\a.bezzubov\Desktop\tendency\Indicators\Indicators_Process_B_7_5\production.py", line 226, in <module>
+    data_add = pd.concat([data_kol_vip_prod_year,data_ur_neispr_obor_year,data_ur_nesoot_prod_year,data_ur_teh_oth_year,data_kol_vip_mufty_year, data_kol_vip_kompl_year, data_kol_narezki_year, data_kol_rezki_pvh_lip_year, data_ur_otkl_prod_year,data_ur_prost_kach_year,data_ur_prost_nepost_year,data_ur_neispr_obor_middle_year,data_ur_nesoot_prod_middle_year,data_ur_teh_oth_middle_year,data_kol_vip_prod_middle_year,data_kol_vip_mufty_middle_year,data_kol_vip_kompl_middle_year,data_kol_narezki_middle_year,data_kol_rezki_pvh_lip_middle_year,data_ur_otkl_prod_middle_year,data_ur_prost_kach_middle_year,data_ur_prost_nepost_middle_year], axis=1)# Конкатенация pd.DataFrame объектов
+  File "c:\users\a.bezzubov\appdata\local\programs\python\python38-32\lib\site-packages\pandas\core\reshape\concat.py", line 274, in concat
+    op = _Concatenator(
+  File "c:\users\a.bezzubov\appdata\local\programs\python\python38-32\lib\site-packages\pandas\core\reshape\concat.py", line 359, in __init__
+    raise TypeError(msg)
+TypeError: cannot concatenate object of type '<class 'str'>'; only Series and DataFrame objs are valid
+[03/March/2021 08:44] - indicators.production - INFO - OK! Load object class
+[03/March/2021 08:44] - indicators.production - INFO - OK! Load object class
+[03/March/2021 08:44] - indicators.production - INFO - OK! Load object class
+[03/March/2021 08:44] - indicators.production - INFO - OK! Load object class
+[03/March/2021 08:44] - indicators.production - INFO - OK! Load object class
+[03/March/2021 08:44] - indicators.production - INFO - OK! Load object class
+[03/March/2021 08:44] - indicators.production - INFO - OK! Load object class
+[03/March/2021 08:44] - indicators.production - INFO - OK! Load object class
+[03/March/2021 08:44] - indicators.production - INFO - OK! Load object class
+[03/March/2021 08:44] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[03/March/2021 08:53] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/March/2021 08:53] - indicators.production - INFO - start initial assignment
+[03/March/2021 08:53] - indicators.production - INFO - OK! Load Data
+[03/March/2021 08:53] - indicators.production - INFO - OK! Load Data
+[03/March/2021 08:53] - indicators.production - INFO - OK! Load Data
+[03/March/2021 08:53] - indicators.production - INFO - OK! Calculation Data
+[03/March/2021 09:28] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/March/2021 09:29] - indicators.production - ERROR - FAILED! Data_Launch_Error: (<class 'ImportError'>, ImportError("cannot import name 'data_testing' from 'Data' (C:\\Users\\a.bezzubov\\Desktop\\tendency\\Data\\__init__.py)"))
+Traceback (most recent call last):
+  File "C:\Users\a.bezzubov\Desktop\tendency\Indicators\Indicators_Process_B_7_5\production.py", line 145, in <module>
+    from Data import data_kol_vip_prod_year, data_ur_neispr_obor_year,data_ur_nesoot_prod_year, data_ur_teh_oth_year, data_kol_vip_mufty_year, data_kol_vip_kompl_year, data_kol_narezki_year, data_kol_rezki_pvh_lip_year, data_ur_rash_mater_year, data_ur_otkl_prod_year, data_ur_prost_kach_year,data_ur_prost_nepost_year, data_ur_neispr_obor_middle_year, data_ur_nesoot_prod_middle_year, data_ur_teh_oth_middle_year,data_kol_vip_prod_middle_year, data_kol_vip_mufty_middle_year,data_kol_vip_kompl_middle_year, data_kol_narezki_middle_year,data_kol_rezki_pvh_lip_middle_year, data_ur_rash_mater_middle_year,data_ur_otkl_prod_middle_year, data_ur_prost_kach_middle_year,data_ur_prost_nepost_middle_year, data_testing
+ImportError: cannot import name 'data_testing' from 'Data' (C:\Users\a.bezzubov\Desktop\tendency\Data\__init__.py)
+[03/March/2021 09:29] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:29] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:29] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:29] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:29] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:29] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:29] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:29] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:29] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:29] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[03/March/2021 09:29] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/March/2021 09:30] - indicators.production - ERROR - FAILED! Data_Launch_Error: (<class 'ImportError'>, ImportError("cannot import name 'data_testing' from 'Data' (C:\\Users\\a.bezzubov\\Desktop\\tendency\\Data\\__init__.py)"))
+Traceback (most recent call last):
+  File "C:\Users\a.bezzubov\Desktop\tendency\Indicators\Indicators_Process_B_7_5\production.py", line 145, in <module>
+    from Data import data_kol_vip_prod_year, data_ur_neispr_obor_year,data_ur_nesoot_prod_year, data_ur_teh_oth_year, data_kol_vip_mufty_year, data_kol_vip_kompl_year, data_kol_narezki_year, data_kol_rezki_pvh_lip_year, data_ur_rash_mater_year, data_ur_otkl_prod_year, data_ur_prost_kach_year,data_ur_prost_nepost_year, data_ur_neispr_obor_middle_year, data_ur_nesoot_prod_middle_year, data_ur_teh_oth_middle_year,data_kol_vip_prod_middle_year, data_kol_vip_mufty_middle_year,data_kol_vip_kompl_middle_year, data_kol_narezki_middle_year,data_kol_rezki_pvh_lip_middle_year, data_ur_rash_mater_middle_year,data_ur_otkl_prod_middle_year, data_ur_prost_kach_middle_year,data_ur_prost_nepost_middle_year, data_testing
+ImportError: cannot import name 'data_testing' from 'Data' (C:\Users\a.bezzubov\Desktop\tendency\Data\__init__.py)
+[03/March/2021 09:30] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:30] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:30] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:30] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:30] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:30] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:30] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:30] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:30] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:30] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[03/March/2021 09:31] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/March/2021 09:31] - indicators.production - ERROR - FAILED! Data_Launch_Error: (<class 'ImportError'>, ImportError("cannot import name 'data_testing' from 'Data' (C:\\Users\\a.bezzubov\\Desktop\\tendency\\Data\\__init__.py)"))
+Traceback (most recent call last):
+  File "C:\Users\a.bezzubov\Desktop\tendency\Indicators\Indicators_Process_B_7_5\production.py", line 145, in <module>
+    from Data import data_kol_vip_prod_year, data_ur_neispr_obor_year,data_ur_nesoot_prod_year, data_ur_teh_oth_year, data_kol_vip_mufty_year, data_kol_vip_kompl_year, data_kol_narezki_year, data_kol_rezki_pvh_lip_year, data_ur_rash_mater_year, data_ur_otkl_prod_year, data_ur_prost_kach_year,data_ur_prost_nepost_year, data_ur_neispr_obor_middle_year, data_ur_nesoot_prod_middle_year, data_ur_teh_oth_middle_year,data_kol_vip_prod_middle_year, data_kol_vip_mufty_middle_year,data_kol_vip_kompl_middle_year, data_kol_narezki_middle_year,data_kol_rezki_pvh_lip_middle_year, data_ur_rash_mater_middle_year,data_ur_otkl_prod_middle_year, data_ur_prost_kach_middle_year,data_ur_prost_nepost_middle_year, data_testing
+ImportError: cannot import name 'data_testing' from 'Data' (C:\Users\a.bezzubov\Desktop\tendency\Data\__init__.py)
+[03/March/2021 09:31] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:31] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:31] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:31] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:31] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:31] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:31] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:31] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:31] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:31] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[03/March/2021 09:37] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/March/2021 09:37] - indicators.production - ERROR - FAILED! Data_Launch_Error: (<class 'ImportError'>, ImportError("cannot import name 'data_testing' from 'Data' (C:\\Users\\a.bezzubov\\Desktop\\tendency\\Data\\__init__.py)"))
+Traceback (most recent call last):
+  File "C:\Users\a.bezzubov\Desktop\tendency\Indicators\Indicators_Process_B_7_5\production.py", line 145, in <module>
+    from Data import data_kol_vip_prod_year, data_ur_neispr_obor_year,data_ur_nesoot_prod_year, data_ur_teh_oth_year, data_kol_vip_mufty_year, data_kol_vip_kompl_year, data_kol_narezki_year, data_kol_rezki_pvh_lip_year, data_ur_rash_mater_year, data_ur_otkl_prod_year, data_ur_prost_kach_year,data_ur_prost_nepost_year, data_ur_neispr_obor_middle_year, data_ur_nesoot_prod_middle_year, data_ur_teh_oth_middle_year,data_kol_vip_prod_middle_year, data_kol_vip_mufty_middle_year,data_kol_vip_kompl_middle_year, data_kol_narezki_middle_year,data_kol_rezki_pvh_lip_middle_year, data_ur_rash_mater_middle_year,data_ur_otkl_prod_middle_year, data_ur_prost_kach_middle_year,data_ur_prost_nepost_middle_year, data_testing
+ImportError: cannot import name 'data_testing' from 'Data' (C:\Users\a.bezzubov\Desktop\tendency\Data\__init__.py)
+[03/March/2021 09:37] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:37] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:37] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:37] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:37] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:37] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:37] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:37] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:37] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:37] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[03/March/2021 09:38] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/March/2021 09:38] - indicators.production - ERROR - FAILED! Data_Launch_Error: (<class 'ImportError'>, ImportError("cannot import name 'data_testing' from 'Data' (C:\\Users\\a.bezzubov\\Desktop\\tendency\\Data\\__init__.py)"))
+Traceback (most recent call last):
+  File "C:\Users\a.bezzubov\Desktop\tendency\Indicators\Indicators_Process_B_7_5\production.py", line 145, in <module>
+    from Data import data_kol_vip_prod_year, data_ur_neispr_obor_year,data_ur_nesoot_prod_year, data_ur_teh_oth_year, data_kol_vip_mufty_year, data_kol_vip_kompl_year, data_kol_narezki_year, data_kol_rezki_pvh_lip_year, data_ur_rash_mater_year, data_ur_otkl_prod_year, data_ur_prost_kach_year,data_ur_prost_nepost_year, data_ur_neispr_obor_middle_year, data_ur_nesoot_prod_middle_year, data_ur_teh_oth_middle_year,data_kol_vip_prod_middle_year, data_kol_vip_mufty_middle_year,data_kol_vip_kompl_middle_year, data_kol_narezki_middle_year,data_kol_rezki_pvh_lip_middle_year, data_ur_rash_mater_middle_year,data_ur_otkl_prod_middle_year, data_ur_prost_kach_middle_year,data_ur_prost_nepost_middle_year, data_testing
+ImportError: cannot import name 'data_testing' from 'Data' (C:\Users\a.bezzubov\Desktop\tendency\Data\__init__.py)
+[03/March/2021 09:38] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:38] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:38] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:38] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:38] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:38] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:38] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:38] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:38] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:38] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[03/March/2021 09:40] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/March/2021 09:40] - indicators.production - ERROR - FAILED! Data_Launch_Error: (<class 'ImportError'>, ImportError("cannot import name 'data_testing' from 'Data' (C:\\Users\\a.bezzubov\\Desktop\\tendency\\Data\\__init__.py)"))
+Traceback (most recent call last):
+  File "production.py", line 145, in <module>
+    from Data import data_kol_vip_prod_year, data_ur_neispr_obor_year,data_ur_nesoot_prod_year, data_ur_teh_oth_year, data_kol_vip_mufty_year, data_kol_vip_kompl_year, data_kol_narezki_year, data_kol_rezki_pvh_lip_year, data_ur_rash_mater_year, data_ur_otkl_prod_year, data_ur_prost_kach_year,data_ur_prost_nepost_year, data_ur_neispr_obor_middle_year, data_ur_nesoot_prod_middle_year, data_ur_teh_oth_middle_year,data_kol_vip_prod_middle_year, data_kol_vip_mufty_middle_year,data_kol_vip_kompl_middle_year, data_kol_narezki_middle_year,data_kol_rezki_pvh_lip_middle_year, data_ur_rash_mater_middle_year,data_ur_otkl_prod_middle_year, data_ur_prost_kach_middle_year,data_ur_prost_nepost_middle_year, data_testing
+ImportError: cannot import name 'data_testing' from 'Data' (C:\Users\a.bezzubov\Desktop\tendency\Data\__init__.py)
+[03/March/2021 09:40] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:40] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:40] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:40] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:40] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:40] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:40] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:40] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:40] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:40] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[03/March/2021 09:41] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/March/2021 09:42] - indicators.production - INFO - start initial assignment
+[03/March/2021 09:42] - indicators.production - INFO - OK! Load Data
+[03/March/2021 09:42] - indicators.production - INFO - OK! Load Data
+[03/March/2021 09:42] - indicators.production - INFO - OK! Load Data
+[03/March/2021 09:42] - indicators.production - INFO - OK! Calculation Data
+[03/March/2021 09:42] - indicators.production - INFO - OK! Calculation Data
+[03/March/2021 09:42] - indicators.production - INFO - OK! end initial assignment 
+[03/March/2021 09:42] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:42] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:42] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:42] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:42] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:42] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:42] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:42] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:42] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:42] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[03/March/2021 09:42] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/March/2021 09:42] - indicators.production - INFO - start initial assignment
+[03/March/2021 09:42] - indicators.production - INFO - OK! Load Data
+[03/March/2021 09:42] - indicators.production - INFO - OK! Load Data
+[03/March/2021 09:42] - indicators.production - INFO - OK! Load Data
+[03/March/2021 09:42] - indicators.production - INFO - OK! Calculation Data
+[03/March/2021 09:42] - indicators.production - INFO - OK! Calculation Data
+[03/March/2021 09:42] - indicators.production - INFO - OK! end initial assignment 
+[03/March/2021 09:42] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:42] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:42] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:42] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:42] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:42] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:42] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:42] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:42] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:42] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[03/March/2021 09:43] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/March/2021 09:43] - indicators.production - INFO - start initial assignment
+[03/March/2021 09:43] - indicators.production - INFO - OK! Load Data
+[03/March/2021 09:43] - indicators.production - INFO - OK! Load Data
+[03/March/2021 09:43] - indicators.production - INFO - OK! Load Data
+[03/March/2021 09:43] - indicators.production - INFO - OK! Calculation Data
+[03/March/2021 09:43] - indicators.production - INFO - OK! Calculation Data
+[03/March/2021 09:43] - indicators.production - INFO - OK! end initial assignment 
+[03/March/2021 09:43] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:43] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:43] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:43] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:43] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:43] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:43] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:43] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:43] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:43] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[03/March/2021 09:45] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/March/2021 09:46] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/March/2021 09:46] - indicators.production - INFO - start initial assignment
+[03/March/2021 09:46] - indicators.production - INFO - OK! Load Data
+[03/March/2021 09:46] - indicators.production - INFO - OK! Load Data
+[03/March/2021 09:46] - indicators.production - INFO - OK! Load Data
+[03/March/2021 09:46] - indicators.production - INFO - OK! Calculation Data
+[03/March/2021 09:46] - indicators.production - INFO - OK! Calculation Data
+[03/March/2021 09:46] - indicators.production - INFO - OK! end initial assignment 
+[03/March/2021 09:46] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:46] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:46] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:46] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:46] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:46] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:46] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:46] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:46] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:46] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[03/March/2021 09:46] - indicators.production - INFO - start initial assignment
+[03/March/2021 09:46] - indicators.production - INFO - OK! Load Data
+[03/March/2021 09:46] - indicators.production - INFO - OK! Load Data
+[03/March/2021 09:46] - indicators.production - INFO - OK! Load Data
+[03/March/2021 09:46] - indicators.production - INFO - OK! Calculation Data
+[03/March/2021 09:46] - indicators.production - INFO - OK! Calculation Data
+[03/March/2021 09:46] - indicators.production - INFO - OK! end initial assignment 
+[03/March/2021 09:46] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:46] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:46] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:46] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:46] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:46] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:46] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:46] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:46] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:46] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[03/March/2021 09:48] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/March/2021 09:49] - indicators.production - INFO - start initial assignment
+[03/March/2021 09:49] - indicators.production - INFO - OK! Load Data
+[03/March/2021 09:49] - indicators.production - INFO - OK! Load Data
+[03/March/2021 09:49] - indicators.production - INFO - OK! Load Data
+[03/March/2021 09:49] - indicators.production - INFO - OK! Calculation Data
+[03/March/2021 09:49] - indicators.production - INFO - OK! Calculation Data
+[03/March/2021 09:49] - indicators.production - INFO - OK! end initial assignment 
+[03/March/2021 09:49] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:49] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:49] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:49] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:49] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:49] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:49] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:49] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:49] - indicators.production - INFO - OK! Load object class
+[03/March/2021 09:49] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[03/March/2021 09:53] - indicators.production.Info - INFO - __Init__ Info
+[03/March/2021 11:55] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/March/2021 11:55] - indicators.production - INFO - start initial assignment
+[03/March/2021 11:55] - indicators.production - INFO - OK! Load Data
+[03/March/2021 11:55] - indicators.production - INFO - OK! Load Data
+[03/March/2021 11:55] - indicators.production - INFO - OK! Load Data
+[03/March/2021 11:55] - indicators.production - INFO - OK! Calculation Data
+[03/March/2021 11:55] - indicators.production - INFO - OK! Calculation Data
+[03/March/2021 11:55] - indicators.production - INFO - OK! end initial assignment 
+[03/March/2021 11:55] - indicators.production - INFO - OK! Load object class
+[03/March/2021 11:55] - indicators.production - INFO - OK! Load object class
+[03/March/2021 11:55] - indicators.production - INFO - OK! Load object class
+[03/March/2021 11:55] - indicators.production - INFO - OK! Load object class
+[03/March/2021 11:55] - indicators.production - INFO - OK! Load object class
+[03/March/2021 11:55] - indicators.production - INFO - OK! Load object class
+[03/March/2021 11:55] - indicators.production - INFO - OK! Load object class
+[03/March/2021 11:55] - indicators.production - INFO - OK! Load object class
+[03/March/2021 11:55] - indicators.production - INFO - OK! Load object class
+[03/March/2021 11:55] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[03/March/2021 13:06] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/March/2021 13:06] - indicators.production - INFO - start initial assignment
+[03/March/2021 13:06] - indicators.production - INFO - OK! Load Data
+[03/March/2021 13:06] - indicators.production - INFO - OK! Load Data
+[03/March/2021 13:06] - indicators.production - INFO - OK! Load Data
+[03/March/2021 13:06] - indicators.production - INFO - OK! Calculation Data
+[03/March/2021 13:06] - indicators.production - INFO - OK! Calculation Data
+[03/March/2021 13:06] - indicators.production - INFO - OK! end initial assignment 
+[03/March/2021 13:06] - indicators.production - INFO - OK! Load object class
+[03/March/2021 13:06] - indicators.production - INFO - OK! Load object class
+[03/March/2021 13:06] - indicators.production - INFO - OK! Load object class
+[03/March/2021 13:06] - indicators.production - INFO - OK! Load object class
+[03/March/2021 13:06] - indicators.production - INFO - OK! Load object class
+[03/March/2021 13:06] - indicators.production - INFO - OK! Load object class
+[03/March/2021 13:06] - indicators.production - INFO - OK! Load object class
+[03/March/2021 13:06] - indicators.production - INFO - OK! Load object class
+[03/March/2021 13:06] - indicators.production - INFO - OK! Load object class
+[03/March/2021 13:06] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[03/March/2021 13:06] - indicators.production.Info - INFO - __Init__ Info
+[03/March/2021 13:06] - indicators.production.Data_Table - INFO - __Init__ Data_Table
+[03/March/2021 13:07] - indicators.production.Info - INFO - __Init__ Info
+[03/March/2021 13:07] - indicators.production.Statistic_Table - INFO - __Init__ Statistic_Table

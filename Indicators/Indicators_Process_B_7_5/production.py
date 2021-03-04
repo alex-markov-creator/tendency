@@ -107,6 +107,9 @@ import logging.config # файл конфигурации
 import logging.handlers # ротация логов
 import traceback # трасировка сообщений об исключениях
 #-------------------------------------------------------
+# модуль для тестирования
+import pytest
+#-------------------------------------------------------
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -229,7 +232,15 @@ except ImportError:
     logger.error(f'FAILED! Data_Launch_Error: {sys.exc_info()[:2]}', exc_info=True) # logging
 
 except TypeError:
+    def test_add_raises():
+        """Все, что находиться в следующем блоке кода, должно
+        вызвать исключение
+        """
+        with pytest.raises(TypeError):
+            raise TypeError
+
     logger.error(f'FAILED! Data_Launch_Error: {sys.exc_info()[:2]}', exc_info=True) # logging
+
 
 except:
     logger.error("FAILED! Data_Launch_Error: %s", traceback.format_exc()) # logging

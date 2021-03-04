@@ -1,0 +1,242 @@
+[Layouts]
+Count=2
+0=LastLayout
+1=layout001
+
+[Items]
+Count=98
+0=Toolbar2, TBtnUndo, 0
+1=Toolbar2, OpenFileInTextEd3, Ctrl+Alt+O
+2=Toolbar2, TBtnShowErrorForm, 0
+3=Toolbar2, tbGlobalSort3, 0
+4=Toolbar2, checkcsvfile3, 0
+5=Toolbar2, repaircsvfile3, 0
+6=Toolbar2, TBtnColumnSort, 0
+7=Toolbar3, TBtnFont, 0
+8=Toolbar3, TBtnSearchCol, 0
+9=Toolbar3, TBtnGotoRow, 0
+10=Toolbar3, tbCellEdit, 0
+11=Toolbar3, BtnOptions, 0
+12=Toolbar3, tbGetSepAuto, 0
+13=Toolbar3, tbSizeCols, 0
+14=Toolbar4, TBSeparatorItem3, 0
+15=Toolbar4, SpTBXItem1, Ctrl+H
+16=Toolbar4, SpTBXItem7, 0
+17=Toolbar4, SpTBXSeparatorItem4, 0
+18=Toolbar1, BtnNewFile, Ctrl+N
+19=Toolbar1, tbNewFromClip, 0
+20=Toolbar1, TBtnOpen, Ctrl+O
+21=Toolbar1, SpTBXSubmenuItem2, 0
+22=Toolbar1, TBtnRefresh, Ctrl+R
+23=Toolbar1, TBtnSave, Ctrl+S
+24=Toolbar1, TBtnSaveFiles, Ctrl+Alt+S
+25=Toolbar1, TBtnClose, Ctrl+F4
+26=Toolbar1, SpTBXRightAlignSpacerItem2, 0
+27=Toolbar1, SpTBXItem6, 0
+28=Toolbar1, Export3, 0
+29=Toolbar1, SpTBXRightAlignSpacerItem1, 0
+30=Toolbar1, BtnExit, Alt+Q
+31=MainMenu, NewFile1, Ctrl+N
+32=MainMenu, PastefromClipboard1, 0
+33=MainMenu, openfile1, Ctrl+O
+34=MainMenu, , 0
+35=MainMenu, , 0
+36=MainMenu, , 0
+37=MainMenu, , 0
+38=MainMenu, , 0
+39=MainMenu, refreshfile1, 0
+40=MainMenu, SpTBXItem10, 0
+41=MainMenu, OpenFileInTextEd2, Ctrl+Alt+O
+42=MainMenu, savefile1, Ctrl+S
+43=MainMenu, savefileas1, Ctrl+Alt+S
+44=MainMenu, savefilewithfixedlength1, 0
+45=MainMenu, NewFIXEDmenu1, 0
+46=MainMenu, AppendFile1, 0
+47=MainMenu, MergeFile1, 0
+48=MainMenu, savefileinUNIXformat1, 0
+49=MainMenu, savefileinUTF8format1, 0
+50=MainMenu, savefileinMACformat1, 0
+51=MainMenu, savefileinDOSformat1, 0
+52=MainMenu, closefile1, Ctrl+F4
+53=MainMenu, importfrom1, 0
+54=MainMenu, Export1, 0
+55=MainMenu, ShowSpecialPaths1, 0
+56=MainMenu, exit1, Alt+Q
+57=MainMenu, undo1, 0
+58=MainMenu, editrecord2, 0
+59=MainMenu, addrecord2, 0
+60=MainMenu, insertrecord2, 0
+61=MainMenu, deleterecord1, 0
+62=MainMenu, copyselectedrecords1, 0
+63=MainMenu, pasterecords1, 0
+64=MainMenu, pasterecordsbelowcursor1, 0
+65=MainMenu, CopyCSVFiletoClipboard1, 0
+66=MainMenu, GlobalSort1, 0
+67=MainMenu, OEMANSI1, 0
+68=MainMenu, ANSIOEM1, 0
+69=MainMenu, ColumnSearch2, Ctrl+F
+70=MainMenu, removeblanklines1, 0
+71=MainMenu, RemoveLeadingSpaces1, 0
+72=MainMenu, RemoveTrailingSpaces1, 0
+73=MainMenu, removespaces1, 0
+74=MainMenu, viewTABs, 0
+75=MainMenu, Font1, 0
+76=MainMenu, SpTBXItem2, 0
+77=MainMenu, SpTBXItem4, 0
+78=MainMenu, SpTBXItem3, 0
+79=MainMenu, SpTBXItem5, 0
+80=MainMenu, ClipboardViewer1, 0
+81=MainMenu, Options2, 0
+82=MainMenu, Portable1, 0
+83=MainMenu, ViewPathforIniFiles1, 0
+84=MainMenu, BtnEmptyClipboard, 0
+85=MainMenu, BtnCopyLVtoClipboard, 0
+86=MainMenu, BtnCreateFileFromClipb, 0
+87=MainMenu, menuCellEdit1, 0
+88=MainMenu, GetSepAutomaticly1, 0
+89=MainMenu, Editor1, 0
+90=MainMenu, checkcsvfile1, 0
+91=MainMenu, repaircsvfile1, 0
+92=MainMenu, AutoSizeColumns1, 0
+93=MainMenu, tbCustToolbars, 0
+94=MainMenu, SpTBXItem8, 0
+95=MainMenu, OpenHelp, Ctrl+H
+96=MainMenu, about1, 0
+97=MainMenu, TBtnStop, 0
+
+[ExtraOptions]
+Count=1
+0=Skin=Aluminum
+
+[LastLayout @ Toolbar2]
+Rev=2000
+Visible=1
+DockedTo=SpTBXDock1
+LastDock=SpTBXDock1
+DockRow=0
+DockPos=266
+FloatLeft=0
+FloatTop=0
+FloatRightX=0
+DisplayMode=0
+
+[LastLayout @ MainMenu]
+Rev=2000
+Visible=1
+DockedTo=SpTBXDock1
+LastDock=SpTBXDock1
+DockRow=0
+DockPos=0
+FloatLeft=0
+FloatTop=0
+FloatRightX=0
+DisplayMode=0
+
+[LastLayout @ Toolbar3]
+Rev=2000
+Visible=1
+DockedTo=SpTBXDock1
+LastDock=SpTBXDock1
+DockRow=0
+DockPos=437
+FloatLeft=0
+FloatTop=0
+FloatRightX=0
+DisplayMode=0
+
+[LastLayout @ Toolbar4]
+Rev=2000
+Visible=1
+DockedTo=SpTBXDock1
+LastDock=SpTBXDock1
+DockRow=0
+DockPos=608
+FloatLeft=317
+FloatTop=86
+FloatRightX=0
+DisplayMode=0
+
+[LastLayout @ Toolbar1]
+Rev=2000
+Visible=1
+DockedTo=SpTBXDock1
+LastDock=SpTBXDock1
+DockRow=0
+DockPos=0
+FloatLeft=0
+FloatTop=0
+FloatRightX=0
+DisplayMode=0
+
+[LastLayout @ Splitter1]
+SplitterRestorePos=60
+
+[LastLayout @ Splitter2]
+SplitterRestorePos=60
+
+[layout001 @ Toolbar2]
+Rev=2000
+Visible=1
+DockedTo=SpTBXDock1
+LastDock=SpTBXDock1
+DockRow=0
+DockPos=266
+FloatLeft=0
+FloatTop=0
+FloatRightX=0
+DisplayMode=0
+
+[layout001 @ MainMenu]
+Rev=2000
+Visible=1
+DockedTo=SpTBXDock1
+LastDock=SpTBXDock1
+DockRow=0
+DockPos=0
+FloatLeft=0
+FloatTop=0
+FloatRightX=0
+DisplayMode=0
+
+[layout001 @ Toolbar3]
+Rev=2000
+Visible=1
+DockedTo=SpTBXDock1
+LastDock=SpTBXDock1
+DockRow=0
+DockPos=437
+FloatLeft=0
+FloatTop=0
+FloatRightX=0
+DisplayMode=0
+
+[layout001 @ Toolbar4]
+Rev=2000
+Visible=1
+DockedTo=SpTBXDock1
+LastDock=SpTBXDock1
+DockRow=0
+DockPos=608
+FloatLeft=317
+FloatTop=86
+FloatRightX=0
+DisplayMode=0
+
+[layout001 @ Toolbar1]
+Rev=2000
+Visible=1
+DockedTo=SpTBXDock1
+LastDock=SpTBXDock1
+DockRow=0
+DockPos=0
+FloatLeft=0
+FloatTop=0
+FloatRightX=0
+DisplayMode=0
+
+[layout001 @ Splitter1]
+SplitterRestorePos=60
+
+[layout001 @ Splitter2]
+SplitterRestorePos=60
+
