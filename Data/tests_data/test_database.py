@@ -10,7 +10,7 @@ from database import *
 # Test module
 #--------------------------------------------------------
 import pytest
-import datatest as dt
+import datatest as dt #Тестирование объектов pandas.DataFrame
 print(sys.path)
 # Tests
 # -------------------------------------------------------
