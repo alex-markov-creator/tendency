@@ -822,3 +822,69 @@ ImportError: cannot import name 'data_testing' from 'Data' (C:\Users\a.bezzubov\
 [03/March/2021 13:06] - indicators.production.Data_Table - INFO - __Init__ Data_Table
 [03/March/2021 13:07] - indicators.production.Info - INFO - __Init__ Info
 [03/March/2021 13:07] - indicators.production.Statistic_Table - INFO - __Init__ Statistic_Table
+[07/March/2021 13:21] - indicators.production - INFO - Started on platform Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 13:21] - indicators.production - INFO - start initial assignment
+[07/March/2021 13:21] - indicators.production - INFO - OK! Load Data
+[07/March/2021 13:21] - indicators.production - INFO - OK! Load Data
+[07/March/2021 13:21] - indicators.production - INFO - OK! Load Data
+[07/March/2021 13:21] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 13:21] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 13:21] - indicators.production - INFO - OK! end initial assignment 
+[07/March/2021 13:21] - indicators.production - INFO - OK! Load object class
+[07/March/2021 13:21] - indicators.production - INFO - OK! Load object class
+[07/March/2021 13:21] - indicators.production - INFO - OK! Load object class
+[07/March/2021 13:21] - indicators.production - INFO - OK! Load object class
+[07/March/2021 13:21] - indicators.production - INFO - OK! Load object class
+[07/March/2021 13:21] - indicators.production - INFO - OK! Load object class
+[07/March/2021 13:21] - indicators.production - INFO - OK! Load object class
+[07/March/2021 13:21] - indicators.production - INFO - OK! Load object class
+[07/March/2021 13:21] - indicators.production - INFO - OK! Load object class
+[07/March/2021 13:21] - indicators.production - INFO - OK! Module on Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 13:21] - indicators.production.Info - INFO - __Init__ Info
+[07/March/2021 13:21] - indicators.production.Data_Table - INFO - __Init__ Data_Table
+[07/March/2021 13:21] - indicators.production.Info - INFO - __Init__ Info
+[07/March/2021 13:21] - indicators.production.Statistic_Table - INFO - __Init__ Statistic_Table
+[07/March/2021 13:21] - indicators.production.Statistic_Table - INFO - __Init__ Statistic_Table
+[07/March/2021 13:21] - indicators.production.Info - INFO - __Init__ Info
+[07/March/2021 13:21] - indicators.production.Comparise - INFO - __Init__ Comparise
+[07/March/2021 13:21] - indicators.production.Comparise - INFO - __Init__ Comparise
+[07/March/2021 13:21] - indicators.production.Info_add - INFO - __Init__ Info_add
+[07/March/2021 13:21] - indicators.production.MaterialConsumption - INFO - __Init__ MaterialConsumption
+[07/March/2021 13:21] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[07/марта/2021 13:21] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[07/марта/2021 13:21] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[07/марта/2021 13:21] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[07/марта/2021 13:21] - indicators.production.Graphics_Number_Production - INFO - __Init__ Graphics_Number_Production
+[07/марта/2021 13:21] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[07/марта/2021 13:21] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[07/марта/2021 13:21] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[07/марта/2021 13:21] - indicators.production.Graphics_Number_Production - INFO - __Init__ Graphics_Number_Production
+[08/March/2021 09:13] - indicators.production - INFO - Started on platform Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[08/March/2021 09:13] - indicators.production - INFO - start initial assignment
+[08/March/2021 09:13] - indicators.production - INFO - OK! Load Data
+[08/March/2021 09:13] - indicators.production - INFO - OK! Load Data
+[08/March/2021 09:13] - indicators.production - INFO - OK! Load Data
+[08/March/2021 09:13] - indicators.production - INFO - OK! Calculation Data
+[08/March/2021 09:13] - indicators.production - INFO - OK! Calculation Data
+[08/March/2021 09:13] - indicators.production - INFO - OK! end initial assignment 
+[08/March/2021 09:13] - indicators.production - INFO - OK! Load object class
+[08/March/2021 09:13] - indicators.production - INFO - OK! Load object class
+[08/March/2021 09:13] - indicators.production - INFO - OK! Load object class
+[08/March/2021 09:13] - indicators.production - INFO - OK! Load object class
+[08/March/2021 09:13] - indicators.production - INFO - OK! Load object class
+[08/March/2021 09:13] - indicators.production - INFO - OK! Load object class
+[08/March/2021 09:13] - indicators.production - INFO - OK! Load object class
+[08/March/2021 09:13] - indicators.production - INFO - OK! Load object class
+[08/March/2021 09:13] - indicators.production - INFO - OK! Load object class
+[08/March/2021 09:13] - indicators.production - INFO - OK! Module on Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[08/March/2021 09:13] - indicators.production.Info - INFO - __Init__ Info
+[08/March/2021 09:13] - indicators.production.Data_Table - INFO - __Init__ Data_Table
+[08/March/2021 09:13] - indicators.production.Info - INFO - __Init__ Info
+[08/March/2021 09:13] - indicators.production.Data_Table - INFO - __Init__ Data_Table
+[08/March/2021 09:14] - indicators.production.Data_Table - INFO - __Init__ Data_Table
+[08/March/2021 09:14] - indicators.production.Info - INFO - __Init__ Info
+[08/March/2021 09:14] - indicators.production.Statistic_Table - INFO - __Init__ Statistic_Table
+[08/March/2021 09:14] - indicators.production.Info - INFO - __Init__ Info
+[08/March/2021 09:14] - indicators.production.Comparise - INFO - __Init__ Comparise
+[08/March/2021 09:14] - indicators.production.Comparise - INFO - __Init__ Comparise
+[08/March/2021 09:15] - indicators.production.Comparise - INFO - __Init__ Comparise

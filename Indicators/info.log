@@ -206,3 +206,590 @@ ZeroDivisionError: division by zero
 [05/March/2021 14:38] - indicators.production - INFO - OK! Load object class
 [05/March/2021 14:38] - indicators.production - INFO - OK! Load object class
 [05/March/2021 14:38] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[07/March/2021 16:30] - indicators.production - INFO - Started on platform Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 16:31] - indicators.production - INFO - start initial assignment
+[07/March/2021 16:31] - indicators.production - INFO - OK! Load Data
+[07/March/2021 16:31] - indicators.production - INFO - OK! Load Data
+[07/March/2021 16:31] - indicators.production - INFO - OK! Load Data
+[07/March/2021 16:31] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 16:31] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 16:31] - indicators.production - INFO - OK! end initial assignment 
+[07/March/2021 16:31] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:31] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:31] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:31] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:31] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:31] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:31] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:31] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:31] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:31] - indicators.production - INFO - OK! Module on Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 16:31] - indicators.project_and_develop - DEBUG - start initial assignment
+[07/March/2021 16:31] - indicators.production.Data_Table - INFO - __Init__ Data_Table
+[07/March/2021 16:31] - indicators.production.Data_Table - INFO - __Init__ Data_Table
+[07/March/2021 16:32] - indicators.production - INFO - Started on platform Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 16:32] - indicators.production - INFO - start initial assignment
+[07/March/2021 16:32] - indicators.production - INFO - OK! Load Data
+[07/March/2021 16:32] - indicators.production - INFO - OK! Load Data
+[07/March/2021 16:32] - indicators.production - INFO - OK! Load Data
+[07/March/2021 16:32] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 16:32] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 16:32] - indicators.production - INFO - OK! end initial assignment 
+[07/March/2021 16:32] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:32] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:32] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:32] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:32] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:32] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:32] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:32] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:32] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:32] - indicators.production - INFO - OK! Module on Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 16:32] - indicators.project_and_develop - DEBUG - start initial assignment
+[07/March/2021 16:51] - indicators.production - INFO - Started on platform Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 16:51] - indicators.production - INFO - start initial assignment
+[07/March/2021 16:51] - indicators.production - INFO - OK! Load Data
+[07/March/2021 16:51] - indicators.production - INFO - OK! Load Data
+[07/March/2021 16:51] - indicators.production - INFO - OK! Load Data
+[07/March/2021 16:51] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 16:51] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 16:51] - indicators.production - INFO - OK! end initial assignment 
+[07/March/2021 16:51] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:51] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:51] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:51] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:51] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:51] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:51] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:51] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:51] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:51] - indicators.production - INFO - OK! Module on Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 16:51] - indicators.project_and_develop - DEBUG - start initial assignment
+[07/March/2021 16:51] - indicators.production - INFO - Started on platform Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 16:51] - indicators.production - INFO - start initial assignment
+[07/March/2021 16:51] - indicators.production - INFO - OK! Load Data
+[07/March/2021 16:51] - indicators.production - INFO - OK! Load Data
+[07/March/2021 16:51] - indicators.production - INFO - OK! Load Data
+[07/March/2021 16:51] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 16:51] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 16:51] - indicators.production - INFO - OK! end initial assignment 
+[07/March/2021 16:51] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:51] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:51] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:51] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:51] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:51] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:51] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:51] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:51] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:51] - indicators.production - INFO - OK! Module on Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 16:51] - indicators.project_and_develop - DEBUG - start initial assignment
+[07/March/2021 16:52] - indicators.production - INFO - Started on platform Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 16:52] - indicators.production - INFO - start initial assignment
+[07/March/2021 16:52] - indicators.production - INFO - OK! Load Data
+[07/March/2021 16:52] - indicators.production - INFO - OK! Load Data
+[07/March/2021 16:52] - indicators.production - INFO - OK! Load Data
+[07/March/2021 16:52] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 16:52] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 16:52] - indicators.production - INFO - OK! end initial assignment 
+[07/March/2021 16:52] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:52] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:52] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:52] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:52] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:52] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:52] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:52] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:52] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:52] - indicators.production - INFO - OK! Module on Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 16:52] - indicators.project_and_develop - DEBUG - start initial assignment
+[07/March/2021 16:52] - indicators.production - INFO - Started on platform Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 16:52] - indicators.production - INFO - start initial assignment
+[07/March/2021 16:52] - indicators.production - INFO - OK! Load Data
+[07/March/2021 16:52] - indicators.production - INFO - OK! Load Data
+[07/March/2021 16:52] - indicators.production - INFO - OK! Load Data
+[07/March/2021 16:52] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 16:52] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 16:52] - indicators.production - INFO - OK! end initial assignment 
+[07/March/2021 16:52] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:52] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:52] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:52] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:52] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:52] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:52] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:52] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:52] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:52] - indicators.production - INFO - OK! Module on Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 16:52] - indicators.project_and_develop - DEBUG - start initial assignment
+[07/March/2021 16:54] - indicators.production - INFO - Started on platform Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 16:54] - indicators.production - INFO - start initial assignment
+[07/March/2021 16:54] - indicators.production - INFO - OK! Load Data
+[07/March/2021 16:54] - indicators.production - INFO - OK! Load Data
+[07/March/2021 16:54] - indicators.production - INFO - OK! Load Data
+[07/March/2021 16:54] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 16:54] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 16:54] - indicators.production - INFO - OK! end initial assignment 
+[07/March/2021 16:54] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:54] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:54] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:54] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:54] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:54] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:54] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:54] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:54] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:54] - indicators.production - INFO - OK! Module on Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 16:54] - indicators.project_and_develop - DEBUG - start initial assignment
+[07/March/2021 16:56] - indicators.production - INFO - Started on platform Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 16:56] - indicators.production - INFO - start initial assignment
+[07/March/2021 16:56] - indicators.production - INFO - OK! Load Data
+[07/March/2021 16:56] - indicators.production - INFO - OK! Load Data
+[07/March/2021 16:56] - indicators.production - INFO - OK! Load Data
+[07/March/2021 16:56] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 16:56] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 16:56] - indicators.production - INFO - OK! end initial assignment 
+[07/March/2021 16:56] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:56] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:56] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:56] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:56] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:56] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:56] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:56] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:56] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:56] - indicators.production - INFO - OK! Module on Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 16:56] - indicators.project_and_develop - DEBUG - start initial assignment
+[07/March/2021 16:56] - indicators.production - INFO - Started on platform Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 16:57] - indicators.production - INFO - start initial assignment
+[07/March/2021 16:57] - indicators.production - INFO - OK! Load Data
+[07/March/2021 16:57] - indicators.production - INFO - OK! Load Data
+[07/March/2021 16:57] - indicators.production - INFO - OK! Load Data
+[07/March/2021 16:57] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 16:57] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 16:57] - indicators.production - INFO - OK! end initial assignment 
+[07/March/2021 16:57] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:57] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:57] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:57] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:57] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:57] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:57] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:57] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:57] - indicators.production - INFO - OK! Load object class
+[07/March/2021 16:57] - indicators.production - INFO - OK! Module on Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 16:57] - indicators.project_and_develop - DEBUG - start initial assignment
+[07/March/2021 17:00] - indicators.production - INFO - Started on platform Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 17:00] - indicators.production - INFO - start initial assignment
+[07/March/2021 17:00] - indicators.production - INFO - OK! Load Data
+[07/March/2021 17:00] - indicators.production - INFO - OK! Load Data
+[07/March/2021 17:00] - indicators.production - INFO - OK! Load Data
+[07/March/2021 17:00] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 17:00] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 17:00] - indicators.production - INFO - OK! end initial assignment 
+[07/March/2021 17:00] - indicators.production - INFO - OK! Load object class
+[07/March/2021 17:00] - indicators.production - INFO - OK! Load object class
+[07/March/2021 17:00] - indicators.production - INFO - OK! Load object class
+[07/March/2021 17:00] - indicators.production - INFO - OK! Load object class
+[07/March/2021 17:00] - indicators.production - INFO - OK! Load object class
+[07/March/2021 17:00] - indicators.production - INFO - OK! Load object class
+[07/March/2021 17:00] - indicators.production - INFO - OK! Load object class
+[07/March/2021 17:00] - indicators.production - INFO - OK! Load object class
+[07/March/2021 17:00] - indicators.production - INFO - OK! Load object class
+[07/March/2021 17:00] - indicators.production - INFO - OK! Module on Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 17:00] - indicators.project_and_develop - DEBUG - start initial assignment
+[07/March/2021 17:01] - indicators.production - INFO - Started on platform Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 17:01] - indicators.production - INFO - start initial assignment
+[07/March/2021 17:01] - indicators.production - INFO - OK! Load Data
+[07/March/2021 17:01] - indicators.production - INFO - OK! Load Data
+[07/March/2021 17:01] - indicators.production - INFO - OK! Load Data
+[07/March/2021 17:01] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 17:01] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 17:01] - indicators.production - INFO - OK! end initial assignment 
+[07/March/2021 17:01] - indicators.production - INFO - OK! Load object class
+[07/March/2021 17:01] - indicators.production - INFO - OK! Load object class
+[07/March/2021 17:01] - indicators.production - INFO - OK! Load object class
+[07/March/2021 17:01] - indicators.production - INFO - OK! Load object class
+[07/March/2021 17:01] - indicators.production - INFO - OK! Load object class
+[07/March/2021 17:01] - indicators.production - INFO - OK! Load object class
+[07/March/2021 17:01] - indicators.production - INFO - OK! Load object class
+[07/March/2021 17:01] - indicators.production - INFO - OK! Load object class
+[07/March/2021 17:01] - indicators.production - INFO - OK! Load object class
+[07/March/2021 17:01] - indicators.production - INFO - OK! Module on Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 17:01] - indicators.project_and_develop - DEBUG - start initial assignment
+[07/March/2021 17:02] - indicators.production - INFO - Started on platform Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 17:02] - indicators.production - INFO - start initial assignment
+[07/March/2021 17:02] - indicators.production - INFO - OK! Load Data
+[07/March/2021 17:02] - indicators.production - INFO - OK! Load Data
+[07/March/2021 17:02] - indicators.production - INFO - OK! Load Data
+[07/March/2021 17:02] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 17:02] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 17:02] - indicators.production - INFO - OK! end initial assignment 
+[07/March/2021 17:02] - indicators.production - INFO - OK! Load object class
+[07/March/2021 17:02] - indicators.production - INFO - OK! Load object class
+[07/March/2021 17:02] - indicators.production - INFO - OK! Load object class
+[07/March/2021 17:02] - indicators.production - INFO - OK! Load object class
+[07/March/2021 17:02] - indicators.production - INFO - OK! Load object class
+[07/March/2021 17:02] - indicators.production - INFO - OK! Load object class
+[07/March/2021 17:02] - indicators.production - INFO - OK! Load object class
+[07/March/2021 17:02] - indicators.production - INFO - OK! Load object class
+[07/March/2021 17:02] - indicators.production - INFO - OK! Load object class
+[07/March/2021 17:02] - indicators.production - INFO - OK! Module on Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 17:02] - indicators.project_and_develop - DEBUG - start initial assignment
+[07/March/2021 18:16] - indicators.production - INFO - Started on platform Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 18:16] - indicators.production - INFO - start initial assignment
+[07/March/2021 18:16] - indicators.production - INFO - OK! Load Data
+[07/March/2021 18:16] - indicators.production - INFO - OK! Load Data
+[07/March/2021 18:16] - indicators.production - INFO - OK! Load Data
+[07/March/2021 18:16] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 18:16] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 18:16] - indicators.production - INFO - OK! end initial assignment 
+[07/March/2021 18:16] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:16] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:16] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:16] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:16] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:16] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:16] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:16] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:16] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:16] - indicators.production - INFO - OK! Module on Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 18:16] - indicators.project_and_develop - DEBUG - start initial assignment
+[07/March/2021 18:30] - indicators.production - INFO - Started on platform Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 18:30] - indicators.production - INFO - start initial assignment
+[07/March/2021 18:30] - indicators.production - INFO - OK! Load Data
+[07/March/2021 18:30] - indicators.production - INFO - OK! Load Data
+[07/March/2021 18:30] - indicators.production - INFO - OK! Load Data
+[07/March/2021 18:30] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 18:30] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 18:30] - indicators.production - INFO - OK! end initial assignment 
+[07/March/2021 18:30] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:30] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:30] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:30] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:30] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:30] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:30] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:30] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:30] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:30] - indicators.production - INFO - OK! Module on Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 18:30] - indicators.project_and_develop - DEBUG - start initial assignment
+[07/March/2021 18:34] - indicators.production - INFO - Started on platform Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 18:34] - indicators.production - INFO - start initial assignment
+[07/March/2021 18:34] - indicators.production - INFO - OK! Load Data
+[07/March/2021 18:34] - indicators.production - INFO - OK! Load Data
+[07/March/2021 18:34] - indicators.production - INFO - OK! Load Data
+[07/March/2021 18:34] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 18:34] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 18:34] - indicators.production - INFO - OK! end initial assignment 
+[07/March/2021 18:34] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:34] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:34] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:34] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:34] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:34] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:34] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:34] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:34] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:34] - indicators.production - INFO - OK! Module on Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 18:34] - indicators.project_and_develop - DEBUG - start initial assignment
+[07/March/2021 18:36] - indicators.production - INFO - Started on platform Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 18:36] - indicators.production - INFO - start initial assignment
+[07/March/2021 18:36] - indicators.production - INFO - OK! Load Data
+[07/March/2021 18:36] - indicators.production - INFO - OK! Load Data
+[07/March/2021 18:36] - indicators.production - INFO - OK! Load Data
+[07/March/2021 18:36] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 18:36] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 18:36] - indicators.production - INFO - OK! end initial assignment 
+[07/March/2021 18:36] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:36] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:36] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:36] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:36] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:36] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:36] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:36] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:36] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:36] - indicators.production - INFO - OK! Module on Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 18:36] - indicators.project_and_develop - DEBUG - start initial assignment
+[07/March/2021 18:43] - indicators.production - INFO - Started on platform Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 18:43] - indicators.production - INFO - start initial assignment
+[07/March/2021 18:43] - indicators.production - INFO - OK! Load Data
+[07/March/2021 18:43] - indicators.production - INFO - OK! Load Data
+[07/March/2021 18:43] - indicators.production - INFO - OK! Load Data
+[07/March/2021 18:43] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 18:43] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 18:43] - indicators.production - INFO - OK! end initial assignment 
+[07/March/2021 18:43] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:43] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:43] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:43] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:43] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:43] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:43] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:43] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:43] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:43] - indicators.production - INFO - OK! Module on Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 18:43] - indicators.project_and_develop - DEBUG - start initial assignment
+[07/March/2021 18:44] - indicators.production - INFO - Started on platform Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 18:44] - indicators.production - INFO - start initial assignment
+[07/March/2021 18:44] - indicators.production - INFO - OK! Load Data
+[07/March/2021 18:44] - indicators.production - INFO - OK! Load Data
+[07/March/2021 18:44] - indicators.production - INFO - OK! Load Data
+[07/March/2021 18:44] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 18:44] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 18:44] - indicators.production - INFO - OK! end initial assignment 
+[07/March/2021 18:44] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:44] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:44] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:44] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:44] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:44] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:44] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:44] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:44] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:44] - indicators.production - INFO - OK! Module on Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 18:44] - indicators.project_and_develop - DEBUG - start initial assignment
+[07/March/2021 18:46] - indicators.production - INFO - Started on platform Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 18:46] - indicators.production - INFO - start initial assignment
+[07/March/2021 18:46] - indicators.production - INFO - OK! Load Data
+[07/March/2021 18:46] - indicators.production - INFO - OK! Load Data
+[07/March/2021 18:46] - indicators.production - INFO - OK! Load Data
+[07/March/2021 18:46] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 18:46] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 18:46] - indicators.production - INFO - OK! end initial assignment 
+[07/March/2021 18:46] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:46] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:46] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:46] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:46] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:46] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:46] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:46] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:46] - indicators.production - INFO - OK! Load object class
+[07/March/2021 18:46] - indicators.production - INFO - OK! Module on Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 18:46] - indicators.project_and_develop - DEBUG - start initial assignment
+[07/March/2021 19:01] - indicators.production - INFO - Started on platform Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 19:01] - indicators.production - INFO - start initial assignment
+[07/March/2021 19:01] - indicators.production - INFO - OK! Load Data
+[07/March/2021 19:01] - indicators.production - INFO - OK! Load Data
+[07/March/2021 19:01] - indicators.production - INFO - OK! Load Data
+[07/March/2021 19:01] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 19:01] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 19:01] - indicators.production - INFO - OK! end initial assignment 
+[07/March/2021 19:01] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:01] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:01] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:01] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:01] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:01] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:01] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:01] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:01] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:01] - indicators.production - INFO - OK! Module on Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 19:01] - indicators.project_and_develop - DEBUG - start initial assignment
+[07/March/2021 19:02] - indicators.production - INFO - Started on platform Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 19:02] - indicators.production - INFO - start initial assignment
+[07/March/2021 19:02] - indicators.production - INFO - OK! Load Data
+[07/March/2021 19:02] - indicators.production - INFO - OK! Load Data
+[07/March/2021 19:02] - indicators.production - INFO - OK! Load Data
+[07/March/2021 19:02] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 19:02] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 19:02] - indicators.production - INFO - OK! end initial assignment 
+[07/March/2021 19:02] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:02] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:02] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:02] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:02] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:02] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:02] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:02] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:02] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:02] - indicators.production - INFO - OK! Module on Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 19:02] - indicators.project_and_develop - DEBUG - start initial assignment
+[07/March/2021 19:02] - indicators.production - INFO - Started on platform Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 19:02] - indicators.production - INFO - start initial assignment
+[07/March/2021 19:02] - indicators.production - INFO - OK! Load Data
+[07/March/2021 19:02] - indicators.production - INFO - OK! Load Data
+[07/March/2021 19:02] - indicators.production - INFO - OK! Load Data
+[07/March/2021 19:02] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 19:02] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 19:02] - indicators.production - INFO - OK! end initial assignment 
+[07/March/2021 19:02] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:02] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:02] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:02] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:02] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:02] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:02] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:02] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:02] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:02] - indicators.production - INFO - OK! Module on Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 19:02] - indicators.project_and_develop - DEBUG - start initial assignment
+[07/March/2021 19:03] - indicators.production - INFO - Started on platform Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 19:03] - indicators.production - INFO - start initial assignment
+[07/March/2021 19:03] - indicators.production - INFO - OK! Load Data
+[07/March/2021 19:03] - indicators.production - INFO - OK! Load Data
+[07/March/2021 19:03] - indicators.production - INFO - OK! Load Data
+[07/March/2021 19:03] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 19:03] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 19:03] - indicators.production - INFO - OK! end initial assignment 
+[07/March/2021 19:03] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:03] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:03] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:03] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:03] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:03] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:03] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:03] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:03] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:03] - indicators.production - INFO - OK! Module on Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 19:03] - indicators.project_and_develop - DEBUG - start initial assignment
+[07/March/2021 19:03] - indicators.production - INFO - Started on platform Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 19:03] - indicators.production - INFO - start initial assignment
+[07/March/2021 19:03] - indicators.production - INFO - OK! Load Data
+[07/March/2021 19:03] - indicators.production - INFO - OK! Load Data
+[07/March/2021 19:03] - indicators.production - INFO - OK! Load Data
+[07/March/2021 19:03] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 19:03] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 19:03] - indicators.production - INFO - OK! end initial assignment 
+[07/March/2021 19:03] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:03] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:03] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:03] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:03] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:03] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:03] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:03] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:03] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:03] - indicators.production - INFO - OK! Module on Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 19:03] - indicators.project_and_develop - DEBUG - start initial assignment
+[07/March/2021 19:04] - indicators.production - INFO - Started on platform Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 19:04] - indicators.production - INFO - start initial assignment
+[07/March/2021 19:04] - indicators.production - INFO - OK! Load Data
+[07/March/2021 19:04] - indicators.production - INFO - OK! Load Data
+[07/March/2021 19:04] - indicators.production - INFO - OK! Load Data
+[07/March/2021 19:04] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 19:04] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 19:04] - indicators.production - INFO - OK! end initial assignment 
+[07/March/2021 19:04] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:04] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:04] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:04] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:04] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:04] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:04] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:04] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:04] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:04] - indicators.production - INFO - OK! Module on Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 19:04] - indicators.project_and_develop - DEBUG - start initial assignment
+[07/March/2021 19:05] - indicators.production - INFO - Started on platform Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 19:05] - indicators.production - INFO - start initial assignment
+[07/March/2021 19:05] - indicators.production - INFO - OK! Load Data
+[07/March/2021 19:05] - indicators.production - INFO - OK! Load Data
+[07/March/2021 19:05] - indicators.production - INFO - OK! Load Data
+[07/March/2021 19:05] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 19:05] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 19:05] - indicators.production - INFO - OK! end initial assignment 
+[07/March/2021 19:05] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:05] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:05] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:05] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:05] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:05] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:05] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:05] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:05] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:05] - indicators.production - INFO - OK! Module on Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 19:05] - indicators.project_and_develop - DEBUG - start initial assignment
+[07/March/2021 19:08] - indicators.production - INFO - Started on platform Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 19:08] - indicators.production - INFO - start initial assignment
+[07/March/2021 19:08] - indicators.production - INFO - OK! Load Data
+[07/March/2021 19:08] - indicators.production - INFO - OK! Load Data
+[07/March/2021 19:08] - indicators.production - INFO - OK! Load Data
+[07/March/2021 19:08] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 19:08] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 19:08] - indicators.production - INFO - OK! end initial assignment 
+[07/March/2021 19:08] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:08] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:08] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:08] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:08] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:08] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:08] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:08] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:08] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:08] - indicators.production - INFO - OK! Module on Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 19:08] - indicators.project_and_develop - DEBUG - start initial assignment
+[07/марта/2021 19:08] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[07/марта/2021 19:08] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[07/марта/2021 19:08] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[07/марта/2021 19:08] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[07/марта/2021 19:08] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[07/марта/2021 19:08] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[07/марта/2021 19:08] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[07/марта/2021 19:08] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[07/марта/2021 19:08] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[07/марта/2021 19:08] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[07/марта/2021 19:08] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[07/марта/2021 19:08] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[07/March/2021 19:10] - indicators.production - INFO - Started on platform Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 19:10] - indicators.production - INFO - start initial assignment
+[07/March/2021 19:10] - indicators.production - INFO - OK! Load Data
+[07/March/2021 19:10] - indicators.production - INFO - OK! Load Data
+[07/March/2021 19:10] - indicators.production - INFO - OK! Load Data
+[07/March/2021 19:10] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 19:10] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 19:10] - indicators.production - INFO - OK! end initial assignment 
+[07/March/2021 19:10] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:10] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:10] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:10] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:10] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:10] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:10] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:10] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:10] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:10] - indicators.production - INFO - OK! Module on Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 19:10] - indicators.project_and_develop - DEBUG - start initial assignment
+[07/марта/2021 19:10] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[07/марта/2021 19:10] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[07/March/2021 19:12] - indicators.production - INFO - Started on platform Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 19:12] - indicators.production - INFO - start initial assignment
+[07/March/2021 19:12] - indicators.production - INFO - OK! Load Data
+[07/March/2021 19:12] - indicators.production - INFO - OK! Load Data
+[07/March/2021 19:12] - indicators.production - INFO - OK! Load Data
+[07/March/2021 19:12] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 19:12] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 19:12] - indicators.production - INFO - OK! end initial assignment 
+[07/March/2021 19:12] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:12] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:12] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:12] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:12] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:12] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:12] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:12] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:12] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:12] - indicators.production - INFO - OK! Module on Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 19:12] - indicators.project_and_develop - DEBUG - start initial assignment
+[07/March/2021 19:15] - indicators.production - INFO - Started on platform Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 19:15] - indicators.production - INFO - start initial assignment
+[07/March/2021 19:15] - indicators.production - INFO - OK! Load Data
+[07/March/2021 19:15] - indicators.production - INFO - OK! Load Data
+[07/March/2021 19:15] - indicators.production - INFO - OK! Load Data
+[07/March/2021 19:15] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 19:15] - indicators.production - INFO - OK! Calculation Data
+[07/March/2021 19:15] - indicators.production - INFO - OK! end initial assignment 
+[07/March/2021 19:15] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:15] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:15] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:15] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:15] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:15] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:15] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:15] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:15] - indicators.production - INFO - OK! Load object class
+[07/March/2021 19:15] - indicators.production - INFO - OK! Module on Linux-5.4.0-58-generic-x86_64-with-glibc2.29
+[07/March/2021 19:15] - indicators.project_and_develop - DEBUG - start initial assignment
+[07/марта/2021 19:15] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production

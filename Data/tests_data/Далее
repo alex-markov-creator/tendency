@@ -1,0 +1,10 @@
+1. Валидация словарем по регулярке -????
+2. Проверка количества символов имени колонки и типа str-???
+column_names = ...
+msg = 'Must have two capital letters followed by digits.'
+validate.regex(column_names, r'^[A-Z]{2}\d+$', msg=msg)
+3. Есть возможность валидации upercase и тп. с помощью метода validate.
+4. проверка типа данных значений одновременно на float и int
+5. проверка на не нулевые значения
+
+

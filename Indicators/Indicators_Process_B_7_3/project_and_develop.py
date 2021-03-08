@@ -79,6 +79,7 @@ import seaborn as sb
 from tabulate import tabulate
 # модуль для логирования(журналирования)
 import logging
+from logging import config
 # модуль для вывода табличных данных
 import Tools.Abstract_Parents as Abstract
 # универсальный модуль для выполнения контракта

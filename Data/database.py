@@ -133,6 +133,7 @@
 |  data_ur_otkl_prod_middle_year       |Уровень отклонений продукции Котк..|
 |  data_ur_prost_kach_middle_year      | Уровень простоя обор. Кпр кач...  |
 |  data_ur_prost_nepost_middle_year    | Уровень простоя обор. Кпр кол...  |
+|  data_test                           | Тестовые данные ...               |
 +--------------------------------------+-----------------------------------+
 # The indicators of adhaesio
 +---------------+---------------------------+--------------------------------+
@@ -155,6 +156,7 @@
 # Импорт основных модулей
 #--------------------------------------------------------
 import pandas as pd
+import numpy as np
 import os
 import sys
 # Корневая дирректория для импорта
@@ -318,6 +320,10 @@ data_km_transkor_middle_year = pd.read_csv(parentdir+r'/Data/Показател�
 data_kp_transkor_middle_year = pd.read_csv(parentdir+r'/Data/Показатели csv полугодие/Процесс О(8.2) Мониторинг и измерение продукции/Кп_Транскор по полугодиям.csv', index_col = 0)
 data_km_shpuly_middle_year = pd.read_csv(parentdir+r'/Data/Показатели csv полугодие/Процесс О(8.2) Мониторинг и измерение продукции/Км_Шпули по полугодиям.csv', index_col = 0)
 data_kp_shpuly_middle_year = pd.read_csv(parentdir+r'/Data/Показатели csv полугодие/Процесс О(8.2) Мониторинг и измерение продукции/Кп_Шпули по полугодиям.csv', index_col = 0)
+
+#Тестовые данные
+
+data_test = pd.read_csv(parentdir+r'/Data/Показатели csv годовые/Test_indicators/test_empty.csv', index_col = 0)
 
 # ПОКАЗАТЕЛИ АДГЕЗИИ
 pz = pd.read_excel(
@@ -494,6 +500,7 @@ lst_name = [
         data_ur_otkl_prod_middle_year,
         data_ur_prost_kach_middle_year,
         data_ur_prost_nepost_middle_year,
+        data_test,
             ]
 # The indicators of adhaesio
 lst_adhaesio = [
@@ -508,7 +515,8 @@ lst_adhaesio = [
             lnn_1_7,
             bpi_1_7,
             bpi_2_0,
-            lnn_1_0
+            lnn_1_0,
+            #data_test,
             ]
 
 

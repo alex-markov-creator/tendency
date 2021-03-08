@@ -314,8 +314,13 @@ try:
             """
             Открытие и запись временного файла для отображения всех значений
             """
-            print(tabulate(self.data, headers = 'keys', tablefmt = 'psql'), file=open(r'data_production.temp', 'w', encoding = 'utf-8'))
-            os.system('data_production.temp')
+            if sys.platform == "linux" or sys.platform == "linux2":
+                print(tabulate(self.data, headers = 'keys', tablefmt = 'psql')) # Linux
+            elif sys.platform == "darwin":
+                pass
+            elif sys.platform == "win32":
+                print(tabulate(self.data, headers = 'keys', tablefmt = 'psql'), file=open(r'data_production.temp', 'w', encoding = 'utf-8'))
+                os.system('data_production.temp')
 
     logger.info("OK! Load object class") # logging
 
