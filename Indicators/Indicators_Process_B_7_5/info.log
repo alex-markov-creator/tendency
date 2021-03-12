@@ -907,3 +907,23 @@ ImportError: cannot import name 'data_testing' from 'Data' (C:\Users\a.bezzubov\
 [09/March/2021 13:36] - indicators.production - INFO - OK! Load object class
 [09/March/2021 13:36] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
 [09/March/2021 13:36] - indicators.production.Info - INFO - __Init__ Info
+[10/March/2021 09:34] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[10/March/2021 09:34] - indicators.production - INFO - start initial assignment
+[10/March/2021 09:34] - indicators.production - INFO - OK! Load Data
+[10/March/2021 09:34] - indicators.production - INFO - OK! Load Data
+[10/March/2021 09:34] - indicators.production - INFO - OK! Load Data
+[10/March/2021 09:34] - indicators.production - INFO - OK! Calculation Data
+[10/March/2021 09:34] - indicators.production - INFO - OK! Calculation Data
+[10/March/2021 09:34] - indicators.production - INFO - OK! end initial assignment 
+[10/March/2021 09:34] - indicators.production - INFO - OK! Load object class
+[10/March/2021 09:34] - indicators.production - INFO - OK! Load object class
+[10/March/2021 09:34] - indicators.production - INFO - OK! Load object class
+[10/March/2021 09:34] - indicators.production - INFO - OK! Load object class
+[10/March/2021 09:34] - indicators.production - INFO - OK! Load object class
+[10/March/2021 09:34] - indicators.production - INFO - OK! Load object class
+[10/March/2021 09:34] - indicators.production - INFO - OK! Load object class
+[10/March/2021 09:34] - indicators.production - INFO - OK! Load object class
+[10/March/2021 09:34] - indicators.production - INFO - OK! Load object class
+[10/March/2021 09:34] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[10/March/2021 09:35] - indicators.production.Info - INFO - __Init__ Info
+[10/March/2021 09:35] - indicators.production.Data_Table - INFO - __Init__ Data_Table
