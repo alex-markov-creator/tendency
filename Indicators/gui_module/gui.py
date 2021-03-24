@@ -18,10 +18,15 @@ import os
 sys.path.append(os.path.realpath('..'))
 import logging
 
-#import pandas as pd
-#import matplotlib.pyplot as plt
-#import Indicators.Indicators_Process_B_7_5.production as pr
-#import Indicators.Indicators_Process_B_7_3.project_and_develop as pad
+import pandas as pd
+import matplotlib.pyplot as plt
+import Indicators.Indicators_Process_B_7_5.production as pr
+import Indicators.Indicators_Process_B_7_2.consumer as cm
+import Indicators.Indicators_Process_B_7_3.project_and_develop as pad
+import Indicators.Indicators_Process_B_7_4_and_O_8_2.control_production as cp
+import Indicators.Indicators_Process_B_7_4_and_O_8_2.adhaesio as ad
+import Indicators.Indicators_Process_B_7_7_and_B_7_5.results as rs
+import Indicators.Indicators_Process_O_6_2.people as ppl
 
 from PyQt5 import QtCore, QtWidgets, QtGui, QtSql
 
@@ -102,7 +107,20 @@ class MainWindow(QtWidgets.QMainWindow):
         qt_action = QtWidgets.QAction(QtGui.QIcon(ICON_QT), "О Qt...", self)
         qt_action.triggered.connect(self.qt)
         help_menu.addAction(qt_action)
-
+        #######################################################################
+        # ПОЗИЦИОНИРОВАНИЕ
+        #######################################################################
+        self.centralWidget = QtWidgets.QWidget()
+        self.setCentralWidget(self.centralWidget)
+        self.vbox = QtWidgets.QVBoxLayout()
+        vbox = QtWidgets.QVBoxLayout(self.centralWidget)
+        self.label_1 = QtWidgets.QPushButton("Кнопка")
+        self.label_1.clicked.connect(self.on_clicked_button1)
+        x = pr.data_ur_neispr_obor_middle_year
+        textEdit = QtWidgets.QTextEdit(f'<b>{str(x)}</b>')
+        #self.label_2.setAlignment(QtCore.Qt.AlignHCenter)
+        vbox.addWidget(self.label_1)
+        vbox.addWidget(textEdit)
         #######################################################################
         # ФУНКЦИИ ВЫПОЛНЕНИЯ КОМАНД
         #######################################################################
@@ -138,7 +156,18 @@ class MainWindow(QtWidgets.QMainWindow):
             QtWidgets.QWidget.closeEvent(self, e)
         else:
             e.ignore()
-"""
+
+    def on_clicked_button1(self):
+        a = pr.Graphics_Indicators_Production(pr.data_ur_neispr_obor_year, name= 'Уровень неисправности оборудования по годам')
+        b = pr.Graphics_Indicators_Production(pr.data_ur_neispr_obor_middle_year, name= 'Уровень неисправности оборудования по полугодиям')
+        c = pr.Graphics_Indicators_Production(pr.data_ur_nesoot_prod_year, name= 'Уровень несоответствующей продукции по годам')
+        d = pr.Graphics_Indicators_Production(pr.data_ur_nesoot_prod_middle_year, name= 'Уровень несоответствующей продукции по полугодиям')
+        e = pr.Graphics_Indicators_Production(pr.data_ur_teh_oth_year, name= 'Уровень техотходов по годам', critery=2)
+        f = pr.Graphics_Indicators_Production(pr.data_ur_teh_oth_middle_year, name= 'Уровень техотходов по полугодиям', critery=2)
+        plt.show()
+
+
+
 # Тестирование
 ##############
 if __name__ == "__main__":
@@ -156,9 +185,8 @@ if __name__ == "__main__":
     ICON_QT = "../gui_icon/qt.png"
 
 
-    #run_about = MainWindow()
-    run_test = MyTest()
-    run_test.show()
-    #run_about.show()
+    run_about = MainWindow()
+    #run_test = MyTest()
+    #run_test.show()
+    run_about.show()
     sys.exit(app.exec_())
-"""

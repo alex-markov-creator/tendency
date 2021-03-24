@@ -32,7 +32,6 @@ pass_dlg = LoginDialog()  # окно идентификации
 class MyWindow(QtWidgets.QDialog):
     """Класс диалогового окна экрана заставки
     """
-
     def __init__(self):
         super().__init__()
         #####################################################
@@ -45,8 +44,6 @@ class MyWindow(QtWidgets.QDialog):
         fn = QtCore.QUrl.fromLocalFile(os.path.abspath("gui_sound/start.wav"))
         self.sndEffect.setSource(fn)
         self.sndEffect.setLoopCount(1)
-
-
 
     @staticmethod
     def load_data(sp):
