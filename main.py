@@ -3,6 +3,6 @@
 *.py - name file.
 """
 
-from Data import pz
+
 
 

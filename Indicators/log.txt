@@ -1,0 +1,1 @@
+Fri Mar 26 15:26:18 2021 Benchmark_Data_Error:  (<class 'KeyError'>, KeyError('Количество выпущенной продукции по годам в тоннах'))

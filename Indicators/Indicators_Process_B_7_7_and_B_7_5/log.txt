@@ -4,3 +4,4 @@ Thu Feb 18 09:18:35 2021 FiveCommand_Error:  (<class 'NameError'>, NameError("na
 Thu Feb 18 09:18:38 2021 FiveCommand_Error:  (<class 'NameError'>, NameError("name 'difference_year' is not defined"))
 Thu Feb 18 09:21:24 2021 FiveCommand_Error:  (<class 'NameError'>, NameError("name 'difference_year' is not defined"))
 Thu Feb 18 09:21:42 2021 FirstCommand_Error:  (<class 'NameError'>, NameError("name 'difference_year' is not defined"))
+Fri Mar 26 13:04:17 2021 Benchmark_Data_Error:  (<class 'KeyError'>, KeyError('Количество выпущенной продукции по годам в тоннах'))

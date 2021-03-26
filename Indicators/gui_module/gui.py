@@ -17,6 +17,8 @@ import sys
 import os
 sys.path.append(os.path.realpath('..'))
 import logging
+import subprocess
+import random
 
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -32,6 +34,12 @@ from PyQt5 import QtCore, QtWidgets, QtGui, QtSql
 
 from gui_module.about import AboutDialog
 from gui_module.help import HelpWhat
+
+from matplotlib.figure import Figure
+import matplotlib.pyplot as plt
+
+from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
+from matplotlib.backends.backend_qt5agg import NavigationToolbar2QT as NavigationToolbar
 
 WIDTH = 1200  # Ширина главного окна
 HEIGHT = 768  # Высота главного окна
@@ -112,15 +120,39 @@ class MainWindow(QtWidgets.QMainWindow):
         #######################################################################
         self.centralWidget = QtWidgets.QWidget()
         self.setCentralWidget(self.centralWidget)
-        self.vbox = QtWidgets.QVBoxLayout()
+        #self.vbox = QtWidgets.QVBoxLayout()
+        #self.hbox = QtWidgets.QHBoxLayout()
+        #self.vbox.addLayout(self.hbox)
+
+        #self.nameLabel = QtWidgets.QLabel('Поиск', self)
+        #self.line = QtWidgets.QLineEdit(self)
+        #self.nameLabel2 = QtWidgets.QLabel('Result', self)
+
+        #self.hbox.addWidget(self.nameLabel)
+        #self.hbox.addWidget(self.line)
+        #self.hbox.addWidget(self.nameLabel2)
+        #self.hbox.addItem(QtWidgets.QSpacerItem(1000, 10, QtWidgets.QSizePolicy.Expanding))
+
+        #pybutton = QtWidgets.QPushButton('Обновить', self)
+        #pybutton.clicked.connect(self.on_clicked_button1)
+        #self.hbox2 = QtWidgets.QHBoxLayout()
+        #self.hbox2.addWidget(pybutton)
+        #self.hbox2.addItem(QtWidgets.QSpacerItem(1000, 10, QtWidgets.QSizePolicy.Expanding))
+        #self.vbox.addLayout(self.hbox2)
+        #m = WidgetPlot(self)
+        #self.vbox.addWidget(m)
+
+
         vbox = QtWidgets.QVBoxLayout(self.centralWidget)
         self.label_1 = QtWidgets.QPushButton("Кнопка")
         self.label_1.clicked.connect(self.on_clicked_button1)
-        x = pr.data_ur_neispr_obor_middle_year
-        textEdit = QtWidgets.QTextEdit(f'<b>{str(x)}</b>')
+        #x = pr.data_ur_neispr_obor_middle_year
+        #textEdit = QtWidgets.QTextEdit(f'<b>{str(x)}</b>')
         #self.label_2.setAlignment(QtCore.Qt.AlignHCenter)
+        m = WidgetPlot()
+
         vbox.addWidget(self.label_1)
-        vbox.addWidget(textEdit)
+        vbox.addWidget(m)
         #######################################################################
         # ФУНКЦИИ ВЫПОЛНЕНИЯ КОМАНД
         #######################################################################
@@ -158,15 +190,39 @@ class MainWindow(QtWidgets.QMainWindow):
             e.ignore()
 
     def on_clicked_button1(self):
-        a = pr.Graphics_Indicators_Production(pr.data_ur_neispr_obor_year, name= 'Уровень неисправности оборудования по годам')
-        b = pr.Graphics_Indicators_Production(pr.data_ur_neispr_obor_middle_year, name= 'Уровень неисправности оборудования по полугодиям')
-        c = pr.Graphics_Indicators_Production(pr.data_ur_nesoot_prod_year, name= 'Уровень несоответствующей продукции по годам')
-        d = pr.Graphics_Indicators_Production(pr.data_ur_nesoot_prod_middle_year, name= 'Уровень несоответствующей продукции по полугодиям')
-        e = pr.Graphics_Indicators_Production(pr.data_ur_teh_oth_year, name= 'Уровень техотходов по годам', critery=2)
-        f = pr.Graphics_Indicators_Production(pr.data_ur_teh_oth_middle_year, name= 'Уровень техотходов по полугодиям', critery=2)
-        plt.show()
+        graphic_middle_seven = pr.Graphics_Number_Production(pr.data_number_middle_year, name= 'Количество выпущенной п/б ленты  по полугодиям')
+        plt.draw()
 
+    def on_clicked_button2(self):
+        #тестирование данных модулей
+        os.chdir('Indicators_Process_B_7_5')
+        os.startfile('production.py')
 
+class WidgetPlot(QtWidgets.QWidget):
+    def __init__(self, *args, **kwargs):
+        QtWidgets.QWidget.__init__(self, *args, **kwargs)
+        self.setLayout(QtWidgets.QVBoxLayout())
+        self.canvas = PlotCanvas(self, width=10, height=8)
+        self.toolbar = NavigationToolbar(self.canvas, self)
+        self.layout().addWidget(self.toolbar)
+        self.layout().addWidget(self.canvas)
+
+class PlotCanvas(FigureCanvas):
+    def __init__(self, parent=None, width=10, height=8, dpi=100):
+        fig = Figure(figsize=(width, height), dpi=dpi)
+        FigureCanvas.__init__(self, fig)
+        self.setParent(parent)
+        FigureCanvas.setSizePolicy(self, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        FigureCanvas.updateGeometry(self)
+        self.plot()
+
+    def plot(self):
+        data = pr.data_kol_vip_prod_year
+        ax = self.figure.add_subplot(111)
+        ax.plot(data, 'r-', linewidth=0.5)
+        ax.set_title('PyQt Matplotlib Example')
+        #graphic_middle_seven = pr.Graphics_Number_Production(pr.data_number_middle_year, name= 'Количество выпущенной п/б ленты  по полугодиям')
+        self.show()
 
 # Тестирование
 ##############

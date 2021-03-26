@@ -485,7 +485,7 @@ try:
             y_ax3 = np.array(y_ax3)
             ax3 = plt.bar(x_ax3,y_ax3,label='Значение показателя', color='blue', alpha=0.5)
             ax3 = plt.plot(x_ax3,y_ax3,label='Значение показателя',marker = 'D', color='black', alpha=0.5)
-            ax3 = plt.title(data_ax3.name, fontsize=4, y=1.05)
+            ax3 = plt.title(data_ax3.name, fontsize=10, y=1.05)
             ax3 = plt.grid(axis='both', color='black', linestyle='dotted',linewidth=1)
             ax3 = plt.legend(fontsize=4, shadow=True, framealpha=1, edgecolor='r', title='', loc='best')
             # График слоя ax4
@@ -497,7 +497,7 @@ try:
             y_ax4 = np.array(y_ax4)
             ax4 = plt.bar(x_ax4,y_ax4,label='Значение показателя', color='orange', alpha=0.5)
             ax4 = plt.plot(x_ax4,y_ax4,label='Значение показателя',marker = 'D', color='black', alpha=0.5)
-            ax4 = plt.title(data_ax4.name, fontsize=5, y=1.05)
+            ax4 = plt.title(data_ax4.name, fontsize=10, y=1.05)
             ax4 = plt.grid(axis='both', color='black', linestyle='dotted',linewidth=1)
             ax4 = plt.legend(fontsize=4, shadow=True, framealpha=1, edgecolor='r', title='', loc='best')
             # График слоя ax5
@@ -507,9 +507,9 @@ try:
             x_ax5 = np.array(x_ax5)
             y_ax5 = data_ax5.transpose()
             y_ax5 = np.array(y_ax5)
-            ax5 = plt.bar(x_ax5,y_ax5,label='Значение показателя', color='green', alpha=0.5)
+            ax5 = plt.bar(x_ax5, y_ax5,label='Значение показателя', color='green', alpha=0.5)
             ax5 = plt.plot(x_ax5,y_ax5,label='Значение показателя',marker = 'D', color='black', alpha=0.5)
-            ax5 = plt.title(data_ax5.name, fontsize=5, y=1.05)
+            ax5 = plt.title(data_ax5.name, fontsize=10, y=1.05)
             ax5 = plt.grid(axis='both', color='black', linestyle='dotted',linewidth=1)
             ax5 = plt.legend(fontsize=4, shadow=True, framealpha=1, edgecolor='r', title='', loc='best')
 
