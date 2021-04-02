@@ -1110,3 +1110,524 @@ ImportError: cannot import name 'data_testing' from 'Data' (C:\Users\a.bezzubov\
 [26/March/2021 11:13] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
 [26/March/2021 11:13] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
 [26/March/2021 11:13] - indicators.production.Graphics_Number_Production - INFO - __Init__ Graphics_Number_Production
+[31/March/2021 09:27] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[31/March/2021 09:27] - indicators.production - INFO - start initial assignment
+[31/March/2021 09:27] - indicators.production - INFO - OK! Load Data
+[31/March/2021 09:27] - indicators.production - INFO - OK! Load Data
+[31/March/2021 09:27] - indicators.production - INFO - OK! Load Data
+[31/March/2021 09:27] - indicators.production - INFO - OK! Calculation Data
+[31/March/2021 09:27] - indicators.production - INFO - OK! Calculation Data
+[31/March/2021 09:27] - indicators.production - INFO - OK! end initial assignment 
+[31/March/2021 09:27] - indicators.production - INFO - OK! Load object class
+[31/March/2021 09:27] - indicators.production - INFO - OK! Load object class
+[31/March/2021 09:27] - indicators.production - INFO - OK! Load object class
+[31/March/2021 09:27] - indicators.production - INFO - OK! Load object class
+[31/March/2021 09:27] - indicators.production - INFO - OK! Load object class
+[31/March/2021 09:27] - indicators.production - INFO - OK! Load object class
+[31/March/2021 09:27] - indicators.production - INFO - OK! Load object class
+[31/March/2021 09:27] - indicators.production - INFO - OK! Load object class
+[31/March/2021 09:27] - indicators.production - INFO - OK! Load object class
+[31/March/2021 09:27] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[31/March/2021 09:30] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[31/March/2021 09:30] - indicators.production - INFO - start initial assignment
+[31/March/2021 09:30] - indicators.production - INFO - OK! Load Data
+[31/March/2021 09:30] - indicators.production - INFO - OK! Load Data
+[31/March/2021 09:30] - indicators.production - INFO - OK! Load Data
+[31/March/2021 09:30] - indicators.production - INFO - OK! Calculation Data
+[31/March/2021 09:30] - indicators.production - INFO - OK! Calculation Data
+[31/March/2021 09:30] - indicators.production - INFO - OK! end initial assignment 
+[31/March/2021 09:30] - indicators.production - INFO - OK! Load object class
+[31/March/2021 09:30] - indicators.production - INFO - OK! Load object class
+[31/March/2021 09:30] - indicators.production - INFO - OK! Load object class
+[31/March/2021 09:30] - indicators.production - INFO - OK! Load object class
+[31/March/2021 09:30] - indicators.production - INFO - OK! Load object class
+[31/March/2021 09:30] - indicators.production - INFO - OK! Load object class
+[31/March/2021 09:30] - indicators.production - INFO - OK! Load object class
+[31/March/2021 09:30] - indicators.production - INFO - OK! Load object class
+[31/March/2021 09:30] - indicators.production - INFO - OK! Load object class
+[31/March/2021 09:30] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[31/March/2021 09:30] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 09:30] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 09:30] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 09:30] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 09:30] - indicators.production.Graphics_Number_Production - INFO - __Init__ Graphics_Number_Production
+[31/March/2021 09:30] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 09:30] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 09:30] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 09:30] - indicators.production.Graphics_Number_Production - INFO - __Init__ Graphics_Number_Production
+[31/March/2021 09:33] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[31/March/2021 09:33] - indicators.production - INFO - start initial assignment
+[31/March/2021 09:33] - indicators.production - INFO - OK! Load Data
+[31/March/2021 09:33] - indicators.production - INFO - OK! Load Data
+[31/March/2021 09:33] - indicators.production - INFO - OK! Load Data
+[31/March/2021 09:33] - indicators.production - INFO - OK! Calculation Data
+[31/March/2021 09:33] - indicators.production - INFO - OK! Calculation Data
+[31/March/2021 09:33] - indicators.production - INFO - OK! end initial assignment 
+[31/March/2021 09:33] - indicators.production - INFO - OK! Load object class
+[31/March/2021 09:33] - indicators.production - INFO - OK! Load object class
+[31/March/2021 09:33] - indicators.production - INFO - OK! Load object class
+[31/March/2021 09:33] - indicators.production - INFO - OK! Load object class
+[31/March/2021 09:33] - indicators.production - INFO - OK! Load object class
+[31/March/2021 09:33] - indicators.production - INFO - OK! Load object class
+[31/March/2021 09:33] - indicators.production - INFO - OK! Load object class
+[31/March/2021 09:33] - indicators.production - INFO - OK! Load object class
+[31/March/2021 09:33] - indicators.production - INFO - OK! Load object class
+[31/March/2021 09:33] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[31/March/2021 09:33] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 09:33] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 09:33] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 09:33] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 09:33] - indicators.production.Graphics_Number_Production - INFO - __Init__ Graphics_Number_Production
+[31/March/2021 09:33] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 09:33] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 09:33] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 09:33] - indicators.production.Graphics_Number_Production - INFO - __Init__ Graphics_Number_Production
+[31/March/2021 09:36] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[31/March/2021 09:36] - indicators.production - INFO - start initial assignment
+[31/March/2021 09:36] - indicators.production - INFO - OK! Load Data
+[31/March/2021 09:36] - indicators.production - INFO - OK! Load Data
+[31/March/2021 09:36] - indicators.production - INFO - OK! Load Data
+[31/March/2021 09:36] - indicators.production - INFO - OK! Calculation Data
+[31/March/2021 09:36] - indicators.production - INFO - OK! Calculation Data
+[31/March/2021 09:36] - indicators.production - INFO - OK! end initial assignment 
+[31/March/2021 09:36] - indicators.production - INFO - OK! Load object class
+[31/March/2021 09:36] - indicators.production - INFO - OK! Load object class
+[31/March/2021 09:36] - indicators.production - INFO - OK! Load object class
+[31/March/2021 09:36] - indicators.production - INFO - OK! Load object class
+[31/March/2021 09:36] - indicators.production - INFO - OK! Load object class
+[31/March/2021 09:36] - indicators.production - INFO - OK! Load object class
+[31/March/2021 09:36] - indicators.production - INFO - OK! Load object class
+[31/March/2021 09:36] - indicators.production - INFO - OK! Load object class
+[31/March/2021 09:36] - indicators.production - INFO - OK! Load object class
+[31/March/2021 09:36] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[31/March/2021 09:36] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 09:36] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 09:36] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 09:36] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 09:36] - indicators.production.Graphics_Number_Production - INFO - __Init__ Graphics_Number_Production
+[31/March/2021 09:36] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 09:36] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 09:36] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 09:36] - indicators.production.Graphics_Number_Production - INFO - __Init__ Graphics_Number_Production
+[31/March/2021 09:38] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[31/March/2021 09:38] - indicators.production - INFO - start initial assignment
+[31/March/2021 09:38] - indicators.production - INFO - OK! Load Data
+[31/March/2021 09:38] - indicators.production - INFO - OK! Load Data
+[31/March/2021 09:38] - indicators.production - INFO - OK! Load Data
+[31/March/2021 09:38] - indicators.production - INFO - OK! Calculation Data
+[31/March/2021 09:38] - indicators.production - INFO - OK! Calculation Data
+[31/March/2021 09:38] - indicators.production - INFO - OK! end initial assignment 
+[31/March/2021 09:38] - indicators.production - INFO - OK! Load object class
+[31/March/2021 09:38] - indicators.production - INFO - OK! Load object class
+[31/March/2021 09:38] - indicators.production - INFO - OK! Load object class
+[31/March/2021 09:38] - indicators.production - INFO - OK! Load object class
+[31/March/2021 09:38] - indicators.production - INFO - OK! Load object class
+[31/March/2021 09:38] - indicators.production - INFO - OK! Load object class
+[31/March/2021 09:38] - indicators.production - INFO - OK! Load object class
+[31/March/2021 09:38] - indicators.production - INFO - OK! Load object class
+[31/March/2021 09:38] - indicators.production - INFO - OK! Load object class
+[31/March/2021 09:38] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[31/March/2021 09:38] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 09:38] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 09:38] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 09:38] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 09:38] - indicators.production.Graphics_Number_Production - INFO - __Init__ Graphics_Number_Production
+[31/March/2021 09:38] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 09:39] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 09:39] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 09:39] - indicators.production.Graphics_Number_Production - INFO - __Init__ Graphics_Number_Production
+[31/March/2021 10:33] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[31/March/2021 10:33] - indicators.production - INFO - start initial assignment
+[31/March/2021 10:33] - indicators.production - INFO - OK! Load Data
+[31/March/2021 10:33] - indicators.production - INFO - OK! Load Data
+[31/March/2021 10:33] - indicators.production - INFO - OK! Load Data
+[31/March/2021 10:33] - indicators.production - INFO - OK! Calculation Data
+[31/March/2021 10:33] - indicators.production - INFO - OK! Calculation Data
+[31/March/2021 10:33] - indicators.production - INFO - OK! end initial assignment 
+[31/March/2021 10:33] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:33] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:33] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:33] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:33] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:33] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:33] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:33] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:33] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:33] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[31/March/2021 10:33] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:33] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:33] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:33] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:33] - indicators.production.Graphics_Number_Production - INFO - __Init__ Graphics_Number_Production
+[31/March/2021 10:35] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[31/March/2021 10:35] - indicators.production - INFO - start initial assignment
+[31/March/2021 10:35] - indicators.production - INFO - OK! Load Data
+[31/March/2021 10:35] - indicators.production - INFO - OK! Load Data
+[31/March/2021 10:35] - indicators.production - INFO - OK! Load Data
+[31/March/2021 10:35] - indicators.production - INFO - OK! Calculation Data
+[31/March/2021 10:35] - indicators.production - INFO - OK! Calculation Data
+[31/March/2021 10:35] - indicators.production - INFO - OK! end initial assignment 
+[31/March/2021 10:35] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:35] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:35] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:35] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:35] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:35] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:35] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:35] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:35] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:35] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[31/March/2021 10:35] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:35] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:35] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:35] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:35] - indicators.production.Graphics_Number_Production - INFO - __Init__ Graphics_Number_Production
+[31/March/2021 10:36] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[31/March/2021 10:36] - indicators.production - INFO - start initial assignment
+[31/March/2021 10:36] - indicators.production - INFO - OK! Load Data
+[31/March/2021 10:36] - indicators.production - INFO - OK! Load Data
+[31/March/2021 10:36] - indicators.production - INFO - OK! Load Data
+[31/March/2021 10:36] - indicators.production - INFO - OK! Calculation Data
+[31/March/2021 10:36] - indicators.production - INFO - OK! Calculation Data
+[31/March/2021 10:36] - indicators.production - INFO - OK! end initial assignment 
+[31/March/2021 10:36] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:36] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:36] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:36] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:36] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:36] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:36] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:36] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:36] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:36] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[31/March/2021 10:36] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:36] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:36] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:36] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:36] - indicators.production.Graphics_Number_Production - INFO - __Init__ Graphics_Number_Production
+[31/March/2021 10:37] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[31/March/2021 10:37] - indicators.production - INFO - start initial assignment
+[31/March/2021 10:37] - indicators.production - INFO - OK! Load Data
+[31/March/2021 10:37] - indicators.production - INFO - OK! Load Data
+[31/March/2021 10:37] - indicators.production - INFO - OK! Load Data
+[31/March/2021 10:37] - indicators.production - INFO - OK! Calculation Data
+[31/March/2021 10:37] - indicators.production - INFO - OK! Calculation Data
+[31/March/2021 10:37] - indicators.production - INFO - OK! end initial assignment 
+[31/March/2021 10:37] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:37] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:37] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:37] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:37] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:37] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:37] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:37] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:37] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:37] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[31/March/2021 10:37] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:37] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:37] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:37] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:37] - indicators.production.Graphics_Number_Production - INFO - __Init__ Graphics_Number_Production
+[31/March/2021 10:38] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[31/March/2021 10:38] - indicators.production - INFO - start initial assignment
+[31/March/2021 10:38] - indicators.production - INFO - OK! Load Data
+[31/March/2021 10:38] - indicators.production - INFO - OK! Load Data
+[31/March/2021 10:38] - indicators.production - INFO - OK! Load Data
+[31/March/2021 10:38] - indicators.production - INFO - OK! Calculation Data
+[31/March/2021 10:38] - indicators.production - INFO - OK! Calculation Data
+[31/March/2021 10:38] - indicators.production - INFO - OK! end initial assignment 
+[31/March/2021 10:38] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:38] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:38] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:38] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:38] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:38] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:38] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:38] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:38] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:38] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[31/March/2021 10:38] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:38] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:38] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:38] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:38] - indicators.production.Graphics_Number_Production - INFO - __Init__ Graphics_Number_Production
+[31/March/2021 10:38] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:38] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:38] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:38] - indicators.production.Graphics_Number_Production - INFO - __Init__ Graphics_Number_Production
+[31/March/2021 10:40] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[31/March/2021 10:41] - indicators.production - INFO - start initial assignment
+[31/March/2021 10:41] - indicators.production - INFO - OK! Load Data
+[31/March/2021 10:41] - indicators.production - INFO - OK! Load Data
+[31/March/2021 10:41] - indicators.production - INFO - OK! Load Data
+[31/March/2021 10:41] - indicators.production - INFO - OK! Calculation Data
+[31/March/2021 10:41] - indicators.production - INFO - OK! Calculation Data
+[31/March/2021 10:41] - indicators.production - INFO - OK! end initial assignment 
+[31/March/2021 10:41] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:41] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:41] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:41] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:41] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:41] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:41] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:41] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:41] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:41] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[31/March/2021 10:41] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:41] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:41] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:41] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:41] - indicators.production.Graphics_Number_Production - INFO - __Init__ Graphics_Number_Production
+[31/March/2021 10:41] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:41] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:41] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:41] - indicators.production.Graphics_Number_Production - INFO - __Init__ Graphics_Number_Production
+[31/March/2021 10:42] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[31/March/2021 10:43] - indicators.production - INFO - start initial assignment
+[31/March/2021 10:43] - indicators.production - INFO - OK! Load Data
+[31/March/2021 10:43] - indicators.production - INFO - OK! Load Data
+[31/March/2021 10:43] - indicators.production - INFO - OK! Load Data
+[31/March/2021 10:43] - indicators.production - INFO - OK! Calculation Data
+[31/March/2021 10:43] - indicators.production - INFO - OK! Calculation Data
+[31/March/2021 10:43] - indicators.production - INFO - OK! end initial assignment 
+[31/March/2021 10:43] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:43] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:43] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:43] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:43] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:43] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:43] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:43] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:43] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:43] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[31/March/2021 10:43] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:43] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:43] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:43] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:43] - indicators.production.Graphics_Number_Production - INFO - __Init__ Graphics_Number_Production
+[31/March/2021 10:43] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:43] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:43] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:43] - indicators.production.Graphics_Number_Production - INFO - __Init__ Graphics_Number_Production
+[31/March/2021 10:44] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[31/March/2021 10:44] - indicators.production - INFO - start initial assignment
+[31/March/2021 10:44] - indicators.production - INFO - OK! Load Data
+[31/March/2021 10:44] - indicators.production - INFO - OK! Load Data
+[31/March/2021 10:44] - indicators.production - INFO - OK! Load Data
+[31/March/2021 10:44] - indicators.production - INFO - OK! Calculation Data
+[31/March/2021 10:44] - indicators.production - INFO - OK! Calculation Data
+[31/March/2021 10:44] - indicators.production - INFO - OK! end initial assignment 
+[31/March/2021 10:44] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:44] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:44] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:44] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:44] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:44] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:44] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:44] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:44] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:44] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[31/March/2021 10:44] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:44] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:44] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:44] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:44] - indicators.production.Graphics_Number_Production - INFO - __Init__ Graphics_Number_Production
+[31/March/2021 10:45] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[31/March/2021 10:45] - indicators.production - INFO - start initial assignment
+[31/March/2021 10:45] - indicators.production - INFO - OK! Load Data
+[31/March/2021 10:45] - indicators.production - INFO - OK! Load Data
+[31/March/2021 10:45] - indicators.production - INFO - OK! Load Data
+[31/March/2021 10:45] - indicators.production - INFO - OK! Calculation Data
+[31/March/2021 10:45] - indicators.production - INFO - OK! Calculation Data
+[31/March/2021 10:45] - indicators.production - INFO - OK! end initial assignment 
+[31/March/2021 10:45] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:45] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:45] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:45] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:45] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:45] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:45] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:45] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:45] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:45] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[31/March/2021 10:45] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:45] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:45] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:45] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:45] - indicators.production.Graphics_Number_Production - INFO - __Init__ Graphics_Number_Production
+[31/March/2021 10:45] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[31/March/2021 10:45] - indicators.production - INFO - start initial assignment
+[31/March/2021 10:45] - indicators.production - INFO - OK! Load Data
+[31/March/2021 10:45] - indicators.production - INFO - OK! Load Data
+[31/March/2021 10:45] - indicators.production - INFO - OK! Load Data
+[31/March/2021 10:45] - indicators.production - INFO - OK! Calculation Data
+[31/March/2021 10:45] - indicators.production - INFO - OK! Calculation Data
+[31/March/2021 10:45] - indicators.production - INFO - OK! end initial assignment 
+[31/March/2021 10:45] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:45] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:45] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:45] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:45] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:45] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:45] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:45] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:45] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:45] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[31/March/2021 10:45] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:45] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:45] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:45] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:45] - indicators.production.Graphics_Number_Production - INFO - __Init__ Graphics_Number_Production
+[31/March/2021 10:45] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:45] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:45] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:45] - indicators.production.Graphics_Number_Production - INFO - __Init__ Graphics_Number_Production
+[31/March/2021 10:47] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[31/March/2021 10:47] - indicators.production - INFO - start initial assignment
+[31/March/2021 10:47] - indicators.production - INFO - OK! Load Data
+[31/March/2021 10:47] - indicators.production - INFO - OK! Load Data
+[31/March/2021 10:47] - indicators.production - INFO - OK! Load Data
+[31/March/2021 10:47] - indicators.production - INFO - OK! Calculation Data
+[31/March/2021 10:47] - indicators.production - INFO - OK! Calculation Data
+[31/March/2021 10:47] - indicators.production - INFO - OK! end initial assignment 
+[31/March/2021 10:47] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:47] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:47] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:47] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:47] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:47] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:47] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:47] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:47] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:47] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[31/March/2021 10:47] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:47] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:47] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:47] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:47] - indicators.production.Graphics_Number_Production - INFO - __Init__ Graphics_Number_Production
+[31/March/2021 10:47] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:47] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:47] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:47] - indicators.production.Graphics_Number_Production - INFO - __Init__ Graphics_Number_Production
+[31/March/2021 10:51] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[31/March/2021 10:51] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[31/March/2021 10:51] - indicators.production - INFO - start initial assignment
+[31/March/2021 10:51] - indicators.production - INFO - OK! Load Data
+[31/March/2021 10:51] - indicators.production - INFO - OK! Load Data
+[31/March/2021 10:51] - indicators.production - INFO - OK! Load Data
+[31/March/2021 10:51] - indicators.production - INFO - OK! Calculation Data
+[31/March/2021 10:51] - indicators.production - INFO - OK! Calculation Data
+[31/March/2021 10:51] - indicators.production - INFO - OK! end initial assignment 
+[31/March/2021 10:51] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:51] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:51] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:51] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:51] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:51] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:51] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:51] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:51] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:51] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[31/March/2021 10:51] - indicators.production - INFO - start initial assignment
+[31/March/2021 10:51] - indicators.production - INFO - OK! Load Data
+[31/March/2021 10:51] - indicators.production - INFO - OK! Load Data
+[31/March/2021 10:51] - indicators.production - INFO - OK! Load Data
+[31/March/2021 10:51] - indicators.production - INFO - OK! Calculation Data
+[31/March/2021 10:51] - indicators.production - INFO - OK! Calculation Data
+[31/March/2021 10:51] - indicators.production - INFO - OK! end initial assignment 
+[31/March/2021 10:51] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:51] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:51] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:51] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:51] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:51] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:51] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:51] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:51] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:51] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[31/March/2021 10:51] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:51] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:51] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:51] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:51] - indicators.production.Graphics_Number_Production - INFO - __Init__ Graphics_Number_Production
+[31/March/2021 10:51] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:51] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:51] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:51] - indicators.production.Graphics_Number_Production - INFO - __Init__ Graphics_Number_Production
+[31/March/2021 10:53] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[31/March/2021 10:53] - indicators.production - INFO - start initial assignment
+[31/March/2021 10:53] - indicators.production - INFO - OK! Load Data
+[31/March/2021 10:53] - indicators.production - INFO - OK! Load Data
+[31/March/2021 10:53] - indicators.production - INFO - OK! Load Data
+[31/March/2021 10:53] - indicators.production - INFO - OK! Calculation Data
+[31/March/2021 10:53] - indicators.production - INFO - OK! Calculation Data
+[31/March/2021 10:53] - indicators.production - INFO - OK! end initial assignment 
+[31/March/2021 10:53] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:53] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:53] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:53] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:53] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:53] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:53] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:53] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:53] - indicators.production - INFO - OK! Load object class
+[31/March/2021 10:53] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[31/March/2021 10:53] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:53] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:53] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:53] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:53] - indicators.production.Graphics_Number_Production - INFO - __Init__ Graphics_Number_Production
+[31/March/2021 10:53] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:53] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:53] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[31/March/2021 10:53] - indicators.production.Graphics_Number_Production - INFO - __Init__ Graphics_Number_Production
+[31/March/2021 12:32] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[31/March/2021 12:33] - indicators.production - INFO - start initial assignment
+[31/March/2021 12:33] - indicators.production - INFO - OK! Load Data
+[31/March/2021 12:33] - indicators.production - INFO - OK! Load Data
+[31/March/2021 12:33] - indicators.production - INFO - OK! Load Data
+[31/March/2021 12:33] - indicators.production - INFO - OK! Calculation Data
+[31/March/2021 12:33] - indicators.production - INFO - OK! Calculation Data
+[31/March/2021 12:33] - indicators.production - INFO - OK! end initial assignment 
+[31/March/2021 12:33] - indicators.production - INFO - OK! Load object class
+[31/March/2021 12:33] - indicators.production - INFO - OK! Load object class
+[31/March/2021 12:33] - indicators.production - INFO - OK! Load object class
+[31/March/2021 12:33] - indicators.production - INFO - OK! Load object class
+[31/March/2021 12:33] - indicators.production - INFO - OK! Load object class
+[31/March/2021 12:33] - indicators.production - INFO - OK! Load object class
+[31/March/2021 12:33] - indicators.production - INFO - OK! Load object class
+[31/March/2021 12:33] - indicators.production - INFO - OK! Load object class
+[31/March/2021 12:33] - indicators.production - INFO - OK! Load object class
+[31/March/2021 12:33] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[31/March/2021 12:33] - indicators.production.Info - INFO - __Init__ Info
+[31/March/2021 12:33] - indicators.production.Info_add - INFO - __Init__ Info_add
+[31/March/2021 12:33] - indicators.production.Info - INFO - __Init__ Info
+[31/March/2021 12:33] - indicators.production.Comparise - INFO - __Init__ Comparise
+[31/March/2021 12:34] - indicators.production.Info - INFO - __Init__ Info
+[31/March/2021 12:34] - indicators.production.Data_Table - INFO - __Init__ Data_Table
+[31/March/2021 12:34] - indicators.production.Data_Table - INFO - __Init__ Data_Table
+[31/March/2021 12:40] - indicators.production.Info - INFO - __Init__ Info
+[31/March/2021 12:43] - indicators.production.Info_add - INFO - __Init__ Info_add
+[31/March/2021 12:43] - indicators.production.MaterialConsumption - INFO - __Init__ MaterialConsumption
+[31/March/2021 12:43] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[31/March/2021 12:43] - indicators.production - INFO - start initial assignment
+[31/March/2021 12:43] - indicators.production - INFO - OK! Load Data
+[31/March/2021 12:43] - indicators.production - INFO - OK! Load Data
+[31/March/2021 12:43] - indicators.production - INFO - OK! Load Data
+[31/March/2021 12:43] - indicators.production - INFO - OK! Calculation Data
+[31/March/2021 12:43] - indicators.production - INFO - OK! Calculation Data
+[31/March/2021 12:43] - indicators.production - INFO - OK! end initial assignment 
+[31/March/2021 12:43] - indicators.production - INFO - OK! Load object class
+[31/March/2021 12:43] - indicators.production - INFO - OK! Load object class
+[31/March/2021 12:43] - indicators.production - INFO - OK! Load object class
+[31/March/2021 12:43] - indicators.production - INFO - OK! Load object class
+[31/March/2021 12:43] - indicators.production - INFO - OK! Load object class
+[31/March/2021 12:43] - indicators.production - INFO - OK! Load object class
+[31/March/2021 12:43] - indicators.production - INFO - OK! Load object class
+[31/March/2021 12:43] - indicators.production - INFO - OK! Load object class
+[31/March/2021 12:43] - indicators.production - INFO - OK! Load object class
+[31/March/2021 12:43] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[31/March/2021 12:43] - indicators.production.Info_add - INFO - __Init__ Info_add
+[31/March/2021 12:43] - indicators.production.MaterialConsumption - INFO - __Init__ MaterialConsumption
+[31/March/2021 12:44] - indicators.production.Info_add - INFO - __Init__ Info_add
+[31/March/2021 12:44] - indicators.production.MaterialConsumption - INFO - __Init__ MaterialConsumption

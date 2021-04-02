@@ -213,7 +213,9 @@ try:
                 "Км_Мастика по полугодиям",
                 "Км_ПВХ по полугодиям",
                 "Кп_Мастика по полугодиям",
-                "Кп_ПВХ по полугодиям"
+                "Кп_ПВХ по полугодиям",
+                'Корреляция Кп к Км по годам',
+                'Корреляция Кп к Км по полугодиям',
                  ]#запись наименований (общие показатели)
 
     NAME_INPUT = {
@@ -396,6 +398,9 @@ try:
     # Конкатенация Кп по ПВХ за полугодие
     data_8 = pd.concat([data_kp_pvh_middle_year, data_kp_selaron_pvh_middle_year, data_kp_bsk_pvh_middle_year], axis=1)
     # Конкатенация Кп по ПВХ за полугодие
+    data_9 = pd.concat([data_km_mastic_year, data_kp_mastic_year, data_kp_mastic_middle_year, data_km_mastic_middle_year], axis=1)
+    data_10 = pd.concat([data_km_pvh_year, data_kp_pvh_year, data_kp_pvh_middle_year, data_km_pvh_middle_year], axis=1)
+
 
     NAME_CORR_INPUT = {
                 '069':data_1,
@@ -405,7 +410,9 @@ try:
                 '073':data_5,
                 '074':data_6,
                 '075':data_7,
-                '076':data_8
+                '076':data_8,
+                '077':data_9,
+                '078':data_10,
                 } # идентификатор данных для корреляции
 
 except Exception:
@@ -502,7 +509,7 @@ try:
         def __init__(self):
             self.x = PrettyTable()
             field_names = ['Идентификатор', 'Наименование']
-            self.x.add_column(field_names[1], MATTER_NAME)
+            self.x.add_column(field_names[1], MATTER_NAME[0:-2])
             self.x.add_column(field_names[0], list(NAME_INPUT.keys()))
 
         def __repr__(self):
@@ -662,6 +669,8 @@ try:
             save_data_6 = data_6.corr()
             save_data_7 = data_7.corr()
             save_data_8 = data_8.corr()
+            save_data_9 = data_9.corr()
+            save_data_10 = data_10.corr()
             print('...files/record.xlsx')
             with pd.ExcelWriter(r'files/record.xlsx') as writer:
                 save_data_1.to_excel(
@@ -676,6 +685,8 @@ try:
                 save_data_6.to_excel(writer, sheet_name=save_data_6.columns[0])
                 save_data_7.to_excel(writer, sheet_name=save_data_7.columns[0])
                 save_data_8.to_excel(writer, sheet_name=save_data_8.columns[0])
+                save_data_9.to_excel(writer, sheet_name='Кп к Км мастика')
+                save_data_10.to_excel(writer, sheet_name='Кп к Км пвх')
             # ЗАПИСЬ СТАТИСТИЧЕСКОЙ ИНФОРМАЦИИ в *.txt файл
             print('Сохранение в файл формата *.txt ...')
             print('...files/*.txt')
