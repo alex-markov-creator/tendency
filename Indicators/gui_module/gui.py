@@ -76,7 +76,7 @@ class MainWindow(QtWidgets.QMainWindow):
         # ГЛАВНОЕ МЕНЮ И ТИТУЛЬНЫЙ ЗАГОЛОВОК
         #########################################################
         # file_menu = self.menuBar().addMenu("&Файл") # МЕНЮ ФАЙЛ -- ВРЕМЕННО ОТКЛЮЧЕНО ДО ПОСЛЕДУЮЩИХ ВЕРСИЙ
-        process_menu = self.menuBar().addMenu("&Процессы")
+        process_menu = self.menuBar().addMenu("&Модули")
         preferences_menu = self.menuBar().addMenu("&Настройки")
         help_menu = self.menuBar().addMenu("&Справка")
         self.setWindowTitle("tendency v.0.2a")
@@ -86,9 +86,9 @@ class MainWindow(QtWidgets.QMainWindow):
         #######################################################################
         # ГЛАВНОЕ МЕНЮ
         #######################################################################
-        indicators_process_1 = QtWidgets.QAction("Процесс_1", self,
+        indicators_process_1 = QtWidgets.QAction("Адгезия", self,
                                               shortcut=QtGui.QKeySequence(QtCore.Qt.SHIFT + QtCore.Qt.Key_1))
-        indicators_process_1.triggered.connect(self.loaddata)
+        indicators_process_1.triggered.connect(self.on_adhaesio)
         process_menu.addAction(indicators_process_1)
 
 
@@ -115,47 +115,52 @@ class MainWindow(QtWidgets.QMainWindow):
         qt_action = QtWidgets.QAction(QtGui.QIcon(ICON_QT), "О Qt...", self)
         qt_action.triggered.connect(self.qt)
         help_menu.addAction(qt_action)
+
+        ######################################################################
+        # ПАНЕЛЬ ИНСТРУМЕНТОВ
+        ######################################################################
+        toolbar_left = QtWidgets.QToolBar()
+        self.addToolBar(QtCore.Qt.LeftToolBarArea, toolbar_left)
+        statusbar = QtWidgets.QStatusBar()
+        self.setStatusBar(statusbar)
+
+        btn_gr_view = QtWidgets.QAction(QtGui.QIcon(ICON_FREE), 'Графики', self)
+        btn_gr_view.triggered.connect(self.graphic_1)
+        btn_gr_view.setStatusTip('Отобразить графики')
+        toolbar_left.addAction(btn_gr_view)
+
+        toolbar_bottom = QtWidgets.QToolBar()
+        self.addToolBar(QtCore.Qt.BottomToolBarArea, toolbar_bottom)
+        statusbar = QtWidgets.QStatusBar()
+        self.setStatusBar(statusbar)
+
+        btn_gr_view = QtWidgets.QAction(QtGui.QIcon(ICON_FREE), 'Графики', self)
+        btn_gr_view.triggered.connect(self.graphic_1)
+        btn_gr_view.setStatusTip('Отобразить графики')
+        toolbar_bottom.addAction(btn_gr_view)
+
         #######################################################################
         # ПОЗИЦИОНИРОВАНИЕ
         #######################################################################
+
         self.centralWidget = QtWidgets.QWidget()
-        self.setCentralWidget(self.centralWidget)
-        #self.vbox = QtWidgets.QVBoxLayout()
-        #self.hbox = QtWidgets.QHBoxLayout()
-        #self.vbox.addLayout(self.hbox)
+        tab = QtWidgets.QTabWidget(self.centralWidget)
+        self.setCentralWidget(tab)
+        tab.addTab(TabStr(),"&Результаты расчётов")
+        tab.addTab(WidgetPlot(), "&Графики")
+        tab.setCurrentIndex(0)
 
-        #self.nameLabel = QtWidgets.QLabel('Поиск', self)
-        #self.line = QtWidgets.QLineEdit(self)
-        #self.nameLabel2 = QtWidgets.QLabel('Result', self)
-
-        #self.hbox.addWidget(self.nameLabel)
-        #self.hbox.addWidget(self.line)
-        #self.hbox.addWidget(self.nameLabel2)
-        #self.hbox.addItem(QtWidgets.QSpacerItem(1000, 10, QtWidgets.QSizePolicy.Expanding))
-
-        #pybutton = QtWidgets.QPushButton('Обновить', self)
-        #pybutton.clicked.connect(self.on_clicked_button1)
-        #self.hbox2 = QtWidgets.QHBoxLayout()
-        #self.hbox2.addWidget(pybutton)
-        #self.hbox2.addItem(QtWidgets.QSpacerItem(1000, 10, QtWidgets.QSizePolicy.Expanding))
-        #self.vbox.addLayout(self.hbox2)
-        #m = WidgetPlot(self)
-        #self.vbox.addWidget(m)
-
-
-        vbox = QtWidgets.QVBoxLayout(self.centralWidget)
-        self.label_1 = QtWidgets.QPushButton("Кнопка")
-        self.label_1.clicked.connect(self.on_clicked_button1)
-        #x = pr.data_ur_neispr_obor_middle_year
-        #textEdit = QtWidgets.QTextEdit(f'<b>{str(x)}</b>')
-        #self.label_2.setAlignment(QtCore.Qt.AlignHCenter)
+        #######################################################################
+        # Экземпляры классов для позиционирования графиков matplotlib
+        #######################################################################
+        """
         m = WidgetPlot()
-
         vbox.addWidget(self.label_1)
         vbox.addWidget(m)
-        #######################################################################
-        # ФУНКЦИИ ВЫПОЛНЕНИЯ КОМАНД
-        #######################################################################
+        """
+    #######################################################################
+    # ФУНКЦИИ ВЫПОЛНЕНИЯ КОМАНД
+    #######################################################################
 
     def loaddata(self):
         pass
@@ -189,23 +194,78 @@ class MainWindow(QtWidgets.QMainWindow):
         else:
             e.ignore()
 
-    def on_clicked_button1(self):
-        graphic_middle_seven = pr.Graphics_Number_Production(pr.data_number_middle_year, name= 'Количество выпущенной п/б ленты  по полугодиям')
-        plt.draw()
+    def graphic_1(self):
+        a = ad.LinearGraphic(ad._pz) # экземпляр класса линейного графика
+        a.middle_value_text() # Aср
+        a.regres_graphic() # построение графика линейной регресии
+        b = ad.DistributionDiagramm(ad._pz) # экземпляр класса диаграммы распределения
+        c = ad.DistributionHistogramm(ad._pz) # экземпляр класса гистограммы распределения
+        d = ad.ErrorGraphic(ad._pz) # экземпляр класса графика погрешностей
+        e = ad.TableGraphic(ad.pz) # экземпляр класса выборки последних значений
+        f = ad.DependenceGraphic(ad._lz_gaz)
+        plt.show()#график на экран
 
-    def on_clicked_button2(self):
+    def on_adhaesio(self):
         #тестирование данных модулей
-        os.chdir('Indicators_Process_B_7_5')
-        os.startfile('production.py')
+        os.chdir('Indicators_Process_B_7_4_and_O_8_2')
+        os.startfile('adhaesio.py')
 
+###Классы содержимого вкладок
+class TabStr(QtWidgets.QWidget):
+    def __init__(self):
+        super().__init__()
+        vbox = QtWidgets.QVBoxLayout()
+        comboBox = QtWidgets.QComboBox()
+        L = []
+        for i in range(1, 11):
+            L.append("Пункт {0}".format(i))
+        comboBox.addItems(L)
+        comboBox.activated[int].connect(self.on_clicked_view)
+        x = pr.data_ur_neispr_obor_middle_year
+        self.textEdit = QtWidgets.QTextEdit(f'<b>{str(x)}</b>')
+        vbox.addWidget(comboBox)
+        vbox.addWidget(self.textEdit)
+        self.setLayout(vbox)
+        self.setLayout(vbox) # передача ссылки родителю
+
+    def on_clicked_view(self, v):
+        print(v)
+        print(type(v))
+        if v==0:
+            x = pr.data_kol_vip_prod_year
+            self.textEdit.setText(f'<b>{str(x)}</b>')
+        elif v ==1:
+            x = 'Text'
+            self.textEdit.setText(f'<b>{str(x)}</b>')
+        else:
+            self.textEdit.setText('Empty')
+
+
+    def save_to_file(self):
+        # функция сохранения в файл
+        pass
+
+### Классы встроенного matplotlib
 class WidgetPlot(QtWidgets.QWidget):
     def __init__(self, *args, **kwargs):
         QtWidgets.QWidget.__init__(self, *args, **kwargs)
         self.setLayout(QtWidgets.QVBoxLayout())
+        self.comboBox = QtWidgets.QComboBox()
+        L = []
+        for i in range(1, 11):
+            L.append("Пункт {0}".format(i))
+        self.comboBox.addItems(L)
+        self.comboBox.activated[int].connect(self.on_clicked_view)
         self.canvas = PlotCanvas(self, width=10, height=8)
         self.toolbar = NavigationToolbar(self.canvas, self)
+        self.layout().addWidget(self.comboBox)
         self.layout().addWidget(self.toolbar)
         self.layout().addWidget(self.canvas)
+
+    def on_clicked_view(self, v):
+        print(v)
+        print(type(v))
+        data = pr.data_kol_vip_prod_middle_year
 
 class PlotCanvas(FigureCanvas):
     def __init__(self, parent=None, width=10, height=8, dpi=100):

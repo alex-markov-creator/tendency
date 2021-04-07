@@ -1631,3 +1631,39 @@ ImportError: cannot import name 'data_testing' from 'Data' (C:\Users\a.bezzubov\
 [31/March/2021 12:43] - indicators.production.MaterialConsumption - INFO - __Init__ MaterialConsumption
 [31/March/2021 12:44] - indicators.production.Info_add - INFO - __Init__ Info_add
 [31/March/2021 12:44] - indicators.production.MaterialConsumption - INFO - __Init__ MaterialConsumption
+[07/April/2021 11:16] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[07/April/2021 11:16] - indicators.production - INFO - start initial assignment
+[07/April/2021 11:16] - indicators.production - INFO - OK! Load Data
+[07/April/2021 11:16] - indicators.production - INFO - OK! Load Data
+[07/April/2021 11:16] - indicators.production - INFO - OK! Load Data
+[07/April/2021 11:16] - indicators.production - INFO - OK! Calculation Data
+[07/April/2021 11:16] - indicators.production - INFO - OK! Calculation Data
+[07/April/2021 11:16] - indicators.production - INFO - OK! end initial assignment 
+[07/April/2021 11:16] - indicators.production - INFO - OK! Load object class
+[07/April/2021 11:16] - indicators.production - INFO - OK! Load object class
+[07/April/2021 11:16] - indicators.production - INFO - OK! Load object class
+[07/April/2021 11:16] - indicators.production - INFO - OK! Load object class
+[07/April/2021 11:16] - indicators.production - INFO - OK! Load object class
+[07/April/2021 11:16] - indicators.production - INFO - OK! Load object class
+[07/April/2021 11:16] - indicators.production - INFO - OK! Load object class
+[07/April/2021 11:16] - indicators.production - INFO - OK! Load object class
+[07/April/2021 11:16] - indicators.production - INFO - OK! Load object class
+[07/April/2021 11:16] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[07/April/2021 14:28] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[07/April/2021 14:28] - indicators.production - INFO - start initial assignment
+[07/April/2021 14:28] - indicators.production - INFO - OK! Load Data
+[07/April/2021 14:28] - indicators.production - INFO - OK! Load Data
+[07/April/2021 14:28] - indicators.production - INFO - OK! Load Data
+[07/April/2021 14:28] - indicators.production - INFO - OK! Calculation Data
+[07/April/2021 14:28] - indicators.production - INFO - OK! Calculation Data
+[07/April/2021 14:28] - indicators.production - INFO - OK! end initial assignment 
+[07/April/2021 14:28] - indicators.production - INFO - OK! Load object class
+[07/April/2021 14:28] - indicators.production - INFO - OK! Load object class
+[07/April/2021 14:28] - indicators.production - INFO - OK! Load object class
+[07/April/2021 14:28] - indicators.production - INFO - OK! Load object class
+[07/April/2021 14:28] - indicators.production - INFO - OK! Load object class
+[07/April/2021 14:28] - indicators.production - INFO - OK! Load object class
+[07/April/2021 14:28] - indicators.production - INFO - OK! Load object class
+[07/April/2021 14:28] - indicators.production - INFO - OK! Load object class
+[07/April/2021 14:28] - indicators.production - INFO - OK! Load object class
+[07/April/2021 14:28] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
