@@ -58,8 +58,13 @@ ICON_ABOUT = "gui_icon/about.png"  # Иконка "О программме"
 ICON_QT = "gui_icon/qt.png"  # Иконка "О Qt"
 
 ICON_FREE = "gui_icon/free_icon.png"  # Иконка временная
+ICON_CMD = "gui_icon/ms-dos-batch-file-icon.png" # Иконка терминального приложения
+ICON_FULLSCREEN = "gui_icon/fullscreen_icon_144319.png" # Иконка режима окна
+ICON_SCREEN = "gui_icon/fullscreen_exit_icon_144320.png" # Иконка режима окна
 
-
+ICON_GRAPHIC_001 = "gui_icon/Documents-CardiacMonitor-icon.png" # Иконка режима окна
+ICON_SAVE = "gui_icon/save_file_disk_open_searsh_loading_clipboard_1513.png" # Иконка сохранения в файл
+ICON_TEST = "gui_icon/Documents-icon.png" # Иконка запуска тестов
 ##########################################################################
 # ОСНОВНОЕ ОКНО
 ##########################################################################
@@ -76,6 +81,7 @@ class MainWindow(QtWidgets.QMainWindow):
         # ГЛАВНОЕ МЕНЮ И ТИТУЛЬНЫЙ ЗАГОЛОВОК
         #########################################################
         # file_menu = self.menuBar().addMenu("&Файл") # МЕНЮ ФАЙЛ -- ВРЕМЕННО ОТКЛЮЧЕНО ДО ПОСЛЕДУЮЩИХ ВЕРСИЙ
+        data_menu = self.menuBar().addMenu("&БД")
         process_menu = self.menuBar().addMenu("&Модули")
         preferences_menu = self.menuBar().addMenu("&Настройки")
         help_menu = self.menuBar().addMenu("&Справка")
@@ -86,18 +92,34 @@ class MainWindow(QtWidgets.QMainWindow):
         #######################################################################
         # ГЛАВНОЕ МЕНЮ
         #######################################################################
-        indicators_process_1 = QtWidgets.QAction("Адгезия", self,
+        data_edit = QtWidgets.QAction(QtGui.QIcon(ICON_TEST),"Редактировать", self,
+                                              shortcut=QtGui.QKeySequence(QtCore.Qt.CTRL + QtCore.Qt.Key_T))
+        data_edit.triggered.connect(self.edit_base)
+        data_menu.addAction(data_edit)
+
+        data_test = QtWidgets.QAction(QtGui.QIcon(ICON_TEST),"Запуск тестов ...", self,
+                                              shortcut=QtGui.QKeySequence(QtCore.Qt.CTRL + QtCore.Qt.Key_T))
+        data_test.triggered.connect(self.test_data)
+        data_menu.addAction(data_test)
+        data_menu.addSeparator()
+
+        data_exit = QtWidgets.QAction(QtGui.QIcon(ICON_FREE),"Выход ...", self,
+                                              shortcut=QtGui.QKeySequence(QtCore.Qt.CTRL + QtCore.Qt.Key_T))
+        data_exit.triggered.connect(self.test_data)
+        data_menu.addAction(data_exit)
+
+        indicators_process_1 = QtWidgets.QAction(QtGui.QIcon(ICON_CMD),"Адгезия", self,
                                               shortcut=QtGui.QKeySequence(QtCore.Qt.SHIFT + QtCore.Qt.Key_1))
         indicators_process_1.triggered.connect(self.on_adhaesio)
         process_menu.addAction(indicators_process_1)
 
 
-        fullscreen_action = QtWidgets.QAction(QtGui.QIcon(ICON_FREE), "Полноэкранный режим", self,
+        fullscreen_action = QtWidgets.QAction(QtGui.QIcon(ICON_FULLSCREEN), "Полноэкранный режим", self,
                                               shortcut=QtGui.QKeySequence(QtCore.Qt.SHIFT + QtCore.Qt.Key_F))
         fullscreen_action.triggered.connect(self.fullscreen_run)
         preferences_menu.addAction(fullscreen_action)
 
-        normalscreen_action = QtWidgets.QAction(QtGui.QIcon(ICON_FREE), "Нормальный режим", self,
+        normalscreen_action = QtWidgets.QAction(QtGui.QIcon(ICON_SCREEN), "Нормальный режим", self,
                                                 shortcut=QtGui.QKeySequence(QtCore.Qt.SHIFT + QtCore.Qt.Key_N))
         normalscreen_action.triggered.connect(self.normalscreen_run)
         preferences_menu.addAction(normalscreen_action)
@@ -119,15 +141,80 @@ class MainWindow(QtWidgets.QMainWindow):
         ######################################################################
         # ПАНЕЛЬ ИНСТРУМЕНТОВ
         ######################################################################
-        toolbar_left = QtWidgets.QToolBar()
-        self.addToolBar(QtCore.Qt.LeftToolBarArea, toolbar_left)
+        toolbar_right = QtWidgets.QToolBar()
+        self.addToolBar(QtCore.Qt.RightToolBarArea, toolbar_right)
         statusbar = QtWidgets.QStatusBar()
         self.setStatusBar(statusbar)
-
-        btn_gr_view = QtWidgets.QAction(QtGui.QIcon(ICON_FREE), 'Графики', self)
+        # АДГЕЗИЯ ПИРМА-З
+        btn_gr_view = QtWidgets.QAction(QtGui.QIcon(ICON_GRAPHIC_001), 'ПИРМА-З', self)
         btn_gr_view.triggered.connect(self.graphic_1)
-        btn_gr_view.setStatusTip('Отобразить графики')
-        toolbar_left.addAction(btn_gr_view)
+        btn_gr_view.setStatusTip('Графики показателей характеризующих адгезию  ПИРМА-З')
+        toolbar_right.addAction(btn_gr_view)
+        # АДГЕЗИЯ ПИРМА-Л
+        btn_gr_view = QtWidgets.QAction(QtGui.QIcon(ICON_GRAPHIC_001), 'ПИРМА-Л', self)
+        btn_gr_view.triggered.connect(self.graphic_2)
+        btn_gr_view.setStatusTip('Графики показателей характеризующих адгезию ПИРМА-Л')
+        toolbar_right.addAction(btn_gr_view)
+
+        # АДГЕЗИЯ ЛИТКОР-НН толщина 2.0 мм.
+        btn_gr_view = QtWidgets.QAction(QtGui.QIcon(ICON_GRAPHIC_001), 'ЛИТКОР-НН толщина 2.0 мм', self)
+        btn_gr_view.triggered.connect(self.graphic_3)
+        btn_gr_view.setStatusTip('Графики показателей характеризующих адгезию ЛИТКОР-НН толщина 2.0 мм')
+        toolbar_right.addAction(btn_gr_view)
+
+        # АДГЕЗИЯ ЛИТКОР-НН толщина 1.9 мм.
+        btn_gr_view = QtWidgets.QAction(QtGui.QIcon(ICON_GRAPHIC_001), 'ЛИТКОР-НН толщина 1.9 мм', self)
+        btn_gr_view.triggered.connect(self.graphic_4)
+        btn_gr_view.setStatusTip('Графики показателей характеризующих адгезию ЛИТКОР-НН толщина 1.9 мм')
+        toolbar_right.addAction(btn_gr_view)
+
+        # АДГЕЗИЯ ЛИТКОР-НН толщина 1.7 мм.
+        btn_gr_view = QtWidgets.QAction(QtGui.QIcon(ICON_GRAPHIC_001), 'ЛИТКОР-НН толщина 1.7 мм', self)
+        btn_gr_view.triggered.connect(self.graphic_5)
+        btn_gr_view.setStatusTip('Графики показателей характеризующих адгезию ЛИТКОР-НН толщина 1.7 мм')
+        toolbar_right.addAction(btn_gr_view)
+
+        # АДГЕЗИЯ ЛИТКОР-НН толщина 1.0 мм.
+        btn_gr_view = QtWidgets.QAction(QtGui.QIcon(ICON_GRAPHIC_001), 'ЛИТКОР-НН толщина 1.0 мм', self)
+        btn_gr_view.triggered.connect(self.graphic_6)
+        btn_gr_view.setStatusTip('Графики показателей характеризующих адгезию ЛИТКОР-НН толщина 1.0 мм')
+        toolbar_right.addAction(btn_gr_view)
+
+        # АДГЕЗИЯ ЛИТКОР-Л_тр_нефть
+        btn_gr_view = QtWidgets.QAction(QtGui.QIcon(ICON_GRAPHIC_001), 'ЛИТКОР-Л_тр_нефть', self)
+        btn_gr_view.triggered.connect(self.graphic_7)
+        btn_gr_view.setStatusTip('Графики показателей характеризующих адгезию ЛИТКОР-Л для транснефти')
+        toolbar_right.addAction(btn_gr_view)
+
+        # АДГЕЗИЯ ЛИТКОР-Л_газ
+        btn_gr_view = QtWidgets.QAction(QtGui.QIcon(ICON_GRAPHIC_001), 'ЛИТКОР-Л_газ', self)
+        btn_gr_view.triggered.connect(self.graphic_8)
+        btn_gr_view.setStatusTip('Графики показателей характеризующих адгезию ЛИТКОР-Л для газораспределения')
+        toolbar_right.addAction(btn_gr_view)
+
+        # АДГЕЗИЯ ЛИТКОР-З_тр_нефть
+        btn_gr_view = QtWidgets.QAction(QtGui.QIcon(ICON_GRAPHIC_001), 'ЛИТКОР-З_тр_нефть', self)
+        btn_gr_view.triggered.connect(self.graphic_9)
+        btn_gr_view.setStatusTip('Графики показателей характеризующих адгезию ЛИТКОР-З для транснефти')
+        toolbar_right.addAction(btn_gr_view)
+
+        # АДГЕЗИЯ ЛИТКОР-З_газ
+        btn_gr_view = QtWidgets.QAction(QtGui.QIcon(ICON_GRAPHIC_001), 'ЛИТКОР-З_газ', self)
+        btn_gr_view.triggered.connect(self.graphic_10)
+        btn_gr_view.setStatusTip('Графики показателей характеризующих адгезию ЛИТКОР-З для газораспределения')
+        toolbar_right.addAction(btn_gr_view)
+
+        # АДГЕЗИЯ БПИ толщина 2.0 мм
+        btn_gr_view = QtWidgets.QAction(QtGui.QIcon(ICON_GRAPHIC_001), 'БПИ толщина 2.0 мм', self)
+        btn_gr_view.triggered.connect(self.graphic_11)
+        btn_gr_view.setStatusTip('Графики показателей характеризующих адгезию БПИ толщина 2.0 мм')
+        toolbar_right.addAction(btn_gr_view)
+
+        # АДГЕЗИЯ БПИ толщина 1.7 мм
+        btn_gr_view = QtWidgets.QAction(QtGui.QIcon(ICON_GRAPHIC_001), 'БПИ толщина 1.7 мм', self)
+        btn_gr_view.triggered.connect(self.graphic_12)
+        btn_gr_view.setStatusTip('Графики показателей характеризующих адгезию БПИ толщина 1.7 мм')
+        toolbar_right.addAction(btn_gr_view)
 
         toolbar_bottom = QtWidgets.QToolBar()
         self.addToolBar(QtCore.Qt.BottomToolBarArea, toolbar_bottom)
@@ -138,6 +225,27 @@ class MainWindow(QtWidgets.QMainWindow):
         btn_gr_view.triggered.connect(self.graphic_1)
         btn_gr_view.setStatusTip('Отобразить графики')
         toolbar_bottom.addAction(btn_gr_view)
+
+        toolbar_top = QtWidgets.QToolBar()
+        self.addToolBar(QtCore.Qt.TopToolBarArea, toolbar_top)
+        statusbar = QtWidgets.QStatusBar()
+        self.setStatusBar(statusbar)
+
+        # Сохранить в файл результаты по адгезии
+        btn_gr_view = QtWidgets.QAction(QtGui.QIcon(ICON_SAVE), 'Сохранить в файл результаты по адгезии', self)
+        btn_gr_view.triggered.connect(self.save_1)
+        btn_gr_view.setStatusTip('Сохранить результаты по адгезии за квартал')
+        toolbar_top.addAction(btn_gr_view)
+
+        toolbar_left = QtWidgets.QToolBar()
+        self.addToolBar(QtCore.Qt.LeftToolBarArea, toolbar_left)
+        statusbar = QtWidgets.QStatusBar()
+        self.setStatusBar(statusbar)
+
+        btn_gr_view = QtWidgets.QAction(QtGui.QIcon(ICON_FREE), 'Графики', self)
+        btn_gr_view.triggered.connect(self.graphic_1)
+        btn_gr_view.setStatusTip('Отобразить графики')
+        toolbar_left.addAction(btn_gr_view)
 
         #######################################################################
         # ПОЗИЦИОНИРОВАНИЕ
@@ -197,18 +305,148 @@ class MainWindow(QtWidgets.QMainWindow):
     def graphic_1(self):
         a = ad.LinearGraphic(ad._pz) # экземпляр класса линейного графика
         a.middle_value_text() # Aср
-        a.regres_graphic() # построение графика линейной регресии
-        b = ad.DistributionDiagramm(ad._pz) # экземпляр класса диаграммы распределения
-        c = ad.DistributionHistogramm(ad._pz) # экземпляр класса гистограммы распределения
-        d = ad.ErrorGraphic(ad._pz) # экземпляр класса графика погрешностей
-        e = ad.TableGraphic(ad.pz) # экземпляр класса выборки последних значений
-        f = ad.DependenceGraphic(ad._lz_gaz)
+        #a.regres_graphic() # построение графика линейной регресии
+        #b = ad.DistributionDiagramm(ad._pz) # экземпляр класса диаграммы распределения
+        #c = ad.DistributionHistogramm(ad._pz) # экземпляр класса гистограммы распределения
+        #d = ad.ErrorGraphic(ad._pz) # экземпляр класса графика погрешностей
+        #e = ad.TableGraphic(ad.pz) # экземпляр класса выборки последних значений
+        #f = ad.DependenceGraphic(ad._pz)
         plt.show()#график на экран
+
+    def graphic_2(self):
+        a = ad.LinearGraphic(ad._pl) # экземпляр класса линейного графика
+        a.middle_value_text() # Aср
+        #a.regres_graphic() # построение графика линейной регресии
+        #b = ad.DistributionDiagramm(ad._pl) # экземпляр класса диаграммы распределения
+        #c = ad.DistributionHistogramm(ad._pl) # экземпляр класса гистограммы распределения
+        #d = ad.ErrorGraphic(ad._pl) # экземпляр класса графика погрешностей
+        #e = ad.TableGraphic(ad.pl) # экземпляр класса выборки последних значений
+        #f = ad.DependenceGraphic(ad._pl)
+        plt.show()#график на экран
+
+    def graphic_3(self):
+        a = ad.LinearGraphic(ad._lnn_2_0) # экземпляр класса линейного графика
+        a.middle_value_text() # Aср
+        #a.regres_graphic() # построение графика линейной регресии
+        #b = ad.DistributionDiagramm(ad._lnn_2_0) # экземпляр класса диаграммы распределения
+        #c = ad.DistributionHistogramm(ad._lnn_2_0) # экземпляр класса гистограммы распределения
+        #d = ad.ErrorGraphic(ad._lnn_2_0) # экземпляр класса графика погрешностей
+        #e = ad.TableGraphic(ad.lnn_2_0) # экземпляр класса выборки последних значений
+        #f = ad.DependenceGraphic(ad._lnn_2_0)
+        plt.show()#график на экран
+
+    def graphic_4(self):
+        a = ad.LinearGraphic(ad._lnn_1_9) # экземпляр класса линейного графика
+        a.middle_value_text() # Aср
+        #a.regres_graphic() # построение графика линейной регресии
+        #b = ad.DistributionDiagramm(ad._lnn_1_9) # экземпляр класса диаграммы распределения
+        #c = ad.DistributionHistogramm(ad._lnn_1_9) # экземпляр класса гистограммы распределения
+        #d = ad.ErrorGraphic(ad._lnn_1_9) # экземпляр класса графика погрешностей
+        #e = ad.TableGraphic(ad.lnn_1_9) # экземпляр класса выборки последних значений
+        #f = ad.DependenceGraphic(ad._lnn_1_9)
+        plt.show()#график на экран
+
+    def graphic_5(self):
+        a = ad.LinearGraphic(ad._lnn_1_7) # экземпляр класса линейного графика
+        a.middle_value_text() # Aср
+        #a.regres_graphic() # построение графика линейной регресии
+        #b = ad.DistributionDiagramm(ad._lnn_1_7) # экземпляр класса диаграммы распределения
+        #c = ad.DistributionHistogramm(ad._lnn_1_7) # экземпляр класса гистограммы распределения
+        #d = ad.ErrorGraphic(ad._lnn_1_7) # экземпляр класса графика погрешностей
+        #e = ad.TableGraphic(ad.lnn_1_7) # экземпляр класса выборки последних значений
+        #f = ad.DependenceGraphic(ad._lnn_1_7)
+        plt.show()#график на экран
+
+    def graphic_6(self):
+        a = ad.LinearGraphic(ad._lnn_1_0) # экземпляр класса линейного графика
+        a.middle_value_text() # Aср
+        #a.regres_graphic() # построение графика линейной регресии
+        #b = ad.DistributionDiagramm(ad._lnn_1_0) # экземпляр класса диаграммы распределения
+        #c = ad.DistributionHistogramm(ad._lnn_1_0) # экземпляр класса гистограммы распределения
+        #d = ad.ErrorGraphic(ad._lnn_1_0) # экземпляр класса графика погрешностей
+        #e = ad.TableGraphic(ad.lnn_1_0) # экземпляр класса выборки последних значений
+        #f = ad.DependenceGraphic(ad._lnn_1_0)
+        plt.show()#график на экран
+
+    def graphic_7(self):
+        a = ad.LinearGraphic(ad._ll_tr_neft) # экземпляр класса линейного графика
+        a.middle_value_text() # Aср
+        #a.regres_graphic() # построение графика линейной регресии
+        #b = ad.DistributionDiagramm(ad._ll_tr_neft) # экземпляр класса диаграммы распределения
+        #c = ad.DistributionHistogramm(ad._ll_tr_neft) # экземпляр класса гистограммы распределения
+        #d = ad.ErrorGraphic(ad._ll_tr_neft) # экземпляр класса графика погрешностей
+        #e = ad.TableGraphic(ad.ll_tr_neft) # экземпляр класса выборки последних значений
+        #f = ad.DependenceGraphic(ad._ll_tr_neft)
+        plt.show()#график на экран
+
+    def graphic_8(self):
+        a = ad.LinearGraphic(ad._ll_gaz) # экземпляр класса линейного графика
+        a.middle_value_text() # Aср
+        #a.regres_graphic() # построение графика линейной регресии
+        #b = ad.DistributionDiagramm(ad._ll_gaz) # экземпляр класса диаграммы распределения
+        #c = ad.DistributionHistogramm(ad._ll_gaz) # экземпляр класса гистограммы распределения
+        #d = ad.ErrorGraphic(ad._ll_gaz) # экземпляр класса графика погрешностей
+        #e = ad.TableGraphic(ad.ll_gaz) # экземпляр класса выборки последних значений
+        #f = ad.DependenceGraphic(ad._ll_gaz)
+        plt.show()#график на экран
+
+    def graphic_9(self):
+        a = ad.LinearGraphic(ad._lz_tr_neft) # экземпляр класса линейного графика
+        a.middle_value_text() # Aср
+        #a.regres_graphic() # построение графика линейной регресии
+        #b = ad.DistributionDiagramm(ad._lz_tr_neft) # экземпляр класса диаграммы распределения
+        #c = ad.DistributionHistogramm(ad._lz_tr_neft) # экземпляр класса гистограммы распределения
+        #d = ad.ErrorGraphic(ad._lz_tr_neft) # экземпляр класса графика погрешностей
+        #e = ad.TableGraphic(ad.lz_tr_neft) # экземпляр класса выборки последних значений
+        #f = ad.DependenceGraphic(ad._lz_tr_neft)
+        plt.show()#график на экран
+
+    def graphic_10(self):
+        a = ad.LinearGraphic(ad._lz_gaz) # экземпляр класса линейного графика
+        a.middle_value_text() # Aср
+        #a.regres_graphic() # построение графика линейной регресии
+        #b = ad.DistributionDiagramm(ad._lz_gaz) # экземпляр класса диаграммы распределения
+        #c = ad.DistributionHistogramm(ad._lz_gaz) # экземпляр класса гистограммы распределения
+        #d = ad.ErrorGraphic(ad._lz_gaz) # экземпляр класса графика погрешностей
+        #e = ad.TableGraphic(ad.lz_gaz) # экземпляр класса выборки последних значений
+        #f = ad.DependenceGraphic(ad._lz_gaz)
+        plt.show()#график на экран
+
+    def graphic_11(self):
+        a = ad.LinearGraphic(ad._bpi_2_0) # экземпляр класса линейного графика
+        a.middle_value_text() # Aср
+        #a.regres_graphic() # построение графика линейной регресии
+        #b = ad.DistributionDiagramm(ad._bpi_2_0) # экземпляр класса диаграммы распределения
+        #c = ad.DistributionHistogramm(ad._bpi_2_0) # экземпляр класса гистограммы распределения
+        #d = ad.ErrorGraphic(ad._bpi_2_0) # экземпляр класса графика погрешностей
+        #e = ad.TableGraphic(ad.bpi_2_0) # экземпляр класса выборки последних значений
+        #f = ad.DependenceGraphic(ad._bpi_2_0)
+        plt.show()#график на экран
+
+    def graphic_12(self):
+        a = ad.LinearGraphic(ad._bpi_1_7) # экземпляр класса линейного графика
+        a.middle_value_text() # Aср
+        #a.regres_graphic() # построение графика линейной регресии
+        #b = ad.DistributionDiagramm(ad._bpi_1_7) # экземпляр класса диаграммы распределения
+        #c = ad.DistributionHistogramm(ad._bpi_1_7) # экземпляр класса гистограммы распределения
+        #d = ad.ErrorGraphic(ad._bpi_1_7) # экземпляр класса графика погрешностей
+        #e = ad.TableGraphic(ad.bpi_1_7) # экземпляр класса выборки последних значений
+        #f = ad.DependenceGraphic(ad._bpi_1_7)
+        plt.show()#график на экран
+
+    def save_1(self):
+        pass
 
     def on_adhaesio(self):
         #тестирование данных модулей
         os.chdir('Indicators_Process_B_7_4_and_O_8_2')
         os.startfile('adhaesio.py')
+
+    def edit_base(self):
+        pass
+
+    def test_data(self):
+        pass
 
 ###Классы содержимого вкладок
 class TabStr(QtWidgets.QWidget):
@@ -299,8 +537,6 @@ if __name__ == "__main__":
     ICON_HELP = "../gui_icon/help.png"
     ICON_ABOUT = "../gui_icon/about.png"
     ICON_QT = "../gui_icon/qt.png"
-
-
     run_about = MainWindow()
     #run_test = MyTest()
     #run_test.show()

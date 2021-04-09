@@ -1667,3 +1667,21 @@ ImportError: cannot import name 'data_testing' from 'Data' (C:\Users\a.bezzubov\
 [07/April/2021 14:28] - indicators.production - INFO - OK! Load object class
 [07/April/2021 14:28] - indicators.production - INFO - OK! Load object class
 [07/April/2021 14:28] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[07/April/2021 14:32] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[07/April/2021 14:32] - indicators.production - INFO - start initial assignment
+[07/April/2021 14:32] - indicators.production - INFO - OK! Load Data
+[07/April/2021 14:32] - indicators.production - INFO - OK! Load Data
+[07/April/2021 14:32] - indicators.production - INFO - OK! Load Data
+[07/April/2021 14:32] - indicators.production - INFO - OK! Calculation Data
+[07/April/2021 14:32] - indicators.production - INFO - OK! Calculation Data
+[07/April/2021 14:32] - indicators.production - INFO - OK! end initial assignment 
+[07/April/2021 14:32] - indicators.production - INFO - OK! Load object class
+[07/April/2021 14:32] - indicators.production - INFO - OK! Load object class
+[07/April/2021 14:32] - indicators.production - INFO - OK! Load object class
+[07/April/2021 14:32] - indicators.production - INFO - OK! Load object class
+[07/April/2021 14:32] - indicators.production - INFO - OK! Load object class
+[07/April/2021 14:32] - indicators.production - INFO - OK! Load object class
+[07/April/2021 14:32] - indicators.production - INFO - OK! Load object class
+[07/April/2021 14:32] - indicators.production - INFO - OK! Load object class
+[07/April/2021 14:32] - indicators.production - INFO - OK! Load object class
+[07/April/2021 14:32] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
