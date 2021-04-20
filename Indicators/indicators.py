@@ -52,9 +52,9 @@ class MyWindow(QtWidgets.QDialog):
         if pass_dlg.QChek.isChecked():
             for i in range(1, 4):  # пауза перед запуском
 
-                sp.showMessage('"Я знаю только то, что я ничего не знаю"'
+                sp.showMessage('"Версия в разработке"'
                                "\n                                                                                            "
-                               'Сократ',
+                               'tendency v.0.2a',
                                QtCore.Qt.AlignHCenter | QtCore.Qt.AlignBottom, QtCore.Qt.black)
                 QtWidgets.qApp.processEvents()  # Запускаем оборот цикла(выход в основной цикл) для избежания зацикливания ("зависания")
                 time.sleep(1)
