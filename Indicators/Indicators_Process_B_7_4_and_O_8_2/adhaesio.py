@@ -107,6 +107,17 @@ for i in ad.lst_adhaesio:
 """
 import sys
 import os
+import platform # информация о версии оси
+#-------------------------------------------------------
+# модуль для логирования(журналирования)
+import logging
+import logging.config # файл конфигурации
+import logging.handlers # ротация логов
+import traceback # трасировка сообщений об исключениях
+#-------------------------------------------------------
+# модуль для тестирования
+import pytest
+#-------------------------------------------------------
 import subprocess
 import time
 sys.path.append(os.path.realpath('../..'))
@@ -124,15 +135,20 @@ from scipy.stats import linregress # модуль для построения л
 from tabulate import tabulate
 import Tools.Abstract_Parents as Abstract
 #универсальный модуль для выполнения контракта
-
-from Data import pz, pl, lz_gaz, lz_tr_neft, ll_gaz, ll_tr_neft, lnn_1_9,lnn_2_0, lnn_1_7, bpi_1_7, bpi_2_0, lnn_1_0, lst_adhaesio
-#импорт DataFrame объектов с исходными данными
-
 from prettytable import PrettyTable # импорт библиотеки для вывода табличных данных в консоли(терминале)
 
+logging.config.fileConfig('logging.conf') # файл конфигурации
+logger = logging.getLogger('indicators.adhaesio') # возвращает объект логгера
+logger.info(f'Started on platform {platform.platform()}') # logging
+
+try:
+    from Data import pz, pl, lz_gaz, lz_tr_neft, ll_gaz, ll_tr_neft, lnn_1_9,lnn_2_0, lnn_1_7, bpi_1_7, bpi_2_0, lnn_1_0, lst_adhaesio
+    #импорт DataFrame объектов с исходными данными
+    logger.info("OK! Load Data") # logging
 # ИСХОДНЫЕ ДАННЫЕ (ДОПОЛНИТЕЛЬНОЕ ФОРМАТИРОВАНИЕ):
 ##################################################
-try:
+    logger.info("start initial assignment") # logging
+
     #Список наименований продукции
     LENTA_NAME = [
                     'ПИРМА-З','ПИРМА-Л','ЛИТКОР-З_газ','ЛИТКОР-З_тр_нефть',
@@ -179,7 +195,6 @@ try:
                 '011':_bpi_2_0, '012':_lnn_1_0
                 } #идентификатор
 
-
     # Расчёт значений в кг
     __pz = _pz.apply(lambda x: x/9.80665)
     __pl = _pl.apply(lambda x: x/9.80665)
@@ -198,8 +213,25 @@ try:
                     __ll_tr_neft, __lnn_1_9, __lnn_2_0, __lnn_1_7,
                     __bpi_1_7, __bpi_2_0]
 
-except Exception:
-    print(time.ctime(), 'Benchmark_Data_Error: ', sys.exc_info()[:2], file = open('log.txt', 'a'))
+
+    logger.info('OK! end initial assignment ')
+
+except ImportError:
+    logger.error(f'FAILED! Data_Launch_Error: {sys.exc_info()[:2]}', exc_info=True) # logging
+
+except TypeError:
+    def test_add_raises():
+        """Все, что находиться в следующем блоке кода, должно
+        вызвать исключение
+        """
+        with pytest.raises(TypeError):
+            raise TypeError
+
+    logger.error(f'FAILED! Data_Launch_Error: {sys.exc_info()[:2]}', exc_info=True) # logging
+
+except:
+    logger.error("FAILED! Data_Launch_Error: %s", traceback.format_exc()) # logging
+
 
 try:
     class LinearGraphic(Abstract.Graphic):
@@ -224,6 +256,8 @@ try:
             critery_3 - Критерий оценки "в нахлест" - БПИ.
             """
             super().__init__(data)
+            self.logger = logging.getLogger('indicators.adhaesio.LinearGraphic')
+            self.logger.info('__Init__ LinearGraphic')
             self.name = name
             self.critery_1 = critery_1
             self.critery_2 = critery_2
@@ -303,6 +337,12 @@ try:
             ax1.grid(axis='both', color='black', linestyle='dotted',linewidth=1)
             ax2.grid(axis='both', color='black', linestyle='dotted',linewidth=1)
 
+    logger.info("OK! Load object class") # logging
+
+except Exception:
+    logger.error(f'FAILED! LinearGraphics_Error: {sys.exc_info()[:2]}') # logging
+
+try:
     class DistributionDiagramm(Abstract.Graphic):
         """
         Класс построения диаграммы распределения
@@ -325,6 +365,8 @@ try:
             critery_3 - Критерий оценки "в нахлест" - БПИ.
             """
             super().__init__(data)
+            self.logger = logging.getLogger('indicators.adhaesio.DistributionDiagramm')
+            self.logger.info('__Init__ DistributionDiagramm')
             self.critery_1 = critery_1
             self.critery_2 = critery_2
             self.critery_3 = critery_3
@@ -339,6 +381,12 @@ try:
             plt.legend(fontsize=8, shadow=True, framealpha=1,  edgecolor='r', title='', loc='best')
             plt.grid(axis='both', color='black', linestyle='--',linewidth=0.5, alpha=0.3)
 
+    logger.info("OK! Load object class") # logging
+
+except Exception:
+    logger.error(f'FAILED! DistributionDiagramm_Error: {sys.exc_info()[:2]}') # logging
+
+try:
     class DistributionHistogramm(Abstract.Graphic):
         """
         Класс построения гистограммы распределения
@@ -358,6 +406,8 @@ try:
             name - название графика.
             """
             super().__init__(data)
+            self.logger = logging.getLogger('indicators.adhaesio.DistributionHistogramm')
+            self.logger.info('__Init__ DistributionHistogramm')
             fig, ax = plt.subplots()
             fig.canvas.set_window_title('Гистограмма распределения')
             sb.distplot(self.data)
@@ -365,6 +415,12 @@ try:
             plt.xlabel("Значение адгезии, Н/см", fontsize=12)
             plt.grid(axis='both', color='black', linestyle='--',linewidth=0.5, alpha=0.3)
 
+    logger.info("OK! Load object class") # logging
+
+except Exception:
+    logger.error(f'FAILED! DistributionDiagramm_Error: {sys.exc_info()[:2]}') # logging
+
+try:
     class ErrorGraphic(Abstract.Graphic):
         """
         Класс построения графика допустимых погрешностей
@@ -388,6 +444,8 @@ try:
             error - допустимая погрешность в %.
             """
             super().__init__(data)
+            self.logger = logging.getLogger('indicators.adhaesio.ErrorGraphic')
+            self.logger.info('__Init__ ErrorGraphic')
             self.critery_1 = critery_1
             self.critery_2 = critery_2
             self.critery_3 = critery_3
@@ -427,6 +485,12 @@ try:
             ax2.axhline(critery_3, color ='black', linestyle=':', label = 'Критерий оценки "в нахлест" - БПИ', alpha=0.7)
             ax2.legend(fontsize=6, shadow=True, framealpha=0.5,  edgecolor='r', title='', loc='best')
 
+    logger.info("OK! Load object class") # logging
+
+except Exception:
+    logger.error(f'FAILED! ErrorGraphic_Error: {sys.exc_info()[:2]}') # logging
+
+try:
     class TableGraphic(Abstract.Graphic):
         """
         Класс визуализации табличных данных для n последних значений
@@ -447,6 +511,8 @@ try:
             name - название графика.
             """
             super().__init__(data)
+            self.logger = logging.getLogger('indicators.adhaesio.TableGraphic')
+            self.logger.info('__Init__ TableGraphic')
             self.data = data
             self.name = name
             data = data.tail(40)
@@ -469,6 +535,12 @@ try:
             plt.ylabel("Значение адгезии", fontsize=12)
             plt.grid(axis='both', color='black', linestyle=':',linewidth=0.5, alpha=0.7)
 
+    logger.info("OK! Load object class") # logging
+
+except Exception:
+    logger.error(f'FAILED! ErrorGraphic_Error: {sys.exc_info()[:2]}') # logging
+
+try:
     class DependenceGraphic(Abstract.Graphic):
         """
         Класс визуализации зависимости данных
@@ -488,6 +560,8 @@ try:
             name - название графика.
             """
             super().__init__(data)
+            self.logger = logging.getLogger('indicators.adhaesio.DependenceGraphic')
+            self.logger.info('__Init__ DependenceGraphic')
             self.data = data
             plt.figure(figsize=(12,10), dpi= 80)
             plt.gcf().canvas.set_window_title(name)
@@ -496,8 +570,10 @@ try:
             plt.xticks(fontsize=12)
             plt.yticks(fontsize=12)
 
+    logger.info("OK! Load object class") # logging
+
 except Exception:
-    print(time.ctime(), 'Graphics_Error: ', sys.exc_info()[:2], file = open('log.txt', 'a'))
+    logger.error(f'FAILED! DependenceGraphic_Error: {sys.exc_info()[:2]}') # logging
 
 try:
     class Data_Table(object):
@@ -518,6 +594,8 @@ try:
             ----------
             data - нименование переменной (см.таблицу выше);
             """
+            self.logger = logging.getLogger('indicators.adhaesio.Data_Table')
+            self.logger.info('__Init__ Data_Table')
             self.data = data
 
         def __str__(self):
@@ -533,8 +611,11 @@ try:
             print(tabulate(self.data, headers = 'keys', tablefmt = 'psql'), file=open(r'temp_data_graphics.txt', 'w', encoding = 'utf-8'))
             os.system('temp_data_graphics.txt')
 
+    logger.info("OK! Load object class") # logging
+
 except Exception:
-    print(time.ctime(), 'Table_Error: ', sys.exc_info()[:2], file = open('log.txt', 'a'))
+    logger.error(f'FAILED! Data_Table_Error: {sys.exc_info()[:2]}') # logging
+
 
 try:
     class Statistic_Table(Abstract.Statistic):
@@ -558,6 +639,8 @@ try:
             ----------
             data - нименование переменной (см.таблицу выше);
             """
+            self.logger = logging.getLogger('indicators.adhaesio.Statistic_Table')
+            self.logger.info('__Init__ Statistic_Table')
             self.data = data
             self.Ascr = data.count() # количество значений
             self.Asr = data.mean()  # среднее значение df.mean(n), где n - номер оси
@@ -615,8 +698,10 @@ try:
             """
             return "Мода значений:\n{}".format(self.Amode)
 
+    logger.info("OK! Load object class") # logging
+
 except Exception:
-    print(time.ctime(), 'Statistic_Error: ', sys.exc_info()[:2], file = open('log.txt', 'a'))
+    logger.error(f'FAILED! Statistic_Table_Error: {sys.exc_info()[:2]}') # logging
 
 try:
     class Save_Data(object):
@@ -634,6 +719,8 @@ try:
             ----------
             data - наименование переменной (см.таблицу выше);
             """
+            self.logger = logging.getLogger('indicators.adhaesio.Save_Data')
+            self.logger.info('__Init__ Save_Data')
             self.data = data
             directory = data.index.name
             parent_dir = r'files/'
@@ -708,6 +795,12 @@ try:
                 g = DependenceGraphic(data)
                 g.save_graphic('{}/Коэффициенты корреляции'.format(path))
 
+    logger.info("OK! Load object class") # logging
+
+except Exception:
+    logger.error(f'FAILED! Save_Data_Error: {sys.exc_info()[:2]}') # logging
+
+try:
     class Save_add_Data(object):
         """
         Класс сохранения статистических данных и графика за квартал
@@ -722,6 +815,8 @@ try:
             ----------
             data - наименование переменной (см.таблицу выше);
             """
+            self.logger = logging.getLogger('indicators.adhaesio.Save_add_Data')
+            self.logger.info('__Init__ Save_add_Data')
             self.data = data
             directory = data.index.name
             parent_dir = r'files/'
@@ -734,8 +829,10 @@ try:
                 e = TableGraphic(data) # экземпляр класса выборки последних значений
                 e.save_graphic('{}/Статистика по n последним значениям'.format(path))
 
+    logger.info("OK! Load object class") # logging
+
 except Exception:
-    print(time.ctime(), 'Save_Error: ', sys.exc_info()[:2], file = open('log.txt', 'a'))
+    logger.error(f'FAILED! Save_add_Data_Error: {sys.exc_info()[:2]}') # logging
 
 try:
     class Info(object):
@@ -743,6 +840,8 @@ try:
         Класс вывода таблицы на экран для выбора идентификатора
         """
         def __init__(self):
+            self.logger = logging.getLogger('indicators.adhaesio.Info')
+            self.logger.info('__Init__ Info')
             self.x = PrettyTable()
             field_names = ['Идентификатор', 'Наименование']
             self.x.add_column(field_names[1], LENTA_NAME)
@@ -752,8 +851,12 @@ try:
         def __repr__(self):
             return '{}'.format(self.x)
 
+    logger.info("OK! Load object class") # logging
+
 except Exception:
-    print(time.ctime(), 'Table_Error: ', sys.exc_info()[:2], file = open('log.txt', 'a'))
+    logger.error(f'FAILED! Info_Error: {sys.exc_info()[:2]}') # logging
+
+logger.info(f"OK! Module on {platform.platform()}") # logging
 
 if __name__=='__main__':
     """

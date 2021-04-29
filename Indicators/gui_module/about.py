@@ -50,7 +50,7 @@ class AboutDialog(QtWidgets.QDialog):
                                 "\nauthor: andrew.bezzubov - 2021-2022 years"
                                 "\nhttps://github.com/alex-markov-creator/tendency.git"
                                 "\nemail: agb2019@list.ru.\n"
-                                "\nGui -интерфейс для просмотра значений и графиков"
+                                "\nGui - интерфейс для просмотра значений и графиков"
                                 "\nпо показателям процессов системы менеджмента"
                                 "\nкачества.\n"
                                 ))
