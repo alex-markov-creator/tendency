@@ -4246,3 +4246,320 @@
 [29/April/2021 13:05] - indicators.production - INFO - OK! Load object class
 [29/April/2021 13:05] - indicators.production - INFO - OK! Load object class
 [29/April/2021 13:05] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[11/May/2021 10:17] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[11/May/2021 10:17] - indicators.production - INFO - start initial assignment
+[11/May/2021 10:17] - indicators.production - INFO - OK! Load Data
+[11/May/2021 10:17] - indicators.production - INFO - OK! Load Data
+[11/May/2021 10:17] - indicators.production - INFO - OK! Load Data
+[11/May/2021 10:17] - indicators.production - INFO - OK! Calculation Data
+[11/May/2021 10:17] - indicators.production - INFO - OK! Calculation Data
+[11/May/2021 10:17] - indicators.production - INFO - OK! end initial assignment 
+[11/May/2021 10:17] - indicators.production - INFO - OK! Load object class
+[11/May/2021 10:17] - indicators.production - INFO - OK! Load object class
+[11/May/2021 10:17] - indicators.production - INFO - OK! Load object class
+[11/May/2021 10:17] - indicators.production - INFO - OK! Load object class
+[11/May/2021 10:17] - indicators.production - INFO - OK! Load object class
+[11/May/2021 10:17] - indicators.production - INFO - OK! Load object class
+[11/May/2021 10:17] - indicators.production - INFO - OK! Load object class
+[11/May/2021 10:17] - indicators.production - INFO - OK! Load object class
+[11/May/2021 10:17] - indicators.production - INFO - OK! Load object class
+[11/May/2021 10:17] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[11/May/2021 10:17] - indicators.production.Info - INFO - __Init__ Info
+[11/May/2021 10:17] - indicators.production.Data_Table - INFO - __Init__ Data_Table
+[11/May/2021 10:17] - indicators.production.Info - INFO - __Init__ Info
+[11/May/2021 10:18] - indicators.production.Comparise - INFO - __Init__ Comparise
+[11/May/2021 10:18] - indicators.production.Info_add - INFO - __Init__ Info_add
+[11/May/2021 10:18] - indicators.production.MaterialConsumption - INFO - __Init__ MaterialConsumption
+[11/May/2021 10:36] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[11/May/2021 10:36] - indicators.production - INFO - start initial assignment
+[11/May/2021 10:36] - indicators.production - INFO - OK! Load Data
+[11/May/2021 10:36] - indicators.production - INFO - OK! Load Data
+[11/May/2021 10:36] - indicators.production - INFO - OK! Load Data
+[11/May/2021 10:36] - indicators.production - INFO - OK! Calculation Data
+[11/May/2021 10:36] - indicators.production - INFO - OK! Calculation Data
+[11/May/2021 10:36] - indicators.production - INFO - OK! end initial assignment 
+[11/May/2021 10:36] - indicators.production - INFO - OK! Load object class
+[11/May/2021 10:36] - indicators.production - INFO - OK! Load object class
+[11/May/2021 10:36] - indicators.production - INFO - OK! Load object class
+[11/May/2021 10:36] - indicators.production - INFO - OK! Load object class
+[11/May/2021 10:36] - indicators.production - INFO - OK! Load object class
+[11/May/2021 10:36] - indicators.production - INFO - OK! Load object class
+[11/May/2021 10:36] - indicators.production - INFO - OK! Load object class
+[11/May/2021 10:36] - indicators.production - INFO - OK! Load object class
+[11/May/2021 10:36] - indicators.production - INFO - OK! Load object class
+[11/May/2021 10:36] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[11/May/2021 10:36] - indicators.production.Info - INFO - __Init__ Info
+[11/May/2021 10:36] - indicators.production.Comparise - INFO - __Init__ Comparise
+[11/May/2021 10:43] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[11/May/2021 10:43] - indicators.production - INFO - start initial assignment
+[11/May/2021 10:43] - indicators.production - INFO - OK! Load Data
+[11/May/2021 10:43] - indicators.production - INFO - OK! Load Data
+[11/May/2021 10:43] - indicators.production - INFO - OK! Load Data
+[11/May/2021 10:43] - indicators.production - INFO - OK! Calculation Data
+[11/May/2021 10:43] - indicators.production - INFO - OK! Calculation Data
+[11/May/2021 10:43] - indicators.production - INFO - OK! end initial assignment 
+[11/May/2021 10:43] - indicators.production - INFO - OK! Load object class
+[11/May/2021 10:43] - indicators.production - INFO - OK! Load object class
+[11/May/2021 10:43] - indicators.production - INFO - OK! Load object class
+[11/May/2021 10:43] - indicators.production - INFO - OK! Load object class
+[11/May/2021 10:43] - indicators.production - INFO - OK! Load object class
+[11/May/2021 10:43] - indicators.production - INFO - OK! Load object class
+[11/May/2021 10:43] - indicators.production - INFO - OK! Load object class
+[11/May/2021 10:43] - indicators.production - INFO - OK! Load object class
+[11/May/2021 10:43] - indicators.production - INFO - OK! Load object class
+[11/May/2021 10:43] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[11/May/2021 10:44] - indicators.production.Info_add - INFO - __Init__ Info_add
+[11/May/2021 10:44] - indicators.production.MaterialConsumption - INFO - __Init__ MaterialConsumption
+[11/May/2021 10:44] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[11/May/2021 10:44] - indicators.production - INFO - start initial assignment
+[11/May/2021 10:44] - indicators.production - INFO - OK! Load Data
+[11/May/2021 10:44] - indicators.production - INFO - OK! Load Data
+[11/May/2021 10:44] - indicators.production - INFO - OK! Load Data
+[11/May/2021 10:44] - indicators.production - INFO - OK! Calculation Data
+[11/May/2021 10:44] - indicators.production - INFO - OK! Calculation Data
+[11/May/2021 10:44] - indicators.production - INFO - OK! end initial assignment 
+[11/May/2021 10:44] - indicators.production - INFO - OK! Load object class
+[11/May/2021 10:44] - indicators.production - INFO - OK! Load object class
+[11/May/2021 10:44] - indicators.production - INFO - OK! Load object class
+[11/May/2021 10:44] - indicators.production - INFO - OK! Load object class
+[11/May/2021 10:44] - indicators.production - INFO - OK! Load object class
+[11/May/2021 10:44] - indicators.production - INFO - OK! Load object class
+[11/May/2021 10:44] - indicators.production - INFO - OK! Load object class
+[11/May/2021 10:44] - indicators.production - INFO - OK! Load object class
+[11/May/2021 10:44] - indicators.production - INFO - OK! Load object class
+[11/May/2021 10:44] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[11/May/2021 10:44] - indicators.production.Info_add - INFO - __Init__ Info_add
+[11/May/2021 10:44] - indicators.production.MaterialConsumption - INFO - __Init__ MaterialConsumption
+[11/May/2021 10:45] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[11/May/2021 10:45] - indicators.production - INFO - start initial assignment
+[11/May/2021 10:45] - indicators.production - INFO - OK! Load Data
+[11/May/2021 10:45] - indicators.production - INFO - OK! Load Data
+[11/May/2021 10:45] - indicators.production - INFO - OK! Load Data
+[11/May/2021 10:45] - indicators.production - INFO - OK! Calculation Data
+[11/May/2021 10:45] - indicators.production - INFO - OK! Calculation Data
+[11/May/2021 10:45] - indicators.production - INFO - OK! end initial assignment 
+[11/May/2021 10:45] - indicators.production - INFO - OK! Load object class
+[11/May/2021 10:45] - indicators.production - INFO - OK! Load object class
+[11/May/2021 10:45] - indicators.production - INFO - OK! Load object class
+[11/May/2021 10:45] - indicators.production - INFO - OK! Load object class
+[11/May/2021 10:45] - indicators.production - INFO - OK! Load object class
+[11/May/2021 10:45] - indicators.production - INFO - OK! Load object class
+[11/May/2021 10:45] - indicators.production - INFO - OK! Load object class
+[11/May/2021 10:45] - indicators.production - INFO - OK! Load object class
+[11/May/2021 10:45] - indicators.production - INFO - OK! Load object class
+[11/May/2021 10:45] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[11/May/2021 10:45] - indicators.production.Info_add - INFO - __Init__ Info_add
+[11/May/2021 10:45] - indicators.production.MaterialConsumption - INFO - __Init__ MaterialConsumption
+[11/May/2021 10:58] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[11/May/2021 10:58] - indicators.production - INFO - start initial assignment
+[11/May/2021 10:58] - indicators.production - INFO - OK! Load Data
+[11/May/2021 10:58] - indicators.production - INFO - OK! Load Data
+[11/May/2021 10:58] - indicators.production - INFO - OK! Load Data
+[11/May/2021 10:58] - indicators.production - INFO - OK! Calculation Data
+[11/May/2021 10:58] - indicators.production - INFO - OK! Calculation Data
+[11/May/2021 10:58] - indicators.production - INFO - OK! end initial assignment 
+[11/May/2021 10:58] - indicators.production - INFO - OK! Load object class
+[11/May/2021 10:58] - indicators.production - INFO - OK! Load object class
+[11/May/2021 10:58] - indicators.production - INFO - OK! Load object class
+[11/May/2021 10:58] - indicators.production - INFO - OK! Load object class
+[11/May/2021 10:58] - indicators.production - INFO - OK! Load object class
+[11/May/2021 10:58] - indicators.production - INFO - OK! Load object class
+[11/May/2021 10:58] - indicators.production - INFO - OK! Load object class
+[11/May/2021 10:58] - indicators.production - INFO - OK! Load object class
+[11/May/2021 10:58] - indicators.production - INFO - OK! Load object class
+[11/May/2021 10:58] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[11/May/2021 10:58] - indicators.production.Info_add - INFO - __Init__ Info_add
+[11/May/2021 10:58] - indicators.production.MaterialConsumption - INFO - __Init__ MaterialConsumption
+[11/May/2021 11:00] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[11/May/2021 11:01] - indicators.production - INFO - start initial assignment
+[11/May/2021 11:01] - indicators.production - INFO - OK! Load Data
+[11/May/2021 11:01] - indicators.production - INFO - OK! Load Data
+[11/May/2021 11:01] - indicators.production - INFO - OK! Load Data
+[11/May/2021 11:01] - indicators.production - INFO - OK! Calculation Data
+[11/May/2021 11:01] - indicators.production - INFO - OK! Calculation Data
+[11/May/2021 11:01] - indicators.production - INFO - OK! end initial assignment 
+[11/May/2021 11:01] - indicators.production - INFO - OK! Load object class
+[11/May/2021 11:01] - indicators.production - INFO - OK! Load object class
+[11/May/2021 11:01] - indicators.production - INFO - OK! Load object class
+[11/May/2021 11:01] - indicators.production - INFO - OK! Load object class
+[11/May/2021 11:01] - indicators.production - INFO - OK! Load object class
+[11/May/2021 11:01] - indicators.production - INFO - OK! Load object class
+[11/May/2021 11:01] - indicators.production - INFO - OK! Load object class
+[11/May/2021 11:01] - indicators.production - INFO - OK! Load object class
+[11/May/2021 11:01] - indicators.production - INFO - OK! Load object class
+[11/May/2021 11:01] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[11/May/2021 11:01] - indicators.production.Info_add - INFO - __Init__ Info_add
+[11/May/2021 11:01] - indicators.production.MaterialConsumption - INFO - __Init__ MaterialConsumption
+[11/May/2021 11:03] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[11/May/2021 11:03] - indicators.production - INFO - start initial assignment
+[11/May/2021 11:03] - indicators.production - INFO - OK! Load Data
+[11/May/2021 11:03] - indicators.production - INFO - OK! Load Data
+[11/May/2021 11:03] - indicators.production - INFO - OK! Load Data
+[11/May/2021 11:03] - indicators.production - INFO - OK! Calculation Data
+[11/May/2021 11:03] - indicators.production - INFO - OK! Calculation Data
+[11/May/2021 11:03] - indicators.production - INFO - OK! end initial assignment 
+[11/May/2021 11:03] - indicators.production - INFO - OK! Load object class
+[11/May/2021 11:03] - indicators.production - INFO - OK! Load object class
+[11/May/2021 11:03] - indicators.production - INFO - OK! Load object class
+[11/May/2021 11:03] - indicators.production - INFO - OK! Load object class
+[11/May/2021 11:03] - indicators.production - INFO - OK! Load object class
+[11/May/2021 11:03] - indicators.production - INFO - OK! Load object class
+[11/May/2021 11:03] - indicators.production - INFO - OK! Load object class
+[11/May/2021 11:03] - indicators.production - INFO - OK! Load object class
+[11/May/2021 11:03] - indicators.production - INFO - OK! Load object class
+[11/May/2021 11:03] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[11/May/2021 13:18] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[11/May/2021 13:18] - indicators.production - INFO - start initial assignment
+[11/May/2021 13:18] - indicators.production - INFO - OK! Load Data
+[11/May/2021 13:18] - indicators.production - INFO - OK! Load Data
+[11/May/2021 13:18] - indicators.production - INFO - OK! Load Data
+[11/May/2021 13:18] - indicators.production - INFO - OK! Calculation Data
+[11/May/2021 13:18] - indicators.production - INFO - OK! Calculation Data
+[11/May/2021 13:18] - indicators.production - INFO - OK! end initial assignment 
+[11/May/2021 13:18] - indicators.production - INFO - OK! Load object class
+[11/May/2021 13:18] - indicators.production - INFO - OK! Load object class
+[11/May/2021 13:18] - indicators.production - INFO - OK! Load object class
+[11/May/2021 13:18] - indicators.production - INFO - OK! Load object class
+[11/May/2021 13:18] - indicators.production - INFO - OK! Load object class
+[11/May/2021 13:18] - indicators.production - INFO - OK! Load object class
+[11/May/2021 13:18] - indicators.production - INFO - OK! Load object class
+[11/May/2021 13:18] - indicators.production - INFO - OK! Load object class
+[11/May/2021 13:18] - indicators.production - INFO - OK! Load object class
+[11/May/2021 13:18] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[11/May/2021 13:18] - indicators.production.Info_add - INFO - __Init__ Info_add
+[11/May/2021 13:18] - indicators.production.MaterialConsumption - INFO - __Init__ MaterialConsumption
+[11/May/2021 13:19] - indicators.production.Info_add - INFO - __Init__ Info_add
+[11/May/2021 13:19] - indicators.production.MaterialConsumption - INFO - __Init__ MaterialConsumption
+[11/May/2021 13:19] - indicators.production.Info_add - INFO - __Init__ Info_add
+[11/May/2021 13:19] - indicators.production.MaterialConsumption - INFO - __Init__ MaterialConsumption
+[11/May/2021 13:23] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[11/May/2021 13:23] - indicators.production - INFO - start initial assignment
+[11/May/2021 13:23] - indicators.production - INFO - OK! Load Data
+[11/May/2021 13:23] - indicators.production - INFO - OK! Load Data
+[11/May/2021 13:23] - indicators.production - INFO - OK! Load Data
+[11/May/2021 13:23] - indicators.production - INFO - OK! Calculation Data
+[11/May/2021 13:23] - indicators.production - INFO - OK! Calculation Data
+[11/May/2021 13:23] - indicators.production - INFO - OK! end initial assignment 
+[11/May/2021 13:23] - indicators.production - INFO - OK! Load object class
+[11/May/2021 13:23] - indicators.production - INFO - OK! Load object class
+[11/May/2021 13:23] - indicators.production - INFO - OK! Load object class
+[11/May/2021 13:23] - indicators.production - INFO - OK! Load object class
+[11/May/2021 13:23] - indicators.production - INFO - OK! Load object class
+[11/May/2021 13:23] - indicators.production - INFO - OK! Load object class
+[11/May/2021 13:23] - indicators.production - INFO - OK! Load object class
+[11/May/2021 13:23] - indicators.production - INFO - OK! Load object class
+[11/May/2021 13:23] - indicators.production - INFO - OK! Load object class
+[11/May/2021 13:23] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[11/May/2021 13:23] - indicators.production.Info_add - INFO - __Init__ Info_add
+[11/May/2021 13:23] - indicators.production.MaterialConsumption - INFO - __Init__ MaterialConsumption
+[11/May/2021 13:25] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[11/May/2021 13:25] - indicators.production - INFO - start initial assignment
+[11/May/2021 13:25] - indicators.production - INFO - OK! Load Data
+[11/May/2021 13:25] - indicators.production - INFO - OK! Load Data
+[11/May/2021 13:25] - indicators.production - INFO - OK! Load Data
+[11/May/2021 13:25] - indicators.production - INFO - OK! Calculation Data
+[11/May/2021 13:25] - indicators.production - INFO - OK! Calculation Data
+[11/May/2021 13:25] - indicators.production - INFO - OK! end initial assignment 
+[11/May/2021 13:25] - indicators.production - INFO - OK! Load object class
+[11/May/2021 13:25] - indicators.production - INFO - OK! Load object class
+[11/May/2021 13:25] - indicators.production - INFO - OK! Load object class
+[11/May/2021 13:25] - indicators.production - INFO - OK! Load object class
+[11/May/2021 13:25] - indicators.production - INFO - OK! Load object class
+[11/May/2021 13:25] - indicators.production - INFO - OK! Load object class
+[11/May/2021 13:25] - indicators.production - INFO - OK! Load object class
+[11/May/2021 13:25] - indicators.production - INFO - OK! Load object class
+[11/May/2021 13:25] - indicators.production - INFO - OK! Load object class
+[11/May/2021 13:25] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[11/May/2021 13:25] - indicators.production.Info_add - INFO - __Init__ Info_add
+[11/May/2021 13:25] - indicators.production.MaterialConsumption - INFO - __Init__ MaterialConsumption
+[11/May/2021 13:25] - indicators.production.Info - INFO - __Init__ Info
+[11/May/2021 13:30] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[11/May/2021 13:30] - indicators.production - INFO - start initial assignment
+[11/May/2021 13:30] - indicators.production - INFO - OK! Load Data
+[11/May/2021 13:30] - indicators.production - INFO - OK! Load Data
+[11/May/2021 13:30] - indicators.production - INFO - OK! Load Data
+[11/May/2021 13:30] - indicators.production - INFO - OK! Calculation Data
+[11/May/2021 13:30] - indicators.production - INFO - OK! Calculation Data
+[11/May/2021 13:30] - indicators.production - INFO - OK! end initial assignment 
+[11/May/2021 13:30] - indicators.production - INFO - OK! Load object class
+[11/May/2021 13:30] - indicators.production - INFO - OK! Load object class
+[11/May/2021 13:30] - indicators.production - INFO - OK! Load object class
+[11/May/2021 13:30] - indicators.production - INFO - OK! Load object class
+[11/May/2021 13:30] - indicators.production - INFO - OK! Load object class
+[11/May/2021 13:30] - indicators.production - INFO - OK! Load object class
+[11/May/2021 13:30] - indicators.production - INFO - OK! Load object class
+[11/May/2021 13:30] - indicators.production - INFO - OK! Load object class
+[11/May/2021 13:30] - indicators.production - INFO - OK! Load object class
+[11/May/2021 13:30] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[11/May/2021 13:30] - indicators.production.Info_add - INFO - __Init__ Info_add
+[11/May/2021 13:30] - indicators.production.MaterialConsumption - INFO - __Init__ MaterialConsumption
+[11/May/2021 13:31] - indicators.production.Info_add - INFO - __Init__ Info_add
+[11/May/2021 13:31] - indicators.production.MaterialConsumption - INFO - __Init__ MaterialConsumption
+[11/May/2021 14:13] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[11/May/2021 14:14] - indicators.production - INFO - start initial assignment
+[11/May/2021 14:14] - indicators.production - INFO - OK! Load Data
+[11/May/2021 14:14] - indicators.production - INFO - OK! Load Data
+[11/May/2021 14:14] - indicators.production - INFO - OK! Load Data
+[11/May/2021 14:14] - indicators.production - INFO - OK! Calculation Data
+[11/May/2021 14:14] - indicators.production - INFO - OK! Calculation Data
+[11/May/2021 14:14] - indicators.production - INFO - OK! end initial assignment 
+[11/May/2021 14:14] - indicators.production - INFO - OK! Load object class
+[11/May/2021 14:14] - indicators.production - INFO - OK! Load object class
+[11/May/2021 14:14] - indicators.production - INFO - OK! Load object class
+[11/May/2021 14:14] - indicators.production - INFO - OK! Load object class
+[11/May/2021 14:14] - indicators.production - INFO - OK! Load object class
+[11/May/2021 14:14] - indicators.production - INFO - OK! Load object class
+[11/May/2021 14:14] - indicators.production - INFO - OK! Load object class
+[11/May/2021 14:14] - indicators.production - INFO - OK! Load object class
+[11/May/2021 14:14] - indicators.production - INFO - OK! Load object class
+[11/May/2021 14:14] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[11/May/2021 14:15] - indicators.production.Comparise - INFO - __Init__ Comparise
+[11/May/2021 14:15] - indicators.production.Comparise - INFO - __Init__ Comparise
+[11/May/2021 14:22] - indicators.production.MaterialConsumption - INFO - __Init__ MaterialConsumption
+[11/May/2021 15:02] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[11/May/2021 15:02] - indicators.production - INFO - start initial assignment
+[11/May/2021 15:02] - indicators.production - INFO - OK! Load Data
+[11/May/2021 15:02] - indicators.production - INFO - OK! Load Data
+[11/May/2021 15:02] - indicators.production - INFO - OK! Load Data
+[11/May/2021 15:02] - indicators.production - INFO - OK! Calculation Data
+[11/May/2021 15:02] - indicators.production - INFO - OK! Calculation Data
+[11/May/2021 15:02] - indicators.production - INFO - OK! end initial assignment 
+[11/May/2021 15:02] - indicators.production - INFO - OK! Load object class
+[11/May/2021 15:02] - indicators.production - INFO - OK! Load object class
+[11/May/2021 15:02] - indicators.production - INFO - OK! Load object class
+[11/May/2021 15:02] - indicators.production - INFO - OK! Load object class
+[11/May/2021 15:02] - indicators.production - INFO - OK! Load object class
+[11/May/2021 15:02] - indicators.production - INFO - OK! Load object class
+[11/May/2021 15:02] - indicators.production - INFO - OK! Load object class
+[11/May/2021 15:02] - indicators.production - INFO - OK! Load object class
+[11/May/2021 15:02] - indicators.production - INFO - OK! Load object class
+[11/May/2021 15:02] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[11/May/2021 15:02] - indicators.production.Info - INFO - __Init__ Info
+[11/May/2021 15:02] - indicators.production.Data_Table - INFO - __Init__ Data_Table
+[11/May/2021 15:02] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[11/May/2021 15:02] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[11/May/2021 15:02] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[11/May/2021 15:02] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[11/May/2021 15:02] - indicators.production.Graphics_Number_Production - INFO - __Init__ Graphics_Number_Production
+[11/May/2021 15:03] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[11/May/2021 15:03] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[11/May/2021 15:03] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[11/May/2021 15:03] - indicators.production.Graphics_Number_Production - INFO - __Init__ Graphics_Number_Production
+[11/May/2021 15:04] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[11/May/2021 15:04] - indicators.production - INFO - start initial assignment
+[11/May/2021 15:04] - indicators.production - INFO - OK! Load Data
+[11/May/2021 15:04] - indicators.production - INFO - OK! Load Data
+[11/May/2021 15:04] - indicators.production - INFO - OK! Load Data
+[11/May/2021 15:04] - indicators.production - INFO - OK! Calculation Data
+[11/May/2021 15:04] - indicators.production - INFO - OK! Calculation Data
+[11/May/2021 15:04] - indicators.production - INFO - OK! end initial assignment 
+[11/May/2021 15:04] - indicators.production - INFO - OK! Load object class
+[11/May/2021 15:04] - indicators.production - INFO - OK! Load object class
+[11/May/2021 15:04] - indicators.production - INFO - OK! Load object class
+[11/May/2021 15:04] - indicators.production - INFO - OK! Load object class
+[11/May/2021 15:04] - indicators.production - INFO - OK! Load object class
+[11/May/2021 15:04] - indicators.production - INFO - OK! Load object class
+[11/May/2021 15:04] - indicators.production - INFO - OK! Load object class
+[11/May/2021 15:04] - indicators.production - INFO - OK! Load object class
+[11/May/2021 15:04] - indicators.production - INFO - OK! Load object class
+[11/May/2021 15:04] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1

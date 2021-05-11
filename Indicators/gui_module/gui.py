@@ -78,12 +78,14 @@ try:
     ICON_FULLSCREEN = "gui_icon/fullscreen_icon_144319.png" # Icon режима окна
     ICON_SCREEN = "gui_icon/fullscreen_exit_icon_144320.png" # Icon режима окна
 
-    ICON_GRAPHIC_001 = "gui_icon/Documents-CardiacMonitor-icon.png" # Icon режима окна
-    ICON_GRAPHIC_002 = "gui_icon/line_chart_analysis_icon_183298.png" # Icon режима окна
-    ICON_GRAPHIC_003 = "gui_icon/area_chart_icon_183308.png" # Icon режима окна
-    ICON_GRAPHIC_004 = "gui_icon/Document-Chart-icon.png" # Icon режима окна
-    ICON_GRAPHIC_005 = "gui_icon/5.png" # Icon режима окна
-    ICON_GRAPHIC_006 = "gui_icon/Chart_icon-icons.com_51184.png" # Icon режима окна
+    ICON_GRAPHIC_001 = "gui_icon/Documents-CardiacMonitor-icon.png" # Icon отображения графиков
+    ICON_GRAPHIC_002 = "gui_icon/line_chart_analysis_icon_183298.png" # Icon отображения графиков
+    ICON_GRAPHIC_003 = "gui_icon/area_chart_icon_183308.png" # Icon отображения графиков
+    ICON_GRAPHIC_004 = "gui_icon/Document-Chart-icon.png" # Icon отображения графиков
+    ICON_GRAPHIC_005 = "gui_icon/5.png" # Icon отображения графиков
+    ICON_GRAPHIC_006 = "gui_icon/Chart_icon-icons.com_51184.png" # Icon отображения графиков
+    ICON_GRAPHIC_007 = "gui_icon/analytics_business_chart_graph_statistics_icon_127216.png" # Icon отображения графиков
+    ICON_GRAPHIC_008 = "gui_icon/bar_chart_analysis_icon_183292.png" # Icon отображения графиков
 
     ICON_SAVE = "gui_icon/save_file_disk_open_searsh_loading_clipboard_1513.png" # Icon сохранения в файл
     ICON_PNG = "gui_icon/File-PNG-icon.png" # Icon сохранения в файл png
@@ -693,6 +695,9 @@ try:
                         e_14_1_4 =pr.e_14_1_4,
                         e_14_1_5 =pr.e_14_1_5,
 
+                        # переменные изменений уровня расхода материала
+                        e_15_1 = pr.e_15_1,
+
                         # переменные изменений уровня технических отходов
                         e_16_1 = pr.e_16_1,
 
@@ -775,6 +780,8 @@ try:
                         e_14_1_m_3 =pr.e_14_1_m_3,
                         e_14_1_m_4 =pr.e_14_1_m_4,
                         e_14_1_m_5 =pr.e_14_1_m_5,
+                        # переменные изменений уровня расхода материала
+                        e_15_m_1 = pr.e_15_m_1,
                         # переменные изменений уровня технических отходов
                         e_16_m_1 = pr.e_16_m_1,
                         # переменные изменений уровня неисправности оборудования
@@ -1610,6 +1617,9 @@ try:
             self.box.setLayout(self.bbox)
 
             self.box_1 = QtWidgets.QGroupBox('Процесс Б(7.5) "Производство продукции"')
+
+            # Кнопки отображения графиков
+            # Количество выпущенной продукции по годам
             self.b_7_5 = QtWidgets.QPushButton()
             self.b_7_5.setIcon(QtGui.QIcon(ICON_GRAPHIC_005))
             self.b_7_5.setIconSize(QtCore.QSize(32, 32))
@@ -1617,6 +1627,7 @@ try:
             self.b_7_5.setStatusTip('Количество выпущенной продукции по годам')
             self.b_7_5.clicked.connect(self.on_clicked_b_7_5)
 
+            # Уровень неисправности оборудования по годам
             self.b_7_5_1 = QtWidgets.QPushButton()
             self.b_7_5_1.setIcon(QtGui.QIcon(ICON_GRAPHIC_006))
             self.b_7_5_1.setIconSize(QtCore.QSize(32, 32))
@@ -1624,53 +1635,101 @@ try:
             self.b_7_5_1.setStatusTip('Уровень неисправности оборудования по годам')
             self.b_7_5_1.clicked.connect(self.on_clicked_b_7_5_1)
 
+            # Уровень несоответствующей продукции по годам
             self.b_7_5_2 = QtWidgets.QPushButton()
             self.b_7_5_2.setIcon(QtGui.QIcon(ICON_GRAPHIC_005))
             self.b_7_5_2.setIconSize(QtCore.QSize(32, 32))
+            self.b_7_5_2.setToolTip("Уровень несоответствующей продукции по годам")
+            self.b_7_5_2.setStatusTip('Уровень несоответствующей продукции по годам')
+            self.b_7_5_2.clicked.connect(self.on_clicked_b_7_5_2)
+
+            # Уровень техотходов по годам
             self.b_7_5_3 = QtWidgets.QPushButton()
             self.b_7_5_3.setIcon(QtGui.QIcon(ICON_GRAPHIC_006))
             self.b_7_5_3.setIconSize(QtCore.QSize(32, 32))
+            self.b_7_5_3.setToolTip("Уровень техотходов по годам")
+            self.b_7_5_3.setStatusTip('Уровень техотходов по годам')
+            self.b_7_5_3.clicked.connect(self.on_clicked_b_7_5_3)
+
+            # Уровень отклонений продукции Котк по годам
             self.b_7_5_4 = QtWidgets.QPushButton()
             self.b_7_5_4.setIcon(QtGui.QIcon(ICON_GRAPHIC_005))
             self.b_7_5_4.setIconSize(QtCore.QSize(32, 32))
+            self.b_7_5_4.setToolTip("Уровень отклонений продукции Котк по годам")
+            self.b_7_5_4.setStatusTip('Уровень отклонений продукции Котк по годам')
+            self.b_7_5_4.clicked.connect(self.on_clicked_b_7_5_4)
+
+            # Уровень простоя оборудования из-за несоответствующего качества расходных материалов Кпр кач
             self.b_7_5_5 = QtWidgets.QPushButton()
             self.b_7_5_5.setIcon(QtGui.QIcon(ICON_GRAPHIC_006))
             self.b_7_5_5.setIconSize(QtCore.QSize(32, 32))
+            self.b_7_5_5.setToolTip("Уровень простоя оборудования из-за несоответствующего качества расходных материалов Кпр кач")
+            self.b_7_5_5.setStatusTip('Уровень простоя оборудования из-за несоответствующего качества расходных материалов Кпр кач')
+            self.b_7_5_5.clicked.connect(self.on_clicked_b_7_5_5)
+
+            # Уровень простоя оборудования из-за непоставки расходных материалов Кпр кол
             self.b_7_5_6 = QtWidgets.QPushButton()
             self.b_7_5_6.setIcon(QtGui.QIcon(ICON_GRAPHIC_005))
             self.b_7_5_6.setIconSize(QtCore.QSize(32, 32))
+            self.b_7_5_6.setToolTip("Уровень простоя оборудования из-за непоставки расходных материалов Кпр кол")
+            self.b_7_5_6.setStatusTip('Уровень простоя оборудования из-за непоставки расходных материалов Кпр кол')
+            self.b_7_5_6.clicked.connect(self.on_clicked_b_7_5_6)
 
-
-
+            # Количество выпущенной продукции по полугодиям
             self.b_7_5_7 = QtWidgets.QPushButton()
-            self.b_7_5_7.setIcon(QtGui.QIcon(ICON_GRAPHIC_006))
+            self.b_7_5_7.setIcon(QtGui.QIcon(ICON_GRAPHIC_007))
             self.b_7_5_7.setIconSize(QtCore.QSize(32, 32))
             self.b_7_5_7.setToolTip("Количество выпущенной продукции по полугодиям")
             self.b_7_5_7.setStatusTip('Количество выпущенной продукции по полугодиям')
             self.b_7_5_7.clicked.connect(self.on_clicked_b_7_5_7)
 
+            # Количество неисправности оборудования по полугодиям
             self.b_7_5_8 = QtWidgets.QPushButton()
-            self.b_7_5_8.setIcon(QtGui.QIcon(ICON_GRAPHIC_005))
+            self.b_7_5_8.setIcon(QtGui.QIcon(ICON_GRAPHIC_008))
             self.b_7_5_8.setIconSize(QtCore.QSize(32, 32))
             self.b_7_5_8.setToolTip("Уровень неисправности оборудования по полугодиям")
             self.b_7_5_8.setStatusTip('Уровень неисправности оборудования по полугодиям')
             self.b_7_5_8.clicked.connect(self.on_clicked_b_7_5_8)
 
+            # Уровень несоответствующей продукции по полугодиям
             self.b_7_5_9 = QtWidgets.QPushButton()
-            self.b_7_5_9.setIcon(QtGui.QIcon(ICON_GRAPHIC_006))
+            self.b_7_5_9.setIcon(QtGui.QIcon(ICON_GRAPHIC_007))
             self.b_7_5_9.setIconSize(QtCore.QSize(32, 32))
+            self.b_7_5_9.setToolTip("Уровень несоответствующей продукции по полугодиям")
+            self.b_7_5_9.setStatusTip('Уровень несоответствующей продукции по полугодиям')
+            self.b_7_5_9.clicked.connect(self.on_clicked_b_7_5_9)
+
+            # Уровень техотходов по полугодиям
             self.b_7_5_10 = QtWidgets.QPushButton()
-            self.b_7_5_10.setIcon(QtGui.QIcon(ICON_GRAPHIC_005))
+            self.b_7_5_10.setIcon(QtGui.QIcon(ICON_GRAPHIC_008))
             self.b_7_5_10.setIconSize(QtCore.QSize(32, 32))
+            self.b_7_5_10.setToolTip("Уровень техотходов по полугодиям")
+            self.b_7_5_10.setStatusTip('Уровень техотходов по полугодиям')
+            self.b_7_5_10.clicked.connect(self.on_clicked_b_7_5_10)
+
+            # Уровень отклонений продукции Котк по полугодиям
             self.b_7_5_11 = QtWidgets.QPushButton()
-            self.b_7_5_11.setIcon(QtGui.QIcon(ICON_GRAPHIC_006))
+            self.b_7_5_11.setIcon(QtGui.QIcon(ICON_GRAPHIC_007))
             self.b_7_5_11.setIconSize(QtCore.QSize(32, 32))
+            self.b_7_5_11.setToolTip("Уровень отклонений продукции Котк по полугодиям")
+            self.b_7_5_11.setStatusTip('Уровень отклонений продукции Котк по полугодиям')
+            self.b_7_5_11.clicked.connect(self.on_clicked_b_7_5_11)
+
+            # Уровень простоя оборудования из-за несоответствующего качества расходных материалов Кпр кач по полугодиям
             self.b_7_5_12 = QtWidgets.QPushButton()
-            self.b_7_5_12.setIcon(QtGui.QIcon(ICON_GRAPHIC_005))
+            self.b_7_5_12.setIcon(QtGui.QIcon(ICON_GRAPHIC_008))
             self.b_7_5_12.setIconSize(QtCore.QSize(32, 32))
+            self.b_7_5_12.setToolTip("Уровень простоя оборудования из-за несоответствующего качества расходных материалов Кпр кач по полугодиям")
+            self.b_7_5_12.setStatusTip('Уровень простоя оборудования из-за несоответствующего качества расходных материалов Кпр кач по полугодиям')
+            self.b_7_5_12.clicked.connect(self.on_clicked_b_7_5_12)
+
+            # Уровень простоя оборудования из-за непоставки расходных материалов Кпр кол по полугодиям
             self.b_7_5_13 = QtWidgets.QPushButton()
-            self.b_7_5_13.setIcon(QtGui.QIcon(ICON_GRAPHIC_006))
+            self.b_7_5_13.setIcon(QtGui.QIcon(ICON_GRAPHIC_007))
             self.b_7_5_13.setIconSize(QtCore.QSize(32, 32))
+            self.b_7_5_13.setToolTip("Уровень простоя оборудования из-за непоставки расходных материалов Кпр кол по полугодиям")
+            self.b_7_5_13.setStatusTip('Уровень простоя оборудования из-за непоставки расходных материалов Кпр кол по полугодиям')
+            self.b_7_5_13.clicked.connect(self.on_clicked_b_7_5_13)
 
             self.bbox_1 = QtWidgets.QHBoxLayout()
             self.bbox_1.addWidget(self.b_7_5)
@@ -1751,6 +1810,41 @@ try:
             b = pr.Graphics_Indicators_Production(pr.data_ur_neispr_obor_year, name= 'Уровень неисправности оборудования по годам')
             plt.show()
 
+        def on_clicked_b_7_5_2(self):
+            """
+            Функция запуска отображения диаграммы _
+            """
+            с = pr.Graphics_Indicators_Production(pr.data_ur_nesoot_prod_year, name= 'Уровень несоответствующей продукции по годам')
+            plt.show()
+
+        def on_clicked_b_7_5_3(self):
+            """
+            Функция запуска отображения диаграммы _
+            """
+            d = pr.Graphics_Indicators_Production(pr.data_ur_teh_oth_year, name= 'Уровень техотходов по годам', critery=2)
+            plt.show()
+
+        def on_clicked_b_7_5_4(self):
+            """
+            Функция запуска отображения диаграммы _
+            """
+            e = pr.Graphics_Indicators_Production(pr.data_ur_otkl_prod_year, name= 'Уровень отклонений продукции Котк по годам')
+            plt.show()
+
+        def on_clicked_b_7_5_5(self):
+            """
+            Функция запуска отображения диаграммы _
+            """
+            f = pr.Graphics_Indicators_Production(pr.data_ur_prost_kach_year, name= 'Уровень простоя оборудования из-за несоответствующего качества расходных материалов Кпр кач')
+            plt.show()
+
+        def on_clicked_b_7_5_6(self):
+            """
+            Функция запуска отображения диаграммы _
+            """
+            g = pr.Graphics_Indicators_Production(pr.data_ur_prost_nepost_year, name= 'Уровень простоя оборудования из-за непоставки расходных материалов Кпр кол')
+            plt.show()
+
         def on_clicked_b_7_5_7(self):
             """
             Функция запуска отображения диаграммы _
@@ -1763,6 +1857,41 @@ try:
             Функция запуска отображения диаграммы _
             """
             b = pr.Graphics_Indicators_Production(pr. data_ur_neispr_obor_middle_year, name= 'Уровень неисправности оборудования по полугодиям')
+            plt.show()
+
+        def on_clicked_b_7_5_9(self):
+            """
+            Функция запуска отображения диаграммы _
+            """
+            с = pr.Graphics_Indicators_Production(pr.data_ur_nesoot_prod_middle_year, name= 'Уровень несоответствующей продукции по полугодиям')
+            plt.show()
+
+        def on_clicked_b_7_5_10(self):
+            """
+            Функция запуска отображения диаграммы _
+            """
+            d = pr.Graphics_Indicators_Production(pr.data_ur_teh_oth_middle_year, name= 'Уровень техотходов по полугодиям', critery=2)
+            plt.show()
+
+        def on_clicked_b_7_5_11(self):
+            """
+            Функция запуска отображения диаграммы _
+            """
+            e = pr.Graphics_Indicators_Production(pr.data_ur_otkl_prod_middle_year, name= 'Уровень отклонений продукции Котк по полугодиям')
+            plt.show()
+
+        def on_clicked_b_7_5_12(self):
+            """
+            Функция запуска отображения диаграммы _
+            """
+            f = pr.Graphics_Indicators_Production(pr.data_ur_prost_kach_middle_year, name= 'Уровень простоя оборудования из-за несоответствующего качества расходных материалов Кпр кач по полугодиям')
+            plt.show()
+
+        def on_clicked_b_7_5_13(self):
+            """
+            Функция запуска отображения диаграммы _
+            """
+            g = pr.Graphics_Indicators_Production(pr.data_ur_prost_nepost_middle_year, name= 'Уровень простоя оборудования из-за непоставки расходных материалов Кпр кол по полугодиям')
             plt.show()
 
     logger.info("OK! Load object class") # logging

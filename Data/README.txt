@@ -19,4 +19,5 @@ pytest -v Data - из корневого каталога
 pytest -v tests_data/test_database.py - из каталога Data
 
 Редактирование БД:
+Notepad.exe - стандартный блокнот Windows
 CSVed/CSVed.exe - бесплатный редактор файлов формата *.csv
