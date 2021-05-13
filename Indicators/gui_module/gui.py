@@ -32,12 +32,12 @@ logger.info(f'Started on platform {platform.platform()}') # logging
 import pandas as pd
 import matplotlib.pyplot as plt
 import Indicators.Indicators_Process_B_7_5.production as pr
-import Indicators.Indicators_Process_B_7_2.consumer as cm
-import Indicators.Indicators_Process_B_7_3.project_and_develop as pad
-import Indicators.Indicators_Process_B_7_4_and_O_8_2.control_production as cp
+#import Indicators.Indicators_Process_B_7_2.consumer as cm
+#import Indicators.Indicators_Process_B_7_3.project_and_develop as pad
+#import Indicators.Indicators_Process_B_7_4_and_O_8_2.control_production as cp
 import Indicators.Indicators_Process_B_7_4_and_O_8_2.adhaesio as ad
-import Indicators.Indicators_Process_B_7_7_and_B_7_5.results as rs
-import Indicators.Indicators_Process_O_6_2.people as ppl
+#import Indicators.Indicators_Process_B_7_7_and_B_7_5.results as rs
+#import Indicators.Indicators_Process_O_6_2.people as ppl
 
 from PyQt5 import QtCore, QtWidgets, QtGui, QtSql, QtPrintSupport
 

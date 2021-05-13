@@ -1,13 +1,58 @@
 # -*- coding: utf-8 -*-
-# version 0.1a
-# author: andrew.bezzubov - 23/09/2020 year
+# version 0.2a
+# author: andrew.bezzubov - 13/05/2021
+# email: ruizcontrol@yandex.ru, agb2019@list.ru
+# https://github.com/alex-markov-creator/tendency.git
+# GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007
 """
 ================================================================
 results.py - Модуль аналитики по следующим показателям качества:
-- Кол-во реализованной продукции;
-- Кол-во выпущенной продукции.
-Для сравнительного анализа и определения используемых запасов.
-Возможны другие цели.
+- Кол-во реализованной продукции (Кр);
+- Кол-во выпущенной продукции (Процесс Б(7.5) "Производство продукции");
+- Уровень поставок продукции (Кпп);
+- Уровень претензий и рекламаций (Кпр);
+- Уровень выполнения заказов (Квз);
+- Объем возвращенной продукции (Квоз).
+===============================================================
+Процесс Б (7.7) "Сбыт"
+===============================================================
+ИСХОДНЫЕ ДАННЫЕ - ФАЙЛ database.py в ../Data:
++--------------------------------------+-----------------------------------+
+|              Переменная              |             Показатель            |
++--------------------------------------+-----------------------------------+
+|        data_kol_vip_prod_year        | Количество выпущенной продукци... |
+|       data_ur_neispr_obor_year       | Уровень неисправности оборудов... |
+|       data_ur_nesoot_prod_year       | Уровень несоответствующей прод... |
+|         data_ur_teh_oth_year         |   Уровень техотходов по годам...  |
+|      data_kol_vip_mufty_year         |   Количество выпущенных муфт...   |
+|      data_kol_vip_kompl_year         |Количество выпущенных комплектов...|
+|      data_kol_narezki_year           |   Количество нарезки пб ленты...  |
+|      data_kol_rezki_pvh_lip_year     |   Количество резки ПВХ липкой...  |
+|       data_ur_rash_mater_year        | Уровень расхода материалов Крм... |
+|        data_ur_otkl_prod_year        |Уровень отклонений продукции Котк..|
+|      data_ur_prost_kach_year         | Уровень простоя обор. Кпр кач...  |
+|      data_ur_prost_nepost_year       | Уровень простоя обор. Кпр кол...  |
+|   data_ur_neispr_obor_middle_year    | Уровень неисправности оборудов... |
+|   data_ur_nesoot_prod_middle_year    | Уровень несоответствующей прод... |
+|     data_ur_teh_oth_middle_year      | Уровень техотходов по полугоди... |
+|    data_kol_vip_prod_middle_year     | Количество выпущеной продукции... |
+|  data_kol_vip_mufty_middle_year      |   Количество выпущенных муфт...   |
+|  data_kol_vip_kompl_middle_year      |Количество выпущенных комплектов...|
+|  data_kol_narezki_middle_year        |   Количество нарезки пб ленты...  |
+|  data_kol_rezki_pvh_lip_middle_year  |   Количество резки ПВХ липкой...  |
+|  data_ur_rash_mater_middle_year      | Уровень расхода материалов Крм... |
+|  data_ur_otkl_prod_middle_year       |Уровень отклонений продукции Котк..|
+|  data_ur_prost_kach_middle_year      | Уровень простоя обор. Кпр кач...  |
+|  data_ur_prost_nepost_middle_year    | Уровень простоя обор. Кпр кол...  |
++--------------------------------------+-----------------------------------+
+# ИСХОДНЫЕ ДАННЫЕ (ПЕРЕМЕННЫЕ ШАБЛОНА process_b_7_5):
++-------------------------------------------------------------------------+
+|  Переменная    |                  Данные шаблона                        |
++-------------------------------------------------------------------------+
+|   prev_year    |# переменные предыдущего и отчетного периода            |
+|   next_year    |                                                        |
+|                |# нумерация строк                                       |
++--------------------------------------+----------------------------------+
 ================================================================
 ИСХОДНЫЕ ДАННЫЕ - ФАЙЛ __init__.py в ../Data:
 ---------------------------------------------
@@ -99,8 +144,7 @@ import Tools.Abstract_Parents as Abstract
 import Tools.Singleton_Pattern as Pattern_singleton
 # универсальный модуль для создания уникального экземпляра класса, реализация паттерна "Одиночка"
 
-from Data import data_kol_vip_prod_year, data_kol_vip_prod_middle_year, data_kol_real_prod_year, data_kol_real_prod_middle_year
-# импорт DataFrame объектов с исходными данными
+from Data import data_kol_vip_prod_year, data_kol_vip_prod_middle_year, data_kol_real_prod_year, data_kol_real_prod_middle_year,data_kol_real_komp_year, data_kol_real_komp_middle_year,data_ob_vozr_prod_year, data_ur_vip_zak_year, data_ur_vip_zak_middle_year # импорт DataFrame объектов с исходными данными
 
 try:
     class Result_Calc(Pattern_singleton.Singleton, Abstract.Calc):

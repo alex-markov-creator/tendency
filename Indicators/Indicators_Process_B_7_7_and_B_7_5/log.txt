@@ -27,3 +27,5 @@ Wed Apr 28 15:59:02 2021 Run_Error:  (<class 'OSError'>, OSError(22, 'Invalid ar
 Wed May 12 10:00:24 2021 Benchmark_Data_Error:  (<class 'KeyError'>, KeyError('Количество выпущенной продукции по годам в тоннах'))
 Wed May 12 10:00:31 2021 FirstCommand_Error:  (<class 'NameError'>, NameError("name 'difference_year' is not defined"))
 Wed May 12 10:00:34 2021 ThreeCommand_Error:  (<class 'KeyError'>, KeyError('Количество выпущенной продукции по годам в тоннах'))
+Thu May 13 09:07:25 2021 Benchmark_Data_Error:  (<class 'KeyError'>, KeyError('Количество выпущенной продукции по годам в тоннах'))
+Thu May 13 09:09:35 2021 Benchmark_Data_Error:  (<class 'KeyError'>, KeyError('Количество выпущенной продукции по годам в тоннах'))
