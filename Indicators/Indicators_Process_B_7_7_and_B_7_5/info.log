@@ -1,0 +1,248 @@
+[14/May/2021 09:01] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[14/May/2021 09:01] - indicators.results - INFO - start initial assignment
+[14/May/2021 09:01] - indicators.results - ERROR - FAILED! Data_Launch_Error: Traceback (most recent call last):
+  File "results.py", line 206, in <module>
+    '012': data_pret_i_rekl_year,
+NameError: name 'data_pret_i_rekl_year' is not defined
+
+[14/May/2021 09:01] - indicators.results - INFO - OK! Load object class
+[14/May/2021 09:02] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[14/May/2021 09:03] - indicators.results - INFO - start initial assignment
+[14/May/2021 09:03] - indicators.results - ERROR - FAILED! Data_Launch_Error: Traceback (most recent call last):
+  File "results.py", line 208, in <module>
+    '014': data_ur_postav_year,
+NameError: name 'data_ur_postav_year' is not defined
+
+[14/May/2021 09:03] - indicators.results - INFO - OK! Load object class
+[14/May/2021 09:04] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[14/May/2021 09:04] - indicators.results - INFO - start initial assignment
+[14/May/2021 09:04] - indicators.results - ERROR - FAILED! Data_Launch_Error: Traceback (most recent call last):
+  File "results.py", line 195, in <module>
+    '001': data_kol_vip_prod_year,
+NameError: name 'data_kol_vip_prod_year' is not defined
+
+[14/May/2021 09:04] - indicators.results - INFO - OK! Load object class
+[14/May/2021 09:05] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[14/May/2021 09:06] - indicators.results - INFO - start initial assignment
+[14/May/2021 09:06] - indicators.results - INFO - OK! Load Data
+[14/May/2021 09:06] - indicators.results - ERROR - FAILED! Data_Launch_Error: Traceback (most recent call last):
+  File "results.py", line 217, in <module>
+    sum_all = self.concat_data(data_kol_vip_prod_year, data_kol_real_prod_year_edit).sum()
+NameError: name 'self' is not defined
+
+[14/May/2021 09:06] - indicators.results - INFO - OK! Load object class
+[14/May/2021 09:06] - indicators.results.Info - INFO - __Init__ Info
+[14/May/2021 09:06] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[14/May/2021 09:06] - indicators.results - INFO - start initial assignment
+[14/May/2021 09:06] - indicators.results - INFO - OK! Load Data
+[14/May/2021 09:06] - indicators.results - ERROR - FAILED! Data_Launch_Error: Traceback (most recent call last):
+  File "results.py", line 217, in <module>
+    sum_all = self.concat_data(data_kol_vip_prod_year, data_kol_real_prod_year_edit).sum()
+NameError: name 'self' is not defined
+
+[14/May/2021 09:06] - indicators.results - INFO - OK! Load object class
+[14/May/2021 09:07] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[14/May/2021 09:07] - indicators.results - INFO - start initial assignment
+[14/May/2021 09:07] - indicators.results - INFO - OK! Load Data
+[14/May/2021 09:07] - indicators.results - INFO - OK! Calculation Data
+[14/May/2021 09:07] - indicators.results - INFO - OK! end initial assignment 
+[14/May/2021 09:07] - indicators.results - INFO - OK! Load object class
+[14/May/2021 09:07] - indicators.results.Info - INFO - __Init__ Info
+[14/May/2021 09:09] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[14/May/2021 09:09] - indicators.results - INFO - start initial assignment
+[14/May/2021 09:09] - indicators.results - INFO - OK! Load Data
+[14/May/2021 09:09] - indicators.results - INFO - OK! Calculation Data
+[14/May/2021 09:09] - indicators.results - INFO - OK! end initial assignment 
+[14/May/2021 09:09] - indicators.results - INFO - OK! Load object class
+[14/May/2021 09:09] - indicators.results.Info - INFO - __Init__ Info
+[14/May/2021 09:10] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[14/May/2021 09:10] - indicators.results - INFO - start initial assignment
+[14/May/2021 09:10] - indicators.results - INFO - OK! Load Data
+[14/May/2021 09:10] - indicators.results - INFO - OK! Calculation Data
+[14/May/2021 09:10] - indicators.results - INFO - OK! end initial assignment 
+[14/May/2021 09:10] - indicators.results - INFO - OK! Load object class
+[14/May/2021 09:10] - indicators.results.Info - INFO - __Init__ Info
+[14/May/2021 09:10] - indicators.results - INFO - OK! NAME_INPUT
+[14/May/2021 09:10] - indicators.results - INFO - OK! NAME_INPUT
+[14/May/2021 09:13] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[14/May/2021 09:13] - indicators.results - INFO - start initial assignment
+[14/May/2021 09:13] - indicators.results - INFO - OK! Load Data
+[14/May/2021 09:13] - indicators.results - INFO - OK! Calculation Data
+[14/May/2021 09:13] - indicators.results - INFO - OK! end initial assignment 
+[14/May/2021 09:13] - indicators.results - INFO - OK! Load object class
+[14/May/2021 09:13] - indicators.results - INFO - OK! Load object class
+[14/May/2021 09:13] - indicators.results.Info - INFO - __Init__ Info
+[14/May/2021 09:13] - indicators.results - INFO - OK! NAME_INPUT
+[14/May/2021 09:13] - indicators.results.Data_Table - INFO - __Init__ Data_Table
+[14/May/2021 09:14] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[14/May/2021 09:14] - indicators.results - INFO - start initial assignment
+[14/May/2021 09:14] - indicators.results - INFO - OK! Load Data
+[14/May/2021 09:14] - indicators.results - INFO - OK! Calculation Data
+[14/May/2021 09:14] - indicators.results - INFO - OK! end initial assignment 
+[14/May/2021 09:14] - indicators.results - INFO - OK! Load object class
+[14/May/2021 09:14] - indicators.results - INFO - OK! Load object class
+[14/May/2021 09:14] - indicators.results.Info - INFO - __Init__ Info
+[14/May/2021 09:14] - indicators.results - INFO - OK! NAME_INPUT
+[14/May/2021 09:14] - indicators.results.Data_Table - INFO - __Init__ Data_Table
+[14/May/2021 09:14] - indicators.results - INFO - OK! NAME_INPUT
+[14/May/2021 09:14] - indicators.results.Data_Table - INFO - __Init__ Data_Table
+[14/May/2021 09:15] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[14/May/2021 09:15] - indicators.results - INFO - start initial assignment
+[14/May/2021 09:15] - indicators.results - INFO - OK! Load Data
+[14/May/2021 09:15] - indicators.results - INFO - OK! Calculation Data
+[14/May/2021 09:15] - indicators.results - INFO - OK! end initial assignment 
+[14/May/2021 09:15] - indicators.results - INFO - OK! Load object class
+[14/May/2021 09:15] - indicators.results - INFO - OK! Load object class
+[14/May/2021 09:15] - indicators.results.Info - INFO - __Init__ Info
+[14/May/2021 09:15] - indicators.results - INFO - OK! NAME_INPUT
+[14/May/2021 09:15] - indicators.results.Data_Table - INFO - __Init__ Data_Table
+[14/May/2021 09:16] - indicators.results - INFO - OK! NAME_INPUT
+[14/May/2021 09:16] - indicators.results.Data_Table - INFO - __Init__ Data_Table
+[14/May/2021 09:16] - indicators.results - INFO - OK! NAME_INPUT
+[14/May/2021 09:16] - indicators.results.Data_Table - INFO - __Init__ Data_Table
+[14/May/2021 09:16] - indicators.results - INFO - OK! NAME_INPUT
+[14/May/2021 09:16] - indicators.results.Data_Table - INFO - __Init__ Data_Table
+[14/May/2021 09:16] - indicators.results - INFO - OK! NAME_INPUT
+[14/May/2021 09:16] - indicators.results.Data_Table - INFO - __Init__ Data_Table
+[14/May/2021 09:16] - indicators.results - INFO - OK! NAME_INPUT
+[14/May/2021 09:16] - indicators.results.Data_Table - INFO - __Init__ Data_Table
+[14/May/2021 09:22] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[14/May/2021 09:23] - indicators.results - INFO - start initial assignment
+[14/May/2021 09:23] - indicators.results - INFO - OK! Load Data
+[14/May/2021 09:23] - indicators.results - INFO - OK! Calculation Data
+[14/May/2021 09:23] - indicators.results - INFO - OK! end initial assignment 
+[14/May/2021 09:23] - indicators.results - INFO - OK! Load object class
+[14/May/2021 09:23] - indicators.results - INFO - OK! Load object class
+[14/May/2021 09:27] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[14/May/2021 09:27] - indicators.results - INFO - start initial assignment
+[14/May/2021 09:27] - indicators.results - INFO - OK! Load Data
+[14/May/2021 09:27] - indicators.results - INFO - OK! Calculation Data
+[14/May/2021 09:27] - indicators.results - INFO - OK! end initial assignment 
+[14/May/2021 09:27] - indicators.results - INFO - OK! Load object class
+[14/May/2021 09:27] - indicators.results - INFO - OK! Load object class
+[14/May/2021 09:27] - indicators.results - INFO - OK! Load object class
+[14/May/2021 09:28] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[14/May/2021 09:28] - indicators.results - INFO - start initial assignment
+[14/May/2021 09:28] - indicators.results - INFO - OK! Load Data
+[14/May/2021 09:28] - indicators.results - INFO - OK! Calculation Data
+[14/May/2021 09:28] - indicators.results - INFO - OK! end initial assignment 
+[14/May/2021 09:28] - indicators.results - INFO - OK! Load object class
+[14/May/2021 09:28] - indicators.results - INFO - OK! Load object class
+[14/May/2021 09:28] - indicators.results - INFO - OK! Load object class
+[14/May/2021 09:29] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[14/May/2021 09:29] - indicators.results - INFO - start initial assignment
+[14/May/2021 09:29] - indicators.results - INFO - OK! Load Data
+[14/May/2021 09:29] - indicators.results - INFO - OK! Calculation Data
+[14/May/2021 09:29] - indicators.results - INFO - OK! end initial assignment 
+[14/May/2021 09:29] - indicators.results - INFO - OK! Load object class
+[14/May/2021 09:29] - indicators.results - INFO - OK! Load object class
+[14/May/2021 09:29] - indicators.results - INFO - OK! Load object class
+[14/May/2021 09:30] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[14/May/2021 09:30] - indicators.results - INFO - start initial assignment
+[14/May/2021 09:30] - indicators.results - INFO - OK! Load Data
+[14/May/2021 09:30] - indicators.results - INFO - OK! Calculation Data
+[14/May/2021 09:30] - indicators.results - INFO - OK! end initial assignment 
+[14/May/2021 09:30] - indicators.results - INFO - OK! Load object class
+[14/May/2021 09:30] - indicators.results - INFO - OK! Load object class
+[14/May/2021 09:30] - indicators.results - INFO - OK! Load object class
+[14/May/2021 09:43] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[14/May/2021 09:43] - indicators.results - INFO - start initial assignment
+[14/May/2021 09:43] - indicators.results - INFO - OK! Load Data
+[14/May/2021 09:43] - indicators.results - ERROR - FAILED! Data_Launch_Error: Traceback (most recent call last):
+  File "results.py", line 224, in <module>
+    data_kol_real_kompl_year_edit = data_kol_real_kompl_year.loc[2017:]
+NameError: name 'data_kol_real_kompl_year' is not defined
+
+[14/May/2021 09:43] - indicators.results - INFO - OK! Load object class
+[14/May/2021 09:43] - indicators.results - INFO - OK! Load object class
+[14/May/2021 09:43] - indicators.results - INFO - OK! Load object class
+[14/May/2021 09:43] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[14/May/2021 09:43] - indicators.results - INFO - start initial assignment
+[14/May/2021 09:43] - indicators.results - INFO - OK! Load Data
+[14/May/2021 09:43] - indicators.results - INFO - OK! Calculation Data
+[14/May/2021 09:43] - indicators.results - INFO - OK! end initial assignment 
+[14/May/2021 09:43] - indicators.results - INFO - OK! Load object class
+[14/May/2021 09:43] - indicators.results - INFO - OK! Load object class
+[14/May/2021 09:43] - indicators.results - INFO - OK! Load object class
+[14/May/2021 09:43] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[14/May/2021 09:44] - indicators.results.Info - INFO - __Init__ Info
+[14/May/2021 09:46] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[14/May/2021 09:46] - indicators.results - INFO - start initial assignment
+[14/May/2021 09:46] - indicators.results - INFO - OK! Load Data
+[14/May/2021 09:46] - indicators.results - INFO - OK! Calculation Data
+[14/May/2021 09:46] - indicators.results - INFO - OK! end initial assignment 
+[14/May/2021 09:46] - indicators.results - INFO - OK! Load object class
+[14/May/2021 09:46] - indicators.results - INFO - OK! Load object class
+[14/May/2021 09:46] - indicators.results - INFO - OK! Load object class
+[14/May/2021 09:46] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[14/May/2021 09:51] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[14/May/2021 09:51] - indicators.results - INFO - start initial assignment
+[14/May/2021 09:51] - indicators.results - INFO - OK! Load Data
+[14/May/2021 09:51] - indicators.results - INFO - OK! Calculation Data
+[14/May/2021 09:51] - indicators.results - INFO - OK! end initial assignment 
+[14/May/2021 09:51] - indicators.results - INFO - OK! Load object class
+[14/May/2021 09:51] - indicators.results - INFO - OK! Load object class
+[14/May/2021 09:51] - indicators.results - INFO - OK! Load object class
+[14/May/2021 09:51] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[14/May/2021 09:51] - indicators.results - INFO - OK!
+[14/May/2021 09:52] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[14/May/2021 09:52] - indicators.results - INFO - start initial assignment
+[14/May/2021 09:52] - indicators.results - INFO - OK! Load Data
+[14/May/2021 09:52] - indicators.results - INFO - OK! Calculation Data
+[14/May/2021 09:52] - indicators.results - INFO - OK! end initial assignment 
+[14/May/2021 09:52] - indicators.results - INFO - OK! Load object class
+[14/May/2021 09:52] - indicators.results - INFO - OK! Load object class
+[14/May/2021 09:52] - indicators.results - INFO - OK! Load object class
+[14/May/2021 09:52] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[14/May/2021 09:52] - indicators.results - INFO - OK!
+[14/May/2021 09:54] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[14/May/2021 09:54] - indicators.results - INFO - start initial assignment
+[14/May/2021 09:54] - indicators.results - INFO - OK! Load Data
+[14/May/2021 09:54] - indicators.results - INFO - OK! Calculation Data
+[14/May/2021 09:54] - indicators.results - INFO - OK! end initial assignment 
+[14/May/2021 09:54] - indicators.results - INFO - OK! Load object class
+[14/May/2021 09:54] - indicators.results - INFO - OK! Load object class
+[14/May/2021 09:54] - indicators.results - INFO - OK! Load object class
+[14/May/2021 09:55] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[14/May/2021 09:55] - indicators.results - INFO - start initial assignment
+[14/May/2021 09:55] - indicators.results - INFO - OK! Load Data
+[14/May/2021 09:55] - indicators.results - INFO - OK! Calculation Data
+[14/May/2021 09:55] - indicators.results - INFO - OK! end initial assignment 
+[14/May/2021 09:55] - indicators.results - INFO - OK! Load object class
+[14/May/2021 09:55] - indicators.results - INFO - OK! Load object class
+[14/May/2021 09:55] - indicators.results - INFO - OK! Load object class
+[14/May/2021 09:55] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[14/May/2021 09:55] - indicators.results - INFO - OK!
+[14/May/2021 09:56] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[14/May/2021 09:57] - indicators.results - INFO - start initial assignment
+[14/May/2021 09:57] - indicators.results - INFO - OK! Load Data
+[14/May/2021 09:57] - indicators.results - INFO - OK! Calculation Data
+[14/May/2021 09:57] - indicators.results - INFO - OK! end initial assignment 
+[14/May/2021 09:57] - indicators.results - INFO - OK! Load object class
+[14/May/2021 09:57] - indicators.results - INFO - OK! Load object class
+[14/May/2021 09:57] - indicators.results - INFO - OK! Load object class
+[14/May/2021 09:57] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[14/May/2021 09:57] - indicators.results - INFO - OK!
+[14/May/2021 10:03] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[14/May/2021 10:03] - indicators.results - INFO - start initial assignment
+[14/May/2021 10:03] - indicators.results - INFO - OK! Load Data
+[14/May/2021 10:03] - indicators.results - ERROR - FAILED! Data_Launch_Error: (<class 'TypeError'>, TypeError('first argument must be an iterable of pandas objects, you passed an object of type "DataFrame"'))
+Traceback (most recent call last):
+  File "results.py", line 225, in <module>
+    sum_lenta = pd.concat(data_kol_vip_prod_year, data_kol_real_prod_year_edit).sum()
+  File "C:\Users\a.bezzubov\AppData\Local\Programs\Python\Python38-32\lib\site-packages\pandas\core\reshape\concat.py", line 285, in concat
+    op = _Concatenator(
+  File "C:\Users\a.bezzubov\AppData\Local\Programs\Python\Python38-32\lib\site-packages\pandas\core\reshape\concat.py", line 320, in __init__
+    raise TypeError(
+TypeError: first argument must be an iterable of pandas objects, you passed an object of type "DataFrame"
+[14/May/2021 10:03] - indicators.results - INFO - OK! Load object class
+[14/May/2021 10:03] - indicators.results - INFO - OK! Load object class
+[14/May/2021 10:03] - indicators.results - INFO - OK! Load object class
+[14/May/2021 10:06] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[14/May/2021 10:06] - indicators.results - INFO - start initial assignment
+[14/May/2021 10:06] - indicators.results - INFO - OK! Load Data
+[14/May/2021 10:06] - indicators.results - INFO - OK! Calculation Data
+[14/May/2021 10:06] - indicators.results - INFO - OK! end initial assignment 
+[14/May/2021 10:06] - indicators.results - INFO - OK! Load object class
+[14/May/2021 10:06] - indicators.results - INFO - OK! Load object class
+[14/May/2021 10:06] - indicators.results - INFO - OK! Load object class
