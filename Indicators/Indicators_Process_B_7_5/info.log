@@ -4563,3 +4563,37 @@
 [11/May/2021 15:04] - indicators.production - INFO - OK! Load object class
 [11/May/2021 15:04] - indicators.production - INFO - OK! Load object class
 [11/May/2021 15:04] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[18/May/2021 13:49] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[18/May/2021 13:50] - indicators.production - INFO - start initial assignment
+[18/May/2021 13:50] - indicators.production - INFO - OK! Load Data
+[18/May/2021 13:50] - indicators.production - INFO - OK! Load Data
+[18/May/2021 13:50] - indicators.production - INFO - OK! Load Data
+[18/May/2021 13:50] - indicators.production - INFO - OK! Calculation Data
+[18/May/2021 13:50] - indicators.production - INFO - OK! Calculation Data
+[18/May/2021 13:50] - indicators.production - INFO - OK! end initial assignment 
+[18/May/2021 13:50] - indicators.production - INFO - OK! Load object class
+[18/May/2021 13:50] - indicators.production - INFO - OK! Load object class
+[18/May/2021 13:50] - indicators.production - INFO - OK! Load object class
+[18/May/2021 13:50] - indicators.production - INFO - OK! Load object class
+[18/May/2021 13:50] - indicators.production - INFO - OK! Load object class
+[18/May/2021 13:50] - indicators.production - INFO - OK! Load object class
+[18/May/2021 13:50] - indicators.production - INFO - OK! Load object class
+[18/May/2021 13:50] - indicators.production - INFO - OK! Load object class
+[18/May/2021 13:50] - indicators.production - INFO - OK! Load object class
+[18/May/2021 13:50] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[18/May/2021 13:50] - indicators.production.Info - INFO - __Init__ Info
+[18/May/2021 13:50] - indicators.production.Data_Table - INFO - __Init__ Data_Table
+[18/May/2021 13:50] - indicators.production.Info - INFO - __Init__ Info
+[18/May/2021 13:50] - indicators.production.Statistic_Table - INFO - __Init__ Statistic_Table
+[18/May/2021 13:50] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[18/May/2021 13:50] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[18/May/2021 13:50] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[18/May/2021 13:50] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[18/May/2021 13:50] - indicators.production.Graphics_Number_Production - INFO - __Init__ Graphics_Number_Production
+[18/May/2021 13:50] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[18/May/2021 13:50] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[18/May/2021 13:50] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[18/May/2021 13:50] - indicators.production.Graphics_Number_Production - INFO - __Init__ Graphics_Number_Production
+[18/May/2021 13:51] - indicators.production.Info - INFO - __Init__ Info
+[18/May/2021 13:51] - indicators.production.Comparise - INFO - __Init__ Comparise
+[18/May/2021 13:51] - indicators.production.Info_add - INFO - __Init__ Info_add

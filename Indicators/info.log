@@ -14537,3 +14537,57 @@ TypeError: 'numpy.float64' object cannot be interpreted as an integer
 [14/May/2021 08:45] - indicators.gui_module.WidgetPlot - INFO - __Init__ WidgetPlot
 [14/May/2021 08:45] - indicators.gui_module.PlotCanvas - INFO - __Init__ PlotCanvas
 [14/May/2021 08:45] - indicators.gui_module.View_Adhaesio_Graphics - INFO - __Init__ View_Adhaesio_Graphics
+[18/May/2021 13:51] - indicators.gui_module - INFO - Started on platform Windows-7-6.1.7601-SP1
+[18/May/2021 13:51] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[18/May/2021 13:51] - indicators.production - INFO - start initial assignment
+[18/May/2021 13:51] - indicators.production - INFO - OK! Load Data
+[18/May/2021 13:51] - indicators.production - INFO - OK! Load Data
+[18/May/2021 13:51] - indicators.production - INFO - OK! Load Data
+[18/May/2021 13:51] - indicators.production - INFO - OK! Calculation Data
+[18/May/2021 13:51] - indicators.production - INFO - OK! Calculation Data
+[18/May/2021 13:51] - indicators.production - INFO - OK! end initial assignment 
+[18/May/2021 13:51] - indicators.production - INFO - OK! Load object class
+[18/May/2021 13:51] - indicators.production - INFO - OK! Load object class
+[18/May/2021 13:51] - indicators.production - INFO - OK! Load object class
+[18/May/2021 13:51] - indicators.production - INFO - OK! Load object class
+[18/May/2021 13:51] - indicators.production - INFO - OK! Load object class
+[18/May/2021 13:51] - indicators.production - INFO - OK! Load object class
+[18/May/2021 13:51] - indicators.production - INFO - OK! Load object class
+[18/May/2021 13:51] - indicators.production - INFO - OK! Load object class
+[18/May/2021 13:51] - indicators.production - INFO - OK! Load object class
+[18/May/2021 13:51] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[18/May/2021 13:51] - indicators.adhaesio - INFO - Started on platform Windows-7-6.1.7601-SP1
+[18/May/2021 13:51] - indicators.adhaesio - INFO - OK! Load Data
+[18/May/2021 13:51] - indicators.adhaesio - INFO - start initial assignment
+[18/May/2021 13:51] - indicators.adhaesio - INFO - OK! end initial assignment 
+[18/May/2021 13:51] - indicators.adhaesio - INFO - OK! Load object class
+[18/May/2021 13:51] - indicators.adhaesio - INFO - OK! Load object class
+[18/May/2021 13:51] - indicators.adhaesio - INFO - OK! Load object class
+[18/May/2021 13:51] - indicators.adhaesio - INFO - OK! Load object class
+[18/May/2021 13:51] - indicators.adhaesio - INFO - OK! Load object class
+[18/May/2021 13:51] - indicators.adhaesio - INFO - OK! Load object class
+[18/May/2021 13:51] - indicators.adhaesio - INFO - OK! Load object class
+[18/May/2021 13:51] - indicators.adhaesio - INFO - OK! Load object class
+[18/May/2021 13:51] - indicators.adhaesio - INFO - OK! Load object class
+[18/May/2021 13:51] - indicators.adhaesio - INFO - OK! Load object class
+[18/May/2021 13:51] - indicators.adhaesio - INFO - OK! Load object class
+[18/May/2021 13:51] - indicators.adhaesio - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[18/May/2021 13:51] - indicators.gui_module - INFO - Import OK!!!
+[18/May/2021 13:51] - indicators.gui_module - INFO - start initial assignment
+[18/May/2021 13:51] - indicators.gui_module - INFO - OK! end initial assignment 
+[18/May/2021 13:51] - indicators.gui_module - INFO - OK! Load object class
+[18/May/2021 13:51] - indicators.gui_module - INFO - OK! Load object class
+[18/May/2021 13:51] - indicators.gui_module - INFO - OK! Load object class
+[18/May/2021 13:51] - indicators.gui_module - INFO - OK! Load object class
+[18/May/2021 13:51] - indicators.gui_module - INFO - OK! Load object class
+[18/May/2021 13:51] - indicators.gui_module - INFO - OK! Load object class
+[18/May/2021 13:51] - indicators.gui_module - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[18/May/2021 13:52] - indicators.gui_module.MainWindow - INFO - __Init__ MainWindow
+[18/May/2021 13:52] - indicators.gui_module.View_Process_Graphics - INFO - __Init__ View_Process_Graphics
+[18/May/2021 13:52] - indicators.gui_module.TabStr - INFO - __Init__ TabStr
+[18/May/2021 13:52] - indicators.gui_module.WidgetPlot - INFO - __Init__ WidgetPlot
+[18/May/2021 13:52] - indicators.gui_module.PlotCanvas - INFO - __Init__ PlotCanvas
+[18/May/2021 13:52] - indicators.gui_module.View_Adhaesio_Graphics - INFO - __Init__ View_Adhaesio_Graphics
+[18/May/2021 13:52] - indicators.adhaesio.ErrorGraphic - INFO - __Init__ ErrorGraphic
+[18/May/2021 13:52] - indicators.adhaesio.LinearGraphic - INFO - __Init__ LinearGraphic
+[18/May/2021 13:53] - indicators.production.Graphics_Number_Production - INFO - __Init__ Graphics_Number_Production
