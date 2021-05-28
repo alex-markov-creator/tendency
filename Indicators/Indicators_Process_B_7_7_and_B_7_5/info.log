@@ -246,3 +246,657 @@ TypeError: first argument must be an iterable of pandas objects, you passed an o
 [14/May/2021 10:06] - indicators.results - INFO - OK! Load object class
 [14/May/2021 10:06] - indicators.results - INFO - OK! Load object class
 [14/May/2021 10:06] - indicators.results - INFO - OK! Load object class
+[26/May/2021 13:08] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[26/May/2021 13:08] - indicators.results - INFO - start initial assignment
+[26/May/2021 13:08] - indicators.results - INFO - OK! Load Data
+[26/May/2021 13:08] - indicators.results - INFO - OK! Calculation Data
+[26/May/2021 13:08] - indicators.results - INFO - OK! end initial assignment 
+[26/May/2021 13:08] - indicators.results - INFO - OK! Load object class
+[26/May/2021 13:08] - indicators.results - INFO - OK! Load object class
+[26/May/2021 13:08] - indicators.results - INFO - OK! Load object class
+[26/May/2021 13:53] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[26/May/2021 13:53] - indicators.results - INFO - start initial assignment
+[26/May/2021 13:53] - indicators.results - INFO - OK! Load Data
+[26/May/2021 13:53] - indicators.results - INFO - OK! Calculation Data
+[26/May/2021 13:53] - indicators.results - INFO - OK! end initial assignment 
+[26/May/2021 13:53] - indicators.results - INFO - OK! Load object class
+[26/May/2021 13:53] - indicators.results - INFO - OK! Load object class
+[26/May/2021 13:53] - indicators.results - INFO - OK! Load object class
+[26/May/2021 13:53] - indicators.results.Info - INFO - __Init__ Info
+[26/May/2021 13:53] - indicators.results - INFO - OK! NAME_INPUT
+[26/May/2021 13:53] - indicators.results.Data_Table - INFO - __Init__ Data_Table
+[26/May/2021 13:54] - indicators.results.Info - INFO - __Init__ Info
+[26/May/2021 13:54] - indicators.results - INFO - OK! NAME_INPUT
+[26/May/2021 13:54] - indicators.results.Data_Table - INFO - __Init__ Data_Table
+[26/May/2021 13:54] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[26/May/2021 13:54] - indicators.results - INFO - OK!
+[26/May/2021 14:34] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[26/May/2021 14:34] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[26/May/2021 14:35] - indicators.results - INFO - start initial assignment
+[26/May/2021 14:35] - indicators.results - INFO - OK! Load Data
+[26/May/2021 14:35] - indicators.results - INFO - OK! Calculation Data
+[26/May/2021 14:35] - indicators.results - INFO - OK! end initial assignment 
+[26/May/2021 14:35] - indicators.results - INFO - OK! Load object class
+[26/May/2021 14:35] - indicators.results - INFO - OK! Load object class
+[26/May/2021 14:35] - indicators.results - INFO - OK! Load object class
+[26/May/2021 14:44] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[26/May/2021 14:44] - indicators.results - INFO - start initial assignment
+[26/May/2021 14:44] - indicators.results - INFO - OK! Load Data
+[26/May/2021 14:44] - indicators.results - INFO - OK! Calculation Data
+[26/May/2021 14:44] - indicators.results - INFO - OK! end initial assignment 
+[26/May/2021 14:44] - indicators.results - INFO - OK! Load object class
+[26/May/2021 14:44] - indicators.results - INFO - OK! Load object class
+[26/May/2021 14:44] - indicators.results - INFO - OK! Load object class
+[26/May/2021 14:44] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[26/May/2021 14:44] - indicators.results - INFO - OK!
+[26/May/2021 14:45] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[26/May/2021 14:45] - indicators.results - INFO - start initial assignment
+[26/May/2021 14:45] - indicators.results - INFO - OK! Load Data
+[26/May/2021 14:45] - indicators.results - INFO - OK! Calculation Data
+[26/May/2021 14:45] - indicators.results - INFO - OK! end initial assignment 
+[26/May/2021 14:45] - indicators.results - INFO - OK! Load object class
+[26/May/2021 14:45] - indicators.results - INFO - OK! Load object class
+[26/May/2021 14:45] - indicators.results - INFO - OK! Load object class
+[26/May/2021 14:46] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[26/May/2021 14:46] - indicators.results.Visual_all - INFO - ('Реализовано', 'Выпущено')
+[26/May/2021 14:46] - indicators.results - INFO - OK!
+[26/May/2021 14:46] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[26/May/2021 14:46] - indicators.results - INFO - start initial assignment
+[26/May/2021 14:46] - indicators.results - INFO - OK! Load Data
+[26/May/2021 14:46] - indicators.results - INFO - OK! Calculation Data
+[26/May/2021 14:46] - indicators.results - INFO - OK! end initial assignment 
+[26/May/2021 14:46] - indicators.results - INFO - OK! Load object class
+[26/May/2021 14:46] - indicators.results - INFO - OK! Load object class
+[26/May/2021 14:46] - indicators.results - INFO - OK! Load object class
+[26/May/2021 14:46] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[26/May/2021 14:46] - indicators.results.Visual_all - INFO - Количество выпущенной п/б ленты по годам в тоннах    18119.178
+Кол-во реализованной продукции по годам в тоннах     18310.411
+dtype: float64
+[26/May/2021 14:46] - indicators.results - INFO - OK!
+[26/May/2021 14:47] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[26/May/2021 14:48] - indicators.results - INFO - start initial assignment
+[26/May/2021 14:48] - indicators.results - INFO - OK! Load Data
+[26/May/2021 14:48] - indicators.results - INFO - OK! Calculation Data
+[26/May/2021 14:48] - indicators.results - INFO - OK! end initial assignment 
+[26/May/2021 14:48] - indicators.results - INFO - OK! Load object class
+[26/May/2021 14:48] - indicators.results - INFO - OK! Load object class
+[26/May/2021 14:48] - indicators.results - INFO - OK! Load object class
+[26/May/2021 14:48] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[26/May/2021 14:48] - indicators.results.Visual_all - INFO - [0 1]
+[26/May/2021 14:48] - indicators.results - INFO - OK!
+[26/May/2021 14:48] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[26/May/2021 14:48] - indicators.results - INFO - start initial assignment
+[26/May/2021 14:48] - indicators.results - INFO - OK! Load Data
+[26/May/2021 14:48] - indicators.results - INFO - OK! Calculation Data
+[26/May/2021 14:48] - indicators.results - INFO - OK! end initial assignment 
+[26/May/2021 14:48] - indicators.results - INFO - OK! Load object class
+[26/May/2021 14:48] - indicators.results - INFO - OK! Load object class
+[26/May/2021 14:48] - indicators.results - INFO - OK! Load object class
+[26/May/2021 14:48] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[26/May/2021 14:48] - indicators.results - INFO - OK!
+[26/May/2021 14:51] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[26/May/2021 14:51] - indicators.results - INFO - start initial assignment
+[26/May/2021 14:51] - indicators.results - INFO - OK! Load Data
+[26/May/2021 14:51] - indicators.results - INFO - OK! Calculation Data
+[26/May/2021 14:51] - indicators.results - INFO - OK! end initial assignment 
+[26/May/2021 14:51] - indicators.results - INFO - OK! Load object class
+[26/May/2021 14:51] - indicators.results - INFO - OK! Load object class
+[26/May/2021 14:51] - indicators.results - INFO - OK! Load object class
+[26/May/2021 14:51] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[26/May/2021 14:51] - indicators.results - INFO - OK!
+[26/May/2021 14:51] - indicators.results.Visual_all - INFO - ['Кол-во реализованной продукции по годам в тоннах', 'Количество выпущенной п/б ленты по годам в тоннах']
+[26/May/2021 14:52] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[26/May/2021 14:52] - indicators.results - INFO - start initial assignment
+[26/May/2021 14:52] - indicators.results - INFO - OK! Load Data
+[26/May/2021 14:52] - indicators.results - INFO - OK! Calculation Data
+[26/May/2021 14:52] - indicators.results - INFO - OK! end initial assignment 
+[26/May/2021 14:52] - indicators.results - INFO - OK! Load object class
+[26/May/2021 14:52] - indicators.results - INFO - OK! Load object class
+[26/May/2021 14:52] - indicators.results - INFO - OK! Load object class
+[26/May/2021 14:52] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[26/May/2021 14:52] - indicators.results - INFO - OK!
+[26/May/2021 14:52] - indicators.results.Visual_all - INFO - TESTING!!!
+[26/May/2021 14:56] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[26/May/2021 14:56] - indicators.results - INFO - start initial assignment
+[26/May/2021 14:56] - indicators.results - INFO - OK! Load Data
+[26/May/2021 14:56] - indicators.results - INFO - OK! Calculation Data
+[26/May/2021 14:56] - indicators.results - INFO - OK! end initial assignment 
+[26/May/2021 14:56] - indicators.results - INFO - OK! Load object class
+[26/May/2021 14:56] - indicators.results - INFO - OK! Load object class
+[26/May/2021 14:56] - indicators.results - INFO - OK! Load object class
+[26/May/2021 14:56] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[26/May/2021 14:56] - indicators.results - INFO - OK!
+[26/May/2021 14:56] - indicators.results.Visual_all - INFO - TESTING!!!
+[26/May/2021 14:56] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[26/May/2021 14:56] - indicators.results - INFO - OK!
+[26/May/2021 14:56] - indicators.results.Visual_all - INFO - TESTING!!!
+[26/May/2021 14:57] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[26/May/2021 14:57] - indicators.results - INFO - start initial assignment
+[26/May/2021 14:57] - indicators.results - INFO - OK! Load Data
+[26/May/2021 14:57] - indicators.results - INFO - OK! Calculation Data
+[26/May/2021 14:57] - indicators.results - INFO - OK! end initial assignment 
+[26/May/2021 14:57] - indicators.results - INFO - OK! Load object class
+[26/May/2021 14:57] - indicators.results - INFO - OK! Load object class
+[26/May/2021 14:57] - indicators.results - INFO - OK! Load object class
+[26/May/2021 14:57] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[26/May/2021 14:57] - indicators.results - INFO - OK!
+[26/May/2021 14:57] - indicators.results.Visual_all - INFO - TESTING!!!
+[26/May/2021 14:57] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[26/May/2021 14:57] - indicators.results - INFO - OK!
+[26/May/2021 14:57] - indicators.results.Visual_all - INFO - TESTING!!!
+[26/May/2021 14:59] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[26/May/2021 14:59] - indicators.results - INFO - start initial assignment
+[26/May/2021 14:59] - indicators.results - INFO - OK! Load Data
+[26/May/2021 14:59] - indicators.results - INFO - OK! Calculation Data
+[26/May/2021 14:59] - indicators.results - INFO - OK! end initial assignment 
+[26/May/2021 14:59] - indicators.results - INFO - OK! Load object class
+[26/May/2021 14:59] - indicators.results - INFO - OK! Load object class
+[26/May/2021 14:59] - indicators.results - INFO - OK! Load object class
+[26/May/2021 14:59] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[26/May/2021 14:59] - indicators.results - INFO - OK!
+[26/May/2021 14:59] - indicators.results.Visual_all - INFO - TESTING!!!
+[26/May/2021 14:59] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[26/May/2021 14:59] - indicators.results - INFO - OK!
+[26/May/2021 14:59] - indicators.results.Visual_all - INFO - TESTING!!!
+[26/May/2021 15:00] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[26/May/2021 15:01] - indicators.results - INFO - start initial assignment
+[26/May/2021 15:01] - indicators.results - INFO - OK! Load Data
+[26/May/2021 15:01] - indicators.results - INFO - OK! Calculation Data
+[26/May/2021 15:01] - indicators.results - INFO - OK! end initial assignment 
+[26/May/2021 15:01] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:01] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:01] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:01] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[26/May/2021 15:01] - indicators.results - INFO - OK!
+[26/May/2021 15:01] - indicators.results.Visual_all - INFO - TESTING!!!
+[26/May/2021 15:01] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[26/May/2021 15:01] - indicators.results - INFO - OK!
+[26/May/2021 15:01] - indicators.results.Visual_all - INFO - TESTING!!!
+[26/May/2021 15:07] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[26/May/2021 15:07] - indicators.results - INFO - start initial assignment
+[26/May/2021 15:07] - indicators.results - INFO - OK! Load Data
+[26/May/2021 15:07] - indicators.results - INFO - OK! Calculation Data
+[26/May/2021 15:07] - indicators.results - INFO - OK! end initial assignment 
+[26/May/2021 15:07] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:07] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:07] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:09] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[26/May/2021 15:09] - indicators.results - INFO - start initial assignment
+[26/May/2021 15:09] - indicators.results - INFO - OK! Load Data
+[26/May/2021 15:09] - indicators.results - INFO - OK! Calculation Data
+[26/May/2021 15:09] - indicators.results - INFO - OK! end initial assignment 
+[26/May/2021 15:09] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:09] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:09] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:10] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[26/May/2021 15:10] - indicators.results - INFO - start initial assignment
+[26/May/2021 15:10] - indicators.results - INFO - OK! Load Data
+[26/May/2021 15:10] - indicators.results - INFO - OK! Calculation Data
+[26/May/2021 15:10] - indicators.results - INFO - OK! end initial assignment 
+[26/May/2021 15:10] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:10] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:10] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:10] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[26/May/2021 15:10] - indicators.results - INFO - start initial assignment
+[26/May/2021 15:10] - indicators.results - INFO - OK! Load Data
+[26/May/2021 15:10] - indicators.results - INFO - OK! Calculation Data
+[26/May/2021 15:10] - indicators.results - INFO - OK! end initial assignment 
+[26/May/2021 15:10] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:10] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:10] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:11] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[26/May/2021 15:11] - indicators.results - INFO - start initial assignment
+[26/May/2021 15:11] - indicators.results - INFO - OK! Load Data
+[26/May/2021 15:11] - indicators.results - INFO - OK! Calculation Data
+[26/May/2021 15:11] - indicators.results - INFO - OK! end initial assignment 
+[26/May/2021 15:11] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:11] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:11] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:11] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[26/May/2021 15:11] - indicators.results - INFO - start initial assignment
+[26/May/2021 15:11] - indicators.results - INFO - OK! Load Data
+[26/May/2021 15:11] - indicators.results - INFO - OK! Calculation Data
+[26/May/2021 15:11] - indicators.results - INFO - OK! end initial assignment 
+[26/May/2021 15:11] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:11] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:11] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:12] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[26/May/2021 15:12] - indicators.results - INFO - start initial assignment
+[26/May/2021 15:12] - indicators.results - INFO - OK! Load Data
+[26/May/2021 15:12] - indicators.results - INFO - OK! Calculation Data
+[26/May/2021 15:12] - indicators.results - INFO - OK! end initial assignment 
+[26/May/2021 15:12] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:12] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:12] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:12] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[26/May/2021 15:12] - indicators.results - INFO - OK!
+[26/May/2021 15:12] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[26/May/2021 15:12] - indicators.results - INFO - OK!
+[26/May/2021 15:14] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[26/May/2021 15:14] - indicators.results - INFO - start initial assignment
+[26/May/2021 15:14] - indicators.results - INFO - OK! Load Data
+[26/May/2021 15:14] - indicators.results - INFO - OK! Calculation Data
+[26/May/2021 15:14] - indicators.results - INFO - OK! end initial assignment 
+[26/May/2021 15:14] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:14] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:14] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:15] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[26/May/2021 15:15] - indicators.results - INFO - start initial assignment
+[26/May/2021 15:15] - indicators.results - INFO - OK! Load Data
+[26/May/2021 15:15] - indicators.results - INFO - OK! Calculation Data
+[26/May/2021 15:15] - indicators.results - INFO - OK! end initial assignment 
+[26/May/2021 15:15] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:15] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:15] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:17] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[26/May/2021 15:18] - indicators.results - INFO - start initial assignment
+[26/May/2021 15:18] - indicators.results - INFO - OK! Load Data
+[26/May/2021 15:18] - indicators.results - INFO - OK! Calculation Data
+[26/May/2021 15:18] - indicators.results - INFO - OK! end initial assignment 
+[26/May/2021 15:18] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:18] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:18] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:19] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[26/May/2021 15:19] - indicators.results - INFO - start initial assignment
+[26/May/2021 15:19] - indicators.results - INFO - OK! Load Data
+[26/May/2021 15:19] - indicators.results - INFO - OK! Calculation Data
+[26/May/2021 15:19] - indicators.results - INFO - OK! end initial assignment 
+[26/May/2021 15:19] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:19] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:19] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:19] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[26/May/2021 15:19] - indicators.results - INFO - OK!
+[26/May/2021 15:19] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[26/May/2021 15:19] - indicators.results - INFO - OK!
+[26/May/2021 15:24] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[26/May/2021 15:24] - indicators.results - INFO - start initial assignment
+[26/May/2021 15:24] - indicators.results - INFO - OK! Load Data
+[26/May/2021 15:24] - indicators.results - INFO - OK! Calculation Data
+[26/May/2021 15:24] - indicators.results - INFO - OK! end initial assignment 
+[26/May/2021 15:24] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:24] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:24] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:24] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[26/May/2021 15:24] - indicators.results - INFO - OK!
+[26/May/2021 15:24] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[26/May/2021 15:24] - indicators.results - INFO - OK!
+[26/May/2021 15:40] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[26/May/2021 15:40] - indicators.results - INFO - start initial assignment
+[26/May/2021 15:40] - indicators.results - INFO - OK! Load Data
+[26/May/2021 15:40] - indicators.results - INFO - OK! Calculation Data
+[26/May/2021 15:40] - indicators.results - INFO - OK! end initial assignment 
+[26/May/2021 15:40] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:40] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:40] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:40] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[26/May/2021 15:40] - indicators.results.Visual_all - INFO - Реализованная и выпущенная продукции
+[26/May/2021 15:40] - indicators.results - INFO - OK!
+[26/May/2021 15:40] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[26/May/2021 15:40] - indicators.results.Visual_all - INFO - Реализованная и выпущенная продукции
+[26/May/2021 15:40] - indicators.results - INFO - OK!
+[26/May/2021 15:42] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[26/May/2021 15:42] - indicators.results - INFO - start initial assignment
+[26/May/2021 15:42] - indicators.results - INFO - OK! Load Data
+[26/May/2021 15:42] - indicators.results - INFO - OK! Calculation Data
+[26/May/2021 15:42] - indicators.results - INFO - OK! end initial assignment 
+[26/May/2021 15:42] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:42] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:42] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:42] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[26/May/2021 15:42] - indicators.results - INFO - OK!
+[26/May/2021 15:42] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[26/May/2021 15:42] - indicators.results - INFO - OK!
+[26/May/2021 15:43] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[26/May/2021 15:43] - indicators.results - INFO - start initial assignment
+[26/May/2021 15:43] - indicators.results - INFO - OK! Load Data
+[26/May/2021 15:43] - indicators.results - INFO - OK! Calculation Data
+[26/May/2021 15:43] - indicators.results - INFO - OK! end initial assignment 
+[26/May/2021 15:43] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:43] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:43] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:44] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[26/May/2021 15:44] - indicators.results - INFO - start initial assignment
+[26/May/2021 15:44] - indicators.results - INFO - OK! Load Data
+[26/May/2021 15:44] - indicators.results - INFO - OK! Calculation Data
+[26/May/2021 15:44] - indicators.results - INFO - OK! end initial assignment 
+[26/May/2021 15:44] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:44] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:44] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:44] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[26/May/2021 15:44] - indicators.results - INFO - OK!
+[26/May/2021 15:45] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[26/May/2021 15:45] - indicators.results - INFO - start initial assignment
+[26/May/2021 15:45] - indicators.results - INFO - OK! Load Data
+[26/May/2021 15:45] - indicators.results - INFO - OK! Calculation Data
+[26/May/2021 15:45] - indicators.results - INFO - OK! end initial assignment 
+[26/May/2021 15:45] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:45] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:45] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:53] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[26/May/2021 15:53] - indicators.results - INFO - start initial assignment
+[26/May/2021 15:53] - indicators.results - INFO - OK! Load Data
+[26/May/2021 15:53] - indicators.results - INFO - OK! Calculation Data
+[26/May/2021 15:53] - indicators.results - INFO - OK! end initial assignment 
+[26/May/2021 15:53] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:53] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:53] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:53] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[26/May/2021 15:53] - indicators.results - INFO - start initial assignment
+[26/May/2021 15:53] - indicators.results - INFO - OK! Load Data
+[26/May/2021 15:53] - indicators.results - INFO - OK! Calculation Data
+[26/May/2021 15:53] - indicators.results - INFO - OK! end initial assignment 
+[26/May/2021 15:53] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:53] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:53] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:53] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[26/May/2021 15:53] - indicators.results - INFO - OK!
+[26/May/2021 15:55] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[26/May/2021 15:55] - indicators.results - INFO - start initial assignment
+[26/May/2021 15:55] - indicators.results - INFO - OK! Load Data
+[26/May/2021 15:55] - indicators.results - INFO - OK! Calculation Data
+[26/May/2021 15:55] - indicators.results - INFO - OK! end initial assignment 
+[26/May/2021 15:55] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:55] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:55] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:55] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[26/May/2021 15:55] - indicators.results - INFO - OK!
+[26/May/2021 15:57] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[26/May/2021 15:57] - indicators.results - INFO - start initial assignment
+[26/May/2021 15:57] - indicators.results - INFO - OK! Load Data
+[26/May/2021 15:57] - indicators.results - INFO - OK! Calculation Data
+[26/May/2021 15:57] - indicators.results - INFO - OK! end initial assignment 
+[26/May/2021 15:57] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:57] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:57] - indicators.results - INFO - OK! Load object class
+[26/May/2021 15:57] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[26/May/2021 15:57] - indicators.results - INFO - OK!
+[26/May/2021 15:57] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[26/May/2021 15:57] - indicators.results - INFO - OK!
+[26/May/2021 16:00] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[26/May/2021 16:00] - indicators.results - INFO - start initial assignment
+[26/May/2021 16:00] - indicators.results - INFO - OK! Load Data
+[26/May/2021 16:00] - indicators.results - INFO - OK! Calculation Data
+[26/May/2021 16:00] - indicators.results - INFO - OK! end initial assignment 
+[26/May/2021 16:00] - indicators.results - INFO - OK! Load object class
+[26/May/2021 16:00] - indicators.results - INFO - OK! Load object class
+[26/May/2021 16:00] - indicators.results - INFO - OK! Load object class
+[26/May/2021 16:00] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[26/May/2021 16:00] - indicators.results - INFO - OK!
+[26/May/2021 16:01] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[26/May/2021 16:02] - indicators.results - INFO - start initial assignment
+[26/May/2021 16:02] - indicators.results - INFO - OK! Load Data
+[26/May/2021 16:02] - indicators.results - INFO - OK! Calculation Data
+[26/May/2021 16:02] - indicators.results - INFO - OK! end initial assignment 
+[26/May/2021 16:02] - indicators.results - INFO - OK! Load object class
+[26/May/2021 16:02] - indicators.results - INFO - OK! Load object class
+[26/May/2021 16:02] - indicators.results - INFO - OK! Load object class
+[26/May/2021 16:02] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[26/May/2021 16:02] - indicators.results - INFO - OK!
+[26/May/2021 16:02] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[26/May/2021 16:02] - indicators.results - INFO - OK!
+[26/May/2021 16:03] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[26/May/2021 16:03] - indicators.results - INFO - start initial assignment
+[26/May/2021 16:03] - indicators.results - INFO - OK! Load Data
+[26/May/2021 16:03] - indicators.results - INFO - OK! Calculation Data
+[26/May/2021 16:03] - indicators.results - INFO - OK! end initial assignment 
+[26/May/2021 16:03] - indicators.results - INFO - OK! Load object class
+[26/May/2021 16:03] - indicators.results - INFO - OK! Load object class
+[26/May/2021 16:03] - indicators.results - INFO - OK! Load object class
+[26/May/2021 16:03] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[26/May/2021 16:03] - indicators.results.Visual_all - INFO -       Количество выпущенной п/б ленты по годам в тоннах  Кол-во реализованной продукции по годам в тоннах
+Год                                                                                                      
+2010                                           1817.007                                          1838.000
+2011                                           2319.412                                          2274.360
+2012                                           1793.778                                          1835.130
+2013                                           1942.546                                          1910.890
+2014                                           1957.010                                          2009.150
+2015                                           1590.887                                          1567.940
+2016                                           1286.476                                          1330.190
+2017                                           1449.358                                          1444.280
+2018                                           1248.460                                          1297.320
+2019                                           1254.366                                          1351.765
+2020                                           1459.878                                          1451.386
+[26/May/2021 16:03] - indicators.results.Visual_all - INFO -       Количество выпущенных комплектов по годам в шт.  Кол-во реализованных комплектов Км по годам в шт
+Год                                                                                                    
+2017                                           2532.0                                            2532.0
+2018                                           6502.0                                            6502.0
+2019                                          11279.0                                           10984.0
+2020                                           2839.0                                            3079.0
+[26/May/2021 16:03] - indicators.results - INFO - OK!
+[26/May/2021 16:03] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[26/May/2021 16:03] - indicators.results.Visual_all - INFO -       Количество выпущенной п/б ленты по годам в тоннах  Кол-во реализованной продукции по годам в тоннах
+Год                                                                                                      
+2010                                           1817.007                                          1838.000
+2011                                           2319.412                                          2274.360
+2012                                           1793.778                                          1835.130
+2013                                           1942.546                                          1910.890
+2014                                           1957.010                                          2009.150
+2015                                           1590.887                                          1567.940
+2016                                           1286.476                                          1330.190
+2017                                           1449.358                                          1444.280
+2018                                           1248.460                                          1297.320
+2019                                           1254.366                                          1351.765
+2020                                           1459.878                                          1451.386
+[26/May/2021 16:03] - indicators.results.Visual_all - INFO -       Количество выпущенных комплектов по годам в шт.  Кол-во реализованных комплектов Км по годам в шт
+Год                                                                                                    
+2017                                           2532.0                                            2532.0
+2018                                           6502.0                                            6502.0
+2019                                          11279.0                                           10984.0
+2020                                           2839.0                                            3079.0
+[26/May/2021 16:03] - indicators.results - INFO - OK!
+[26/May/2021 16:04] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[26/May/2021 16:04] - indicators.results - INFO - start initial assignment
+[26/May/2021 16:04] - indicators.results - INFO - OK! Load Data
+[26/May/2021 16:04] - indicators.results - INFO - OK! Calculation Data
+[26/May/2021 16:04] - indicators.results - INFO - OK! end initial assignment 
+[26/May/2021 16:04] - indicators.results - INFO - OK! Load object class
+[26/May/2021 16:04] - indicators.results - INFO - OK! Load object class
+[26/May/2021 16:04] - indicators.results - INFO - OK! Load object class
+[26/May/2021 16:04] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[26/May/2021 16:04] - indicators.results.Visual_all - INFO -       Количество выпущенной п/б ленты по годам в тоннах  Кол-во реализованной продукции по годам в тоннах
+Год                                                                                                      
+2010                                           1817.007                                          1838.000
+2011                                           2319.412                                          2274.360
+2012                                           1793.778                                          1835.130
+2013                                           1942.546                                          1910.890
+2014                                           1957.010                                          2009.150
+2015                                           1590.887                                          1567.940
+2016                                           1286.476                                          1330.190
+2017                                           1449.358                                          1444.280
+2018                                           1248.460                                          1297.320
+2019                                           1254.366                                          1351.765
+2020                                           1459.878                                          1451.386
+[26/May/2021 16:04] - indicators.results.Visual_all - INFO -       Количество выпущенных комплектов по годам в шт.  Кол-во реализованных комплектов Км по годам в шт
+Год                                                                                                    
+2017                                           2532.0                                            2532.0
+2018                                           6502.0                                            6502.0
+2019                                          11279.0                                           10984.0
+2020                                           2839.0                                            3079.0
+[26/May/2021 16:04] - indicators.results - INFO - OK!
+[26/May/2021 16:04] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[26/May/2021 16:04] - indicators.results.Visual_all - INFO -       Количество выпущенной п/б ленты по годам в тоннах  Кол-во реализованной продукции по годам в тоннах
+Год                                                                                                      
+2010                                           1817.007                                          1838.000
+2011                                           2319.412                                          2274.360
+2012                                           1793.778                                          1835.130
+2013                                           1942.546                                          1910.890
+2014                                           1957.010                                          2009.150
+2015                                           1590.887                                          1567.940
+2016                                           1286.476                                          1330.190
+2017                                           1449.358                                          1444.280
+2018                                           1248.460                                          1297.320
+2019                                           1254.366                                          1351.765
+2020                                           1459.878                                          1451.386
+[26/May/2021 16:04] - indicators.results.Visual_all - INFO -       Количество выпущенных комплектов по годам в шт.  Кол-во реализованных комплектов Км по годам в шт
+Год                                                                                                    
+2017                                           2532.0                                            2532.0
+2018                                           6502.0                                            6502.0
+2019                                          11279.0                                           10984.0
+2020                                           2839.0                                            3079.0
+[26/May/2021 16:04] - indicators.results - INFO - OK!
+[26/May/2021 16:05] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[26/May/2021 16:05] - indicators.results.Visual_all - INFO -       Количество выпущенной п/б ленты по годам в тоннах  Кол-во реализованной продукции по годам в тоннах
+Год                                                                                                      
+2010                                           1817.007                                          1838.000
+2011                                           2319.412                                          2274.360
+2012                                           1793.778                                          1835.130
+2013                                           1942.546                                          1910.890
+2014                                           1957.010                                          2009.150
+2015                                           1590.887                                          1567.940
+2016                                           1286.476                                          1330.190
+2017                                           1449.358                                          1444.280
+2018                                           1248.460                                          1297.320
+2019                                           1254.366                                          1351.765
+2020                                           1459.878                                          1451.386
+[26/May/2021 16:05] - indicators.results.Visual_all - INFO -       Количество выпущенных комплектов по годам в шт.  Кол-во реализованных комплектов Км по годам в шт
+Год                                                                                                    
+2017                                           2532.0                                            2532.0
+2018                                           6502.0                                            6502.0
+2019                                          11279.0                                           10984.0
+2020                                           2839.0                                            3079.0
+[26/May/2021 16:05] - indicators.results - INFO - OK!
+[26/May/2021 16:05] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[26/May/2021 16:05] - indicators.results.Visual_all - INFO -       Количество выпущенной п/б ленты по годам в тоннах  Кол-во реализованной продукции по годам в тоннах
+Год                                                                                                      
+2010                                           1817.007                                          1838.000
+2011                                           2319.412                                          2274.360
+2012                                           1793.778                                          1835.130
+2013                                           1942.546                                          1910.890
+2014                                           1957.010                                          2009.150
+2015                                           1590.887                                          1567.940
+2016                                           1286.476                                          1330.190
+2017                                           1449.358                                          1444.280
+2018                                           1248.460                                          1297.320
+2019                                           1254.366                                          1351.765
+2020                                           1459.878                                          1451.386
+[26/May/2021 16:05] - indicators.results.Visual_all - INFO -       Количество выпущенных комплектов по годам в шт.  Кол-во реализованных комплектов Км по годам в шт
+Год                                                                                                    
+2017                                           2532.0                                            2532.0
+2018                                           6502.0                                            6502.0
+2019                                          11279.0                                           10984.0
+2020                                           2839.0                                            3079.0
+[26/May/2021 16:05] - indicators.results - INFO - OK!
+[27/May/2021 08:33] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[27/May/2021 08:33] - indicators.results - INFO - start initial assignment
+[27/May/2021 08:33] - indicators.results - INFO - OK! Load Data
+[27/May/2021 08:33] - indicators.results - INFO - OK! Calculation Data
+[27/May/2021 08:33] - indicators.results - INFO - OK! end initial assignment 
+[27/May/2021 08:33] - indicators.results - INFO - OK! Load object class
+[27/May/2021 08:33] - indicators.results - INFO - OK! Load object class
+[27/May/2021 08:33] - indicators.results - INFO - OK! Load object class
+[27/May/2021 08:33] - indicators.results - INFO - True
+[27/May/2021 08:33] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[27/May/2021 08:33] - indicators.results - INFO - OK!
+[27/May/2021 08:33] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[27/May/2021 08:33] - indicators.results - INFO - OK!
+[27/May/2021 08:34] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[27/May/2021 08:34] - indicators.results - INFO - start initial assignment
+[27/May/2021 08:34] - indicators.results - INFO - OK! Load Data
+[27/May/2021 08:34] - indicators.results - INFO - OK! Calculation Data
+[27/May/2021 08:34] - indicators.results - INFO - OK! end initial assignment 
+[27/May/2021 08:34] - indicators.results - INFO - OK! Load object class
+[27/May/2021 08:34] - indicators.results - INFO - OK! Load object class
+[27/May/2021 08:34] - indicators.results - INFO - OK! Load object class
+[27/May/2021 08:34] - indicators.results - INFO - True
+[27/May/2021 08:34] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[27/May/2021 08:34] - indicators.results - INFO - OK!
+[27/May/2021 08:34] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[27/May/2021 08:34] - indicators.results - INFO - OK!
+[27/May/2021 08:35] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[27/May/2021 08:35] - indicators.results - INFO - start initial assignment
+[27/May/2021 08:35] - indicators.results - INFO - OK! Load Data
+[27/May/2021 08:35] - indicators.results - INFO - OK! Calculation Data
+[27/May/2021 08:35] - indicators.results - INFO - OK! end initial assignment 
+[27/May/2021 08:35] - indicators.results - INFO - OK! Load object class
+[27/May/2021 08:35] - indicators.results - INFO - OK! Load object class
+[27/May/2021 08:35] - indicators.results - INFO - OK! Load object class
+[27/May/2021 08:35] - indicators.results - INFO - None
+[27/May/2021 08:35] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[27/May/2021 08:35] - indicators.results - INFO - OK!
+[27/May/2021 08:35] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[27/May/2021 08:35] - indicators.results - INFO - OK!
+[27/May/2021 08:36] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[27/May/2021 08:36] - indicators.results - INFO - start initial assignment
+[27/May/2021 08:36] - indicators.results - INFO - OK! Load Data
+[27/May/2021 08:36] - indicators.results - INFO - OK! Calculation Data
+[27/May/2021 08:36] - indicators.results - INFO - OK! end initial assignment 
+[27/May/2021 08:36] - indicators.results - INFO - OK! Load object class
+[27/May/2021 08:36] - indicators.results - INFO - OK! Load object class
+[27/May/2021 08:36] - indicators.results - INFO - OK! Load object class
+[27/May/2021 08:36] - indicators.results - INFO - 18119.178000000004
+[27/May/2021 08:36] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[27/May/2021 08:36] - indicators.results - INFO - OK!
+[27/May/2021 08:36] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[27/May/2021 08:36] - indicators.results - INFO - OK!
+[27/May/2021 08:36] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[27/May/2021 08:37] - indicators.results - INFO - start initial assignment
+[27/May/2021 08:37] - indicators.results - INFO - OK! Load Data
+[27/May/2021 08:37] - indicators.results - INFO - OK! Calculation Data
+[27/May/2021 08:37] - indicators.results - INFO - OK! end initial assignment 
+[27/May/2021 08:37] - indicators.results - INFO - OK! Load object class
+[27/May/2021 08:37] - indicators.results - INFO - OK! Load object class
+[27/May/2021 08:37] - indicators.results - INFO - OK! Load object class
+[27/May/2021 08:37] - indicators.results - INFO - Количество выпущенной п/б ленты по годам в тоннах    18119.178
+Кол-во реализованной продукции по годам в тоннах     18310.411
+dtype: float64
+[27/May/2021 08:37] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[27/May/2021 08:37] - indicators.results - INFO - OK!
+[27/May/2021 08:37] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[27/May/2021 08:37] - indicators.results - INFO - OK!
+[27/May/2021 08:43] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[27/May/2021 08:43] - indicators.results - INFO - start initial assignment
+[27/May/2021 08:43] - indicators.results - INFO - OK! Load Data
+[27/May/2021 08:43] - indicators.results - INFO - OK! Calculation Data
+[27/May/2021 08:43] - indicators.results - INFO - OK! end initial assignment 
+[27/May/2021 08:43] - indicators.results - INFO - OK! Load object class
+[27/May/2021 08:43] - indicators.results - INFO - OK! Load object class
+[27/May/2021 08:43] - indicators.results - INFO - OK! Load object class
+[27/May/2021 08:43] - indicators.results - INFO - True
+[27/May/2021 08:43] - indicators.results - INFO - True
+[27/May/2021 08:43] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[27/May/2021 08:43] - indicators.results - INFO - OK!
+[27/May/2021 08:43] - indicators.results - INFO - True
+[27/May/2021 08:43] - indicators.results - INFO - True
+[27/May/2021 08:43] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[27/May/2021 08:43] - indicators.results - INFO - OK!
+[27/May/2021 08:56] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[27/May/2021 08:56] - indicators.results - INFO - start initial assignment
+[27/May/2021 08:56] - indicators.results - INFO - OK! Load Data
+[27/May/2021 08:56] - indicators.results - INFO - OK! Calculation Data
+[27/May/2021 08:56] - indicators.results - INFO - OK! end initial assignment 
+[27/May/2021 08:56] - indicators.results - INFO - OK! Load object class
+[27/May/2021 08:56] - indicators.results - INFO - OK! Load object class
+[27/May/2021 08:56] - indicators.results - INFO - OK! Load object class
+[27/May/2021 08:57] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[27/May/2021 08:57] - indicators.results - INFO - OK!
+[27/May/2021 08:57] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[27/May/2021 08:57] - indicators.results - INFO - OK!
+[27/May/2021 08:57] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[27/May/2021 08:57] - indicators.results - INFO - OK!
+[27/May/2021 08:57] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[27/May/2021 08:57] - indicators.results - INFO - OK!
+[27/May/2021 09:03] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[27/May/2021 09:04] - indicators.results - INFO - start initial assignment
+[27/May/2021 09:04] - indicators.results - INFO - OK! Load Data
+[27/May/2021 09:04] - indicators.results - INFO - OK! Calculation Data
+[27/May/2021 09:04] - indicators.results - INFO - OK! end initial assignment 
+[27/May/2021 09:04] - indicators.results - INFO - OK! Load object class
+[27/May/2021 09:04] - indicators.results - INFO - OK! Load object class
+[27/May/2021 09:04] - indicators.results - INFO - OK! Load object class
+[27/May/2021 09:04] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[27/May/2021 09:04] - indicators.results - INFO - OK!
+[27/May/2021 09:04] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[27/May/2021 09:04] - indicators.results - INFO - OK!
+[27/May/2021 09:04] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[27/May/2021 09:04] - indicators.results - INFO - OK!
+[27/May/2021 09:04] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[27/May/2021 09:04] - indicators.results - INFO - OK!
+[27/May/2021 09:29] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[27/May/2021 09:29] - indicators.results - INFO - start initial assignment
+[27/May/2021 09:29] - indicators.results - INFO - OK! Load Data
+[27/May/2021 09:29] - indicators.results - INFO - OK! Load object class
+[27/May/2021 09:29] - indicators.results - INFO - OK! Load object class
+[27/May/2021 09:29] - indicators.results - INFO - OK! Load object class
+[27/May/2021 09:29] - indicators.results.Info - INFO - __Init__ Info
+[27/May/2021 09:29] - indicators.results - INFO - OK! NAME_INPUT
+[27/May/2021 09:29] - indicators.results.Data_Table - INFO - __Init__ Data_Table
