@@ -118,6 +118,8 @@ sys.path.append(os.path.realpath('../..'))
 from prettytable import PrettyTable
 # модуль для вывода табличных данных
 from tabulate import tabulate
+# модуль для построения линейной регрессии
+from scipy.stats import linregress
 #-------------------------------------------------------
 import numpy as np
 import pandas as pd
@@ -247,26 +249,34 @@ try:
     concat_kompl = pd.concat([data_kol_vip_kompl_year, data_kol_real_komp_year_edit],axis=1)
     sum_kompl = concat_kompl.sum()
 
+    # ИСХОДНЫЕ ДАННЫЕ (ДОПОЛНИТЕЛЬНОЕ ФОРМАТИРОВАНИЕ ДЛЯ ПОСТРОЕНИЯ ГРАФИКА LINEAR_GRAPHICS):
+    sum_lenta_year = pd.concat([data_kol_vip_prod_year, data_kol_real_prod_year],axis=1)
+    sum_lenta_middle_year = pd.concat([data_kol_vip_prod_middle_year, data_kol_real_prod_middle_year],axis=1)
+
+    sum_kompl_year = pd.concat([data_kol_vip_kompl_year, data_kol_real_komp_year],axis=1)
+    sum_kompl_middle_year = pd.concat([data_kol_real_komp_middle_year, data_kol_real_komp_middle_year],axis=1)
+
     # ИСХОДНЫЕ ДАННЫЕ (ДОПОЛНИТЕЛЬНЫЕ РАСЧЁТЫ):
     ###########################################
     # Переменные: [sum_all,sum_year, sum_middle_year, summer,calc_year, calc_middle_year]
-    a = Result_Calc()
+
+    #a = Result_Calc()
     # экземпляр класса для объединения и подсчёта
-    sum_all = a.result_all()
+    #sum_all = a.result_all()
     # Общие результаты - итоги
-    sum_year = a.result_year().iloc[:,:2]
+    #sum_year = a.result_year().iloc[:,:2]
     # Результаты по годам
-    sum_middle_year = a.result_middle_year().iloc[:,:2]
+    #sum_middle_year = a.result_middle_year().iloc[:,:2]
     # Результаты по полугодиям
-    summer = a.result_summer()
+    #summer = a.result_summer()
     # Сконкатенированные результаты для подсчёта коэфициента корреляции
-    calc_year = sum_year.iloc[:,:3]
+    #calc_year = sum_year.iloc[:,:3]
     # Разница по годам для построения столбчатой диаграммы
-    calc_middle_year = sum_middle_year.iloc[:,:3]
+    #calc_middle_year = sum_middle_year.iloc[:,:3]
     # Разница по полугодиям для построения столбчатой диаграммы
-    difference_year = a.result_year().loc[2010:].iloc[:,2:3]
+    #difference_year = a.result_year().loc[2010:].iloc[:,2:3]
     # Результаты по годам
-    difference_middle_year = a.result_middle_year().iloc[:,2:3]
+    #difference_middle_year = a.result_middle_year().iloc[:,2:3]
     # Результаты по полугодиям
 
     logger.info("OK! Calculation Data") # logging
@@ -348,7 +358,8 @@ try:
 except Exception:
     logger.error(f'FAILED! Data_Table_Error: {sys.exc_info()[:2]}') # logging
 
-
+try:
+    #@time_of_function
     class Result_Calc(Pattern_singleton.Singleton, Abstract.Calc):
         """
         Класс подсчета и конкатенации исходных данных
@@ -373,9 +384,9 @@ except Exception:
             """
             sum_year = self.concat_data(data_kol_vip_prod_year, data_kol_real_prod_year)
             sum_year['Разница в тоннах'] = sum_year[
-                    'Кол-во реализованной продукции по годам в тоннах'
+                    sum_year.transpose().iloc[0].name
                                                     ] - sum_year[
-                    'Количество выпущенной продукции по годам в тоннах'
+                    sum_year.transpose().iloc[1].name
                                                                 ]
             return sum_year
 
@@ -400,14 +411,21 @@ except Exception:
             """
             summer = self.concat_data(sum_year,sum_middle_year)
             return summer
+
+    logger.info("OK! Load object class") # logging
+
+except Exception:
+    logger.error(f'FAILED! Result_Calc_Error: {sys.exc_info()[:2]}') # logging
+
 try:
-    @time_of_function
+    #@time_of_function
     class Visual_all(Abstract.Graphic):
         """
         График общих результатов выпуска и реализации в виде горизонтальной столбчатой диаграммы
         ========================================================================================
         # Пример отображения графика
-        va = Visual_all(sum_all)
+        graphic_one = Visual_all(sum_lenta, 'Реализованная и выпущенная продукции (лента) с 2010 года')
+        graphic_two = Visual_all(sum_kompl, 'Реализованная и выпущенная продукции (комплекты) с 2017 года')
         plt.show()
         """
         def __init__(self, data: pd.Series, name = 'Реализованная и выпущенная продукции'):
@@ -416,7 +434,7 @@ try:
             self.logger = logging.getLogger('indicators.results.Visual_all')
             self.logger.info('__Init__ Visual_all')
             fig, ax = plt.subplots()
-            fig.canvas.set_window_title('График сравнения')
+            fig.canvas.set_window_title('Процесс Б(7.7) "Сбыт"')
             obj = ('Реализовано', 'Выпущено')
             y_pos = np.arange(len(obj))
             logger.info("OK!") # logging
@@ -443,6 +461,7 @@ try:
 except Exception:
     logger.error(f'FAILED! Visual_all_Error: {sys.exc_info()[:2]}') # logging
 
+try:
     class LinearGraphics(Abstract.Graphic):
         """
         График общих результатов выпуска и реализации
@@ -457,11 +476,15 @@ except Exception:
         def __init__(self,data):
             super().__init__(data)
             self.data = data
+            self.logger = logging.getLogger('indicators.production.LinearGraphics')
+            self.logger.info('__Init__ LinearGraphics')
+            #self.__class__.num_instances += 1 # счётчик экземпляров класса
             self.data.plot()
             plt.title(r'Кол-во реализованной и выпущенной продукции', fontsize=16, y=1.05)
-            plt.ylabel('Кол-во в тоннах')
+            plt.ylabel('Кол-во')
             plt.xlabel('Год')
             plt.legend(fontsize=7, shadow=True, framealpha=1, facecolor='w', edgecolor='r', title='', loc = 'best')
+            plt.gcf().canvas.set_window_title('Процесс Б(7.5) "Сбыт"')
             plt.grid()
 
         def maximum_minimum_text(self):
@@ -484,6 +507,11 @@ except Exception:
                         xytext=(min_index, min_value_realized+10), fontsize=9,
                         arrowprops = dict(arrowstyle = '->', color = 'red'),
                         bbox=dict(facecolor='pink', alpha=0.1)) # надпись "Минимум"
+
+    logger.info("OK! Load object class") # logging
+
+except Exception:
+    logger.error(f'FAILED!LinearGraphics_Error: {sys.exc_info()[:2]}') # logging
 
     class Visual_difference(Abstract.Graphic):
         """
@@ -719,6 +747,7 @@ if __name__ == '__main__':
             ГРАФИКИ
             """
             try:
+                """
                 if data_kol_real_prod_year.isin([0]).all(axis=None) == False and data_kol_vip_prod_year.isin([0]).all(axis=None) == False:
                     graphic_one = Visual_all(sum_lenta, 'Реализованная и выпущенная продукции (лента) с 2010 года')
                 else:
@@ -728,9 +757,28 @@ if __name__ == '__main__':
                     graphic_two = Visual_all(sum_kompl, 'Реализованная и выпущенная продукции (комплекты) с 2017 года')
                 else:
                     pass
+                """
+                if data_kol_real_prod_year.isin([0]).all(axis=None) == False and data_kol_vip_prod_year.isin([0]).all(axis=None) == False:
+                    graphic_three = LinearGraphics(sum_lenta_year)
+                    graphic_three.maximum_minimum_text()
+                    #graphic_three.regres_graphic()
+                else:
+                    pass
+                if data_kol_real_prod_middle_year.isin([0]).all(axis=None) == False and data_kol_vip_prod_middle_year.isin([0]).all(axis=None) == False:
+                    graphic_four = LinearGraphics(sum_lenta_middle_year)
+                    graphic_four.maximum_minimum_text()
+                    #graphic_four.regres_graphic()
+                else:
+                    pass
 
-                #g = LinearGraphics(sum_year)
-                #g.maximum_minimum_text()
+                if data_kol_real_komp_year.isin([0]).all(axis=None) == False and data_kol_vip_kompl_year.isin([0]).all(axis=None) == False:
+                    graphic_five = LinearGraphics(sum_kompl_year)
+                    graphic_five.maximum_minimum_text()
+                    #graphic_five.regres_graphic()
+                else:
+                    pass
+
+
                 #y = LinearGraphics(sum_year.loc[2010:])
                 #y.maximum_minimum_text()
                 #y.regres_graphic()

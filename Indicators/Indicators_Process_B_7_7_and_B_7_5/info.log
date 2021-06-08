@@ -900,3 +900,943 @@ dtype: float64
 [27/May/2021 09:29] - indicators.results.Info - INFO - __Init__ Info
 [27/May/2021 09:29] - indicators.results - INFO - OK! NAME_INPUT
 [27/May/2021 09:29] - indicators.results.Data_Table - INFO - __Init__ Data_Table
+[03/June/2021 10:10] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 10:10] - indicators.results - INFO - start initial assignment
+[03/June/2021 10:10] - indicators.results - INFO - OK! Load Data
+[03/June/2021 10:10] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:10] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:10] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:10] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:10] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:10] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[03/June/2021 10:10] - indicators.results - INFO - OK!
+[03/June/2021 10:10] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[03/June/2021 10:10] - indicators.results - INFO - OK!
+[03/June/2021 10:10] - indicators.results - ERROR - FAILED! ThreeCommand_Error: Traceback (most recent call last):
+  File "results.py", line 746, in perform
+    g = LinearGraphics(sum_year)
+NameError: name 'sum_year' is not defined
+
+[03/June/2021 10:14] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 10:15] - indicators.results - INFO - start initial assignment
+[03/June/2021 10:15] - indicators.results - INFO - OK! Load Data
+[03/June/2021 10:15] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:15] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:15] - indicators.results - ERROR - FAILED! Result_Calc_Error: (<class 'KeyError'>, KeyError('Количество выпущенной продукции по годам в тоннах'))
+[03/June/2021 10:15] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:15] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:20] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 10:20] - indicators.results - INFO - start initial assignment
+[03/June/2021 10:20] - indicators.results - INFO - OK! Load Data
+[03/June/2021 10:20] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:20] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:20] - indicators.results - ERROR - FAILED! Result_Calc_Error: (<class 'KeyError'>, KeyError('Количество выпущенной продукции по годам в тоннах'))
+[03/June/2021 10:20] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:20] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:37] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 10:37] - indicators.results - INFO - start initial assignment
+[03/June/2021 10:37] - indicators.results - INFO - OK! Load Data
+[03/June/2021 10:37] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:37] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:37] - indicators.results - INFO -       Количество выпущенной п/б ленты по годам в тоннах  ...  Разница в тоннах
+Год                                                      ...                  
+2007                                                NaN  ...               NaN
+2008                                                NaN  ...               NaN
+2009                                                NaN  ...               NaN
+2010                                           1817.007  ...           -20.993
+2011                                           2319.412  ...            45.052
+2012                                           1793.778  ...           -41.352
+2013                                           1942.546  ...            31.656
+2014                                           1957.010  ...           -52.140
+2015                                           1590.887  ...            22.947
+2016                                           1286.476  ...           -43.714
+2017                                           1449.358  ...             5.078
+2018                                           1248.460  ...           -48.860
+2019                                           1254.366  ...           -97.399
+2020                                           1459.878  ...             8.492
+
+[14 rows x 3 columns]
+[03/June/2021 10:37] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:37] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:37] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:38] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 10:38] - indicators.results - INFO - start initial assignment
+[03/June/2021 10:38] - indicators.results - INFO - OK! Load Data
+[03/June/2021 10:38] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:38] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:38] - indicators.results - INFO -       Количество выпущенной п/б ленты по годам в тоннах  ...  Разница в тоннах
+Год                                                      ...                  
+2007                                                NaN  ...               NaN
+2008                                                NaN  ...               NaN
+2009                                                NaN  ...               NaN
+2010                                           1817.007  ...           -20.993
+2011                                           2319.412  ...            45.052
+2012                                           1793.778  ...           -41.352
+2013                                           1942.546  ...            31.656
+2014                                           1957.010  ...           -52.140
+2015                                           1590.887  ...            22.947
+2016                                           1286.476  ...           -43.714
+2017                                           1449.358  ...             5.078
+2018                                           1248.460  ...           -48.860
+2019                                           1254.366  ...           -97.399
+2020                                           1459.878  ...             8.492
+
+[14 rows x 3 columns]
+[03/June/2021 10:38] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:38] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:38] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:38] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[03/June/2021 10:38] - indicators.results - INFO - OK!
+[03/June/2021 10:38] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[03/June/2021 10:38] - indicators.results - INFO - OK!
+[03/June/2021 10:39] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 10:39] - indicators.results - INFO - start initial assignment
+[03/June/2021 10:39] - indicators.results - INFO - OK! Load Data
+[03/June/2021 10:39] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:39] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:39] - indicators.results - INFO -       Количество выпущенной п/б ленты по годам в тоннах  ...  Разница в тоннах
+Год                                                      ...                  
+2007                                                NaN  ...               NaN
+2008                                                NaN  ...               NaN
+2009                                                NaN  ...               NaN
+2010                                           1817.007  ...           -20.993
+2011                                           2319.412  ...            45.052
+2012                                           1793.778  ...           -41.352
+2013                                           1942.546  ...            31.656
+2014                                           1957.010  ...           -52.140
+2015                                           1590.887  ...            22.947
+2016                                           1286.476  ...           -43.714
+2017                                           1449.358  ...             5.078
+2018                                           1248.460  ...           -48.860
+2019                                           1254.366  ...           -97.399
+2020                                           1459.878  ...             8.492
+
+[14 rows x 3 columns]
+[03/June/2021 10:39] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:39] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:39] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:39] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[03/June/2021 10:39] - indicators.results - INFO - OK!
+[03/June/2021 10:39] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[03/June/2021 10:39] - indicators.results - INFO - OK!
+[03/June/2021 10:39] - indicators.results - ERROR - FAILED! ThreeCommand_Error: Traceback (most recent call last):
+  File "results.py", line 749, in perform
+    g = LinearGraphics(sum_year)
+NameError: name 'sum_year' is not defined
+
+[03/June/2021 10:44] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 10:44] - indicators.results - INFO - start initial assignment
+[03/June/2021 10:44] - indicators.results - INFO - OK! Load Data
+[03/June/2021 10:44] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:44] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:44] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:44] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:44] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:45] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[03/June/2021 10:45] - indicators.results - INFO - OK!
+[03/June/2021 10:45] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[03/June/2021 10:45] - indicators.results - INFO - OK!
+[03/June/2021 10:45] - indicators.results - ERROR - FAILED! ThreeCommand_Error: Traceback (most recent call last):
+  File "results.py", line 746, in perform
+    g = LinearGraphics(sum_year)
+NameError: name 'sum_year' is not defined
+
+[03/June/2021 10:46] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 10:47] - indicators.results - INFO - start initial assignment
+[03/June/2021 10:47] - indicators.results - INFO - OK! Load Data
+[03/June/2021 10:47] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:47] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:47] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:47] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:47] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:50] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 10:50] - indicators.results - INFO - start initial assignment
+[03/June/2021 10:50] - indicators.results - INFO - OK! Load Data
+[03/June/2021 10:50] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:50] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:50] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:50] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:50] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:50] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[03/June/2021 10:50] - indicators.results - INFO - OK!
+[03/June/2021 10:50] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[03/June/2021 10:50] - indicators.results - INFO - OK!
+[03/June/2021 10:50] - indicators.results - ERROR - FAILED! ThreeCommand_Error: Traceback (most recent call last):
+  File "results.py", line 748, in perform
+    g = LinearGraphics(sum_year)
+NameError: name 'sum_year' is not defined
+
+[03/June/2021 10:51] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 10:51] - indicators.results - INFO - start initial assignment
+[03/June/2021 10:51] - indicators.results - INFO - OK! Load Data
+[03/June/2021 10:51] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:51] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:51] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:51] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:51] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:51] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 10:51] - indicators.results - INFO - start initial assignment
+[03/June/2021 10:51] - indicators.results - INFO - OK! Load Data
+[03/June/2021 10:51] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:51] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:51] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:51] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:51] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:51] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[03/June/2021 10:51] - indicators.results - INFO - OK!
+[03/June/2021 10:51] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[03/June/2021 10:51] - indicators.results - INFO - OK!
+[03/June/2021 10:51] - indicators.results - ERROR - FAILED! ThreeCommand_Error: Traceback (most recent call last):
+  File "results.py", line 748, in perform
+    g = LinearGraphics(sum_year)
+NameError: name 'sum_year' is not defined
+
+[03/June/2021 10:52] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 10:54] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 10:54] - indicators.results - INFO - start initial assignment
+[03/June/2021 10:54] - indicators.results - INFO - OK! Load Data
+[03/June/2021 10:54] - indicators.results - INFO -       Количество выпущенной п/б ленты по годам в тоннах  Кол-во реализованной продукции по годам в тоннах
+Год                                                                                                      
+2007                                                NaN                                          1229.060
+2008                                                NaN                                          1150.690
+2009                                                NaN                                          1360.000
+2010                                           1817.007                                          1838.000
+2011                                           2319.412                                          2274.360
+2012                                           1793.778                                          1835.130
+2013                                           1942.546                                          1910.890
+2014                                           1957.010                                          2009.150
+2015                                           1590.887                                          1567.940
+2016                                           1286.476                                          1330.190
+2017                                           1449.358                                          1444.280
+2018                                           1248.460                                          1297.320
+2019                                           1254.366                                          1351.765
+2020                                           1459.878                                          1451.386
+[03/June/2021 10:54] - indicators.results - INFO - OK! Calculation Data
+[03/June/2021 10:54] - indicators.results - INFO - OK! end initial assignment 
+[03/June/2021 10:54] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:54] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:54] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:54] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:54] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:55] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[03/June/2021 10:55] - indicators.results - INFO - OK!
+[03/June/2021 10:55] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[03/June/2021 10:55] - indicators.results - INFO - OK!
+[03/June/2021 10:59] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 10:59] - indicators.results - INFO - start initial assignment
+[03/June/2021 10:59] - indicators.results - INFO - OK! Load Data
+[03/June/2021 10:59] - indicators.results - INFO - OK! Calculation Data
+[03/June/2021 10:59] - indicators.results - INFO - OK! end initial assignment 
+[03/June/2021 10:59] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:59] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:59] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:59] - indicators.results - INFO - OK! Load object class
+[03/June/2021 10:59] - indicators.results - INFO - OK! Load object class
+[03/June/2021 11:01] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[03/June/2021 11:01] - indicators.results - INFO - OK!
+[03/June/2021 11:01] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[03/June/2021 11:01] - indicators.results - INFO - OK!
+[03/June/2021 11:11] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 11:12] - indicators.results - INFO - start initial assignment
+[03/June/2021 11:12] - indicators.results - INFO - OK! Load Data
+[03/June/2021 11:12] - indicators.results - INFO - OK! Load object class
+[03/June/2021 11:12] - indicators.results - INFO - OK! Load object class
+[03/June/2021 11:12] - indicators.results - INFO - OK! Load object class
+[03/June/2021 11:12] - indicators.results - INFO - OK! Load object class
+[03/June/2021 11:12] - indicators.results - INFO - OK! Load object class
+[03/June/2021 11:12] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[03/June/2021 11:12] - indicators.results - INFO - OK!
+[03/June/2021 11:12] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[03/June/2021 11:12] - indicators.results - INFO - OK!
+[03/June/2021 11:12] - indicators.results - ERROR - FAILED! ThreeCommand_Error: Traceback (most recent call last):
+  File "results.py", line 751, in perform
+    g = LinearGraphics(sum_year)
+NameError: name 'sum_year' is not defined
+
+[03/June/2021 11:13] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 11:13] - indicators.results - INFO - start initial assignment
+[03/June/2021 11:13] - indicators.results - INFO - OK! Load Data
+[03/June/2021 11:13] - indicators.results - INFO - OK! Load object class
+[03/June/2021 11:13] - indicators.results - INFO - OK! Load object class
+[03/June/2021 11:13] - indicators.results - INFO - OK! Load object class
+[03/June/2021 11:13] - indicators.results - INFO - OK! Load object class
+[03/June/2021 11:13] - indicators.results - INFO - OK! Load object class
+[03/June/2021 11:13] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[03/June/2021 11:13] - indicators.results - INFO - OK!
+[03/June/2021 11:13] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[03/June/2021 11:13] - indicators.results - INFO - OK!
+[03/June/2021 11:13] - indicators.results - ERROR - FAILED! ThreeCommand_Error: Traceback (most recent call last):
+  File "results.py", line 751, in perform
+    g = LinearGraphics(sum_year)
+NameError: name 'sum_year' is not defined
+
+[03/June/2021 11:14] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 11:14] - indicators.results - INFO - start initial assignment
+[03/June/2021 11:14] - indicators.results - INFO - OK! Load Data
+[03/June/2021 11:14] - indicators.results - INFO - OK! Load object class
+[03/June/2021 11:14] - indicators.results - INFO - OK! Load object class
+[03/June/2021 11:14] - indicators.results - INFO - OK! Load object class
+[03/June/2021 11:14] - indicators.results - INFO - OK! Load object class
+[03/June/2021 11:14] - indicators.results - INFO - OK! Load object class
+[03/June/2021 11:14] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[03/June/2021 11:14] - indicators.results - INFO - OK!
+[03/June/2021 11:14] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[03/June/2021 11:14] - indicators.results - INFO - OK!
+[03/June/2021 11:14] - indicators.results - ERROR - FAILED! ThreeCommand_Error: Traceback (most recent call last):
+  File "results.py", line 759, in perform
+    e = Visual_difference(sum_year)
+NameError: name 'Visual_difference' is not defined
+
+[03/June/2021 11:22] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 11:22] - indicators.results - INFO - start initial assignment
+[03/June/2021 11:22] - indicators.results - INFO - OK! Load Data
+[03/June/2021 11:22] - indicators.results - INFO - OK! Calculation Data
+[03/June/2021 11:22] - indicators.results - INFO - OK! end initial assignment 
+[03/June/2021 11:22] - indicators.results - INFO - OK! Load object class
+[03/June/2021 11:22] - indicators.results - INFO - OK! Load object class
+[03/June/2021 11:22] - indicators.results - INFO - OK! Load object class
+[03/June/2021 11:22] - indicators.results - INFO - OK! Load object class
+[03/June/2021 11:22] - indicators.results - INFO - OK! Load object class
+[03/June/2021 11:22] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[03/June/2021 11:22] - indicators.results - INFO - OK!
+[03/June/2021 11:22] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[03/June/2021 11:22] - indicators.results - INFO - OK!
+[03/June/2021 11:26] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 11:26] - indicators.results - INFO - start initial assignment
+[03/June/2021 11:26] - indicators.results - INFO - OK! Load Data
+[03/June/2021 11:26] - indicators.results - INFO - OK! Calculation Data
+[03/June/2021 11:26] - indicators.results - INFO - OK! end initial assignment 
+[03/June/2021 11:26] - indicators.results - INFO - OK! Load object class
+[03/June/2021 11:26] - indicators.results - INFO - OK! Load object class
+[03/June/2021 11:26] - indicators.results - INFO - OK! Load object class
+[03/June/2021 11:26] - indicators.results - INFO - OK! Load object class
+[03/June/2021 11:26] - indicators.results - INFO - OK! Load object class
+[03/June/2021 11:26] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[03/June/2021 11:26] - indicators.results - INFO - OK!
+[03/June/2021 11:26] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[03/June/2021 11:26] - indicators.results - INFO - OK!
+[03/June/2021 11:29] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 11:29] - indicators.results - INFO - start initial assignment
+[03/June/2021 11:29] - indicators.results - INFO - OK! Load Data
+[03/June/2021 11:29] - indicators.results - INFO - OK! Calculation Data
+[03/June/2021 11:29] - indicators.results - INFO - OK! end initial assignment 
+[03/June/2021 11:29] - indicators.results - INFO - OK! Load object class
+[03/June/2021 11:29] - indicators.results - INFO - OK! Load object class
+[03/June/2021 11:29] - indicators.results - INFO - OK! Load object class
+[03/June/2021 11:29] - indicators.results - INFO - OK! Load object class
+[03/June/2021 11:29] - indicators.results - INFO - OK! Load object class
+[03/June/2021 11:29] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[03/June/2021 11:29] - indicators.results - INFO - OK!
+[03/June/2021 11:29] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[03/June/2021 11:29] - indicators.results - INFO - OK!
+[03/June/2021 11:33] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 11:33] - indicators.results - INFO - start initial assignment
+[03/June/2021 11:33] - indicators.results - INFO - OK! Load Data
+[03/June/2021 11:33] - indicators.results - INFO - OK! Calculation Data
+[03/June/2021 11:33] - indicators.results - INFO - OK! end initial assignment 
+[03/June/2021 11:33] - indicators.results - INFO - OK! Load object class
+[03/June/2021 11:33] - indicators.results - INFO - OK! Load object class
+[03/June/2021 11:33] - indicators.results - INFO - OK! Load object class
+[03/June/2021 11:33] - indicators.results - INFO - OK! Load object class
+[03/June/2021 11:33] - indicators.results - INFO - OK! Load object class
+[03/June/2021 11:33] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[03/June/2021 11:33] - indicators.results - INFO - OK!
+[03/June/2021 11:33] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[03/June/2021 11:33] - indicators.results - INFO - OK!
+[03/June/2021 11:44] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 11:44] - indicators.results - INFO - start initial assignment
+[03/June/2021 11:44] - indicators.results - INFO - OK! Load Data
+[03/June/2021 11:44] - indicators.results - INFO - OK! Calculation Data
+[03/June/2021 11:44] - indicators.results - INFO - OK! end initial assignment 
+[03/June/2021 11:44] - indicators.results - INFO - OK! Load object class
+[03/June/2021 11:44] - indicators.results - INFO - OK! Load object class
+[03/June/2021 11:44] - indicators.results - INFO - OK! Load object class
+[03/June/2021 11:44] - indicators.results - INFO - OK! Load object class
+[03/June/2021 11:44] - indicators.results - INFO - OK! Load object class
+[03/June/2021 11:44] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[03/June/2021 11:44] - indicators.results - INFO - OK!
+[03/June/2021 11:44] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[03/June/2021 11:44] - indicators.results - INFO - OK!
+[03/June/2021 11:44] - indicators.results - ERROR - FAILED! ThreeCommand_Error: Traceback (most recent call last):
+  File "results.py", line 772, in perform
+    graphic_three = LinearGraphics(sum_lenta_year)
+  File "results.py", line 479, in __init__
+    self.__class__.num_instances += 1 # счётчик экземпляров класса
+AttributeError: type object 'LinearGraphics' has no attribute 'num_instances'
+
+[03/June/2021 11:44] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 11:44] - indicators.results - INFO - start initial assignment
+[03/June/2021 11:44] - indicators.results - INFO - OK! Load Data
+[03/June/2021 11:44] - indicators.results - INFO - OK! Calculation Data
+[03/June/2021 11:44] - indicators.results - INFO - OK! end initial assignment 
+[03/June/2021 11:44] - indicators.results - INFO - OK! Load object class
+[03/June/2021 11:44] - indicators.results - INFO - OK! Load object class
+[03/June/2021 11:44] - indicators.results - INFO - OK! Load object class
+[03/June/2021 11:44] - indicators.results - INFO - OK! Load object class
+[03/June/2021 11:44] - indicators.results - INFO - OK! Load object class
+[03/June/2021 11:44] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[03/June/2021 11:44] - indicators.results - INFO - OK!
+[03/June/2021 11:44] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[03/June/2021 11:44] - indicators.results - INFO - OK!
+[03/June/2021 11:44] - indicators.results - ERROR - FAILED! ThreeCommand_Error: Traceback (most recent call last):
+  File "results.py", line 772, in perform
+    graphic_three = LinearGraphics(sum_lenta_year)
+  File "results.py", line 487, in __init__
+    stats = linregress(x, y)
+NameError: name 'linregress' is not defined
+
+[03/June/2021 11:46] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 11:46] - indicators.results - INFO - start initial assignment
+[03/June/2021 11:46] - indicators.results - INFO - OK! Load Data
+[03/June/2021 11:46] - indicators.results - INFO - OK! Calculation Data
+[03/June/2021 11:46] - indicators.results - INFO - OK! end initial assignment 
+[03/June/2021 11:46] - indicators.results - INFO - OK! Load object class
+[03/June/2021 11:46] - indicators.results - INFO - OK! Load object class
+[03/June/2021 11:46] - indicators.results - INFO - OK! Load object class
+[03/June/2021 11:46] - indicators.results - INFO - OK! Load object class
+[03/June/2021 11:46] - indicators.results - INFO - OK! Load object class
+[03/June/2021 11:46] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[03/June/2021 11:46] - indicators.results - INFO - OK!
+[03/June/2021 11:46] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[03/June/2021 11:46] - indicators.results - INFO - OK!
+[03/June/2021 12:30] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 12:30] - indicators.results - INFO - start initial assignment
+[03/June/2021 12:30] - indicators.results - INFO - OK! Load Data
+[03/June/2021 12:30] - indicators.results - INFO - OK! Calculation Data
+[03/June/2021 12:30] - indicators.results - INFO - OK! end initial assignment 
+[03/June/2021 12:30] - indicators.results - INFO - OK! Load object class
+[03/June/2021 12:30] - indicators.results - INFO - OK! Load object class
+[03/June/2021 12:30] - indicators.results - INFO - OK! Load object class
+[03/June/2021 12:30] - indicators.results - INFO - OK! Load object class
+[03/June/2021 12:30] - indicators.results - INFO - OK! Load object class
+[03/June/2021 12:30] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[03/June/2021 12:30] - indicators.results - INFO - OK!
+[03/June/2021 12:30] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[03/June/2021 12:30] - indicators.results - INFO - OK!
+[03/June/2021 12:31] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 12:31] - indicators.results - INFO - start initial assignment
+[03/June/2021 12:31] - indicators.results - INFO - OK! Load Data
+[03/June/2021 12:31] - indicators.results - INFO - OK! Calculation Data
+[03/June/2021 12:31] - indicators.results - INFO - OK! end initial assignment 
+[03/June/2021 12:31] - indicators.results - INFO - OK! Load object class
+[03/June/2021 12:31] - indicators.results - INFO - OK! Load object class
+[03/June/2021 12:31] - indicators.results - INFO - OK! Load object class
+[03/June/2021 12:31] - indicators.results - INFO - OK! Load object class
+[03/June/2021 12:31] - indicators.results - INFO - OK! Load object class
+[03/June/2021 12:31] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[03/June/2021 12:31] - indicators.results - INFO - OK!
+[03/June/2021 12:31] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[03/June/2021 12:31] - indicators.results - INFO - OK!
+[03/June/2021 12:32] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[03/June/2021 12:32] - indicators.results - INFO - OK!
+[03/June/2021 12:32] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[03/June/2021 12:32] - indicators.results - INFO - OK!
+[03/June/2021 12:33] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 12:33] - indicators.results - INFO - start initial assignment
+[03/June/2021 12:33] - indicators.results - INFO - OK! Load Data
+[03/June/2021 12:33] - indicators.results - INFO - OK! Calculation Data
+[03/June/2021 12:33] - indicators.results - INFO - OK! end initial assignment 
+[03/June/2021 12:33] - indicators.results - INFO - OK! Load object class
+[03/June/2021 12:33] - indicators.results - INFO - OK! Load object class
+[03/June/2021 12:33] - indicators.results - INFO - OK! Load object class
+[03/June/2021 12:33] - indicators.results - INFO - OK! Load object class
+[03/June/2021 12:33] - indicators.results - INFO - OK! Load object class
+[03/June/2021 12:34] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[03/June/2021 12:34] - indicators.results - INFO - OK!
+[03/June/2021 12:34] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[03/June/2021 12:34] - indicators.results - INFO - OK!
+[03/June/2021 12:46] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 12:47] - indicators.results - INFO - start initial assignment
+[03/June/2021 12:47] - indicators.results - INFO - OK! Load Data
+[03/June/2021 12:47] - indicators.results - INFO - OK! Calculation Data
+[03/June/2021 12:47] - indicators.results - INFO - OK! end initial assignment 
+[03/June/2021 12:47] - indicators.results - INFO - OK! Load object class
+[03/June/2021 12:47] - indicators.results - INFO - OK! Load object class
+[03/June/2021 12:47] - indicators.results - INFO - OK! Load object class
+[03/June/2021 12:47] - indicators.results - INFO - OK! Load object class
+[03/June/2021 12:47] - indicators.results - INFO - OK! Load object class
+[03/June/2021 12:48] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 12:49] - indicators.results - INFO - start initial assignment
+[03/June/2021 12:49] - indicators.results - INFO - OK! Load Data
+[03/June/2021 12:49] - indicators.results - INFO - OK! Calculation Data
+[03/June/2021 12:49] - indicators.results - INFO - OK! end initial assignment 
+[03/June/2021 12:49] - indicators.results - INFO - OK! Load object class
+[03/June/2021 12:49] - indicators.results - INFO - OK! Load object class
+[03/June/2021 12:49] - indicators.results - INFO - OK! Load object class
+[03/June/2021 12:49] - indicators.results - INFO - OK! Load object class
+[03/June/2021 12:49] - indicators.results - INFO - OK! Load object class
+[03/June/2021 12:52] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 12:52] - indicators.results - INFO - start initial assignment
+[03/June/2021 12:52] - indicators.results - INFO - OK! Load Data
+[03/June/2021 12:52] - indicators.results - INFO - OK! Calculation Data
+[03/June/2021 12:52] - indicators.results - INFO - OK! end initial assignment 
+[03/June/2021 12:52] - indicators.results - INFO - OK! Load object class
+[03/June/2021 12:52] - indicators.results - INFO - OK! Load object class
+[03/June/2021 12:52] - indicators.results - INFO - OK! Load object class
+[03/June/2021 12:52] - indicators.results - INFO - OK! Load object class
+[03/June/2021 12:52] - indicators.results - INFO - OK! Load object class
+[03/June/2021 12:52] - indicators.results - ERROR - FAILED! ThreeCommand_Error: Traceback (most recent call last):
+  File "results.py", line 780, in perform
+    graphic_three = LinearGraphics(sum_lenta_year)
+  File "results.py", line 496, in __init__
+    plt.axhline(critery, color ='red', linestyle='dashed', label='Критерий оценки')
+NameError: name 'critery' is not defined
+
+[03/June/2021 12:52] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 12:52] - indicators.results - INFO - start initial assignment
+[03/June/2021 12:52] - indicators.results - INFO - OK! Load Data
+[03/June/2021 12:52] - indicators.results - INFO - OK! Calculation Data
+[03/June/2021 12:52] - indicators.results - INFO - OK! end initial assignment 
+[03/June/2021 12:52] - indicators.results - INFO - OK! Load object class
+[03/June/2021 12:52] - indicators.results - INFO - OK! Load object class
+[03/June/2021 12:52] - indicators.results - INFO - OK! Load object class
+[03/June/2021 12:52] - indicators.results - INFO - OK! Load object class
+[03/June/2021 12:52] - indicators.results - INFO - OK! Load object class
+[03/June/2021 12:53] - indicators.results - ERROR - FAILED! ThreeCommand_Error: Traceback (most recent call last):
+  File "results.py", line 780, in perform
+    graphic_three = LinearGraphics(sum_lenta_year)
+  File "results.py", line 497, in __init__
+    plt.title(name, fontsize=16, y=1.05)
+NameError: name 'name' is not defined
+
+[03/June/2021 12:53] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 12:53] - indicators.results - INFO - start initial assignment
+[03/June/2021 12:53] - indicators.results - INFO - OK! Load Data
+[03/June/2021 12:53] - indicators.results - INFO - OK! Calculation Data
+[03/June/2021 12:53] - indicators.results - INFO - OK! end initial assignment 
+[03/June/2021 12:53] - indicators.results - INFO - OK! Load object class
+[03/June/2021 12:53] - indicators.results - INFO - OK! Load object class
+[03/June/2021 12:53] - indicators.results - INFO - OK! Load object class
+[03/June/2021 12:53] - indicators.results - INFO - OK! Load object class
+[03/June/2021 12:53] - indicators.results - INFO - OK! Load object class
+[03/June/2021 12:53] - indicators.results - ERROR - FAILED! ThreeCommand_Error: Traceback (most recent call last):
+  File "results.py", line 780, in perform
+    graphic_three = LinearGraphics(sum_lenta_year)
+  File "results.py", line 497, in __init__
+    plt.title(fontsize=16, y=1.05)
+TypeError: title() missing 1 required positional argument: 'label'
+
+[03/June/2021 12:54] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 12:54] - indicators.results - INFO - start initial assignment
+[03/June/2021 12:54] - indicators.results - INFO - OK! Load Data
+[03/June/2021 12:54] - indicators.results - INFO - OK! Calculation Data
+[03/June/2021 12:54] - indicators.results - INFO - OK! end initial assignment 
+[03/June/2021 12:54] - indicators.results - INFO - OK! Load object class
+[03/June/2021 12:54] - indicators.results - INFO - OK! Load object class
+[03/June/2021 12:54] - indicators.results - INFO - OK! Load object class
+[03/June/2021 12:54] - indicators.results - INFO - OK! Load object class
+[03/June/2021 12:54] - indicators.results - INFO - OK! Load object class
+[03/June/2021 12:54] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 12:54] - indicators.results - INFO - start initial assignment
+[03/June/2021 12:54] - indicators.results - INFO - OK! Load Data
+[03/June/2021 12:54] - indicators.results - INFO - OK! Calculation Data
+[03/June/2021 12:54] - indicators.results - INFO - OK! end initial assignment 
+[03/June/2021 12:54] - indicators.results - INFO - OK! Load object class
+[03/June/2021 12:54] - indicators.results - INFO - OK! Load object class
+[03/June/2021 12:54] - indicators.results - INFO - OK! Load object class
+[03/June/2021 12:54] - indicators.results - INFO - OK! Load object class
+[03/June/2021 12:54] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:03] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 13:03] - indicators.results - INFO - start initial assignment
+[03/June/2021 13:03] - indicators.results - INFO - OK! Load Data
+[03/June/2021 13:03] - indicators.results - INFO - OK! Calculation Data
+[03/June/2021 13:03] - indicators.results - INFO - OK! end initial assignment 
+[03/June/2021 13:03] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:03] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:03] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:03] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:03] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:03] - indicators.results - ERROR - FAILED! ThreeCommand_Error: Traceback (most recent call last):
+  File "results.py", line 795, in perform
+    graphic_three = LinearGraphics(sum_lenta_year)
+  File "results.py", line 504, in __init__
+    ax2 = fig.add_subplot(gs[1, :-1])
+  File "C:\Users\a.bezzubov\AppData\Local\Programs\Python\Python38-32\lib\site-packages\matplotlib\gridspec.py", line 237, in __getitem__
+    [_normalize(k1, nrows, 0), _normalize(k2, ncols, 1)],
+  File "C:\Users\a.bezzubov\AppData\Local\Programs\Python\Python38-32\lib\site-packages\matplotlib\gridspec.py", line 217, in _normalize
+    raise IndexError("GridSpec slice would result in no space "
+IndexError: GridSpec slice would result in no space allocated for subplot
+
+[03/June/2021 13:04] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 13:04] - indicators.results - INFO - start initial assignment
+[03/June/2021 13:04] - indicators.results - INFO - OK! Load Data
+[03/June/2021 13:04] - indicators.results - INFO - OK! Calculation Data
+[03/June/2021 13:04] - indicators.results - INFO - OK! end initial assignment 
+[03/June/2021 13:04] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:04] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:04] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:04] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:04] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:07] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 13:07] - indicators.results - INFO - start initial assignment
+[03/June/2021 13:07] - indicators.results - INFO - OK! Load Data
+[03/June/2021 13:07] - indicators.results - INFO - OK! Calculation Data
+[03/June/2021 13:07] - indicators.results - INFO - OK! end initial assignment 
+[03/June/2021 13:07] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:07] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:07] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:07] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:07] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:08] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 13:08] - indicators.results - INFO - start initial assignment
+[03/June/2021 13:08] - indicators.results - INFO - OK! Load Data
+[03/June/2021 13:08] - indicators.results - INFO - OK! Calculation Data
+[03/June/2021 13:08] - indicators.results - INFO - OK! end initial assignment 
+[03/June/2021 13:08] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:08] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:08] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:08] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:08] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:18] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 13:19] - indicators.results - INFO - start initial assignment
+[03/June/2021 13:19] - indicators.results - INFO - OK! Load Data
+[03/June/2021 13:19] - indicators.results - INFO - OK! Calculation Data
+[03/June/2021 13:19] - indicators.results - INFO - OK! end initial assignment 
+[03/June/2021 13:19] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:19] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:19] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:19] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:19] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:19] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 13:19] - indicators.results - INFO - start initial assignment
+[03/June/2021 13:19] - indicators.results - INFO - OK! Load Data
+[03/June/2021 13:19] - indicators.results - INFO - OK! Calculation Data
+[03/June/2021 13:19] - indicators.results - INFO - OK! end initial assignment 
+[03/June/2021 13:19] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:19] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:19] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:19] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:19] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:20] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 13:20] - indicators.results - INFO - start initial assignment
+[03/June/2021 13:20] - indicators.results - INFO - OK! Load Data
+[03/June/2021 13:20] - indicators.results - INFO - OK! Calculation Data
+[03/June/2021 13:20] - indicators.results - INFO - OK! end initial assignment 
+[03/June/2021 13:20] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:20] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:20] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:20] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:20] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:24] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 13:24] - indicators.results - INFO - start initial assignment
+[03/June/2021 13:24] - indicators.results - INFO - OK! Load Data
+[03/June/2021 13:24] - indicators.results - INFO - OK! Calculation Data
+[03/June/2021 13:24] - indicators.results - INFO - OK! end initial assignment 
+[03/June/2021 13:24] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:24] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:24] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:24] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:24] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:24] - indicators.results - ERROR - FAILED! ThreeCommand_Error: Traceback (most recent call last):
+  File "results.py", line 765, in perform
+    graphic_three = LinearGraphics(sum_lenta_year)
+  File "results.py", line 484, in __init__
+    ax1.plot(self.data)
+AttributeError: 'tuple' object has no attribute 'plot'
+
+[03/June/2021 13:25] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 13:25] - indicators.results - INFO - start initial assignment
+[03/June/2021 13:25] - indicators.results - INFO - OK! Load Data
+[03/June/2021 13:25] - indicators.results - INFO - OK! Calculation Data
+[03/June/2021 13:25] - indicators.results - INFO - OK! end initial assignment 
+[03/June/2021 13:25] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:25] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:25] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:25] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:25] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:43] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 13:43] - indicators.results - INFO - start initial assignment
+[03/June/2021 13:43] - indicators.results - INFO - OK! Load Data
+[03/June/2021 13:43] - indicators.results - INFO - OK! Calculation Data
+[03/June/2021 13:43] - indicators.results - INFO - OK! end initial assignment 
+[03/June/2021 13:43] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:43] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:43] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:43] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:43] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:44] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 13:44] - indicators.results - INFO - start initial assignment
+[03/June/2021 13:44] - indicators.results - INFO - OK! Load Data
+[03/June/2021 13:44] - indicators.results - INFO - OK! Calculation Data
+[03/June/2021 13:44] - indicators.results - INFO - OK! end initial assignment 
+[03/June/2021 13:44] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:44] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:44] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:44] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:44] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:44] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 13:45] - indicators.results - INFO - start initial assignment
+[03/June/2021 13:45] - indicators.results - INFO - OK! Load Data
+[03/June/2021 13:45] - indicators.results - INFO - OK! Calculation Data
+[03/June/2021 13:45] - indicators.results - INFO - OK! end initial assignment 
+[03/June/2021 13:45] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:45] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:45] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:45] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:45] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:45] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 13:45] - indicators.results - INFO - start initial assignment
+[03/June/2021 13:45] - indicators.results - INFO - OK! Load Data
+[03/June/2021 13:45] - indicators.results - INFO - OK! Calculation Data
+[03/June/2021 13:45] - indicators.results - INFO - OK! end initial assignment 
+[03/June/2021 13:45] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:45] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:45] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:45] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:45] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:57] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 13:57] - indicators.results - INFO - start initial assignment
+[03/June/2021 13:57] - indicators.results - INFO - OK! Load Data
+[03/June/2021 13:57] - indicators.results - INFO - OK! Calculation Data
+[03/June/2021 13:57] - indicators.results - INFO - OK! end initial assignment 
+[03/June/2021 13:57] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:57] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:57] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:57] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:57] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:59] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 13:59] - indicators.results - INFO - start initial assignment
+[03/June/2021 13:59] - indicators.results - INFO - OK! Load Data
+[03/June/2021 13:59] - indicators.results - INFO - OK! Calculation Data
+[03/June/2021 13:59] - indicators.results - INFO - OK! end initial assignment 
+[03/June/2021 13:59] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:59] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:59] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:59] - indicators.results - INFO - OK! Load object class
+[03/June/2021 13:59] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:00] - indicators.results - ERROR - FAILED! ThreeCommand_Error: Traceback (most recent call last):
+  File "results.py", line 767, in perform
+    graphic_three = LinearGraphics(sum_lenta_year)
+  File "results.py", line 484, in __init__
+    fig,ax = plt.subplot()
+TypeError: cannot unpack non-iterable AxesSubplot object
+
+[03/June/2021 14:00] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 14:00] - indicators.results - INFO - start initial assignment
+[03/June/2021 14:00] - indicators.results - INFO - OK! Load Data
+[03/June/2021 14:00] - indicators.results - INFO - OK! Calculation Data
+[03/June/2021 14:00] - indicators.results - INFO - OK! end initial assignment 
+[03/June/2021 14:00] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:00] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:00] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:00] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:00] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:01] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 14:01] - indicators.results - INFO - start initial assignment
+[03/June/2021 14:01] - indicators.results - INFO - OK! Load Data
+[03/June/2021 14:01] - indicators.results - INFO - OK! Calculation Data
+[03/June/2021 14:01] - indicators.results - INFO - OK! end initial assignment 
+[03/June/2021 14:01] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:01] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:01] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:01] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:01] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:13] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 14:14] - indicators.results - INFO - start initial assignment
+[03/June/2021 14:14] - indicators.results - INFO - OK! Load Data
+[03/June/2021 14:14] - indicators.results - INFO - OK! Calculation Data
+[03/June/2021 14:14] - indicators.results - INFO - OK! end initial assignment 
+[03/June/2021 14:14] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:14] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:14] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:14] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:14] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:14] - indicators.results - ERROR - FAILED! ThreeCommand_Error: Traceback (most recent call last):
+  File "results.py", line 763, in perform
+    graphic_three = LinearGraphics(sum_lenta_year)
+  File "results.py", line 482, in __init__
+    self.data.subplot()
+  File "C:\Users\a.bezzubov\AppData\Local\Programs\Python\Python38-32\lib\site-packages\pandas\core\generic.py", line 5465, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'subplot'
+
+[03/June/2021 14:14] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 14:14] - indicators.results - INFO - start initial assignment
+[03/June/2021 14:14] - indicators.results - INFO - OK! Load Data
+[03/June/2021 14:14] - indicators.results - INFO - OK! Calculation Data
+[03/June/2021 14:14] - indicators.results - INFO - OK! end initial assignment 
+[03/June/2021 14:14] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:14] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:14] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:14] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:14] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:14] - indicators.results - ERROR - FAILED! ThreeCommand_Error: Traceback (most recent call last):
+  File "results.py", line 763, in perform
+    graphic_three = LinearGraphics(sum_lenta_year)
+  File "results.py", line 482, in __init__
+    self.data.subplots()
+  File "C:\Users\a.bezzubov\AppData\Local\Programs\Python\Python38-32\lib\site-packages\pandas\core\generic.py", line 5465, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'subplots'
+
+[03/June/2021 14:27] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 14:27] - indicators.results - INFO - start initial assignment
+[03/June/2021 14:27] - indicators.results - INFO - OK! Load Data
+[03/June/2021 14:27] - indicators.results - INFO - OK! Calculation Data
+[03/June/2021 14:27] - indicators.results - INFO - OK! end initial assignment 
+[03/June/2021 14:27] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:27] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:27] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:27] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:27] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:29] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 14:29] - indicators.results - INFO - start initial assignment
+[03/June/2021 14:29] - indicators.results - INFO - OK! Load Data
+[03/June/2021 14:29] - indicators.results - INFO - OK! Calculation Data
+[03/June/2021 14:29] - indicators.results - INFO - OK! end initial assignment 
+[03/June/2021 14:29] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:29] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:29] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:29] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:29] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:29] - indicators.results - ERROR - FAILED! ThreeCommand_Error: Traceback (most recent call last):
+  File "results.py", line 765, in perform
+    graphic_three = LinearGraphics(sum_lenta_year)
+  File "results.py", line 484, in __init__
+    ax2.bar(self.data)
+  File "C:\Users\a.bezzubov\AppData\Local\Programs\Python\Python38-32\lib\site-packages\matplotlib\__init__.py", line 1438, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+TypeError: bar() missing 1 required positional argument: 'height'
+
+[03/June/2021 14:30] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 14:30] - indicators.results - INFO - start initial assignment
+[03/June/2021 14:30] - indicators.results - INFO - OK! Load Data
+[03/June/2021 14:30] - indicators.results - INFO - OK! Calculation Data
+[03/June/2021 14:30] - indicators.results - INFO - OK! end initial assignment 
+[03/June/2021 14:30] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:30] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:30] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:30] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:30] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:30] - indicators.results - ERROR - FAILED! ThreeCommand_Error: Traceback (most recent call last):
+  File "results.py", line 765, in perform
+    graphic_three = LinearGraphics(sum_lenta_year)
+  File "results.py", line 484, in __init__
+    ax2.plot(self.data.index())
+TypeError: 'Int64Index' object is not callable
+
+[03/June/2021 14:30] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 14:30] - indicators.results - INFO - start initial assignment
+[03/June/2021 14:30] - indicators.results - INFO - OK! Load Data
+[03/June/2021 14:30] - indicators.results - INFO - OK! Calculation Data
+[03/June/2021 14:30] - indicators.results - INFO - OK! end initial assignment 
+[03/June/2021 14:30] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:30] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:30] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:30] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:30] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:33] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 14:33] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 14:33] - indicators.results - INFO - start initial assignment
+[03/June/2021 14:33] - indicators.results - INFO - OK! Load Data
+[03/June/2021 14:33] - indicators.results - INFO - OK! Calculation Data
+[03/June/2021 14:33] - indicators.results - INFO - OK! end initial assignment 
+[03/June/2021 14:33] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:33] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:33] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:33] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:33] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:33] - indicators.results - ERROR - FAILED! ThreeCommand_Error: Traceback (most recent call last):
+  File "results.py", line 777, in perform
+    graphic_three = LinearGraphics(sum_lenta_year)
+  File "results.py", line 493, in __init__
+    plt.axhline(critery, color ='red', linestyle='dashed', label='Критерий оценки')
+NameError: name 'critery' is not defined
+
+[03/June/2021 14:34] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 14:34] - indicators.results - INFO - start initial assignment
+[03/June/2021 14:34] - indicators.results - INFO - OK! Load Data
+[03/June/2021 14:34] - indicators.results - INFO - OK! Calculation Data
+[03/June/2021 14:34] - indicators.results - INFO - OK! end initial assignment 
+[03/June/2021 14:34] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:34] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:34] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:34] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:34] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:36] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 14:36] - indicators.results - INFO - start initial assignment
+[03/June/2021 14:36] - indicators.results - INFO - OK! Load Data
+[03/June/2021 14:36] - indicators.results - INFO - OK! Calculation Data
+[03/June/2021 14:36] - indicators.results - INFO - OK! end initial assignment 
+[03/June/2021 14:36] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:36] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:36] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:36] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:36] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:37] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 14:38] - indicators.results - INFO - start initial assignment
+[03/June/2021 14:38] - indicators.results - INFO - OK! Load Data
+[03/June/2021 14:38] - indicators.results - INFO - OK! Calculation Data
+[03/June/2021 14:38] - indicators.results - INFO - OK! end initial assignment 
+[03/June/2021 14:38] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:38] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:38] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:38] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:38] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:39] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 14:39] - indicators.results - INFO - start initial assignment
+[03/June/2021 14:39] - indicators.results - INFO - OK! Load Data
+[03/June/2021 14:39] - indicators.results - INFO - OK! Calculation Data
+[03/June/2021 14:39] - indicators.results - INFO - OK! end initial assignment 
+[03/June/2021 14:39] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:39] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:39] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:39] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:39] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:40] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 14:41] - indicators.results - INFO - start initial assignment
+[03/June/2021 14:41] - indicators.results - INFO - OK! Load Data
+[03/June/2021 14:41] - indicators.results - INFO - OK! Calculation Data
+[03/June/2021 14:41] - indicators.results - INFO - OK! end initial assignment 
+[03/June/2021 14:41] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:41] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:41] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:41] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:41] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:41] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 14:41] - indicators.results - INFO - start initial assignment
+[03/June/2021 14:41] - indicators.results - INFO - OK! Load Data
+[03/June/2021 14:41] - indicators.results - INFO - OK! Calculation Data
+[03/June/2021 14:41] - indicators.results - INFO - OK! end initial assignment 
+[03/June/2021 14:41] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:41] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:41] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:41] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:41] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:41] - indicators.results - ERROR - FAILED! ThreeCommand_Error: Traceback (most recent call last):
+  File "results.py", line 763, in perform
+    graphic_three = LinearGraphics(sum_lenta_year)
+  File "results.py", line 482, in __init__
+    fig.canvas.set_window_title('Процесс Б(7.7) "Сбыт"')
+AttributeError: 'tuple' object has no attribute 'canvas'
+
+[03/June/2021 14:46] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 14:46] - indicators.results - INFO - start initial assignment
+[03/June/2021 14:46] - indicators.results - INFO - OK! Load Data
+[03/June/2021 14:46] - indicators.results - INFO - OK! Calculation Data
+[03/June/2021 14:46] - indicators.results - INFO - OK! end initial assignment 
+[03/June/2021 14:46] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:46] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:46] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:46] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:46] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:47] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 14:47] - indicators.results - INFO - start initial assignment
+[03/June/2021 14:47] - indicators.results - INFO - OK! Load Data
+[03/June/2021 14:47] - indicators.results - INFO - OK! Calculation Data
+[03/June/2021 14:47] - indicators.results - INFO - OK! end initial assignment 
+[03/June/2021 14:47] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:47] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:47] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:47] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:47] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:54] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[03/June/2021 14:54] - indicators.results - INFO - start initial assignment
+[03/June/2021 14:54] - indicators.results - INFO - OK! Load Data
+[03/June/2021 14:54] - indicators.results - INFO - OK! Calculation Data
+[03/June/2021 14:54] - indicators.results - INFO - OK! end initial assignment 
+[03/June/2021 14:54] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:54] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:54] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:54] - indicators.results - INFO - OK! Load object class
+[03/June/2021 14:54] - indicators.results - INFO - OK! Load object class
