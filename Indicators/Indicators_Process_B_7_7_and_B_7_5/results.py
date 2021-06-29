@@ -20,19 +20,21 @@ results.py - Модуль аналитики по следующим показ�
 +--------------------------------------+-----------------------------------+
 |              Переменная              |             Показатель            |
 +--------------------------------------+-----------------------------------+
-|       data_kol_real_prod_year        | Количество реализованной проду... |
-|        data_kol_vip_prod_year        | Количество выпущенной продукци... |
-|    data_kol_real_prod_middle_year    | Количество реализованной проду... |
-|       data_kol_real_komp_year        | Количество реализованных компл... |
-|      data_kol_vip_kompl_year         |Количество выпущенных комплектов...|
-|    data_kol_real_komp_middle_year    | Количество реализованных компл... |
-|       data_ob_vozr_prod_year         | Объем возвращенной продукции ...  |
-|       data_ur_vip_zak_year           | Уровень выполнения заказов ...    |
-|      data_ur_vip_zak_middle_year     | Уровень выполенния заказов ...    |
-|        data_pret_i_rekl_year         | Претензии и рекламации от потр... |
-|     data_pret_i_rekl_middle_year     | Претензии и рекламации от потр... |
-|         data_ur_postav_year          |   Уровень поставок по годам...   |
-|      data_ur_postav_middle_year      | Уровень поставок по полугодиям... |
+|       data_kol_real_prod_year        |     Кол. реализов. прод. год      |
+|        data_kol_vip_prod_year        |     Кол. вып. продукци год        |
+|    data_kol_real_prod_middle_year    |  Кол. реализов. прод. полугодие   |
+|     data_kol_vip_prod_middle_year    |    Кол. выпущ. прод. полугодие    |
+|       data_kol_real_komp_year        |   Кол. реализов. компл. год       |
+|      data_kol_vip_kompl_year         |   Кол. выпущ. комплектов год      |
+|    data_kol_real_komp_middle_year    |  Кол. реализов. компл. полугодие  |
+|    data_kol_vip_kompl_middle_year    |  Кол. выпущ. компл. полугодие     |
+|       data_ob_vozr_prod_year         |    Объем возвращ. прод. год       |
+|       data_ur_vip_zak_year           |   Уров. выпол. заказов год        |
+|      data_ur_vip_zak_middle_year     |   Уров. выпол. заказов полугодие  |
+|        data_pret_i_rekl_year         |      Претен. и реклам. год        |
+|     data_pret_i_rekl_middle_year     |    Претен. и реклам. полугодие    |
+|         data_ur_postav_year          |         Уров. постав. год         |
+|      data_ur_postav_middle_year      |      Уров. постав. полугодие      |
 +--------------------------------------+-----------------------------------+
 # ИСХОДНЫЕ ДАННЫЕ (ПЕРЕМЕННЫЕ ШАБЛОНА process_b_7_5): (РЕДАКТИРОВАТЬ!!!)
 +-------------------------------------------------------------------------+
@@ -109,6 +111,7 @@ lst = [save_data_1, save_data_2, save_data_3, save_data_4, save_data_5]
 for i in lst:
     print(i)#вывод на экран
 """
+import pdb # отладка стандартными средствами
 import sys
 import os
 sys.path.append(os.path.realpath('../..'))
@@ -254,7 +257,7 @@ try:
     sum_lenta_middle_year = pd.concat([data_kol_vip_prod_middle_year, data_kol_real_prod_middle_year],axis=1)
 
     sum_kompl_year = pd.concat([data_kol_vip_kompl_year, data_kol_real_komp_year],axis=1)
-    sum_kompl_middle_year = pd.concat([data_kol_real_komp_middle_year, data_kol_real_komp_middle_year],axis=1)
+    sum_kompl_middle_year = pd.concat([data_kol_real_komp_middle_year, data_kol_vip_kompl_middle_year],axis=1)
 
     # ИСХОДНЫЕ ДАННЫЕ (ДОПОЛНИТЕЛЬНЫЕ РАСЧЁТЫ):
     ###########################################
@@ -430,9 +433,9 @@ try:
         """
         def __init__(self, data: pd.Series, name = 'Реализованная и выпущенная продукции'):
             super().__init__(data)
-            self.data = data
             self.logger = logging.getLogger('indicators.results.Visual_all')
             self.logger.info('__Init__ Visual_all')
+            self.data = data
             fig, ax = plt.subplots()
             fig.canvas.set_window_title('Процесс Б(7.7) "Сбыт"')
             obj = ('Реализовано', 'Выпущено')
@@ -466,21 +469,28 @@ try:
         """
         График общих результатов выпуска и реализации
         в виде линейного графика с визуализацией экстремумов функций графика
+        и графиком линейной регрессии
         ====================================================================
         Пример запуска:
         ---------------
-        gr = LinearGraphics(sum_year)
+        gr = LinearGraphics(sum_lenta_year, name = 'Выпуск и реализация п/б ленты по годам')
         gr.maximum_minimum_text()
-        plt.show()
         """
-        def __init__(self,data):
+        def __init__(self, data: pd.DataFrame, name = 'Реализованная и выпущенная продукции'):
             super().__init__(data)
-            self.data = data
-            self.logger = logging.getLogger('indicators.production.LinearGraphics')
+            self.logger = logging.getLogger('indicators.results.LinearGraphics')
             self.logger.info('__Init__ LinearGraphics')
-            #self.__class__.num_instances += 1 # счётчик экземпляров класса
+            self.data = self.data.dropna()
+            x = self.data.index.tolist()
+            x = np.array(x)
+            y = self.data.transpose().iloc[0]
+            y = np.array(y)
+            stats = linregress(x, y)
+            m = stats.slope
+            b = stats.intercept
             self.data.plot()
-            plt.title(r'Кол-во реализованной и выпущенной продукции', fontsize=16, y=1.05)
+            plt.plot(x, b + m * x ,linestyle='dashed', color="blue", label='Линейная регрессия')
+            plt.title(name, fontsize=16, y=1.05)
             plt.ylabel('Кол-во')
             plt.xlabel('Год')
             plt.legend(fontsize=7, shadow=True, framealpha=1, facecolor='w', edgecolor='r', title='', loc = 'best')
@@ -513,23 +523,33 @@ try:
 except Exception:
     logger.error(f'FAILED!LinearGraphics_Error: {sys.exc_info()[:2]}') # logging
 
+try:
     class Visual_difference(Abstract.Graphic):
         """
         Класс графического отображения соотношения реализации и выпуска
         ===============================================================
         Пример запуска:
         ---------------
-        vd = Visual_difference(calc_year)
+        gr = Visual_difference(sum_kompl_year, name = 'Реализация и выпуск комплектов по годам')
         plt.show()
         """
-        def __init__(self, data):
+        def __init__(self, data:pd.DataFrame, name = 'Реализация и выпуск'):
             super().__init__(data)
+            self.logger = logging.getLogger('indicators.results.Visual_difference')
+            self.logger.info('__Init__ Visual_difference')
             self.data = data
             self.data.plot(kind='barh')
-            plt.title(r'Реализация и выпуск', fontsize=12, y=1.05)
+            plt.title(name, fontsize=12, y=1.05)
             plt.legend(fontsize=8, shadow=True, framealpha=0.5, facecolor='w', edgecolor='r',loc='best')
+            plt.gcf().canvas.set_window_title('Процесс Б(7.5) "Сбыт"')
             plt.grid()
 
+    logger.info("OK! Load object class") # logging
+
+except Exception:
+    logger.error(f'FAILED!Visual_difference_Error: {sys.exc_info()[:2]}') # logging
+
+try:
     class Visual_stock(Abstract.Graphic):
         """
         Класс графического отображения разницы реализации и выпуска
@@ -546,6 +566,11 @@ except Exception:
             plt.title(r'Используемые запасы и перевыпуск продукции', fontsize=12, y=1.05)
             plt.legend(fontsize=8, shadow=True, framealpha=1, facecolor='y', edgecolor='r',loc='best')
             plt.grid()
+
+    logger.info("OK! Load object class") # logging
+
+except Exception:
+    logger.error(f'FAILED!Visual_stock_Error: {sys.exc_info()[:2]}') # logging
 
     class AllStatistics(Abstract.Statistic):
         """
@@ -747,7 +772,6 @@ if __name__ == '__main__':
             ГРАФИКИ
             """
             try:
-                """
                 if data_kol_real_prod_year.isin([0]).all(axis=None) == False and data_kol_vip_prod_year.isin([0]).all(axis=None) == False:
                     graphic_one = Visual_all(sum_lenta, 'Реализованная и выпущенная продукции (лента) с 2010 года')
                 else:
@@ -757,38 +781,54 @@ if __name__ == '__main__':
                     graphic_two = Visual_all(sum_kompl, 'Реализованная и выпущенная продукции (комплекты) с 2017 года')
                 else:
                     pass
-                """
+
                 if data_kol_real_prod_year.isin([0]).all(axis=None) == False and data_kol_vip_prod_year.isin([0]).all(axis=None) == False:
-                    graphic_three = LinearGraphics(sum_lenta_year)
+                    graphic_three = LinearGraphics(sum_lenta_year, name = 'Выпуск и реализация п/б ленты по годам')
                     graphic_three.maximum_minimum_text()
-                    #graphic_three.regres_graphic()
                 else:
                     pass
+
                 if data_kol_real_prod_middle_year.isin([0]).all(axis=None) == False and data_kol_vip_prod_middle_year.isin([0]).all(axis=None) == False:
-                    graphic_four = LinearGraphics(sum_lenta_middle_year)
+                    graphic_four = LinearGraphics(sum_lenta_middle_year, name = 'Выпуск и реализация п/б ленты по полугодиям')
                     graphic_four.maximum_minimum_text()
-                    #graphic_four.regres_graphic()
                 else:
                     pass
 
                 if data_kol_real_komp_year.isin([0]).all(axis=None) == False and data_kol_vip_kompl_year.isin([0]).all(axis=None) == False:
-                    graphic_five = LinearGraphics(sum_kompl_year)
+                    graphic_five = LinearGraphics(sum_kompl_year, name = 'Выпуск и реализация комплектов по годам')
                     graphic_five.maximum_minimum_text()
-                    #graphic_five.regres_graphic()
                 else:
                     pass
 
+                if data_kol_real_komp_middle_year.isin([0]).all(axis=None) == False and data_kol_vip_kompl_middle_year.isin([0]).all(axis=None) == False:
+                    #graphic_six = LinearGraphics(sum_kompl_middle_year, name = 'Выпуск и реализация комплектов по полугодиям')
+                    #graphic_six.maximum_minimum_text()
+                    pass # недостаточно значений
+                else:
+                    pass
 
-                #y = LinearGraphics(sum_year.loc[2010:])
-                #y.maximum_minimum_text()
-                #y.regres_graphic()
-                #h = LinearGraphics(sum_middle_year)
-                #h.maximum_minimum_text()
-                #h.regres_graphic()
-                #e = Visual_difference(sum_year)
-                #k = Visual_difference(sum_middle_year)
-                #l = Visual_stock(difference_year)
-                #l = Visual_stock(difference_middle_year)
+                if data_kol_real_prod_year.isin([0]).all(axis=None) == False and data_kol_vip_prod_year.isin([0]).all(axis=None) == False:
+                    graphic_seven = Visual_difference(sum_lenta_year, name = 'Реализация и выпуск п/б ленты по годам')
+                else:
+                    pass
+
+                if data_kol_real_prod_middle_year.isin([0]).all(axis=None) == False and data_kol_vip_prod_middle_year.isin([0]).all(axis=None) == False:
+                    graphic_eight = Visual_difference(sum_lenta_middle_year,name = 'Реализация и выпуск п/б ленты по полугодиям')
+                else:
+                    pass
+
+                if data_kol_real_komp_year.isin([0]).all(axis=None) == False and data_kol_vip_kompl_year.isin([0]).all(axis=None) == False:
+                    graphic_nine = Visual_difference(sum_kompl_year, name = 'Реализация и выпуск комплектов по годам')
+                else:
+                    pass
+
+                if data_kol_real_komp_middle_year.isin([0]).all(axis=None) == False and data_kol_vip_kompl_middle_year.isin([0]).all(axis=None) == False:
+                    graphic_ten = Visual_difference(sum_kompl_middle_year, name = 'Реализация и выпуск комплектов по полугодиям')
+                else:
+                    pass
+
+                #graphic_eleven = Visual_stock(difference_year)
+                #graphic_twelve = Visual_stock(difference_middle_year)
                 plt.show()
 
             except Exception:
@@ -855,20 +895,57 @@ if __name__ == '__main__':
                 else:
                     pass
 
+                if data_kol_real_prod_year.isin([0]).all(axis=None) == False and data_kol_vip_prod_year.isin([0]).all(axis=None) == False:
+                    graphic_three = LinearGraphics(sum_lenta_year, name = 'Выпуск и реализация п/б ленты по годам')
+                    graphic_three.maximum_minimum_text()
+                    graphic_three.save_graphic(r'files/003')
+                else:
+                    pass
+                if data_kol_real_prod_middle_year.isin([0]).all(axis=None) == False and data_kol_vip_prod_middle_year.isin([0]).all(axis=None) == False:
+                    graphic_four = LinearGraphics(sum_lenta_middle_year, name = 'Выпуск и реализация п/б ленты по полугодиям')
+                    graphic_four.maximum_minimum_text()
+                    graphic_four.save_graphic(r'files/004')
+                else:
+                    pass
+                if data_kol_real_komp_year.isin([0]).all(axis=None) == False and data_kol_vip_kompl_year.isin([0]).all(axis=None) == False:
+                    graphic_five = LinearGraphics(sum_kompl_year, name = 'Выпуск и реализация комплектов по годам')
+                    graphic_five.maximum_minimum_text()
+                    graphic_five.save_graphic(r'files/005')
+                else:
+                    pass
+                if data_kol_real_komp_middle_year.isin([0]).all(axis=None) == False and data_kol_vip_kompl_middle_year.isin([0]).all(axis=None) == False:
+                    #graphic_six = LinearGraphics(sum_kompl_middle_year, name = 'Выпуск и реализация комплектов по полугодиям')
+                    #graphic_six.maximum_minimum_text()
+                    #graphic_six.save_graphic(r'files/006')
+                    pass # недостаточно значений
+                else:
+                    pass
+
+                if data_kol_real_prod_year.isin([0]).all(axis=None) == False and data_kol_vip_prod_year.isin([0]).all(axis=None) == False:
+                    graphic_seven = Visual_difference(sum_lenta_year, name = 'Реализация и выпуск п/б ленты по годам')
+                    graphic_seven.save_graphic(r'files/007')
+                else:
+                    pass
+
+                if data_kol_real_prod_middle_year.isin([0]).all(axis=None) == False and data_kol_vip_prod_middle_year.isin([0]).all(axis=None) == False:
+                    graphic_eight = Visual_difference(sum_lenta_middle_year,name = 'Реализация и выпуск п/б ленты по полугодиям')
+                    graphic_eight.save_graphic(r'files/008')
+                else:
+                    pass
+
+                if data_kol_real_komp_year.isin([0]).all(axis=None) == False and data_kol_vip_kompl_year.isin([0]).all(axis=None) == False:
+                    graphic_nine = Visual_difference(sum_kompl_year, name = 'Реализация и выпуск комплектов по годам')
+                    graphic_nine.save_graphic(r'files/009')
+                else:
+                    pass
+
+                if data_kol_real_komp_middle_year.isin([0]).all(axis=None) == False and data_kol_vip_kompl_middle_year.isin([0]).all(axis=None) == False:
+                    graphic_ten = Visual_difference(sum_kompl_middle_year, name = 'Реализация и выпуск комплектов по полугодиям')
+                    graphic_ten.save_graphic(r'files/010')
+                else:
+                    pass
+
                 """
-                g = LinearGraphics(sum_year)
-                g.maximum_minimum_text()
-                g.save_graphic(r'files/Линейный график по годам')
-                y = LinearGraphics(sum_year.loc[2010:])
-                y.maximum_minimum_text()
-                y.regres_graphic()
-                y.save_graphic(r'files/Линейная регрессия по годам')
-                h = LinearGraphics(sum_middle_year)
-                h.maximum_minimum_text()
-                h.save_graphic(r'files/Линейный график по полугодиям')
-                o = LinearGraphics(sum_middle_year)
-                o.regres_graphic()
-                o.save_graphic(r'files/Линейная регрессия по полугодиям')
                 e = Visual_difference(sum_year)
                 e.save_graphic(r'files/Соотношение по годам')
                 k = Visual_difference(sum_middle_year)
@@ -893,6 +970,7 @@ if __name__ == '__main__':
                     save_data_4.to_excel(writer, sheet_name='Статистика по исходным данным')
                     save_data_5.to_excel(writer, sheet_name='Результаты корреляции')
                 """
+
             except Exception:
                 logger.error("FAILED! FiveCommand_Error: %s", traceback.format_exc()) # logging
 
@@ -948,6 +1026,7 @@ if __name__ == '__main__':
     try:
         run = Interface_cmd()
         run.main()
+        pdb.set_trace() # отладка
 
     except:
         print(time.ctime(), 'Run_Error: ', sys.exc_info()[:2], file = open('log.txt', 'a'))

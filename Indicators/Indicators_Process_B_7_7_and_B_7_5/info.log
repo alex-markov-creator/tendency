@@ -1840,3 +1840,581 @@ AttributeError: 'tuple' object has no attribute 'canvas'
 [03/June/2021 14:54] - indicators.results - INFO - OK! Load object class
 [03/June/2021 14:54] - indicators.results - INFO - OK! Load object class
 [03/June/2021 14:54] - indicators.results - INFO - OK! Load object class
+[25/June/2021 12:53] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[25/June/2021 12:53] - indicators.results - INFO - start initial assignment
+[25/June/2021 12:53] - indicators.results - INFO - OK! Load Data
+[25/June/2021 12:53] - indicators.results - INFO - OK! Calculation Data
+[25/June/2021 12:53] - indicators.results - INFO - OK! end initial assignment 
+[25/June/2021 12:53] - indicators.results - INFO - OK! Load object class
+[25/June/2021 12:53] - indicators.results - INFO - OK! Load object class
+[25/June/2021 12:53] - indicators.results - INFO - OK! Load object class
+[25/June/2021 12:53] - indicators.results - INFO - OK! Load object class
+[25/June/2021 12:53] - indicators.results - INFO - OK! Load object class
+[25/June/2021 12:53] - indicators.results.Info - INFO - __Init__ Info
+[25/June/2021 12:54] - indicators.results - INFO - OK! NAME_INPUT
+[25/June/2021 12:54] - indicators.results.Data_Table - INFO - __Init__ Data_Table
+[28/June/2021 14:51] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[28/June/2021 14:51] - indicators.results - INFO - start initial assignment
+[28/June/2021 14:51] - indicators.results - INFO - OK! Load Data
+[28/June/2021 14:51] - indicators.results - INFO - OK! Calculation Data
+[28/June/2021 14:51] - indicators.results - INFO - OK! end initial assignment 
+[28/June/2021 14:51] - indicators.results - INFO - OK! Load object class
+[28/June/2021 14:51] - indicators.results - INFO - OK! Load object class
+[28/June/2021 14:51] - indicators.results - INFO - OK! Load object class
+[28/June/2021 14:51] - indicators.results - INFO - OK! Load object class
+[28/June/2021 14:51] - indicators.results - INFO - OK! Load object class
+[28/June/2021 14:55] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[28/June/2021 14:56] - indicators.results - INFO - start initial assignment
+[28/June/2021 14:56] - indicators.results - INFO - OK! Load Data
+[28/June/2021 14:56] - indicators.results - INFO - OK! Calculation Data
+[28/June/2021 14:56] - indicators.results - INFO - OK! end initial assignment 
+[28/June/2021 14:56] - indicators.results - INFO - OK! Load object class
+[28/June/2021 14:56] - indicators.results - INFO - OK! Load object class
+[28/June/2021 14:56] - indicators.results - INFO - OK! Load object class
+[28/June/2021 14:56] - indicators.results - INFO - OK! Load object class
+[28/June/2021 14:56] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:10] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[28/June/2021 15:10] - indicators.results - INFO - start initial assignment
+[28/June/2021 15:10] - indicators.results - INFO - OK! Load Data
+[28/June/2021 15:10] - indicators.results - INFO - OK! Calculation Data
+[28/June/2021 15:10] - indicators.results - INFO - OK! end initial assignment 
+[28/June/2021 15:10] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:10] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:10] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:10] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:10] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:11] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[28/June/2021 15:11] - indicators.results - INFO - start initial assignment
+[28/June/2021 15:11] - indicators.results - INFO - OK! Load Data
+[28/June/2021 15:11] - indicators.results - INFO - OK! Calculation Data
+[28/June/2021 15:11] - indicators.results - INFO - OK! end initial assignment 
+[28/June/2021 15:11] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:11] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:11] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:11] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:11] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:12] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[28/June/2021 15:13] - indicators.results - INFO - start initial assignment
+[28/June/2021 15:13] - indicators.results - INFO - OK! Load Data
+[28/June/2021 15:13] - indicators.results - INFO - OK! Calculation Data
+[28/June/2021 15:13] - indicators.results - INFO - OK! end initial assignment 
+[28/June/2021 15:13] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:13] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:13] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:13] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:13] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:14] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[28/June/2021 15:14] - indicators.results - INFO - start initial assignment
+[28/June/2021 15:14] - indicators.results - INFO - OK! Load Data
+[28/June/2021 15:14] - indicators.results - INFO - OK! Calculation Data
+[28/June/2021 15:14] - indicators.results - INFO - OK! end initial assignment 
+[28/June/2021 15:14] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:14] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:14] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:14] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:14] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:16] - indicators.results.Info - INFO - __Init__ Info
+[28/June/2021 15:16] - indicators.results - INFO - OK! NAME_INPUT
+[28/June/2021 15:16] - indicators.results.Data_Table - INFO - __Init__ Data_Table
+[28/June/2021 15:16] - indicators.results - INFO - OK! NAME_INPUT
+[28/June/2021 15:16] - indicators.results.Data_Table - INFO - __Init__ Data_Table
+[28/June/2021 15:24] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[28/June/2021 15:24] - indicators.results - INFO - start initial assignment
+[28/June/2021 15:24] - indicators.results - INFO - OK! Load Data
+[28/June/2021 15:24] - indicators.results - INFO - OK! Calculation Data
+[28/June/2021 15:24] - indicators.results - INFO - OK! end initial assignment 
+[28/June/2021 15:24] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:24] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:24] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:24] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:24] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:25] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[28/June/2021 15:25] - indicators.results - INFO - start initial assignment
+[28/June/2021 15:25] - indicators.results - INFO - OK! Load Data
+[28/June/2021 15:25] - indicators.results - INFO - OK! Calculation Data
+[28/June/2021 15:25] - indicators.results - INFO - OK! end initial assignment 
+[28/June/2021 15:25] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:25] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:25] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:25] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:25] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:27] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[28/June/2021 15:28] - indicators.results - INFO - start initial assignment
+[28/June/2021 15:28] - indicators.results - INFO - OK! Load Data
+[28/June/2021 15:28] - indicators.results - INFO - OK! Calculation Data
+[28/June/2021 15:28] - indicators.results - INFO - OK! end initial assignment 
+[28/June/2021 15:28] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:28] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:28] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:28] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:28] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:28] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[28/June/2021 15:28] - indicators.results - INFO - start initial assignment
+[28/June/2021 15:28] - indicators.results - INFO - OK! Load Data
+[28/June/2021 15:28] - indicators.results - INFO - OK! Calculation Data
+[28/June/2021 15:28] - indicators.results - INFO - OK! end initial assignment 
+[28/June/2021 15:28] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:28] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:28] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:28] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:28] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:32] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[28/June/2021 15:32] - indicators.results - INFO - start initial assignment
+[28/June/2021 15:32] - indicators.results - INFO - OK! Load Data
+[28/June/2021 15:32] - indicators.results - INFO - OK! Calculation Data
+[28/June/2021 15:32] - indicators.results - INFO - OK! end initial assignment 
+[28/June/2021 15:32] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:32] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:32] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:32] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:32] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:35] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[28/June/2021 15:36] - indicators.results - INFO - start initial assignment
+[28/June/2021 15:36] - indicators.results - INFO - OK! Load Data
+[28/June/2021 15:36] - indicators.results - INFO - OK! Calculation Data
+[28/June/2021 15:36] - indicators.results - INFO - OK! end initial assignment 
+[28/June/2021 15:36] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:36] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:36] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:36] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:36] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:37] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[28/June/2021 15:37] - indicators.results - INFO - start initial assignment
+[28/June/2021 15:37] - indicators.results - INFO - OK! Load Data
+[28/June/2021 15:37] - indicators.results - INFO - OK! Calculation Data
+[28/June/2021 15:37] - indicators.results - INFO - OK! end initial assignment 
+[28/June/2021 15:37] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:37] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:37] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:37] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:37] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:38] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[28/June/2021 15:39] - indicators.results - INFO - start initial assignment
+[28/June/2021 15:39] - indicators.results - INFO - OK! Load Data
+[28/June/2021 15:39] - indicators.results - INFO - OK! Calculation Data
+[28/June/2021 15:39] - indicators.results - INFO - OK! end initial assignment 
+[28/June/2021 15:39] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:39] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:39] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:39] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:39] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:43] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[28/June/2021 15:43] - indicators.results - INFO - start initial assignment
+[28/June/2021 15:43] - indicators.results - INFO - OK! Load Data
+[28/June/2021 15:43] - indicators.results - INFO - OK! Calculation Data
+[28/June/2021 15:43] - indicators.results - INFO - OK! end initial assignment 
+[28/June/2021 15:43] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:43] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:43] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:43] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:43] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:46] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[28/June/2021 15:46] - indicators.results - INFO - start initial assignment
+[28/June/2021 15:46] - indicators.results - INFO - OK! Load Data
+[28/June/2021 15:46] - indicators.results - INFO - OK! Calculation Data
+[28/June/2021 15:46] - indicators.results - INFO - OK! end initial assignment 
+[28/June/2021 15:46] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:46] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:46] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:46] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:46] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:47] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[28/June/2021 15:48] - indicators.results - INFO - start initial assignment
+[28/June/2021 15:48] - indicators.results - INFO - OK! Load Data
+[28/June/2021 15:48] - indicators.results - INFO - OK! Calculation Data
+[28/June/2021 15:48] - indicators.results - INFO - OK! end initial assignment 
+[28/June/2021 15:48] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:48] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:48] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:48] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:48] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:49] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[28/June/2021 15:49] - indicators.results - INFO - start initial assignment
+[28/June/2021 15:49] - indicators.results - INFO - OK! Load Data
+[28/June/2021 15:49] - indicators.results - INFO - OK! Calculation Data
+[28/June/2021 15:49] - indicators.results - INFO - OK! end initial assignment 
+[28/June/2021 15:49] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:49] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:49] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:49] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:49] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:49] - indicators.results - ERROR - FAILED! ThreeCommand_Error: Traceback (most recent call last):
+  File "results.py", line 784, in perform
+    graphic_four.with_regression()
+UnboundLocalError: local variable 'graphic_four' referenced before assignment
+
+[28/June/2021 15:50] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[28/June/2021 15:50] - indicators.results - INFO - start initial assignment
+[28/June/2021 15:50] - indicators.results - INFO - OK! Load Data
+[28/June/2021 15:50] - indicators.results - INFO - OK! Calculation Data
+[28/June/2021 15:50] - indicators.results - INFO - OK! end initial assignment 
+[28/June/2021 15:50] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:50] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:50] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:50] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:50] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:55] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[28/June/2021 15:56] - indicators.results - INFO - start initial assignment
+[28/June/2021 15:56] - indicators.results - INFO - OK! Load Data
+[28/June/2021 15:56] - indicators.results - INFO - OK! Calculation Data
+[28/June/2021 15:56] - indicators.results - INFO - OK! end initial assignment 
+[28/June/2021 15:56] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:56] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:56] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:56] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:56] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:57] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[28/June/2021 15:57] - indicators.results - INFO - start initial assignment
+[28/June/2021 15:57] - indicators.results - INFO - OK! Load Data
+[28/June/2021 15:57] - indicators.results - INFO - OK! Calculation Data
+[28/June/2021 15:57] - indicators.results - INFO - OK! end initial assignment 
+[28/June/2021 15:57] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:57] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:57] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:57] - indicators.results - INFO - OK! Load object class
+[28/June/2021 15:57] - indicators.results - INFO - OK! Load object class
+[28/June/2021 16:01] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[28/June/2021 16:01] - indicators.results - INFO - start initial assignment
+[28/June/2021 16:01] - indicators.results - INFO - OK! Load Data
+[28/June/2021 16:01] - indicators.results - INFO - OK! Calculation Data
+[28/June/2021 16:01] - indicators.results - INFO - OK! end initial assignment 
+[28/June/2021 16:01] - indicators.results - INFO - OK! Load object class
+[28/June/2021 16:01] - indicators.results - INFO - OK! Load object class
+[28/June/2021 16:01] - indicators.results - INFO - OK! Load object class
+[28/June/2021 16:01] - indicators.results - INFO - OK! Load object class
+[28/June/2021 16:01] - indicators.results - INFO - OK! Load object class
+[28/June/2021 16:01] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[28/June/2021 16:01] - indicators.results - INFO - OK!
+[28/June/2021 16:01] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[28/June/2021 16:01] - indicators.results - INFO - OK!
+[28/June/2021 16:03] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[28/June/2021 16:03] - indicators.results - INFO - start initial assignment
+[28/June/2021 16:03] - indicators.results - INFO - OK! Load Data
+[28/June/2021 16:03] - indicators.results - INFO - OK! Calculation Data
+[28/June/2021 16:03] - indicators.results - INFO - OK! end initial assignment 
+[28/June/2021 16:03] - indicators.results - INFO - OK! Load object class
+[28/June/2021 16:03] - indicators.results - INFO - OK! Load object class
+[28/June/2021 16:03] - indicators.results - INFO - OK! Load object class
+[28/June/2021 16:03] - indicators.results - INFO - OK! Load object class
+[28/June/2021 16:03] - indicators.results - INFO - OK! Load object class
+[28/June/2021 16:04] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[28/June/2021 16:04] - indicators.results - INFO - OK!
+[28/June/2021 16:04] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[28/June/2021 16:04] - indicators.results - INFO - OK!
+[29/June/2021 08:43] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[29/June/2021 08:43] - indicators.results - INFO - start initial assignment
+[29/June/2021 08:43] - indicators.results - INFO - OK! Load Data
+[29/June/2021 08:43] - indicators.results - INFO - OK! Calculation Data
+[29/June/2021 08:43] - indicators.results - INFO - OK! end initial assignment 
+[29/June/2021 08:43] - indicators.results - INFO - OK! Load object class
+[29/June/2021 08:43] - indicators.results - INFO - OK! Load object class
+[29/June/2021 08:43] - indicators.results - INFO - OK! Load object class
+[29/June/2021 08:43] - indicators.results - INFO - OK! Load object class
+[29/June/2021 08:43] - indicators.results - INFO - OK! Load object class
+[29/June/2021 08:44] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[29/June/2021 08:44] - indicators.results - INFO - OK!
+[29/June/2021 08:44] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[29/June/2021 08:44] - indicators.results - INFO - OK!
+[29/June/2021 09:05] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[29/June/2021 09:05] - indicators.results - INFO - start initial assignment
+[29/June/2021 09:05] - indicators.results - INFO - OK! Load Data
+[29/June/2021 09:05] - indicators.results - INFO - OK! Calculation Data
+[29/June/2021 09:05] - indicators.results - INFO - OK! end initial assignment 
+[29/June/2021 09:05] - indicators.results - INFO - OK! Load object class
+[29/June/2021 09:05] - indicators.results - INFO - OK! Load object class
+[29/June/2021 09:05] - indicators.results - INFO - OK! Load object class
+[29/June/2021 09:05] - indicators.results - INFO - OK! Load object class
+[29/June/2021 09:05] - indicators.results - INFO - OK! Load object class
+[29/June/2021 09:06] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[29/June/2021 09:06] - indicators.results - INFO - OK!
+[29/June/2021 09:06] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[29/June/2021 09:06] - indicators.results - INFO - OK!
+[29/June/2021 09:06] - indicators.results.LinearGraphics - INFO - __Init__ LinearGraphics
+[29/June/2021 09:06] - indicators.results.LinearGraphics - INFO - __Init__ LinearGraphics
+[29/June/2021 09:06] - indicators.results.LinearGraphics - INFO - __Init__ LinearGraphics
+[29/June/2021 09:09] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[29/June/2021 09:09] - indicators.results - INFO - start initial assignment
+[29/June/2021 09:09] - indicators.results - INFO - OK! Load Data
+[29/June/2021 09:09] - indicators.results - INFO - OK! Calculation Data
+[29/June/2021 09:09] - indicators.results - INFO - OK! end initial assignment 
+[29/June/2021 09:09] - indicators.results - INFO - OK! Load object class
+[29/June/2021 09:09] - indicators.results - INFO - OK! Load object class
+[29/June/2021 09:09] - indicators.results - INFO - OK! Load object class
+[29/June/2021 09:09] - indicators.results - INFO - OK! Load object class
+[29/June/2021 09:09] - indicators.results - INFO - OK! Load object class
+[29/June/2021 09:10] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[29/June/2021 09:10] - indicators.results - INFO - start initial assignment
+[29/June/2021 09:10] - indicators.results - INFO - OK! Load Data
+[29/June/2021 09:10] - indicators.results - INFO - OK! Calculation Data
+[29/June/2021 09:10] - indicators.results - INFO - OK! end initial assignment 
+[29/June/2021 09:10] - indicators.results - INFO - OK! Load object class
+[29/June/2021 09:10] - indicators.results - INFO - OK! Load object class
+[29/June/2021 09:10] - indicators.results - INFO - OK! Load object class
+[29/June/2021 09:10] - indicators.results - INFO - OK! Load object class
+[29/June/2021 09:10] - indicators.results - INFO - OK! Load object class
+[29/June/2021 09:10] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[29/June/2021 09:10] - indicators.results - INFO - OK!
+[29/June/2021 09:10] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[29/June/2021 09:10] - indicators.results - INFO - OK!
+[29/June/2021 09:10] - indicators.results.LinearGraphics - INFO - __Init__ LinearGraphics
+[29/June/2021 09:10] - indicators.results.LinearGraphics - INFO - __Init__ LinearGraphics
+[29/June/2021 09:10] - indicators.results.LinearGraphics - INFO - __Init__ LinearGraphics
+[29/June/2021 09:10] - indicators.results.LinearGraphics - INFO - __Init__ LinearGraphics
+[29/June/2021 09:12] - indicators.results.Info - INFO - __Init__ Info
+[29/June/2021 09:12] - indicators.results - INFO - OK! NAME_INPUT
+[29/June/2021 09:12] - indicators.results.Data_Table - INFO - __Init__ Data_Table
+[29/June/2021 09:13] - indicators.results - INFO - OK! NAME_INPUT
+[29/June/2021 09:13] - indicators.results.Data_Table - INFO - __Init__ Data_Table
+[29/June/2021 09:13] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[29/June/2021 09:13] - indicators.results - INFO - OK!
+[29/June/2021 09:13] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[29/June/2021 09:13] - indicators.results - INFO - OK!
+[29/June/2021 09:13] - indicators.results.LinearGraphics - INFO - __Init__ LinearGraphics
+[29/June/2021 09:13] - indicators.results.LinearGraphics - INFO - __Init__ LinearGraphics
+[29/June/2021 09:13] - indicators.results.LinearGraphics - INFO - __Init__ LinearGraphics
+[29/June/2021 09:13] - indicators.results.LinearGraphics - INFO - __Init__ LinearGraphics
+[29/June/2021 09:14] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[29/June/2021 09:14] - indicators.results - INFO - start initial assignment
+[29/June/2021 09:14] - indicators.results - INFO - OK! Load Data
+[29/June/2021 09:14] - indicators.results - INFO - OK! Load object class
+[29/June/2021 09:14] - indicators.results - INFO - OK! Load object class
+[29/June/2021 09:14] - indicators.results - INFO - OK! Load object class
+[29/June/2021 09:14] - indicators.results - INFO - OK! Load object class
+[29/June/2021 09:14] - indicators.results - INFO - OK! Load object class
+[29/June/2021 09:14] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[29/June/2021 09:14] - indicators.results - INFO - OK!
+[29/June/2021 09:14] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[29/June/2021 09:14] - indicators.results - INFO - OK!
+[29/June/2021 09:14] - indicators.results.LinearGraphics - INFO - __Init__ LinearGraphics
+[29/June/2021 09:14] - indicators.results.LinearGraphics - INFO - __Init__ LinearGraphics
+[29/June/2021 09:14] - indicators.results.LinearGraphics - INFO - __Init__ LinearGraphics
+[29/June/2021 09:14] - indicators.results - ERROR - FAILED! ThreeCommand_Error: Traceback (most recent call last):
+  File "results.py", line 787, in perform
+    graphic_six = LinearGraphics(sum_kompl_middle_year, name = 'Выпуск и реализация комплектов по полугодиям')
+NameError: name 'sum_kompl_middle_year' is not defined
+
+[29/June/2021 09:15] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[29/June/2021 09:15] - indicators.results - INFO - start initial assignment
+[29/June/2021 09:15] - indicators.results - INFO - OK! Load Data
+[29/June/2021 09:15] - indicators.results - INFO - OK! Calculation Data
+[29/June/2021 09:15] - indicators.results - INFO - OK! end initial assignment 
+[29/June/2021 09:15] - indicators.results - INFO - OK! Load object class
+[29/June/2021 09:15] - indicators.results - INFO - OK! Load object class
+[29/June/2021 09:15] - indicators.results - INFO - OK! Load object class
+[29/June/2021 09:15] - indicators.results - INFO - OK! Load object class
+[29/June/2021 09:15] - indicators.results - INFO - OK! Load object class
+[29/June/2021 09:15] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[29/June/2021 09:15] - indicators.results - INFO - OK!
+[29/June/2021 09:15] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[29/June/2021 09:15] - indicators.results - INFO - OK!
+[29/June/2021 09:15] - indicators.results.LinearGraphics - INFO - __Init__ LinearGraphics
+[29/June/2021 09:15] - indicators.results.LinearGraphics - INFO - __Init__ LinearGraphics
+[29/June/2021 09:15] - indicators.results.LinearGraphics - INFO - __Init__ LinearGraphics
+[29/June/2021 09:15] - indicators.results.LinearGraphics - INFO - __Init__ LinearGraphics
+[29/June/2021 09:17] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[29/June/2021 09:17] - indicators.results - INFO - start initial assignment
+[29/June/2021 09:17] - indicators.results - INFO - OK! Load Data
+[29/June/2021 09:17] - indicators.results - INFO - OK! Calculation Data
+[29/June/2021 09:17] - indicators.results - INFO - OK! end initial assignment 
+[29/June/2021 09:17] - indicators.results - INFO - OK! Load object class
+[29/June/2021 09:17] - indicators.results - INFO - OK! Load object class
+[29/June/2021 09:17] - indicators.results - INFO - OK! Load object class
+[29/June/2021 09:17] - indicators.results - INFO - OK! Load object class
+[29/June/2021 09:17] - indicators.results - INFO - OK! Load object class
+[29/June/2021 09:22] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[29/June/2021 09:22] - indicators.results - INFO - start initial assignment
+[29/June/2021 09:22] - indicators.results - INFO - OK! Load Data
+[29/June/2021 09:22] - indicators.results - INFO - OK! Calculation Data
+[29/June/2021 09:22] - indicators.results - INFO - OK! end initial assignment 
+[29/June/2021 09:22] - indicators.results - INFO - OK! Load object class
+[29/June/2021 09:22] - indicators.results - INFO - OK! Load object class
+[29/June/2021 09:22] - indicators.results - INFO - OK! Load object class
+[29/June/2021 09:22] - indicators.results - INFO - OK! Load object class
+[29/June/2021 09:22] - indicators.results - INFO - OK! Load object class
+[29/June/2021 09:22] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[29/June/2021 09:22] - indicators.results - INFO - OK!
+[29/June/2021 09:22] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[29/June/2021 09:22] - indicators.results - INFO - OK!
+[29/June/2021 09:22] - indicators.results.LinearGraphics - INFO - __Init__ LinearGraphics
+[29/June/2021 09:22] - indicators.results.LinearGraphics - INFO - __Init__ LinearGraphics
+[29/June/2021 09:22] - indicators.results.LinearGraphics - INFO - __Init__ LinearGraphics
+[29/June/2021 10:16] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[29/June/2021 10:16] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[29/June/2021 10:16] - indicators.results - INFO - start initial assignment
+[29/June/2021 10:16] - indicators.results - INFO - OK! Load Data
+[29/June/2021 10:16] - indicators.results - INFO - OK! Calculation Data
+[29/June/2021 10:16] - indicators.results - INFO - OK! end initial assignment 
+[29/June/2021 10:16] - indicators.results - INFO - OK! Load object class
+[29/June/2021 10:16] - indicators.results - INFO - OK! Load object class
+[29/June/2021 10:16] - indicators.results - INFO - OK! Load object class
+[29/June/2021 10:16] - indicators.results - INFO - OK! Load object class
+[29/June/2021 10:16] - indicators.results - INFO - OK! Load object class
+[29/June/2021 10:16] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[29/June/2021 10:16] - indicators.results - INFO - OK!
+[29/June/2021 10:16] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[29/June/2021 10:16] - indicators.results - INFO - OK!
+[29/June/2021 10:16] - indicators.results.LinearGraphics - INFO - __Init__ LinearGraphics
+[29/June/2021 10:19] - indicators.results.LinearGraphics - INFO - __Init__ LinearGraphics
+[29/June/2021 10:19] - indicators.results.LinearGraphics - INFO - __Init__ LinearGraphics
+[29/June/2021 10:26] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[29/June/2021 10:26] - indicators.results - INFO - start initial assignment
+[29/June/2021 10:26] - indicators.results - INFO - OK! Load Data
+[29/June/2021 10:26] - indicators.results - INFO - OK! Calculation Data
+[29/June/2021 10:26] - indicators.results - INFO - OK! end initial assignment 
+[29/June/2021 10:26] - indicators.results - INFO - OK! Load object class
+[29/June/2021 10:26] - indicators.results - INFO - OK! Load object class
+[29/June/2021 10:26] - indicators.results - INFO - OK! Load object class
+[29/June/2021 10:26] - indicators.results - INFO - OK! Load object class
+[29/June/2021 10:26] - indicators.results - INFO - OK! Load object class
+[29/June/2021 10:27] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[29/June/2021 10:35] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[29/June/2021 10:35] - indicators.results - INFO - start initial assignment
+[29/June/2021 10:35] - indicators.results - INFO - OK! Load Data
+[29/June/2021 10:35] - indicators.results - INFO - OK! Calculation Data
+[29/June/2021 10:35] - indicators.results - INFO - OK! end initial assignment 
+[29/June/2021 10:35] - indicators.results - INFO - OK! Load object class
+[29/June/2021 10:35] - indicators.results - INFO - OK! Load object class
+[29/June/2021 10:35] - indicators.results - INFO - OK! Load object class
+[29/June/2021 10:35] - indicators.results - INFO - OK! Load object class
+[29/June/2021 10:35] - indicators.results - INFO - OK! Load object class
+[29/June/2021 10:41] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[29/June/2021 10:42] - indicators.results - INFO - start initial assignment
+[29/June/2021 10:45] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[29/June/2021 10:45] - indicators.results - INFO - start initial assignment
+[29/June/2021 10:45] - indicators.results - INFO - OK! Load Data
+[29/June/2021 10:45] - indicators.results - INFO - OK! Calculation Data
+[29/June/2021 10:45] - indicators.results - INFO - OK! end initial assignment 
+[29/June/2021 10:45] - indicators.results - INFO - OK! Load object class
+[29/June/2021 10:45] - indicators.results - INFO - OK! Load object class
+[29/June/2021 10:45] - indicators.results - INFO - OK! Load object class
+[29/June/2021 10:45] - indicators.results - INFO - OK! Load object class
+[29/June/2021 10:48] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[29/June/2021 10:48] - indicators.results - INFO - start initial assignment
+[29/June/2021 10:48] - indicators.results - INFO - OK! Load Data
+[29/June/2021 10:48] - indicators.results - INFO - OK! Calculation Data
+[29/June/2021 10:48] - indicators.results - INFO - OK! end initial assignment 
+[29/June/2021 10:48] - indicators.results - INFO - OK! Load object class
+[29/June/2021 10:48] - indicators.results - INFO - OK! Load object class
+[29/June/2021 10:48] - indicators.results - INFO - OK! Load object class
+[29/June/2021 10:48] - indicators.results - INFO - OK! Load object class
+[29/June/2021 10:48] - indicators.results - INFO - OK! Load object class
+[29/June/2021 10:49] - indicators.results.Info - INFO - __Init__ Info
+[29/June/2021 10:49] - indicators.results - INFO - OK! NAME_INPUT
+[29/June/2021 10:49] - indicators.results.Data_Table - INFO - __Init__ Data_Table
+[29/June/2021 10:50] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[29/June/2021 10:50] - indicators.results - INFO - start initial assignment
+[29/June/2021 10:50] - indicators.results - INFO - OK! Load Data
+[29/June/2021 10:50] - indicators.results - INFO - OK! Calculation Data
+[29/June/2021 10:50] - indicators.results - INFO - OK! end initial assignment 
+[29/June/2021 10:50] - indicators.results - INFO - OK! Load object class
+[29/June/2021 10:50] - indicators.results - INFO - OK! Load object class
+[29/June/2021 10:50] - indicators.results - INFO - OK! Load object class
+[29/June/2021 10:50] - indicators.results - INFO - OK! Load object class
+[29/June/2021 10:50] - indicators.results - INFO - OK! Load object class
+[29/June/2021 10:50] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[29/June/2021 10:50] - indicators.results - INFO - OK!
+[29/June/2021 10:50] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[29/June/2021 10:50] - indicators.results - INFO - OK!
+[29/June/2021 10:50] - indicators.results.LinearGraphics - INFO - __Init__ LinearGraphics
+[29/June/2021 10:50] - indicators.results.LinearGraphics - INFO - __Init__ LinearGraphics
+[29/June/2021 10:50] - indicators.results.LinearGraphics - INFO - __Init__ LinearGraphics
+[29/June/2021 10:50] - indicators.results - ERROR - FAILED! Data_Launch_Error: Traceback (most recent call last):
+  File "results.py", line 212, in <module>
+    '003': data_kol_vip_kompl_year,
+  File "results.py", line 212, in <module>
+    '003': data_kol_vip_kompl_year,
+  File "C:\Users\a.bezzubov\AppData\Local\Programs\Python\Python38-32\lib\bdb.py", line 88, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "C:\Users\a.bezzubov\AppData\Local\Programs\Python\Python38-32\lib\bdb.py", line 112, in dispatch_line
+    self.user_line(frame)
+  File "C:\Users\a.bezzubov\AppData\Local\Programs\Python\Python38-32\lib\pdb.py", line 262, in user_line
+    self.interaction(frame, None)
+  File "C:\Users\a.bezzubov\AppData\Local\Programs\Python\Python38-32\lib\pdb.py", line 357, in interaction
+    self._cmdloop()
+  File "C:\Users\a.bezzubov\AppData\Local\Programs\Python\Python38-32\lib\pdb.py", line 322, in _cmdloop
+    self.cmdloop()
+  File "C:\Users\a.bezzubov\AppData\Local\Programs\Python\Python38-32\lib\cmd.py", line 138, in cmdloop
+    stop = self.onecmd(line)
+  File "C:\Users\a.bezzubov\AppData\Local\Programs\Python\Python38-32\lib\pdb.py", line 423, in onecmd
+    return cmd.Cmd.onecmd(self, line)
+  File "C:\Users\a.bezzubov\AppData\Local\Programs\Python\Python38-32\lib\cmd.py", line 217, in onecmd
+    return func(arg)
+  File "C:\Users\a.bezzubov\AppData\Local\Programs\Python\Python38-32\lib\pdb.py", line 1129, in do_EOF
+    self.message('')
+  File "C:\Users\a.bezzubov\AppData\Local\Programs\Python\Python38-32\lib\pdb.py", line 458, in message
+    print(msg, file=self.stdout)
+OSError: [Errno 22] Invalid argument
+
+[29/June/2021 10:50] - indicators.results - INFO - OK! Calculation Data
+[29/June/2021 10:50] - indicators.results - INFO - OK! end initial assignment 
+[29/June/2021 10:50] - indicators.results - INFO - OK! Load object class
+[29/June/2021 10:50] - indicators.results - INFO - OK! Load object class
+[29/June/2021 10:50] - indicators.results - INFO - OK! Load object class
+[29/June/2021 10:50] - indicators.results - INFO - OK! Load object class
+[29/June/2021 10:50] - indicators.results - INFO - OK! Load object class
+[29/June/2021 11:17] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[29/June/2021 11:18] - indicators.results - INFO - start initial assignment
+[29/June/2021 11:18] - indicators.results - INFO - OK! Load Data
+[29/June/2021 11:18] - indicators.results - INFO - OK! Calculation Data
+[29/June/2021 11:18] - indicators.results - INFO - OK! end initial assignment 
+[29/June/2021 11:18] - indicators.results - INFO - OK! Load object class
+[29/June/2021 11:18] - indicators.results - INFO - OK! Load object class
+[29/June/2021 11:18] - indicators.results - INFO - OK! Load object class
+[29/June/2021 11:18] - indicators.results - INFO - OK! Load object class
+[29/June/2021 11:18] - indicators.results - INFO - OK! Load object class
+[29/June/2021 11:18] - indicators.results - INFO - OK! Load object class
+[29/June/2021 11:18] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[29/June/2021 11:18] - indicators.results - INFO - OK!
+[29/June/2021 11:18] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[29/June/2021 11:18] - indicators.results - INFO - OK!
+[29/June/2021 11:18] - indicators.results.LinearGraphics - INFO - __Init__ LinearGraphics
+[29/June/2021 11:18] - indicators.results.LinearGraphics - INFO - __Init__ LinearGraphics
+[29/June/2021 11:18] - indicators.results.LinearGraphics - INFO - __Init__ LinearGraphics
+[29/June/2021 11:18] - indicators.results.Visual_difference - INFO - __Init__ Visual_difference
+[29/June/2021 11:18] - indicators.results.Visual_difference - INFO - __Init__ Visual_difference
+[29/June/2021 11:18] - indicators.results.Visual_difference - INFO - __Init__ Visual_difference
+[29/June/2021 11:18] - indicators.results.Visual_difference - INFO - __Init__ Visual_difference
+[29/June/2021 11:44] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[29/June/2021 11:45] - indicators.results - INFO - start initial assignment
+[29/June/2021 11:45] - indicators.results - INFO - OK! Load Data
+[29/June/2021 11:45] - indicators.results - INFO - OK! Calculation Data
+[29/June/2021 11:45] - indicators.results - INFO - OK! end initial assignment 
+[29/June/2021 11:45] - indicators.results - INFO - OK! Load object class
+[29/June/2021 11:45] - indicators.results - INFO - OK! Load object class
+[29/June/2021 11:45] - indicators.results - INFO - OK! Load object class
+[29/June/2021 11:45] - indicators.results - INFO - OK! Load object class
+[29/June/2021 11:45] - indicators.results - INFO - OK! Load object class
+[29/June/2021 11:45] - indicators.results - INFO - OK! Load object class
+[29/June/2021 11:45] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[29/June/2021 11:45] - indicators.results - INFO - OK!
+[29/June/2021 11:45] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[29/June/2021 11:45] - indicators.results - INFO - OK!
+[29/June/2021 11:45] - indicators.results.LinearGraphics - INFO - __Init__ LinearGraphics
+[29/June/2021 11:45] - indicators.results.LinearGraphics - INFO - __Init__ LinearGraphics
+[29/June/2021 11:45] - indicators.results.LinearGraphics - INFO - __Init__ LinearGraphics
+[29/June/2021 11:45] - indicators.results.Visual_difference - INFO - __Init__ Visual_difference
+[29/June/2021 11:45] - indicators.results.Visual_difference - INFO - __Init__ Visual_difference
+[29/June/2021 11:45] - indicators.results.Visual_difference - INFO - __Init__ Visual_difference
+[29/June/2021 11:45] - indicators.results.Visual_difference - INFO - __Init__ Visual_difference
+[29/June/2021 11:49] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[29/June/2021 11:49] - indicators.results - INFO - start initial assignment
+[29/June/2021 11:49] - indicators.results - INFO - OK! Load Data
+[29/June/2021 11:49] - indicators.results - INFO - OK! Calculation Data
+[29/June/2021 11:49] - indicators.results - INFO - OK! end initial assignment 
+[29/June/2021 11:49] - indicators.results - INFO - OK! Load object class
+[29/June/2021 11:49] - indicators.results - INFO - OK! Load object class
+[29/June/2021 11:49] - indicators.results - INFO - OK! Load object class
+[29/June/2021 11:49] - indicators.results - INFO - OK! Load object class
+[29/June/2021 11:49] - indicators.results - INFO - OK! Load object class
+[29/June/2021 11:49] - indicators.results - INFO - OK! Load object class
+[29/June/2021 11:49] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[29/June/2021 11:49] - indicators.results - INFO - OK!
+[29/June/2021 11:49] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[29/June/2021 11:49] - indicators.results - INFO - OK!
+[29/June/2021 11:49] - indicators.results.LinearGraphics - INFO - __Init__ LinearGraphics
+[29/June/2021 11:49] - indicators.results.LinearGraphics - INFO - __Init__ LinearGraphics
+[29/June/2021 11:49] - indicators.results.LinearGraphics - INFO - __Init__ LinearGraphics
+[29/June/2021 11:49] - indicators.results.Visual_difference - INFO - __Init__ Visual_difference
+[29/June/2021 11:50] - indicators.results.Visual_difference - INFO - __Init__ Visual_difference
+[29/June/2021 11:50] - indicators.results.Visual_difference - INFO - __Init__ Visual_difference
+[29/June/2021 11:50] - indicators.results.Visual_difference - INFO - __Init__ Visual_difference

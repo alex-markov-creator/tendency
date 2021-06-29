@@ -15075,3 +15075,55 @@ TypeError: 'numpy.float64' object cannot be interpreted as an integer
 [03/June/2021 14:58] - indicators.gui_module.WidgetPlot - INFO - __Init__ WidgetPlot
 [03/June/2021 14:58] - indicators.gui_module.PlotCanvas - INFO - __Init__ PlotCanvas
 [03/June/2021 14:58] - indicators.gui_module.View_Adhaesio_Graphics - INFO - __Init__ View_Adhaesio_Graphics
+[28/June/2021 16:09] - indicators.gui_module - INFO - Started on platform Windows-7-6.1.7601-SP1
+[28/June/2021 16:10] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[28/June/2021 16:10] - indicators.production - INFO - start initial assignment
+[28/June/2021 16:10] - indicators.production - INFO - OK! Load Data
+[28/June/2021 16:10] - indicators.production - INFO - OK! Load Data
+[28/June/2021 16:10] - indicators.production - INFO - OK! Load Data
+[28/June/2021 16:10] - indicators.production - INFO - OK! Calculation Data
+[28/June/2021 16:10] - indicators.production - INFO - OK! Calculation Data
+[28/June/2021 16:10] - indicators.production - INFO - OK! end initial assignment 
+[28/June/2021 16:10] - indicators.production - INFO - OK! Load object class
+[28/June/2021 16:10] - indicators.production - INFO - OK! Load object class
+[28/June/2021 16:10] - indicators.production - INFO - OK! Load object class
+[28/June/2021 16:10] - indicators.production - INFO - OK! Load object class
+[28/June/2021 16:10] - indicators.production - INFO - OK! Load object class
+[28/June/2021 16:10] - indicators.production - INFO - OK! Load object class
+[28/June/2021 16:10] - indicators.production - INFO - OK! Load object class
+[28/June/2021 16:10] - indicators.production - INFO - OK! Load object class
+[28/June/2021 16:10] - indicators.production - INFO - OK! Load object class
+[28/June/2021 16:10] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[28/June/2021 16:10] - indicators.adhaesio - INFO - Started on platform Windows-7-6.1.7601-SP1
+[28/June/2021 16:10] - indicators.adhaesio - INFO - OK! Load Data
+[28/June/2021 16:10] - indicators.adhaesio - INFO - start initial assignment
+[28/June/2021 16:10] - indicators.adhaesio - INFO - OK! end initial assignment 
+[28/June/2021 16:10] - indicators.adhaesio - INFO - OK! Load object class
+[28/June/2021 16:10] - indicators.adhaesio - INFO - OK! Load object class
+[28/June/2021 16:10] - indicators.adhaesio - INFO - OK! Load object class
+[28/June/2021 16:10] - indicators.adhaesio - INFO - OK! Load object class
+[28/June/2021 16:10] - indicators.adhaesio - INFO - OK! Load object class
+[28/June/2021 16:10] - indicators.adhaesio - INFO - OK! Load object class
+[28/June/2021 16:10] - indicators.adhaesio - INFO - OK! Load object class
+[28/June/2021 16:10] - indicators.adhaesio - INFO - OK! Load object class
+[28/June/2021 16:10] - indicators.adhaesio - INFO - OK! Load object class
+[28/June/2021 16:10] - indicators.adhaesio - INFO - OK! Load object class
+[28/June/2021 16:10] - indicators.adhaesio - INFO - OK! Load object class
+[28/June/2021 16:10] - indicators.adhaesio - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[28/June/2021 16:10] - indicators.gui_module - INFO - Import OK!!!
+[28/June/2021 16:10] - indicators.gui_module - INFO - start initial assignment
+[28/June/2021 16:10] - indicators.gui_module - INFO - OK! end initial assignment 
+[28/June/2021 16:10] - indicators.gui_module - INFO - OK! Load object class
+[28/June/2021 16:10] - indicators.gui_module - INFO - OK! Load object class
+[28/June/2021 16:10] - indicators.gui_module - INFO - OK! Load object class
+[28/June/2021 16:10] - indicators.gui_module - INFO - OK! Load object class
+[28/June/2021 16:10] - indicators.gui_module - INFO - OK! Load object class
+[28/June/2021 16:10] - indicators.gui_module - INFO - OK! Load object class
+[28/June/2021 16:10] - indicators.gui_module - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[28/June/2021 16:10] - indicators.gui_module.MainWindow - INFO - __Init__ MainWindow
+[28/June/2021 16:10] - indicators.gui_module.View_Process_Graphics - INFO - __Init__ View_Process_Graphics
+[28/June/2021 16:10] - indicators.gui_module.TabStr - INFO - __Init__ TabStr
+[28/June/2021 16:10] - indicators.gui_module.WidgetPlot - INFO - __Init__ WidgetPlot
+[28/June/2021 16:10] - indicators.gui_module.PlotCanvas - INFO - __Init__ PlotCanvas
+[28/June/2021 16:10] - indicators.gui_module.View_Adhaesio_Graphics - INFO - __Init__ View_Adhaesio_Graphics
+[28/June/2021 16:11] - indicators.production.Graphics_Number_Production - INFO - __Init__ Graphics_Number_Production
