@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # version 0.2a
-# author: andrew.bezzubov - _/_/2021 year
+# author: andrew.bezzubov - 02/07/2021 year
 # email: ruizcontrol@yandex.ru, agb2019@list.ru
 # https://github.com/alex-markov-creator/tendency.git
 # GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007
@@ -42,21 +42,97 @@ results.py - Модуль аналитики по следующим показ�
 +-------------------------------------------------------------------------+
 |   prev_year    |# переменные предыдущего и отчетного периода            |
 |   next_year    |                                                        |
-|                |# нумерация строк                                       |
+|    n_4         |# нумерация строк                                       |
+|    n_5         |                                                        |
+|    n_6         |                                                        |
+|    n_7         |                                                        |
+|    n_8         |                                                        |
+|    i_4_1_1     |# переменные уровня выполнения заказов                  |
+|    i_4_2_1     |                                                        |
+|    i_4_1_m_1   |                                                        |
+|    i_4_2_m_1   |                                                        |
+|    i_5_1_1     |# переменные уровня претензий и рекламаций              |
+|    i_5_2_1     |                                                        |
+|    i_5_1_m_1   |                                                        |
+|    i_5_2_m_1   |                                                        |
+|    i_6_1_1     |# переменные объема возвращенной продукции              |
+|    i_6_2_1     |                                                        |
+|    i_6_1_m_1   |                                                        |
+|    i_6_2_m_1   |                                                        |
+|    i_7_1_1     |# переменные количества реализованной продукции         |
+|    i_7_2_1     |                                                        |
+|    i_7_1_m_1   |                                                        |
+|    i_7_2_m_1   |                                                        |
+|    i_7_1_2     |                                                        |
+|    i_7_2_2     |                                                        |
+|    i_7_1_m_2   |                                                        |
+|    i_7_2_m_2   |                                                        |
+|    i_7_1_3     |                                                        |
+|    i_7_1_4     |                                                        |
+|    i_7_1_5     |                                                        |
+|    i_7_2_3     |                                                        |
+|    i_7_2_4     |                                                        |
+|    i_7_2_5     |                                                        |
+|    i_7_1_m_3   |                                                        |
+|    i_7_1_m_4   |                                                        |
+|    i_7_1_m_5   |                                                        |
+|    i_7_2_m_3   |                                                        |
+|    i_7_2_m_4   |                                                        |
+|    i_7_2_m_5   |                                                        |
+|    i_8_1       |# переменные уровня поставок продукции Кпп              |
+|    i_8_m_1     |                                                        |
+|    i_8_2       |                                                        |
+|    i_8_m_2     |                                                        |
+|    e_4_1       |# переменные изменений уровня выполнения заказов        |
+|    e_4_m_1     |                                                        |
+|    e_5_1       |# переменные изменений уровня претензий и рекламаций    |
+|    e_5_m_1     |                                                        |
+|    e_6_1       |# переменные изменений объема возвращенной продукции    |
+|    e_6_m_1     |                                                        |
+|    e_7_1       |# переменные изменений кол-ва реализованной продукции   |
+|    e_7_2       |                                                        |
+|    e_7_3       |                                                        |
+|    e_7_4       |                                                        |
+|    e_7_5       |                                                        |
+|    e_7_m_1     |                                                        |
+|    e_7_m_2     |                                                        |
+|    e_7_m_3     |                                                        |
+|    e_7_m_4     |                                                        |
+|    e_7_m_5     |                                                        |
+|    e_8_1       |# переменные уровня поставок продукции                  |
+|    e_8_m_1     |                                                        |
 +--------------------------------------+----------------------------------+
 ================================================================
 ИСХОДНЫЕ ДАННЫЕ - ФАЙЛ __init__.py в ../Data:
 ---------------------------------------------
-
-СПРАВКА
-
 Инструкции при импорте:
 -----------------------
 import pandas as pd
 import matplotlib.pyplot as plt
 import results as rs
 
-Построение графиков:
+СПРАВКА
+print(pr.__doc__)
+
+Вывод исходных данных в виде файла и таблицы
+---------------------------------------------
+x = rs.Data_Table(rs.data_kol_real_prod_year)
+print(x)
+x.open_data()
+
+ДАННЫЕ статистических расчетов
+--------------------------------
+x = rs.Statistic_Table(rs.data_kol_real_prod_year)
+print(x.score())
+#Экземпляр значений количества проведенных испытаний и номеров партии
+print(x.middle())
+# Экземпляр средних значений
+print(x.max_min())
+# Экземпляр максимальных и минимальных значений
+print(x.st_d())
+# Экземпляр для вывода отклонений результатов испытаний
+
+ПОСТРОЕНИЕ графиков:
 --------------------
 #график "Столбчатая диаграмма - Итоги"
 graphic_one = rs.Visual_all(rs.sum_lenta, 'Реализованная и выпущенная продукции (лента) с 2010 года')
@@ -92,32 +168,15 @@ graphic_thirteen = rs.Visual_stock(diff_kompl_year, name='Используемы
 graphic_fourteen = rs.Visual_stock(diff_kompl_middle_year, name='Используемые запасы и перевыпуск комплектов(шт.) по полугодиям')
 plt.show()#график на экран
 
-( ДАЛЕЕ РЕДАКТИРОВАТЬ!!!)
-Результаты подсчётов:
----------------------
-b = rs.Result_Calc()
-#вызов экземпляра для расчетов
-save_data_1 = b.concat_data(
-                            rs.data_kol_vip_prod_year, rs.data_kol_vip_prod_middle_year,
-                            rs.data_kol_real_prod_year, rs.data_kol_real_prod_middle_year
-                            )#исходные данные
-save_data_2 = pd.concat(
-                        [rs.difference_year, rs.difference_middle_year],
-                        axis = 1
-                        )#реализация-выпуск
-save_data_3 = pd.concat(
-                        [rs.difference_year.describe(), rs.difference_middle_year.describe()], axis = 1
-                        )#cтатистика по разнице
-save_data_4 = pd.concat(
-                        [rs.data_kol_vip_prod_year.describe(), rs.data_kol_vip_prod_middle_year.describe(),
-                        rs.data_kol_real_prod_year.describe(), rs.data_kol_real_prod_middle_year.describe()],
-                        axis = 1
-                        )#cтатистика по исходным данным
-save_data_5 = rs.summer.corr()#результаты корреляции
+СРАВНЕНИЕ значений с предыдущими результатами
+---------------------------------------------
+x = rs.Comparise(rs.data_kol_real_prod_year)
+print(x)
+print(x.score())
 
-lst = [save_data_1, save_data_2, save_data_3, save_data_4, save_data_5]
-for i in lst:
-    print(i)#вывод на экран
+СОХРАНЕНИЕ графиков и результатов
+---------------------------------
+rs.Save_Data()
 """
 import sys
 import os
@@ -235,23 +294,6 @@ try:
     lst_name = [data_kol_vip_prod_year, data_kol_vip_prod_middle_year, data_kol_real_prod_year, data_kol_real_prod_middle_year,data_kol_real_komp_year, data_kol_real_komp_middle_year,data_ob_vozr_prod_year, data_ur_vip_zak_year, data_ur_vip_zak_middle_year,data_kol_vip_kompl_year,data_kol_vip_kompl_middle_year,data_pret_i_rekl_year,data_pret_i_rekl_middle_year, data_ur_postav_year,data_ur_postav_middle_year] #список для сохранения стаистических расчетов
     logger.info("OK! Load Data") # logging
 
-except ImportError:
-    logger.error(f'FAILED! Data_Launch_Error: {sys.exc_info()[:2]}', exc_info=True) # logging
-
-except TypeError:
-    def test_add_raises():
-        """Все, что находиться в следующем блоке кода, должно
-        вызвать исключение
-        """
-        with pytest.raises(TypeError):
-            raise TypeError
-
-    logger.error(f'FAILED! Data_Launch_Error: {sys.exc_info()[:2]}', exc_info=True) # logging
-
-except:
-    logger.error("FAILED! Data_Launch_Error: %s", traceback.format_exc()) # logging
-
-try:
     # ИСХОДНЫЕ ДАННЫЕ (ДОПОЛНИТЕЛЬНОЕ ФОРМАТИРОВАНИЕ ДЛЯ ПОСТРОЕНИЯ ГРАФИКА VISUAL_ALL):
     #########################################################################
     sum_lenta = pd.concat([data_kol_real_prod_year, data_kol_vip_prod_year], axis=1).dropna().sum()
@@ -276,8 +318,102 @@ try:
     prev_year = data_kol_real_prod_year.index[-2]
     next_year = data_kol_real_prod_year.index[-1]
 
-except Exception:
-    logger.error(f'FAILED! Initial_assignment_Error: {sys.exc_info()[:2]}') # logging
+    n_4 = '4'# нумерация строк
+    n_5 = '5'# нумерация строк
+    n_6 = '6'# нумерация строк
+    n_7 = '7'# нумерация строк
+    n_8 = '8'# нумерация строк
+
+    # Переменные уровня выполнения заказов
+    i_4_1_1 = data_ur_vip_zak_year.tail(2).iloc[0,0]
+    i_4_2_1 = data_ur_vip_zak_year.tail(2).iloc[1,0]
+    i_4_1_m_1 = data_ur_vip_zak_middle_year.tail(2).iloc[0,0]
+    i_4_2_m_1 = data_ur_vip_zak_middle_year.tail(2).iloc[1,0]
+
+    # Переменные уровня претензий и рекламаций
+    i_5_1_1 = data_pret_i_rekl_year.tail(2).iloc[0,0]
+    i_5_2_1 = data_pret_i_rekl_year.tail(2).iloc[1,0]
+    i_5_1_m_1 = data_pret_i_rekl_middle_year.tail(2).iloc[0,0]
+    i_5_2_m_1 = data_pret_i_rekl_middle_year.tail(2).iloc[1,0]
+
+    # Переменные объема возвращенной продукции
+    i_6_1_1 = data_ob_vozr_prod_year.tail(2).iloc[0,0]
+    i_6_2_1 = data_ob_vozr_prod_year.tail(2).iloc[1,0]
+    i_6_1_m_1 = None
+    i_6_2_m_1 = None
+
+    # Переменные количества реализованной продукции
+    i_7_1_1 = data_kol_real_prod_year.tail(2).iloc[0,0]
+    i_7_2_1 = data_kol_real_prod_year.tail(2).iloc[1,0]
+    i_7_1_m_1 = data_kol_real_prod_middle_year.tail(2).iloc[0,0]
+    i_7_2_m_1 = data_kol_real_prod_middle_year.tail(2).iloc[1,0]
+    i_7_1_2 = data_kol_real_komp_year.tail(2).iloc[0,0]
+    i_7_2_2 = data_kol_real_komp_year.tail(2).iloc[1,0]
+    i_7_1_m_2 = data_kol_real_komp_middle_year.tail(2).iloc[0,0]
+    i_7_2_m_2 = data_kol_real_komp_middle_year.tail(2).iloc[1,0]
+    i_7_1_3 = None
+    i_7_1_4 = None
+    i_7_1_5 = None
+    i_7_2_3 = None
+    i_7_2_4 = None
+    i_7_2_5 = None
+    i_7_1_m_3 = None
+    i_7_1_m_4 = None
+    i_7_1_m_5 = None
+    i_7_2_m_3 = None
+    i_7_2_m_4 = None
+    i_7_2_m_5 = None
+
+    # Переменные уровня поставок продукции Кпп
+    i_8_1 = data_ur_postav_year.tail(2).iloc[0,0]
+    i_8_2 = data_ur_postav_year.tail(2).iloc[1,0]
+    i_8_m_1 = data_ur_postav_middle_year.tail(2).iloc[0,0]
+    i_8_m_2 = data_ur_postav_middle_year.tail(2).iloc[1,0]
+
+    # переменные изменений уровня выполнения заказов
+    e_4_1 = round(i_4_2_1-i_4_1_1, 2)
+    e_4_m_1 = round(i_4_2_m_1-i_4_1_m_1, 2)
+
+    # переменные изменений уровня претензий и рекламаций
+    e_5_1 = round(i_5_2_1-i_5_1_1, 2)
+    e_5_m_1 = round(i_5_2_m_1-i_5_1_m_1,2)
+
+    # переменные изменений объема возвращенной продукции
+    e_6_1 = round(i_6_2_1-i_6_1_1, 2)
+    e_6_m_1 = None
+
+    # переменные изменений кол-ва реализованной продукции
+    e_7_1 = round(i_7_2_1-i_7_1_1 , 2)
+    e_7_2 = round(i_7_2_2-i_7_1_2 , 2)
+    e_7_3 = None
+    e_7_4 = None
+    e_7_5 = None
+    e_7_m_1 = round(i_7_2_m_1-i_7_1_m_1 , 2)
+    e_7_m_2 = round(i_7_2_m_2-i_7_1_m_2 , 2)
+    e_7_m_3 = None
+    e_7_m_4 = None
+    e_7_m_5 = None
+
+    # переменные уровня поставок продукции
+    e_8_1 = round(i_8_2-i_8_1, 2)
+    e_8_m_1 = round(i_8_m_2-i_8_m_1, 2)
+
+
+except ImportError:
+    logger.error(f'FAILED! Data_Launch_Error: {sys.exc_info()[:2]}', exc_info=True) # logging
+
+except TypeError:
+    def test_add_raises():
+        """Все, что находиться в следующем блоке кода, должно
+        вызвать исключение
+        """
+        with pytest.raises(TypeError):
+            raise TypeError
+
+    logger.error(f'FAILED! Data_Launch_Error: {sys.exc_info()[:2]}', exc_info=True) # logging
+
+except:
+    logger.error("FAILED! Data_Launch_Error: %s", traceback.format_exc()) # logging
 
 try:
     @time_of_function
@@ -666,8 +802,11 @@ try:
                 print('Сохранение в файл формата *.xlsx ...')
                 save_data_1 = pd.concat([data_kol_vip_prod_year, data_kol_vip_prod_middle_year, data_kol_real_prod_year, data_kol_real_prod_middle_year,data_kol_real_komp_year, data_kol_real_komp_middle_year,data_ob_vozr_prod_year, data_ur_vip_zak_year, data_ur_vip_zak_middle_year,data_kol_vip_kompl_year,data_kol_vip_kompl_middle_year,data_pret_i_rekl_year,data_pret_i_rekl_middle_year, data_ur_postav_year,data_ur_postav_middle_year], axis=1)
 
-                save_data_2 = pd.concat([diff_lenta_year, diff_lenta_middle_year], axis=1)
-                save_data_3 = pd.concat([diff_kompl_year, diff_kompl_middle_year], axis=1)
+                save_data_2 = pd.concat([data_kol_real_prod_year, data_kol_vip_prod_year], axis=1).dropna()
+                save_data_2['Отклонение от выпуска'] = save_data_2.transpose().iloc[0] - save_data_2.transpose().iloc[1]
+
+                save_data_3 = pd.concat([data_kol_real_komp_year, data_kol_vip_kompl_year], axis=1).dropna()
+                save_data_3['Отклонение от выпуска'] = save_data_3.transpose().iloc[0] - save_data_3.transpose().iloc[1]
 
                 save_data_4 = pd.concat([data_kol_vip_prod_year, data_kol_vip_prod_middle_year, data_kol_real_prod_year, data_kol_real_prod_middle_year,], axis=1).dropna().corr()
 

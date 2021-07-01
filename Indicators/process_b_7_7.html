@@ -1,0 +1,120 @@
+﻿<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html">
+<title>Сводные данные по показателям процессов</title>
+</head>
+<body>
+<h3>{{NAME_TABLE}}</h3>
+<table border="1" cellpadding="5"
+style="border-collapse: collapse; border: 1px solid black;">
+	<tr align=center>
+		<th> Наименование показателей, процесс,<br> единица измерения </th>
+		<th> Критерий </th>
+        <th> Факт за {{PREV_YEAR}} год </th>
+        <th> Факт за {{NEXT_YEAR}} год </th>
+	</tr>
+	<tr>
+		<td>{{n_4}} Уровень выполнения заказов, Б(7.7)<br>
+        Отношение количества заказов, выполненных в<br>
+        срок, к общему количеству заказов, %</td>
+
+		<td align=center valign=middle>100%</td>
+
+        <td align=center valign=middle>{{i_4_1_1}}{{i_4_1_m_1}}</td>
+
+        <td align=center valign=middle>{{i_4_2_1}}{{i_4_2_m_1}}</td>
+	</tr>
+    <tr>
+        <td>{{n_5}} Уровень претензий и рекламаций Б (7.7),<br>
+        В количественном выражении</td>
+        <td align=center valign=middle>&lt;5</td>
+        <td align=center valign=middle>
+          {{i_5_1_1}}{{i_5_1_m_1}}</td>
+        <td align=center valign=middle>
+          {{i_5_2_1}}{{i_5_2_m_1}}</td>
+    </tr>
+    <tr >
+        <td>{{n_6}} Объем возвращенной продукции, Б (7.2),<br>
+        Возврат от потребителей от общего объема<br>
+        реализованной продукции за год, %</td>
+        <td align=center valign=middle>&lt;5%</td>
+        <td align=center valign=middle>{{i_6_1_1}}{{i_6_1_m_1}}
+        </td>
+        <td align=center valign=middle>{{i_6_2_1}}{{i_6_2_m_1}}
+        </td>
+    </tr>
+    <tr>
+        <td>{{n_7}} Количество реализованной продукции, Б(7.7),т</td>
+        <td align=center valign=middle>-</td>
+        <td align=center valign=middle>
+            {{i_7_1_1}}{{i_7_1_m_1}} т.-п/б ленты<br>
+            {{i_7_1_2}}{{i_7_1_m_2}} шт. - комплектов ЛИТКОР КМ<br>
+            {{i_7_1_3}}{{i_7_1_m_3}}<br>
+            {{i_7_1_4}}{{i_7_1_m_4}}<br>
+            {{i_7_1_5}}{{i_7_1_m_5}}</td>
+        <td align=center valign=middle>
+            {{i_7_2_1}}{{i_7_2_m_1}} т.-п/б ленты<br>
+            {{i_7_2_2}}{{i_7_2_m_2}} шт. - комплектов ЛИТКОР КМ<br>
+            {{i_7_2_3}}{{i_7_2_m_3}}<br>
+            {{i_7_2_4}}{{i_7_2_m_4}}<br>
+            {{i_7_2_5}}{{i_7_2_m_5}}</td>
+    </tr>
+    <tr>
+        <td>{{n_8}} Уровень поставок продукции Кпп, Б(7.7)<br>
+        Отношение количества отгруженной продукции к заявленной, %</td>
+        <td align=center valign=middle>100%</td>
+        <td align=center valign=middle>{{i_8_1}}{{i_8_m_1}}</td>
+        <td align=center valign=middle>{{i_8_2}}{{i_8_m_2}}</td>
+    </tr>
+</table>
+
+<h3>{{NAME_TABLE_2}}</h3>
+<table border="1" cellpadding="5"
+style="border-collapse: collapse; border: 1px solid black;">
+  <tr>
+    <th align=center> Наименование показателей, процесс,<br>
+    единица измерения </th>
+    <th align=center> Изменение значений </th>
+  </tr>
+    <tr>
+        <td>{{n_4}} Уровень выполнения заказов, B(7.7)<br>
+        Отношение количества заказов, выполненных в<br>
+        срок, к общему количеству заказов, %</td>
+        <td align=center valign=middle>{{e_4_1}}{{e_4_m_1}}</td>
+
+    </tr>
+
+    <tr>
+        <td>{{n_5}} Уровень претензий и рекламаций Б (7.7),<br>
+        В количественном выражении</td>
+        <td align=center valign=middle>
+          {{e_5_1}}{{e_5_m_1}}</td>
+    </tr>
+
+    <tr >
+        <td>{{n_6}} Объем возвращенной продукции, Б (7.2),<br>
+        Возврат от потребителей от общего объема<br>
+        реализованной продукции за год, %</td>
+        <td align=center valign=middle>{{e_6_1}}{{e_6_m_1}}
+        </td>
+    </tr>
+
+    <tr>
+        <td>{{n_7}} Количество реализованной продукции, Б(7.7),т</td>
+        <td align=center valign=middle>
+            {{e_7_1}}{{e_7_m_1}} т.-п/б ленты<br>
+            {{e_7_2}}{{e_7_m_2}} шт. - комплектов ЛИТКОР КМ<br>
+            {{e_7_3}}{{e_7_m_3}}<br>
+            {{e_7_4}}{{e_7_m_4}}<br>
+            {{e_7_5}}{{e_7_m_5}}</td>
+    </tr>
+
+    <tr>
+        <td>{{n_8}} Уровень поставок продукции Кпп, Б(7.7)<br>
+        Отношение количества отгруженной продукции к заявленной, %</td>
+        <td align=center valign=middle>{{e_8_1}}{{e_8_m_1}}</td>
+    </tr>
+</table>
+</body>
+</html>

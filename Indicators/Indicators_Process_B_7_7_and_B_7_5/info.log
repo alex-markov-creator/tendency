@@ -3742,3 +3742,231 @@ NameError: name 'pylhelp' is not defined
 [30/June/2021 16:09] - indicators.results - ERROR - FAILED! Run_Error: (<class 'OSError'>, OSError(22, 'Invalid argument'))
 [30/June/2021 16:09] - indicators.results - ERROR - FAILED! Run_Error: (<class 'OSError'>, OSError(22, 'Invalid argument'))
 [30/June/2021 16:09] - indicators.results - ERROR - FAILED! Run_Error: (<class 'OSError'>, OSError(22, 'Invalid argument'))
+[01/July/2021 09:44] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 09:45] - indicators.results - INFO - start initial assignment
+[01/July/2021 09:45] - indicators.results - INFO - OK! Load Data
+[01/July/2021 09:45] - indicators.results - INFO - OK! Calculation Data
+[01/July/2021 09:45] - indicators.results - INFO - OK! end initial assignment 
+[01/July/2021 09:45] - indicators.results - INFO - OK! Load object class
+[01/July/2021 09:45] - indicators.results - INFO - OK! Load object class
+[01/July/2021 09:45] - indicators.results - INFO - OK! Load object class
+[01/July/2021 09:45] - indicators.results - INFO - OK! Load object class
+[01/July/2021 09:45] - indicators.results - INFO - OK! Load object class
+[01/July/2021 09:45] - indicators.results - INFO - OK! Load object class
+[01/July/2021 09:45] - indicators.results - INFO - OK! Load object class
+[01/July/2021 09:45] - indicators.results - INFO - OK! Load object class
+[01/July/2021 09:45] - indicators.results - INFO - OK! Load object class
+[01/July/2021 09:45] - indicators.results - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 09:45] - indicators.results - INFO - OK! Load object class
+[01/July/2021 09:49] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 09:49] - indicators.results - INFO - start initial assignment
+[01/July/2021 09:49] - indicators.results - INFO - OK! Load Data
+[01/July/2021 09:49] - indicators.results - INFO - OK! Calculation Data
+[01/July/2021 09:49] - indicators.results - INFO - OK! end initial assignment 
+[01/July/2021 09:49] - indicators.results - INFO - OK! Load object class
+[01/July/2021 09:49] - indicators.results - INFO - OK! Load object class
+[01/July/2021 09:49] - indicators.results - INFO - OK! Load object class
+[01/July/2021 09:49] - indicators.results - INFO - OK! Load object class
+[01/July/2021 09:49] - indicators.results - INFO - OK! Load object class
+[01/July/2021 09:49] - indicators.results - INFO - OK! Load object class
+[01/July/2021 09:49] - indicators.results - INFO - OK! Load object class
+[01/July/2021 09:49] - indicators.results - INFO - OK! Load object class
+[01/July/2021 09:49] - indicators.results - INFO - OK! Load object class
+[01/July/2021 09:49] - indicators.results - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 09:49] - indicators.results - INFO - OK! Load object class
+[01/July/2021 09:49] - indicators.results.Save_Data - INFO - __Init__ Save_Data
+[01/July/2021 09:49] - indicators.results - ERROR - Error None
+[01/July/2021 09:49] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[01/July/2021 09:49] - indicators.results - INFO - OK!
+[01/July/2021 09:49] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[01/July/2021 09:49] - indicators.results - INFO - OK!
+[01/July/2021 09:49] - indicators.results.LinearGraphics - INFO - __Init__ LinearGraphics
+[01/July/2021 09:49] - indicators.results.LinearGraphics - INFO - __Init__ LinearGraphics
+[01/July/2021 09:49] - indicators.results.LinearGraphics - INFO - __Init__ LinearGraphics
+[01/July/2021 09:49] - indicators.results.Visual_difference - INFO - __Init__ Visual_difference
+[01/July/2021 09:49] - indicators.results.Visual_difference - INFO - __Init__ Visual_difference
+[01/July/2021 09:49] - indicators.results.Visual_difference - INFO - __Init__ Visual_difference
+[01/July/2021 09:49] - indicators.results.Visual_difference - INFO - __Init__ Visual_difference
+[01/July/2021 09:49] - indicators.results.Visual_stock - INFO - __Init__ Visual_stock
+[01/July/2021 09:49] - indicators.results.Visual_stock - INFO - __Init__ Visual_stock
+[01/July/2021 09:49] - indicators.results.Visual_stock - INFO - __Init__ Visual_stock
+[01/July/2021 09:50] - indicators.results.Visual_stock - INFO - __Init__ Visual_stock
+[01/July/2021 09:50] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 09:50] - indicators.results - INFO - start initial assignment
+[01/July/2021 09:50] - indicators.results - INFO - OK! Load Data
+[01/July/2021 09:50] - indicators.results - INFO - OK! Calculation Data
+[01/July/2021 09:50] - indicators.results - INFO - OK! end initial assignment 
+[01/July/2021 09:50] - indicators.results - INFO - OK! Load object class
+[01/July/2021 09:50] - indicators.results - INFO - OK! Load object class
+[01/July/2021 09:50] - indicators.results - INFO - OK! Load object class
+[01/July/2021 09:50] - indicators.results - INFO - OK! Load object class
+[01/July/2021 09:50] - indicators.results - INFO - OK! Load object class
+[01/July/2021 09:50] - indicators.results - INFO - OK! Load object class
+[01/July/2021 09:50] - indicators.results - INFO - OK! Load object class
+[01/July/2021 09:50] - indicators.results - INFO - OK! Load object class
+[01/July/2021 09:50] - indicators.results - INFO - OK! Load object class
+[01/July/2021 09:50] - indicators.results - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 09:50] - indicators.results - INFO - OK! Load object class
+[01/July/2021 09:50] - indicators.results.Save_Data - INFO - __Init__ Save_Data
+[01/July/2021 09:50] - indicators.results - INFO - OK! Save_TO_XLSX
+[01/July/2021 09:50] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[01/July/2021 09:50] - indicators.results - INFO - OK!
+[01/July/2021 09:50] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[01/July/2021 09:50] - indicators.results - INFO - OK!
+[01/July/2021 09:50] - indicators.results.LinearGraphics - INFO - __Init__ LinearGraphics
+[01/July/2021 09:50] - indicators.results.LinearGraphics - INFO - __Init__ LinearGraphics
+[01/July/2021 09:50] - indicators.results.LinearGraphics - INFO - __Init__ LinearGraphics
+[01/July/2021 09:50] - indicators.results.Visual_difference - INFO - __Init__ Visual_difference
+[01/July/2021 09:50] - indicators.results.Visual_difference - INFO - __Init__ Visual_difference
+[01/July/2021 09:51] - indicators.results.Visual_difference - INFO - __Init__ Visual_difference
+[01/July/2021 09:51] - indicators.results.Visual_difference - INFO - __Init__ Visual_difference
+[01/July/2021 09:51] - indicators.results.Visual_stock - INFO - __Init__ Visual_stock
+[01/July/2021 09:51] - indicators.results.Visual_stock - INFO - __Init__ Visual_stock
+[01/July/2021 09:51] - indicators.results.Visual_stock - INFO - __Init__ Visual_stock
+[01/July/2021 09:51] - indicators.results.Visual_stock - INFO - __Init__ Visual_stock
+[01/July/2021 09:51] - indicators.results - INFO - OK! SAVE_GRAPHICS
+[01/July/2021 09:51] - indicators.results - INFO - OK! FourCommand
+[01/July/2021 09:55] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 09:55] - indicators.results - INFO - start initial assignment
+[01/July/2021 09:55] - indicators.results - INFO - OK! Load Data
+[01/July/2021 09:55] - indicators.results - INFO - OK! Calculation Data
+[01/July/2021 09:55] - indicators.results - INFO - OK! end initial assignment 
+[01/July/2021 09:55] - indicators.results - INFO - OK! Load object class
+[01/July/2021 09:55] - indicators.results - INFO - OK! Load object class
+[01/July/2021 09:55] - indicators.results - INFO - OK! Load object class
+[01/July/2021 09:55] - indicators.results - INFO - OK! Load object class
+[01/July/2021 09:55] - indicators.results - INFO - OK! Load object class
+[01/July/2021 09:55] - indicators.results - INFO - OK! Load object class
+[01/July/2021 09:55] - indicators.results - INFO - OK! Load object class
+[01/July/2021 09:55] - indicators.results - INFO - OK! Load object class
+[01/July/2021 09:55] - indicators.results - INFO - OK! Load object class
+[01/July/2021 09:55] - indicators.results - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 09:55] - indicators.results - INFO - OK! Load object class
+[01/July/2021 09:55] - indicators.results.Save_Data - INFO - __Init__ Save_Data
+[01/July/2021 09:55] - indicators.results - INFO - OK! Save_TO_XLSX
+[01/July/2021 09:55] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[01/July/2021 09:55] - indicators.results - INFO - OK!
+[01/July/2021 09:55] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[01/July/2021 09:55] - indicators.results - INFO - OK!
+[01/July/2021 09:55] - indicators.results.LinearGraphics - INFO - __Init__ LinearGraphics
+[01/July/2021 09:55] - indicators.results.LinearGraphics - INFO - __Init__ LinearGraphics
+[01/July/2021 09:55] - indicators.results.LinearGraphics - INFO - __Init__ LinearGraphics
+[01/July/2021 09:55] - indicators.results.Visual_difference - INFO - __Init__ Visual_difference
+[01/July/2021 09:55] - indicators.results.Visual_difference - INFO - __Init__ Visual_difference
+[01/July/2021 09:55] - indicators.results.Visual_difference - INFO - __Init__ Visual_difference
+[01/July/2021 09:55] - indicators.results.Visual_difference - INFO - __Init__ Visual_difference
+[01/July/2021 09:55] - indicators.results.Visual_stock - INFO - __Init__ Visual_stock
+[01/July/2021 09:55] - indicators.results.Visual_stock - INFO - __Init__ Visual_stock
+[01/July/2021 09:55] - indicators.results.Visual_stock - INFO - __Init__ Visual_stock
+[01/July/2021 09:55] - indicators.results.Visual_stock - INFO - __Init__ Visual_stock
+[01/July/2021 09:56] - indicators.results - INFO - OK! SAVE_GRAPHICS
+[01/July/2021 09:56] - indicators.results - INFO - OK! FourCommand
+[01/July/2021 09:56] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 09:57] - indicators.results - INFO - start initial assignment
+[01/July/2021 09:57] - indicators.results - INFO - OK! Load Data
+[01/July/2021 09:57] - indicators.results - INFO - OK! Calculation Data
+[01/July/2021 09:57] - indicators.results - INFO - OK! end initial assignment 
+[01/July/2021 09:57] - indicators.results - INFO - OK! Load object class
+[01/July/2021 09:57] - indicators.results - INFO - OK! Load object class
+[01/July/2021 09:57] - indicators.results - INFO - OK! Load object class
+[01/July/2021 09:57] - indicators.results - INFO - OK! Load object class
+[01/July/2021 09:57] - indicators.results - INFO - OK! Load object class
+[01/July/2021 09:57] - indicators.results - INFO - OK! Load object class
+[01/July/2021 09:57] - indicators.results - INFO - OK! Load object class
+[01/July/2021 09:57] - indicators.results - INFO - OK! Load object class
+[01/July/2021 09:57] - indicators.results - INFO - OK! Load object class
+[01/July/2021 09:57] - indicators.results - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 09:57] - indicators.results - INFO - OK! Load object class
+[01/July/2021 09:57] - indicators.results.Save_Data - INFO - __Init__ Save_Data
+[01/July/2021 09:57] - indicators.results - ERROR - Error None
+[01/July/2021 09:57] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[01/July/2021 09:57] - indicators.results - INFO - OK!
+[01/July/2021 09:57] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[01/July/2021 09:57] - indicators.results - INFO - OK!
+[01/July/2021 09:57] - indicators.results.LinearGraphics - INFO - __Init__ LinearGraphics
+[01/July/2021 09:57] - indicators.results.LinearGraphics - INFO - __Init__ LinearGraphics
+[01/July/2021 09:57] - indicators.results.LinearGraphics - INFO - __Init__ LinearGraphics
+[01/July/2021 09:57] - indicators.results.Visual_difference - INFO - __Init__ Visual_difference
+[01/July/2021 09:57] - indicators.results.Visual_difference - INFO - __Init__ Visual_difference
+[01/July/2021 09:57] - indicators.results.Visual_difference - INFO - __Init__ Visual_difference
+[01/July/2021 09:57] - indicators.results.Visual_difference - INFO - __Init__ Visual_difference
+[01/July/2021 09:57] - indicators.results.Visual_stock - INFO - __Init__ Visual_stock
+[01/July/2021 09:57] - indicators.results.Visual_stock - INFO - __Init__ Visual_stock
+[01/July/2021 09:57] - indicators.results.Visual_stock - INFO - __Init__ Visual_stock
+[01/July/2021 09:57] - indicators.results.Visual_stock - INFO - __Init__ Visual_stock
+[01/July/2021 09:57] - indicators.results - INFO - OK! SAVE_GRAPHICS
+[01/July/2021 09:57] - indicators.results - INFO - OK! FourCommand
+[01/July/2021 09:59] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 09:59] - indicators.results - INFO - start initial assignment
+[01/July/2021 09:59] - indicators.results - INFO - OK! Load Data
+[01/July/2021 09:59] - indicators.results - INFO - OK! Calculation Data
+[01/July/2021 09:59] - indicators.results - INFO - OK! end initial assignment 
+[01/July/2021 09:59] - indicators.results - INFO - OK! Load object class
+[01/July/2021 09:59] - indicators.results - INFO - OK! Load object class
+[01/July/2021 09:59] - indicators.results - INFO - OK! Load object class
+[01/July/2021 09:59] - indicators.results - INFO - OK! Load object class
+[01/July/2021 09:59] - indicators.results - INFO - OK! Load object class
+[01/July/2021 09:59] - indicators.results - INFO - OK! Load object class
+[01/July/2021 09:59] - indicators.results - INFO - OK! Load object class
+[01/July/2021 09:59] - indicators.results - INFO - OK! Load object class
+[01/July/2021 09:59] - indicators.results - INFO - OK! Load object class
+[01/July/2021 09:59] - indicators.results - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 09:59] - indicators.results - INFO - OK! Load object class
+[01/July/2021 09:59] - indicators.results.Save_Data - INFO - __Init__ Save_Data
+[01/July/2021 09:59] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 10:00] - indicators.results - INFO - start initial assignment
+[01/July/2021 10:00] - indicators.results - INFO - OK! Load Data
+[01/July/2021 10:00] - indicators.results - INFO - OK! Calculation Data
+[01/July/2021 10:00] - indicators.results - INFO - OK! end initial assignment 
+[01/July/2021 10:00] - indicators.results - INFO - OK! Load object class
+[01/July/2021 10:00] - indicators.results - INFO - OK! Load object class
+[01/July/2021 10:00] - indicators.results - INFO - OK! Load object class
+[01/July/2021 10:00] - indicators.results - INFO - OK! Load object class
+[01/July/2021 10:00] - indicators.results - INFO - OK! Load object class
+[01/July/2021 10:00] - indicators.results - INFO - OK! Load object class
+[01/July/2021 10:00] - indicators.results - INFO - OK! Load object class
+[01/July/2021 10:00] - indicators.results - INFO - OK! Load object class
+[01/July/2021 10:00] - indicators.results - INFO - OK! Load object class
+[01/July/2021 10:00] - indicators.results - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 10:00] - indicators.results - INFO - OK! Load object class
+[01/July/2021 10:00] - indicators.results.Save_Data - INFO - __Init__ Save_Data
+[01/July/2021 10:00] - indicators.results - INFO - OK! Save_TO_XLSX
+[01/July/2021 10:00] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[01/July/2021 10:00] - indicators.results - INFO - OK!
+[01/July/2021 10:00] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[01/July/2021 10:00] - indicators.results - INFO - OK!
+[01/July/2021 10:00] - indicators.results.LinearGraphics - INFO - __Init__ LinearGraphics
+[01/July/2021 10:00] - indicators.results.LinearGraphics - INFO - __Init__ LinearGraphics
+[01/July/2021 10:00] - indicators.results.LinearGraphics - INFO - __Init__ LinearGraphics
+[01/July/2021 10:00] - indicators.results.Visual_difference - INFO - __Init__ Visual_difference
+[01/July/2021 10:00] - indicators.results.Visual_difference - INFO - __Init__ Visual_difference
+[01/July/2021 10:00] - indicators.results.Visual_difference - INFO - __Init__ Visual_difference
+[01/July/2021 10:00] - indicators.results.Visual_difference - INFO - __Init__ Visual_difference
+[01/July/2021 10:00] - indicators.results.Visual_stock - INFO - __Init__ Visual_stock
+[01/July/2021 10:00] - indicators.results.Visual_stock - INFO - __Init__ Visual_stock
+[01/July/2021 10:00] - indicators.results.Visual_stock - INFO - __Init__ Visual_stock
+[01/July/2021 10:00] - indicators.results.Visual_stock - INFO - __Init__ Visual_stock
+[01/July/2021 10:00] - indicators.results - INFO - OK! SAVE_GRAPHICS
+[01/July/2021 10:00] - indicators.results - INFO - OK! FourCommand
+[01/July/2021 11:57] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 11:57] - indicators.results - INFO - start initial assignment
+[01/July/2021 11:57] - indicators.results - INFO - OK! Load Data
+[01/July/2021 11:57] - indicators.results - INFO - OK! Calculation Data
+[01/July/2021 11:57] - indicators.results - INFO - OK! end initial assignment 
+[01/July/2021 11:57] - indicators.results - INFO - OK! Load object class
+[01/July/2021 11:57] - indicators.results - INFO - OK! Load object class
+[01/July/2021 11:57] - indicators.results - INFO - OK! Load object class
+[01/July/2021 11:57] - indicators.results - INFO - OK! Load object class
+[01/July/2021 11:57] - indicators.results - INFO - OK! Load object class
+[01/July/2021 11:57] - indicators.results - INFO - OK! Load object class
+[01/July/2021 11:57] - indicators.results - INFO - OK! Load object class
+[01/July/2021 11:57] - indicators.results - INFO - OK! Load object class
+[01/July/2021 11:57] - indicators.results - INFO - OK! Load object class
+[01/July/2021 11:57] - indicators.results - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 11:57] - indicators.results - INFO - OK! Load object class
+[01/July/2021 11:58] - indicators.results.Info - INFO - __Init__ Info
+[01/July/2021 14:13] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 14:13] - indicators.results - INFO - start initial assignment
+[01/July/2021 14:13] - indicators.results - INFO - OK! Load Data
+[01/July/2021 14:13] - indicators.results - INFO - OK! Calculation Data
+[01/July/2021 14:13] - indicators.results - INFO - OK! end initial assignment 

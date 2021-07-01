@@ -15236,3 +15236,1003 @@ TypeError: 'numpy.float64' object cannot be interpreted as an integer
 [30/June/2021 10:41] - indicators.gui_module.View_Adhaesio_Graphics - INFO - __Init__ View_Adhaesio_Graphics
 [30/June/2021 10:41] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
 [30/June/2021 10:41] - indicators.production.Graphics_Number_Production - INFO - __Init__ Graphics_Number_Production
+[01/July/2021 12:39] - indicators.gui_module - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 12:39] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 12:40] - indicators.production - INFO - start initial assignment
+[01/July/2021 12:40] - indicators.production - INFO - OK! Load Data
+[01/July/2021 12:40] - indicators.production - INFO - OK! Load Data
+[01/July/2021 12:40] - indicators.production - INFO - OK! Load Data
+[01/July/2021 12:40] - indicators.production - INFO - OK! Calculation Data
+[01/July/2021 12:40] - indicators.production - INFO - OK! Calculation Data
+[01/July/2021 12:40] - indicators.production - INFO - OK! end initial assignment 
+[01/July/2021 12:40] - indicators.production - INFO - OK! Load object class
+[01/July/2021 12:40] - indicators.production - INFO - OK! Load object class
+[01/July/2021 12:40] - indicators.production - INFO - OK! Load object class
+[01/July/2021 12:40] - indicators.production - INFO - OK! Load object class
+[01/July/2021 12:40] - indicators.production - INFO - OK! Load object class
+[01/July/2021 12:40] - indicators.production - INFO - OK! Load object class
+[01/July/2021 12:40] - indicators.production - INFO - OK! Load object class
+[01/July/2021 12:40] - indicators.production - INFO - OK! Load object class
+[01/July/2021 12:40] - indicators.production - INFO - OK! Load object class
+[01/July/2021 12:40] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 12:40] - indicators.adhaesio - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 12:40] - indicators.adhaesio - INFO - OK! Load Data
+[01/July/2021 12:40] - indicators.adhaesio - INFO - start initial assignment
+[01/July/2021 12:40] - indicators.adhaesio - INFO - OK! end initial assignment 
+[01/July/2021 12:40] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 12:40] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 12:40] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 12:40] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 12:40] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 12:40] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 12:40] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 12:40] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 12:40] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 12:40] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 12:40] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 12:40] - indicators.adhaesio - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 12:40] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 12:40] - indicators.results - INFO - start initial assignment
+[01/July/2021 12:40] - indicators.results - INFO - OK! Load Data
+[01/July/2021 12:40] - indicators.results - INFO - OK! Calculation Data
+[01/July/2021 12:40] - indicators.results - INFO - OK! end initial assignment 
+[01/July/2021 12:40] - indicators.results - INFO - OK! Load object class
+[01/July/2021 12:40] - indicators.results - INFO - OK! Load object class
+[01/July/2021 12:40] - indicators.results - INFO - OK! Load object class
+[01/July/2021 12:40] - indicators.results - INFO - OK! Load object class
+[01/July/2021 12:40] - indicators.results - INFO - OK! Load object class
+[01/July/2021 12:40] - indicators.results - INFO - OK! Load object class
+[01/July/2021 12:40] - indicators.results - INFO - OK! Load object class
+[01/July/2021 12:40] - indicators.results - INFO - OK! Load object class
+[01/July/2021 12:40] - indicators.results - INFO - OK! Load object class
+[01/July/2021 12:40] - indicators.results - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 12:40] - indicators.results - INFO - OK! Load object class
+[01/July/2021 12:40] - indicators.gui_module - INFO - Import OK!!!
+[01/July/2021 12:40] - indicators.gui_module - INFO - start initial assignment
+[01/July/2021 12:40] - indicators.gui_module - INFO - OK! end initial assignment 
+[01/July/2021 12:40] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 12:40] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 12:40] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 12:40] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 12:40] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 12:40] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 12:40] - indicators.gui_module - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 12:40] - indicators.gui_module.MainWindow - INFO - __Init__ MainWindow
+[01/July/2021 12:40] - indicators.gui_module.View_Process_Graphics - INFO - __Init__ View_Process_Graphics
+[01/July/2021 12:40] - indicators.gui_module.TabStr - INFO - __Init__ TabStr
+[01/July/2021 12:40] - indicators.gui_module.WidgetPlot - INFO - __Init__ WidgetPlot
+[01/July/2021 12:40] - indicators.gui_module.PlotCanvas - INFO - __Init__ PlotCanvas
+[01/July/2021 12:40] - indicators.gui_module.View_Adhaesio_Graphics - INFO - __Init__ View_Adhaesio_Graphics
+[01/July/2021 12:55] - indicators.gui_module - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 12:55] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 12:55] - indicators.production - INFO - start initial assignment
+[01/July/2021 12:55] - indicators.production - INFO - OK! Load Data
+[01/July/2021 12:55] - indicators.production - INFO - OK! Load Data
+[01/July/2021 12:55] - indicators.production - INFO - OK! Load Data
+[01/July/2021 12:55] - indicators.production - INFO - OK! Calculation Data
+[01/July/2021 12:55] - indicators.production - INFO - OK! Calculation Data
+[01/July/2021 12:55] - indicators.production - INFO - OK! end initial assignment 
+[01/July/2021 12:55] - indicators.production - INFO - OK! Load object class
+[01/July/2021 12:55] - indicators.production - INFO - OK! Load object class
+[01/July/2021 12:55] - indicators.production - INFO - OK! Load object class
+[01/July/2021 12:55] - indicators.production - INFO - OK! Load object class
+[01/July/2021 12:55] - indicators.production - INFO - OK! Load object class
+[01/July/2021 12:55] - indicators.production - INFO - OK! Load object class
+[01/July/2021 12:55] - indicators.production - INFO - OK! Load object class
+[01/July/2021 12:55] - indicators.production - INFO - OK! Load object class
+[01/July/2021 12:55] - indicators.production - INFO - OK! Load object class
+[01/July/2021 12:55] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 12:55] - indicators.adhaesio - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 12:55] - indicators.adhaesio - INFO - OK! Load Data
+[01/July/2021 12:55] - indicators.adhaesio - INFO - start initial assignment
+[01/July/2021 12:55] - indicators.adhaesio - INFO - OK! end initial assignment 
+[01/July/2021 12:55] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 12:55] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 12:55] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 12:55] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 12:55] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 12:55] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 12:55] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 12:55] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 12:55] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 12:55] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 12:55] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 12:55] - indicators.adhaesio - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 12:55] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 12:55] - indicators.results - INFO - start initial assignment
+[01/July/2021 12:55] - indicators.results - INFO - OK! Load Data
+[01/July/2021 12:55] - indicators.results - INFO - OK! Calculation Data
+[01/July/2021 12:55] - indicators.results - INFO - OK! end initial assignment 
+[01/July/2021 12:55] - indicators.results - INFO - OK! Load object class
+[01/July/2021 12:55] - indicators.results - INFO - OK! Load object class
+[01/July/2021 12:55] - indicators.results - INFO - OK! Load object class
+[01/July/2021 12:55] - indicators.results - INFO - OK! Load object class
+[01/July/2021 12:55] - indicators.results - INFO - OK! Load object class
+[01/July/2021 12:55] - indicators.results - INFO - OK! Load object class
+[01/July/2021 12:55] - indicators.results - INFO - OK! Load object class
+[01/July/2021 12:55] - indicators.results - INFO - OK! Load object class
+[01/July/2021 12:55] - indicators.results - INFO - OK! Load object class
+[01/July/2021 12:55] - indicators.results - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 12:55] - indicators.results - INFO - OK! Load object class
+[01/July/2021 12:55] - indicators.gui_module - INFO - Import OK!!!
+[01/July/2021 12:55] - indicators.gui_module - INFO - start initial assignment
+[01/July/2021 12:55] - indicators.gui_module - INFO - OK! end initial assignment 
+[01/July/2021 12:55] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 12:55] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 12:55] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 12:55] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 12:55] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 12:55] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 12:55] - indicators.gui_module - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 12:56] - indicators.gui_module.MainWindow - INFO - __Init__ MainWindow
+[01/July/2021 12:56] - indicators.gui_module.View_Process_Graphics - INFO - __Init__ View_Process_Graphics
+[01/July/2021 12:56] - indicators.gui_module.TabStr - INFO - __Init__ TabStr
+[01/July/2021 12:56] - indicators.gui_module.WidgetPlot - INFO - __Init__ WidgetPlot
+[01/July/2021 12:56] - indicators.gui_module.PlotCanvas - INFO - __Init__ PlotCanvas
+[01/July/2021 12:56] - indicators.gui_module.View_Adhaesio_Graphics - INFO - __Init__ View_Adhaesio_Graphics
+[01/July/2021 12:56] - indicators.adhaesio.ErrorGraphic - INFO - __Init__ ErrorGraphic
+[01/July/2021 13:11] - indicators.gui_module - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 13:11] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 13:11] - indicators.production - INFO - start initial assignment
+[01/July/2021 13:11] - indicators.production - INFO - OK! Load Data
+[01/July/2021 13:11] - indicators.production - INFO - OK! Load Data
+[01/July/2021 13:11] - indicators.production - INFO - OK! Load Data
+[01/July/2021 13:11] - indicators.production - INFO - OK! Calculation Data
+[01/July/2021 13:11] - indicators.production - INFO - OK! Calculation Data
+[01/July/2021 13:11] - indicators.production - INFO - OK! end initial assignment 
+[01/July/2021 13:11] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:11] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:11] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:11] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:11] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:11] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:11] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:11] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:11] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:11] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 13:11] - indicators.adhaesio - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 13:11] - indicators.adhaesio - INFO - OK! Load Data
+[01/July/2021 13:11] - indicators.adhaesio - INFO - start initial assignment
+[01/July/2021 13:11] - indicators.adhaesio - INFO - OK! end initial assignment 
+[01/July/2021 13:11] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:11] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:11] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:11] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:11] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:11] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:11] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:11] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:11] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:11] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:11] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:11] - indicators.adhaesio - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 13:11] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 13:11] - indicators.results - INFO - start initial assignment
+[01/July/2021 13:11] - indicators.results - INFO - OK! Load Data
+[01/July/2021 13:11] - indicators.results - INFO - OK! Calculation Data
+[01/July/2021 13:11] - indicators.results - INFO - OK! end initial assignment 
+[01/July/2021 13:11] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:11] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:11] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:11] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:11] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:11] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:11] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:11] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:11] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:11] - indicators.results - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 13:11] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:11] - indicators.gui_module - INFO - Import OK!!!
+[01/July/2021 13:11] - indicators.gui_module - INFO - start initial assignment
+[01/July/2021 13:11] - indicators.gui_module - INFO - OK! end initial assignment 
+[01/July/2021 13:11] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 13:11] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 13:11] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 13:11] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 13:11] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 13:11] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 13:11] - indicators.gui_module - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 13:11] - indicators.gui_module.MainWindow - INFO - __Init__ MainWindow
+[01/July/2021 13:11] - indicators.gui_module.View_Process_Graphics - INFO - __Init__ View_Process_Graphics
+[01/July/2021 13:11] - indicators.gui_module.TabStr - INFO - __Init__ TabStr
+[01/July/2021 13:11] - indicators.gui_module.WidgetPlot - INFO - __Init__ WidgetPlot
+[01/July/2021 13:11] - indicators.gui_module.PlotCanvas - INFO - __Init__ PlotCanvas
+[01/July/2021 13:11] - indicators.gui_module.View_Adhaesio_Graphics - INFO - __Init__ View_Adhaesio_Graphics
+[01/July/2021 13:18] - indicators.gui_module - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 13:18] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 13:19] - indicators.production - INFO - start initial assignment
+[01/July/2021 13:19] - indicators.production - INFO - OK! Load Data
+[01/July/2021 13:19] - indicators.production - INFO - OK! Load Data
+[01/July/2021 13:19] - indicators.production - INFO - OK! Load Data
+[01/July/2021 13:19] - indicators.production - INFO - OK! Calculation Data
+[01/July/2021 13:19] - indicators.production - INFO - OK! Calculation Data
+[01/July/2021 13:19] - indicators.production - INFO - OK! end initial assignment 
+[01/July/2021 13:19] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:19] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:19] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:19] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:19] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:19] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:19] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:19] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:19] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:19] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 13:19] - indicators.adhaesio - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 13:19] - indicators.adhaesio - INFO - OK! Load Data
+[01/July/2021 13:19] - indicators.adhaesio - INFO - start initial assignment
+[01/July/2021 13:19] - indicators.adhaesio - INFO - OK! end initial assignment 
+[01/July/2021 13:19] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:19] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:19] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:19] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:19] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:19] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:19] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:19] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:19] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:19] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:19] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:19] - indicators.adhaesio - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 13:19] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 13:19] - indicators.results - INFO - start initial assignment
+[01/July/2021 13:19] - indicators.results - INFO - OK! Load Data
+[01/July/2021 13:19] - indicators.results - INFO - OK! Calculation Data
+[01/July/2021 13:19] - indicators.results - INFO - OK! end initial assignment 
+[01/July/2021 13:19] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:19] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:19] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:19] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:19] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:19] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:19] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:19] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:19] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:19] - indicators.results - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 13:19] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:19] - indicators.gui_module - INFO - Import OK!!!
+[01/July/2021 13:19] - indicators.gui_module - INFO - start initial assignment
+[01/July/2021 13:19] - indicators.gui_module - INFO - OK! end initial assignment 
+[01/July/2021 13:19] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 13:19] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 13:19] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 13:19] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 13:19] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 13:19] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 13:19] - indicators.gui_module - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 13:19] - indicators.gui_module.MainWindow - INFO - __Init__ MainWindow
+[01/July/2021 13:19] - indicators.gui_module.View_Process_Graphics - INFO - __Init__ View_Process_Graphics
+[01/July/2021 13:19] - indicators.gui_module.TabStr - INFO - __Init__ TabStr
+[01/July/2021 13:19] - indicators.gui_module.WidgetPlot - INFO - __Init__ WidgetPlot
+[01/July/2021 13:19] - indicators.gui_module.PlotCanvas - INFO - __Init__ PlotCanvas
+[01/July/2021 13:19] - indicators.gui_module.View_Adhaesio_Graphics - INFO - __Init__ View_Adhaesio_Graphics
+[01/July/2021 13:29] - indicators.gui_module - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 13:29] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 13:29] - indicators.production - INFO - start initial assignment
+[01/July/2021 13:29] - indicators.production - INFO - OK! Load Data
+[01/July/2021 13:29] - indicators.production - INFO - OK! Load Data
+[01/July/2021 13:29] - indicators.production - INFO - OK! Load Data
+[01/July/2021 13:29] - indicators.production - INFO - OK! Calculation Data
+[01/July/2021 13:29] - indicators.production - INFO - OK! Calculation Data
+[01/July/2021 13:29] - indicators.production - INFO - OK! end initial assignment 
+[01/July/2021 13:29] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:29] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:29] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:29] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:29] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:29] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:29] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:29] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:29] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:29] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 13:29] - indicators.adhaesio - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 13:29] - indicators.adhaesio - INFO - OK! Load Data
+[01/July/2021 13:29] - indicators.adhaesio - INFO - start initial assignment
+[01/July/2021 13:29] - indicators.adhaesio - INFO - OK! end initial assignment 
+[01/July/2021 13:29] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:29] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:29] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:29] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:29] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:29] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:29] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:29] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:29] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:29] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:29] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:29] - indicators.adhaesio - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 13:29] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 13:29] - indicators.results - INFO - start initial assignment
+[01/July/2021 13:29] - indicators.results - INFO - OK! Load Data
+[01/July/2021 13:29] - indicators.results - INFO - OK! Calculation Data
+[01/July/2021 13:29] - indicators.results - INFO - OK! end initial assignment 
+[01/July/2021 13:29] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:29] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:29] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:29] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:29] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:29] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:29] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:29] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:29] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:29] - indicators.results - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 13:29] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:29] - indicators.gui_module - INFO - Import OK!!!
+[01/July/2021 13:29] - indicators.gui_module - INFO - start initial assignment
+[01/July/2021 13:29] - indicators.gui_module - INFO - OK! end initial assignment 
+[01/July/2021 13:29] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 13:29] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 13:29] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 13:29] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 13:29] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 13:29] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 13:29] - indicators.gui_module - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 13:29] - indicators.gui_module.MainWindow - INFO - __Init__ MainWindow
+[01/July/2021 13:29] - indicators.gui_module.View_Process_Graphics - INFO - __Init__ View_Process_Graphics
+[01/July/2021 13:29] - indicators.gui_module.TabStr - INFO - __Init__ TabStr
+[01/July/2021 13:29] - indicators.gui_module.WidgetPlot - INFO - __Init__ WidgetPlot
+[01/July/2021 13:29] - indicators.gui_module.PlotCanvas - INFO - __Init__ PlotCanvas
+[01/July/2021 13:29] - indicators.gui_module.View_Adhaesio_Graphics - INFO - __Init__ View_Adhaesio_Graphics
+[01/July/2021 13:32] - indicators.gui_module - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 13:32] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 13:32] - indicators.production - INFO - start initial assignment
+[01/July/2021 13:32] - indicators.production - INFO - OK! Load Data
+[01/July/2021 13:32] - indicators.production - INFO - OK! Load Data
+[01/July/2021 13:32] - indicators.production - INFO - OK! Load Data
+[01/July/2021 13:32] - indicators.production - INFO - OK! Calculation Data
+[01/July/2021 13:32] - indicators.production - INFO - OK! Calculation Data
+[01/July/2021 13:32] - indicators.production - INFO - OK! end initial assignment 
+[01/July/2021 13:32] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:32] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:32] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:32] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:32] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:32] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:32] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:32] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:32] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:32] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 13:32] - indicators.adhaesio - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 13:32] - indicators.adhaesio - INFO - OK! Load Data
+[01/July/2021 13:32] - indicators.adhaesio - INFO - start initial assignment
+[01/July/2021 13:32] - indicators.adhaesio - INFO - OK! end initial assignment 
+[01/July/2021 13:32] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:32] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:32] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:32] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:32] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:32] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:32] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:32] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:32] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:32] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:32] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:32] - indicators.adhaesio - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 13:32] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 13:32] - indicators.results - INFO - start initial assignment
+[01/July/2021 13:32] - indicators.results - INFO - OK! Load Data
+[01/July/2021 13:32] - indicators.results - INFO - OK! Calculation Data
+[01/July/2021 13:32] - indicators.results - INFO - OK! end initial assignment 
+[01/July/2021 13:32] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:32] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:32] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:32] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:32] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:32] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:32] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:32] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:32] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:32] - indicators.results - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 13:32] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:32] - indicators.gui_module - INFO - Import OK!!!
+[01/July/2021 13:32] - indicators.gui_module - INFO - start initial assignment
+[01/July/2021 13:32] - indicators.gui_module - INFO - OK! end initial assignment 
+[01/July/2021 13:32] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 13:32] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 13:32] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 13:32] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 13:32] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 13:32] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 13:32] - indicators.gui_module - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 13:32] - indicators.gui_module.MainWindow - INFO - __Init__ MainWindow
+[01/July/2021 13:32] - indicators.gui_module.View_Process_Graphics - INFO - __Init__ View_Process_Graphics
+[01/July/2021 13:32] - indicators.gui_module.TabStr - INFO - __Init__ TabStr
+[01/July/2021 13:32] - indicators.gui_module.WidgetPlot - INFO - __Init__ WidgetPlot
+[01/July/2021 13:32] - indicators.gui_module.PlotCanvas - INFO - __Init__ PlotCanvas
+[01/July/2021 13:32] - indicators.gui_module.View_Adhaesio_Graphics - INFO - __Init__ View_Adhaesio_Graphics
+[01/July/2021 13:35] - indicators.gui_module - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 13:35] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 13:35] - indicators.production - INFO - start initial assignment
+[01/July/2021 13:35] - indicators.production - INFO - OK! Load Data
+[01/July/2021 13:35] - indicators.production - INFO - OK! Load Data
+[01/July/2021 13:35] - indicators.production - INFO - OK! Load Data
+[01/July/2021 13:35] - indicators.production - INFO - OK! Calculation Data
+[01/July/2021 13:35] - indicators.production - INFO - OK! Calculation Data
+[01/July/2021 13:35] - indicators.production - INFO - OK! end initial assignment 
+[01/July/2021 13:35] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:35] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:35] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:35] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:35] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:35] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:35] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:35] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:35] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:35] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 13:35] - indicators.adhaesio - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 13:35] - indicators.adhaesio - INFO - OK! Load Data
+[01/July/2021 13:35] - indicators.adhaesio - INFO - start initial assignment
+[01/July/2021 13:35] - indicators.adhaesio - INFO - OK! end initial assignment 
+[01/July/2021 13:35] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:35] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:35] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:35] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:35] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:35] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:35] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:35] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:35] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:35] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:35] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:35] - indicators.adhaesio - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 13:35] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 13:35] - indicators.results - INFO - start initial assignment
+[01/July/2021 13:35] - indicators.results - INFO - OK! Load Data
+[01/July/2021 13:35] - indicators.results - INFO - OK! Calculation Data
+[01/July/2021 13:35] - indicators.results - INFO - OK! end initial assignment 
+[01/July/2021 13:35] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:35] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:35] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:35] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:35] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:35] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:35] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:35] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:35] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:35] - indicators.results - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 13:35] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:35] - indicators.gui_module - INFO - Import OK!!!
+[01/July/2021 13:35] - indicators.gui_module - INFO - start initial assignment
+[01/July/2021 13:35] - indicators.gui_module - INFO - OK! end initial assignment 
+[01/July/2021 13:35] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 13:35] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 13:35] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 13:35] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 13:35] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 13:35] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 13:35] - indicators.gui_module - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 13:35] - indicators.gui_module.MainWindow - INFO - __Init__ MainWindow
+[01/July/2021 13:35] - indicators.gui_module.View_Process_Graphics - INFO - __Init__ View_Process_Graphics
+[01/July/2021 13:35] - indicators.gui_module.TabStr - INFO - __Init__ TabStr
+[01/July/2021 13:35] - indicators.gui_module.WidgetPlot - INFO - __Init__ WidgetPlot
+[01/July/2021 13:35] - indicators.gui_module.PlotCanvas - INFO - __Init__ PlotCanvas
+[01/July/2021 13:35] - indicators.gui_module.View_Adhaesio_Graphics - INFO - __Init__ View_Adhaesio_Graphics
+[01/July/2021 13:41] - indicators.gui_module - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 13:41] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 13:41] - indicators.production - INFO - start initial assignment
+[01/July/2021 13:41] - indicators.production - INFO - OK! Load Data
+[01/July/2021 13:41] - indicators.production - INFO - OK! Load Data
+[01/July/2021 13:41] - indicators.production - INFO - OK! Load Data
+[01/July/2021 13:41] - indicators.production - INFO - OK! Calculation Data
+[01/July/2021 13:41] - indicators.production - INFO - OK! Calculation Data
+[01/July/2021 13:41] - indicators.production - INFO - OK! end initial assignment 
+[01/July/2021 13:41] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:41] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:41] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:41] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:41] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:41] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:41] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:41] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:41] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:41] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 13:41] - indicators.adhaesio - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 13:41] - indicators.adhaesio - INFO - OK! Load Data
+[01/July/2021 13:41] - indicators.adhaesio - INFO - start initial assignment
+[01/July/2021 13:41] - indicators.adhaesio - INFO - OK! end initial assignment 
+[01/July/2021 13:41] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:41] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:41] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:41] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:41] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:41] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:41] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:41] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:41] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:41] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:41] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:41] - indicators.adhaesio - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 13:41] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 13:41] - indicators.results - INFO - start initial assignment
+[01/July/2021 13:41] - indicators.results - INFO - OK! Load Data
+[01/July/2021 13:41] - indicators.results - INFO - OK! Calculation Data
+[01/July/2021 13:41] - indicators.results - INFO - OK! end initial assignment 
+[01/July/2021 13:41] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:41] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:41] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:41] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:41] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:41] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:41] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:41] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:41] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:41] - indicators.results - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 13:41] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:41] - indicators.gui_module - INFO - Import OK!!!
+[01/July/2021 13:41] - indicators.gui_module - INFO - start initial assignment
+[01/July/2021 13:41] - indicators.gui_module - INFO - OK! end initial assignment 
+[01/July/2021 13:41] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 13:41] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 13:41] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 13:41] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 13:41] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 13:41] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 13:41] - indicators.gui_module - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 13:41] - indicators.gui_module.MainWindow - INFO - __Init__ MainWindow
+[01/July/2021 13:41] - indicators.gui_module.View_Process_Graphics - INFO - __Init__ View_Process_Graphics
+[01/July/2021 13:41] - indicators.gui_module.TabStr - INFO - __Init__ TabStr
+[01/July/2021 13:41] - indicators.gui_module.WidgetPlot - INFO - __Init__ WidgetPlot
+[01/July/2021 13:41] - indicators.gui_module.PlotCanvas - INFO - __Init__ PlotCanvas
+[01/July/2021 13:41] - indicators.gui_module.View_Adhaesio_Graphics - INFO - __Init__ View_Adhaesio_Graphics
+[01/July/2021 13:43] - indicators.gui_module - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 13:43] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 13:43] - indicators.production - INFO - start initial assignment
+[01/July/2021 13:43] - indicators.production - INFO - OK! Load Data
+[01/July/2021 13:43] - indicators.production - INFO - OK! Load Data
+[01/July/2021 13:43] - indicators.production - INFO - OK! Load Data
+[01/July/2021 13:43] - indicators.production - INFO - OK! Calculation Data
+[01/July/2021 13:43] - indicators.production - INFO - OK! Calculation Data
+[01/July/2021 13:43] - indicators.production - INFO - OK! end initial assignment 
+[01/July/2021 13:43] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:43] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:43] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:43] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:43] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:43] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:43] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:43] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:43] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:43] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 13:43] - indicators.adhaesio - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 13:43] - indicators.adhaesio - INFO - OK! Load Data
+[01/July/2021 13:43] - indicators.adhaesio - INFO - start initial assignment
+[01/July/2021 13:43] - indicators.adhaesio - INFO - OK! end initial assignment 
+[01/July/2021 13:43] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:43] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:43] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:43] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:43] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:43] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:43] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:43] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:43] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:43] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:43] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:43] - indicators.adhaesio - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 13:43] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 13:43] - indicators.results - INFO - start initial assignment
+[01/July/2021 13:43] - indicators.results - INFO - OK! Load Data
+[01/July/2021 13:43] - indicators.results - INFO - OK! Calculation Data
+[01/July/2021 13:43] - indicators.results - INFO - OK! end initial assignment 
+[01/July/2021 13:43] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:43] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:43] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:43] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:43] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:43] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:43] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:43] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:43] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:43] - indicators.results - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 13:43] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:43] - indicators.gui_module - INFO - Import OK!!!
+[01/July/2021 13:43] - indicators.gui_module - INFO - start initial assignment
+[01/July/2021 13:43] - indicators.gui_module - INFO - OK! end initial assignment 
+[01/July/2021 13:43] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 13:43] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 13:43] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 13:43] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 13:43] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 13:43] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 13:43] - indicators.gui_module - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 13:43] - indicators.gui_module.MainWindow - INFO - __Init__ MainWindow
+[01/July/2021 13:43] - indicators.gui_module.View_Process_Graphics - INFO - __Init__ View_Process_Graphics
+[01/July/2021 13:43] - indicators.gui_module.TabStr - INFO - __Init__ TabStr
+[01/July/2021 13:43] - indicators.gui_module.WidgetPlot - INFO - __Init__ WidgetPlot
+[01/July/2021 13:43] - indicators.gui_module.PlotCanvas - INFO - __Init__ PlotCanvas
+[01/July/2021 13:43] - indicators.gui_module.View_Adhaesio_Graphics - INFO - __Init__ View_Adhaesio_Graphics
+[01/July/2021 13:46] - indicators.gui_module - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 13:46] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 13:46] - indicators.production - INFO - start initial assignment
+[01/July/2021 13:46] - indicators.production - INFO - OK! Load Data
+[01/July/2021 13:46] - indicators.production - INFO - OK! Load Data
+[01/July/2021 13:46] - indicators.production - INFO - OK! Load Data
+[01/July/2021 13:46] - indicators.production - INFO - OK! Calculation Data
+[01/July/2021 13:46] - indicators.production - INFO - OK! Calculation Data
+[01/July/2021 13:46] - indicators.production - INFO - OK! end initial assignment 
+[01/July/2021 13:46] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:46] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:46] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:46] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:46] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:46] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:46] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:46] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:46] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:46] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 13:46] - indicators.adhaesio - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 13:46] - indicators.adhaesio - INFO - OK! Load Data
+[01/July/2021 13:46] - indicators.adhaesio - INFO - start initial assignment
+[01/July/2021 13:46] - indicators.adhaesio - INFO - OK! end initial assignment 
+[01/July/2021 13:46] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:46] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:46] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:46] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:46] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:46] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:46] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:46] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:46] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:46] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:46] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:46] - indicators.adhaesio - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 13:46] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 13:46] - indicators.results - INFO - start initial assignment
+[01/July/2021 13:46] - indicators.results - INFO - OK! Load Data
+[01/July/2021 13:46] - indicators.results - INFO - OK! Calculation Data
+[01/July/2021 13:46] - indicators.results - INFO - OK! end initial assignment 
+[01/July/2021 13:46] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:46] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:46] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:46] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:46] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:46] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:46] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:46] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:46] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:46] - indicators.results - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 13:46] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:46] - indicators.gui_module - INFO - Import OK!!!
+[01/July/2021 13:46] - indicators.gui_module - INFO - start initial assignment
+[01/July/2021 13:46] - indicators.gui_module - INFO - OK! end initial assignment 
+[01/July/2021 13:46] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 13:46] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 13:46] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 13:46] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 13:46] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 13:46] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 13:46] - indicators.gui_module - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 13:46] - indicators.gui_module.MainWindow - INFO - __Init__ MainWindow
+[01/July/2021 13:46] - indicators.gui_module.View_Process_Graphics - INFO - __Init__ View_Process_Graphics
+[01/July/2021 13:46] - indicators.gui_module.TabStr - INFO - __Init__ TabStr
+[01/July/2021 13:46] - indicators.gui_module.WidgetPlot - INFO - __Init__ WidgetPlot
+[01/July/2021 13:46] - indicators.gui_module.PlotCanvas - INFO - __Init__ PlotCanvas
+[01/July/2021 13:46] - indicators.gui_module.View_Adhaesio_Graphics - INFO - __Init__ View_Adhaesio_Graphics
+[01/July/2021 13:47] - indicators.gui_module - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 13:47] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 13:47] - indicators.production - INFO - start initial assignment
+[01/July/2021 13:47] - indicators.production - INFO - OK! Load Data
+[01/July/2021 13:47] - indicators.production - INFO - OK! Load Data
+[01/July/2021 13:47] - indicators.production - INFO - OK! Load Data
+[01/July/2021 13:47] - indicators.production - INFO - OK! Calculation Data
+[01/July/2021 13:47] - indicators.production - INFO - OK! Calculation Data
+[01/July/2021 13:47] - indicators.production - INFO - OK! end initial assignment 
+[01/July/2021 13:47] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:47] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:47] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:47] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:47] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:47] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:47] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:47] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:47] - indicators.production - INFO - OK! Load object class
+[01/July/2021 13:47] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 13:47] - indicators.adhaesio - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 13:47] - indicators.adhaesio - INFO - OK! Load Data
+[01/July/2021 13:47] - indicators.adhaesio - INFO - start initial assignment
+[01/July/2021 13:47] - indicators.adhaesio - INFO - OK! end initial assignment 
+[01/July/2021 13:47] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:47] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:47] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:47] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:47] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:47] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:47] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:47] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:47] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:47] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:47] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 13:47] - indicators.adhaesio - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 13:47] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 13:47] - indicators.results - INFO - start initial assignment
+[01/July/2021 13:47] - indicators.results - INFO - OK! Load Data
+[01/July/2021 13:47] - indicators.results - INFO - OK! Calculation Data
+[01/July/2021 13:47] - indicators.results - INFO - OK! end initial assignment 
+[01/July/2021 13:47] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:47] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:47] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:47] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:47] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:47] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:47] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:47] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:47] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:47] - indicators.results - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 13:47] - indicators.results - INFO - OK! Load object class
+[01/July/2021 13:47] - indicators.gui_module - INFO - Import OK!!!
+[01/July/2021 13:47] - indicators.gui_module - INFO - start initial assignment
+[01/July/2021 13:47] - indicators.gui_module - INFO - OK! end initial assignment 
+[01/July/2021 13:47] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 13:47] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 13:47] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 13:47] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 13:47] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 13:47] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 13:47] - indicators.gui_module - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 13:47] - indicators.gui_module.MainWindow - INFO - __Init__ MainWindow
+[01/July/2021 13:47] - indicators.gui_module.View_Process_Graphics - INFO - __Init__ View_Process_Graphics
+[01/July/2021 13:47] - indicators.gui_module.TabStr - INFO - __Init__ TabStr
+[01/July/2021 13:47] - indicators.gui_module.WidgetPlot - INFO - __Init__ WidgetPlot
+[01/July/2021 13:47] - indicators.gui_module.PlotCanvas - INFO - __Init__ PlotCanvas
+[01/July/2021 13:47] - indicators.gui_module.View_Adhaesio_Graphics - INFO - __Init__ View_Adhaesio_Graphics
+[01/July/2021 14:10] - indicators.gui_module - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 14:11] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 14:11] - indicators.production - INFO - start initial assignment
+[01/July/2021 14:11] - indicators.production - INFO - OK! Load Data
+[01/July/2021 14:11] - indicators.production - INFO - OK! Load Data
+[01/July/2021 14:11] - indicators.production - INFO - OK! Load Data
+[01/July/2021 14:11] - indicators.production - INFO - OK! Calculation Data
+[01/July/2021 14:11] - indicators.production - INFO - OK! Calculation Data
+[01/July/2021 14:11] - indicators.production - INFO - OK! end initial assignment 
+[01/July/2021 14:11] - indicators.production - INFO - OK! Load object class
+[01/July/2021 14:11] - indicators.production - INFO - OK! Load object class
+[01/July/2021 14:11] - indicators.production - INFO - OK! Load object class
+[01/July/2021 14:11] - indicators.production - INFO - OK! Load object class
+[01/July/2021 14:11] - indicators.production - INFO - OK! Load object class
+[01/July/2021 14:11] - indicators.production - INFO - OK! Load object class
+[01/July/2021 14:11] - indicators.production - INFO - OK! Load object class
+[01/July/2021 14:11] - indicators.production - INFO - OK! Load object class
+[01/July/2021 14:11] - indicators.production - INFO - OK! Load object class
+[01/July/2021 14:11] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 14:11] - indicators.adhaesio - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 14:11] - indicators.adhaesio - INFO - OK! Load Data
+[01/July/2021 14:11] - indicators.adhaesio - INFO - start initial assignment
+[01/July/2021 14:11] - indicators.adhaesio - INFO - OK! end initial assignment 
+[01/July/2021 14:11] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 14:11] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 14:11] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 14:11] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 14:11] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 14:11] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 14:11] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 14:11] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 14:11] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 14:11] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 14:11] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 14:11] - indicators.adhaesio - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 14:11] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 14:11] - indicators.results - INFO - start initial assignment
+[01/July/2021 14:11] - indicators.results - INFO - OK! Load Data
+[01/July/2021 14:11] - indicators.results - INFO - OK! Calculation Data
+[01/July/2021 14:11] - indicators.results - INFO - OK! end initial assignment 
+[01/July/2021 14:11] - indicators.results - ERROR - FAILED! Data_Launch_Error: (<class 'TypeError'>, TypeError("unsupported operand type(s) for -: 'NoneType' and 'NoneType'"))
+Traceback (most recent call last):
+  File "C:\Users\a.bezzubov\Desktop\tendency\Indicators\Indicators_Process_B_7_7_and_B_7_5\results.py", line 383, in <module>
+    e_6_m_1 = round(i_6_2_m_1-i_6_1_m_1, 2)
+TypeError: unsupported operand type(s) for -: 'NoneType' and 'NoneType'
+[01/July/2021 14:11] - indicators.results - INFO - OK! Load object class
+[01/July/2021 14:11] - indicators.results - INFO - OK! Load object class
+[01/July/2021 14:11] - indicators.results - INFO - OK! Load object class
+[01/July/2021 14:11] - indicators.results - INFO - OK! Load object class
+[01/July/2021 14:11] - indicators.results - INFO - OK! Load object class
+[01/July/2021 14:11] - indicators.results - INFO - OK! Load object class
+[01/July/2021 14:11] - indicators.results - INFO - OK! Load object class
+[01/July/2021 14:11] - indicators.results - INFO - OK! Load object class
+[01/July/2021 14:11] - indicators.results - INFO - OK! Load object class
+[01/July/2021 14:11] - indicators.results - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 14:11] - indicators.results - INFO - OK! Load object class
+[01/July/2021 14:11] - indicators.gui_module - INFO - Import OK!!!
+[01/July/2021 14:11] - indicators.gui_module - INFO - start initial assignment
+[01/July/2021 14:11] - indicators.gui_module - INFO - OK! end initial assignment 
+[01/July/2021 14:11] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 14:11] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 14:11] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 14:11] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 14:11] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 14:11] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 14:11] - indicators.gui_module - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 14:11] - indicators.gui_module.MainWindow - INFO - __Init__ MainWindow
+[01/July/2021 14:11] - indicators.gui_module.View_Process_Graphics - INFO - __Init__ View_Process_Graphics
+[01/July/2021 14:11] - indicators.gui_module.TabStr - INFO - __Init__ TabStr
+[01/July/2021 14:11] - indicators.gui_module.WidgetPlot - INFO - __Init__ WidgetPlot
+[01/July/2021 14:11] - indicators.gui_module.PlotCanvas - INFO - __Init__ PlotCanvas
+[01/July/2021 14:11] - indicators.gui_module.View_Adhaesio_Graphics - INFO - __Init__ View_Adhaesio_Graphics
+[01/July/2021 14:11] - indicators.gui_module - ERROR - FAILED! TabStr().on_clicked_view()_Error: (<class 'AttributeError'>, AttributeError("module 'Indicators.Indicators_Process_B_7_7_and_B_7_5.results' has no attribute 'e_7_1'"))
+[01/July/2021 14:11] - indicators.gui_module - ERROR - FAILED! TabStr().on_clicked_view()_Error: (<class 'AttributeError'>, AttributeError("module 'Indicators.Indicators_Process_B_7_7_and_B_7_5.results' has no attribute 'e_7_m_1'"))
+[01/July/2021 14:18] - indicators.gui_module - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 14:18] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 14:19] - indicators.production - INFO - start initial assignment
+[01/July/2021 14:19] - indicators.production - INFO - OK! Load Data
+[01/July/2021 14:19] - indicators.production - INFO - OK! Load Data
+[01/July/2021 14:19] - indicators.production - INFO - OK! Load Data
+[01/July/2021 14:19] - indicators.production - INFO - OK! Calculation Data
+[01/July/2021 14:19] - indicators.production - INFO - OK! Calculation Data
+[01/July/2021 14:19] - indicators.production - INFO - OK! end initial assignment 
+[01/July/2021 14:19] - indicators.production - INFO - OK! Load object class
+[01/July/2021 14:19] - indicators.production - INFO - OK! Load object class
+[01/July/2021 14:19] - indicators.production - INFO - OK! Load object class
+[01/July/2021 14:19] - indicators.production - INFO - OK! Load object class
+[01/July/2021 14:19] - indicators.production - INFO - OK! Load object class
+[01/July/2021 14:19] - indicators.production - INFO - OK! Load object class
+[01/July/2021 14:19] - indicators.production - INFO - OK! Load object class
+[01/July/2021 14:19] - indicators.production - INFO - OK! Load object class
+[01/July/2021 14:19] - indicators.production - INFO - OK! Load object class
+[01/July/2021 14:19] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 14:19] - indicators.adhaesio - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 14:19] - indicators.adhaesio - INFO - OK! Load Data
+[01/July/2021 14:19] - indicators.adhaesio - INFO - start initial assignment
+[01/July/2021 14:19] - indicators.adhaesio - INFO - OK! end initial assignment 
+[01/July/2021 14:19] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 14:19] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 14:19] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 14:19] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 14:19] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 14:19] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 14:19] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 14:19] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 14:19] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 14:19] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 14:19] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 14:19] - indicators.adhaesio - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 14:19] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 14:19] - indicators.results - INFO - start initial assignment
+[01/July/2021 14:19] - indicators.results - INFO - OK! Load Data
+[01/July/2021 14:19] - indicators.results - INFO - OK! Calculation Data
+[01/July/2021 14:19] - indicators.results - INFO - OK! end initial assignment 
+[01/July/2021 14:19] - indicators.gui_module - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 14:19] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 14:19] - indicators.production - INFO - start initial assignment
+[01/July/2021 14:19] - indicators.production - INFO - OK! Load Data
+[01/July/2021 14:19] - indicators.production - INFO - OK! Load Data
+[01/July/2021 14:19] - indicators.production - INFO - OK! Load Data
+[01/July/2021 14:19] - indicators.production - INFO - OK! Calculation Data
+[01/July/2021 14:19] - indicators.production - INFO - OK! Calculation Data
+[01/July/2021 14:19] - indicators.production - INFO - OK! end initial assignment 
+[01/July/2021 14:19] - indicators.production - INFO - OK! Load object class
+[01/July/2021 14:19] - indicators.production - INFO - OK! Load object class
+[01/July/2021 14:19] - indicators.production - INFO - OK! Load object class
+[01/July/2021 14:19] - indicators.production - INFO - OK! Load object class
+[01/July/2021 14:19] - indicators.production - INFO - OK! Load object class
+[01/July/2021 14:19] - indicators.production - INFO - OK! Load object class
+[01/July/2021 14:19] - indicators.production - INFO - OK! Load object class
+[01/July/2021 14:19] - indicators.production - INFO - OK! Load object class
+[01/July/2021 14:19] - indicators.production - INFO - OK! Load object class
+[01/July/2021 14:19] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 14:19] - indicators.adhaesio - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 14:19] - indicators.adhaesio - INFO - OK! Load Data
+[01/July/2021 14:19] - indicators.adhaesio - INFO - start initial assignment
+[01/July/2021 14:19] - indicators.adhaesio - INFO - OK! end initial assignment 
+[01/July/2021 14:19] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 14:19] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 14:19] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 14:19] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 14:19] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 14:19] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 14:19] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 14:19] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 14:19] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 14:19] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 14:19] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 14:19] - indicators.adhaesio - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 14:19] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 14:19] - indicators.results - INFO - start initial assignment
+[01/July/2021 14:19] - indicators.results - INFO - OK! Load Data
+[01/July/2021 14:19] - indicators.results - INFO - OK! Calculation Data
+[01/July/2021 14:19] - indicators.results - INFO - OK! end initial assignment 
+[01/July/2021 14:19] - indicators.results - INFO - OK! Load object class
+[01/July/2021 14:19] - indicators.results - INFO - OK! Load object class
+[01/July/2021 14:19] - indicators.results - INFO - OK! Load object class
+[01/July/2021 14:19] - indicators.results - INFO - OK! Load object class
+[01/July/2021 14:19] - indicators.results - INFO - OK! Load object class
+[01/July/2021 14:19] - indicators.results - INFO - OK! Load object class
+[01/July/2021 14:19] - indicators.results - INFO - OK! Load object class
+[01/July/2021 14:19] - indicators.results - INFO - OK! Load object class
+[01/July/2021 14:19] - indicators.results - INFO - OK! Load object class
+[01/July/2021 14:19] - indicators.results - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 14:19] - indicators.results - INFO - OK! Load object class
+[01/July/2021 14:19] - indicators.gui_module - INFO - Import OK!!!
+[01/July/2021 14:19] - indicators.gui_module - INFO - start initial assignment
+[01/July/2021 14:19] - indicators.gui_module - INFO - OK! end initial assignment 
+[01/July/2021 14:19] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 14:19] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 14:19] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 14:19] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 14:19] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 14:19] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 14:19] - indicators.gui_module - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 14:19] - indicators.gui_module.MainWindow - INFO - __Init__ MainWindow
+[01/July/2021 14:19] - indicators.gui_module.View_Process_Graphics - INFO - __Init__ View_Process_Graphics
+[01/July/2021 14:19] - indicators.gui_module.TabStr - INFO - __Init__ TabStr
+[01/July/2021 14:19] - indicators.gui_module.WidgetPlot - INFO - __Init__ WidgetPlot
+[01/July/2021 14:19] - indicators.gui_module.PlotCanvas - INFO - __Init__ PlotCanvas
+[01/July/2021 14:19] - indicators.gui_module.View_Adhaesio_Graphics - INFO - __Init__ View_Adhaesio_Graphics
+[01/July/2021 14:20] - indicators.gui_module - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 14:20] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 14:21] - indicators.production - INFO - start initial assignment
+[01/July/2021 14:21] - indicators.production - INFO - OK! Load Data
+[01/July/2021 14:21] - indicators.production - INFO - OK! Load Data
+[01/July/2021 14:21] - indicators.production - INFO - OK! Load Data
+[01/July/2021 14:21] - indicators.production - INFO - OK! Calculation Data
+[01/July/2021 14:21] - indicators.production - INFO - OK! Calculation Data
+[01/July/2021 14:21] - indicators.production - INFO - OK! end initial assignment 
+[01/July/2021 14:21] - indicators.production - INFO - OK! Load object class
+[01/July/2021 14:21] - indicators.production - INFO - OK! Load object class
+[01/July/2021 14:21] - indicators.production - INFO - OK! Load object class
+[01/July/2021 14:21] - indicators.production - INFO - OK! Load object class
+[01/July/2021 14:21] - indicators.production - INFO - OK! Load object class
+[01/July/2021 14:21] - indicators.production - INFO - OK! Load object class
+[01/July/2021 14:21] - indicators.production - INFO - OK! Load object class
+[01/July/2021 14:21] - indicators.production - INFO - OK! Load object class
+[01/July/2021 14:21] - indicators.production - INFO - OK! Load object class
+[01/July/2021 14:21] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 14:21] - indicators.adhaesio - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 14:21] - indicators.adhaesio - INFO - OK! Load Data
+[01/July/2021 14:21] - indicators.adhaesio - INFO - start initial assignment
+[01/July/2021 14:21] - indicators.adhaesio - INFO - OK! end initial assignment 
+[01/July/2021 14:21] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 14:21] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 14:21] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 14:21] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 14:21] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 14:21] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 14:21] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 14:21] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 14:21] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 14:21] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 14:21] - indicators.adhaesio - INFO - OK! Load object class
+[01/July/2021 14:21] - indicators.adhaesio - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 14:21] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[01/July/2021 14:21] - indicators.results - INFO - start initial assignment
+[01/July/2021 14:21] - indicators.results - INFO - OK! Load Data
+[01/July/2021 14:21] - indicators.results - INFO - OK! Calculation Data
+[01/July/2021 14:21] - indicators.results - INFO - OK! end initial assignment 
+[01/July/2021 14:21] - indicators.results - INFO - OK! Load object class
+[01/July/2021 14:21] - indicators.results - INFO - OK! Load object class
+[01/July/2021 14:21] - indicators.results - INFO - OK! Load object class
+[01/July/2021 14:21] - indicators.results - INFO - OK! Load object class
+[01/July/2021 14:21] - indicators.results - INFO - OK! Load object class
+[01/July/2021 14:21] - indicators.results - INFO - OK! Load object class
+[01/July/2021 14:21] - indicators.results - INFO - OK! Load object class
+[01/July/2021 14:21] - indicators.results - INFO - OK! Load object class
+[01/July/2021 14:21] - indicators.results - INFO - OK! Load object class
+[01/July/2021 14:21] - indicators.results - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 14:21] - indicators.results - INFO - OK! Load object class
+[01/July/2021 14:21] - indicators.gui_module - INFO - Import OK!!!
+[01/July/2021 14:21] - indicators.gui_module - INFO - start initial assignment
+[01/July/2021 14:21] - indicators.gui_module - INFO - OK! end initial assignment 
+[01/July/2021 14:21] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 14:21] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 14:21] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 14:21] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 14:21] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 14:21] - indicators.gui_module - INFO - OK! Load object class
+[01/July/2021 14:21] - indicators.gui_module - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[01/July/2021 14:21] - indicators.gui_module.MainWindow - INFO - __Init__ MainWindow
+[01/July/2021 14:21] - indicators.gui_module.View_Process_Graphics - INFO - __Init__ View_Process_Graphics
+[01/July/2021 14:21] - indicators.gui_module.TabStr - INFO - __Init__ TabStr
+[01/July/2021 14:21] - indicators.gui_module.WidgetPlot - INFO - __Init__ WidgetPlot
+[01/July/2021 14:21] - indicators.gui_module.PlotCanvas - INFO - __Init__ PlotCanvas
+[01/July/2021 14:21] - indicators.gui_module.View_Adhaesio_Graphics - INFO - __Init__ View_Adhaesio_Graphics
+[01/July/2021 14:34] - indicators.adhaesio.LinearGraphic - INFO - __Init__ LinearGraphic
+[01/July/2021 14:36] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[01/July/2021 14:36] - indicators.production.Graphics_Number_Production - INFO - __Init__ Graphics_Number_Production
+[01/July/2021 14:37] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[01/July/2021 14:37] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[01/July/2021 14:37] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[01/July/2021 14:37] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[01/July/2021 14:37] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[01/July/2021 14:37] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[01/July/2021 14:37] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[01/July/2021 14:37] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[01/July/2021 14:37] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[01/July/2021 14:38] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[01/July/2021 14:38] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production

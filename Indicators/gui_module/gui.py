@@ -36,7 +36,7 @@ import Indicators.Indicators_Process_B_7_5.production as pr
 #import Indicators.Indicators_Process_B_7_3.project_and_develop as pad
 #import Indicators.Indicators_Process_B_7_4_and_O_8_2.control_production as cp
 import Indicators.Indicators_Process_B_7_4_and_O_8_2.adhaesio as ad
-#import Indicators.Indicators_Process_B_7_7_and_B_7_5.results as rs
+import Indicators.Indicators_Process_B_7_7_and_B_7_5.results as rs
 #import Indicators.Indicators_Process_O_6_2.people as ppl
 
 from PyQt5 import QtCore, QtWidgets, QtGui, QtSql, QtPrintSupport
@@ -615,6 +615,8 @@ try:
             L.append('Сводные данные за полугодие')
             L.append('Процесс Б(7.5) "Производство продукции"')
             L.append('Процесс Б(7.5) "Производство продукции" - полугодие')
+            L.append('Процесс Б(7.7) "Сбыт"')
+            L.append('Процесс Б(7.7) "Сбыт" - полугодие')
             for i in range(5, 23):
                 L.append("Пункт {0}".format(i))
             comboBox.addItems(L)
@@ -793,6 +795,83 @@ try:
                         # переменные изменений уровня отклонений продукции
                         e_20_m_1 = pr.e_20_m_1,
 
+                        )
+                    document = QtGui.QTextDocument()
+                    document.setHtml(x)
+                    self.textEdit.setDocument(document)
+
+                elif v ==4:
+                    templateLoader = jinja2.FileSystemLoader(searchpath='./')
+                    templateEnv = jinja2.Environment(loader=templateLoader)
+                    TEMPLATE_FILE = 'process_b_7_7.html'
+                    template = templateEnv.get_template(TEMPLATE_FILE)
+                    x = template.render(
+                        NAME_TABLE='Сводные данные за год: Процесс Б(7.5) "Производство продукции"',
+                        PREV_YEAR = rs.prev_year,
+                        NEXT_YEAR = rs.next_year,
+                        n_4 = rs.n_4,
+                        n_5 = rs.n_5,
+                        n_6 = rs.n_6,
+                        n_7 = rs.n_7,
+                        n_8 = rs.n_8,
+                        i_4_1_1 = rs.i_4_1_1,
+                        i_4_2_1 = rs.i_4_2_1,
+                        i_5_1_1 = rs.i_5_1_1,
+                        i_5_2_1 = rs.i_5_2_1,
+                        i_6_1_1 = rs.i_6_1_1,
+                        i_6_2_1 = rs.i_6_2_1,
+                        i_7_1_1 = rs.i_7_1_1,
+                        i_7_2_1 = rs.i_7_2_1,
+                        i_7_1_2 = rs.i_7_1_2,
+                        i_7_2_2 = rs.i_7_2_2,
+                        i_8_1 = rs.i_8_1,
+                        i_8_2 = rs.i_8_2,
+                        NAME_TABLE_2='Изменение значений за год: Процесс Б(7.5) "Производство продукции"',
+                        e_4_1 = rs.e_4_1,
+                        e_5_1 = rs.e_5_1,
+                        e_6_1 = rs.e_6_1,
+                        e_7_1 = rs.e_7_1,
+                        e_7_2 = rs.e_7_2,
+                        e_8_1 = rs.e_8_1,
+
+                        )
+                    document = QtGui.QTextDocument()
+                    document.setHtml(x)
+                    self.textEdit.setDocument(document)
+
+                elif v ==5:
+                    templateLoader = jinja2.FileSystemLoader(searchpath='./')
+                    templateEnv = jinja2.Environment(loader=templateLoader)
+                    TEMPLATE_FILE = 'process_b_7_7.html'
+                    template = templateEnv.get_template(TEMPLATE_FILE)
+                    x = template.render(
+                        NAME_TABLE='Сводные данные за полугодие: Процесс Б(7.5) "Производство продукции"',
+                        PREV_YEAR = rs.prev_year,
+                        NEXT_YEAR = rs.next_year,
+                        n_4 = rs.n_4,
+                        n_5 = rs.n_5,
+                        n_6 = rs.n_6,
+                        n_7 = rs.n_7,
+                        n_8 = rs.n_8,
+                        i_4_1_m_1 = rs.i_4_1_m_1,
+                        i_4_2_m_1 = rs.i_4_2_m_1,
+                        i_5_1_m_1 = rs.i_5_1_m_1,
+                        i_5_2_m_1 = rs.i_5_2_m_1,
+                        i_6_1_m_1 = '-',
+                        i_6_2_m_1 = '-',
+
+                        i_7_1_m_1 = rs.i_7_1_m_1,
+                        i_7_2_m_1 = rs.i_7_2_m_1,
+                        i_7_1_m_2 = rs.i_7_1_m_2,
+                        i_7_2_m_2 = rs.i_7_2_m_2,
+                        i_8_m_1 = rs.i_8_m_1,
+                        i_8_m_2 = rs.i_8_m_2,
+                        NAME_TABLE_2='Изменение значений за полугодие: Процесс Б(7.5) "Производство продукции"',
+                        e_4_m_1 = rs.e_4_m_1,
+                        e_5_m_1 = rs.e_5_m_1,
+                        e_7_m_1 = rs.e_7_m_1,
+                        e_7_m_2 = rs.e_7_m_2,
+                        e_8_m_1 = rs.e_8_m_1,
                         )
                     document = QtGui.QTextDocument()
                     document.setHtml(x)
