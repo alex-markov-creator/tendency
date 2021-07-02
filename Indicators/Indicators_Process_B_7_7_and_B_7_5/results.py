@@ -36,7 +36,7 @@ results.py - Модуль аналитики по следующим показ�
 |         data_ur_postav_year          |         Уров. постав. год         |
 |      data_ur_postav_middle_year      |      Уров. постав. полугодие      |
 +--------------------------------------+-----------------------------------+
-# ИСХОДНЫЕ ДАННЫЕ (ПЕРЕМЕННЫЕ ШАБЛОНА process_b_7_5): (РЕДАКТИРОВАТЬ!!!)
+# ИСХОДНЫЕ ДАННЫЕ (ПЕРЕМЕННЫЕ ШАБЛОНА process_b_7_5):
 +-------------------------------------------------------------------------+
 |  Переменная    |                  Данные шаблона                        |
 +-------------------------------------------------------------------------+
@@ -112,7 +112,7 @@ import matplotlib.pyplot as plt
 import results as rs
 
 СПРАВКА
-print(pr.__doc__)
+print(rs.__doc__)
 
 Вывод исходных данных в виде файла и таблицы
 ---------------------------------------------
@@ -139,33 +139,33 @@ graphic_one = rs.Visual_all(rs.sum_lenta, 'Реализованная и вып�
 
 graphic_two = rs.Visual_all(rs.sum_kompl, 'Реализованная и выпущенная продукции (комплекты) с 2017 года')
 
-graphic_three = rs.LinearGraphics(sum_lenta_year, name = 'Выпуск и реализация п/б ленты по годам')
+graphic_three = rs.LinearGraphics(rs.sum_lenta_year, name = 'Выпуск и реализация п/б ленты по годам')
 graphic_three.maximum_minimum_text()
 
-graphic_four = rs.LinearGraphics(sum_lenta_middle_year, name = 'Выпуск и реализация п/б ленты по полугодиям')
+graphic_four = rs.LinearGraphics(rs.sum_lenta_middle_year, name = 'Выпуск и реализация п/б ленты по полугодиям')
 graphic_four.maximum_minimum_text()
 
-graphic_five = rs.LinearGraphics(sum_kompl_year, name = 'Выпуск и реализация комплектов по годам')
+graphic_five = rs.LinearGraphics(rs.sum_kompl_year, name = 'Выпуск и реализация комплектов по годам')
 graphic_five.maximum_minimum_text()
 
-graphic_six = rs.LinearGraphics(sum_kompl_middle_year, name = 'Выпуск и реализация комплектов по полугодиям')
+graphic_six = rs.LinearGraphics(rs.sum_kompl_middle_year, name = 'Выпуск и реализация комплектов по полугодиям')
 graphic_six.maximum_minimum_text()
 
-graphic_seven = rs.Visual_difference(sum_lenta_year, name = 'Реализация и выпуск п/б ленты по годам')
+graphic_seven = rs.Visual_difference(rs.sum_lenta_year, name = 'Реализация и выпуск п/б ленты по годам')
 
-graphic_eight = rs.Visual_difference(sum_lenta_middle_year,name = 'Реализация и выпуск п/б ленты по полугодиям')
+graphic_eight = rs.Visual_difference(rs.sum_lenta_middle_year,name = 'Реализация и выпуск п/б ленты по полугодиям')
 
-graphic_nine = rs.Visual_difference(sum_kompl_year, name = 'Реализация и выпуск комплектов по годам')
+graphic_nine = rs.Visual_difference(rs.sum_kompl_year, name = 'Реализация и выпуск комплектов по годам')
 
-graphic_ten = rs.Visual_difference(sum_kompl_middle_year, name = 'Реализация и выпуск комплектов по полугодиям')
+graphic_ten = rs.Visual_difference(rs.sum_kompl_middle_year, name = 'Реализация и выпуск комплектов по полугодиям')
 
-graphic_eleven = rs.Visual_stock(diff_lenta_year, name='Используемые запасы и перевыпуск п/б лент(тонн) по годам')
+graphic_eleven = rs.Visual_stock(rs.diff_lenta_year, name='Используемые запасы и перевыпуск п/б лент(тонн) по годам')
 
-graphic_twelve = rs.Visual_stock(diff_lenta_middle_year, name='Используемые запасы и перевыпуск п/б лент(тонн) по полугодиям')
+graphic_twelve = rs.Visual_stock(rs.diff_lenta_middle_year, name='Используемые запасы и перевыпуск п/б лент(тонн) по полугодиям')
 
-graphic_thirteen = rs.Visual_stock(diff_kompl_year, name='Используемые запасы и перевыпуск комплектов (шт.) по годам')
+graphic_thirteen = rs.Visual_stock(rs.diff_kompl_year, name='Используемые запасы и перевыпуск комплектов (шт.) по годам')
 
-graphic_fourteen = rs.Visual_stock(diff_kompl_middle_year, name='Используемые запасы и перевыпуск комплектов(шт.) по полугодиям')
+graphic_fourteen = rs.Visual_stock(rs.diff_kompl_middle_year, name='Используемые запасы и перевыпуск комплектов(шт.) по полугодиям')
 plt.show()#график на экран
 
 СРАВНЕНИЕ значений с предыдущими результатами
@@ -214,7 +214,7 @@ import traceback # трасировка сообщений об исключен
 import pytest
 import time
 #-------------------------------------------------------
-#ЛОГИРОВАНИЕ
+# ЛОГИРОВАНИЕ
 logging.config.fileConfig('logging.conf') # файл конфигурации
 logger = logging.getLogger('indicators.results') # возвращает объект логгера
 logger.info(f'Started on platform {platform.platform()}') # logging
@@ -229,8 +229,8 @@ def time_of_function(function):
         start_time = time.perf_counter()
         start_time_ns = time.perf_counter_ns()
         res = function(*args)
-        print(f'Время выполнения в секундах: {time.perf_counter() - start_time}')
-        print(f'Время выполнения в наносекундах: {time.perf_counter_ns() - start_time_ns}')
+        logger.info(f'Время выполнения в секундах: {time.perf_counter() - start_time}')
+        logger.info(f'Время выполнения в наносекундах: {time.perf_counter_ns() - start_time_ns}')
         return res
     return wrapped
 
@@ -242,8 +242,8 @@ def message_save(function):
     def wrapped(*args):
         start_time = time.perf_counter()
         res = function(*args)
-        print('Сохранение...')
-        print(f'Время сохранения файлов в секундах: {time.perf_counter() - start_time}')
+        logger.info('Сохранение...')
+        logger.info(f'Время сохранения файлов в секундах: {time.perf_counter() - start_time}')
         return res
     return wrapped
 
@@ -251,6 +251,7 @@ def message_save(function):
 try:
     # импорт DataFrame объектов с исходными данными
     from Data import data_kol_vip_prod_year, data_kol_vip_prod_middle_year, data_kol_real_prod_year, data_kol_real_prod_middle_year,data_kol_real_komp_year, data_kol_real_komp_middle_year,data_ob_vozr_prod_year, data_ur_vip_zak_year, data_ur_vip_zak_middle_year,data_kol_vip_kompl_year,data_kol_vip_kompl_middle_year,data_pret_i_rekl_year,data_pret_i_rekl_middle_year, data_ur_postav_year,data_ur_postav_middle_year
+
     # ИСХОДНЫЕ ДАННЫЕ (ДОПОЛНИТЕЛЬНОЕ ФОРМАТИРОВАНИЕ):
     ##################################################
     logger.info("start initial assignment") # logging
@@ -292,6 +293,7 @@ try:
                     } #идентификатор
 
     lst_name = [data_kol_vip_prod_year, data_kol_vip_prod_middle_year, data_kol_real_prod_year, data_kol_real_prod_middle_year,data_kol_real_komp_year, data_kol_real_komp_middle_year,data_ob_vozr_prod_year, data_ur_vip_zak_year, data_ur_vip_zak_middle_year,data_kol_vip_kompl_year,data_kol_vip_kompl_middle_year,data_pret_i_rekl_year,data_pret_i_rekl_middle_year, data_ur_postav_year,data_ur_postav_middle_year] #список для сохранения стаистических расчетов
+
     logger.info("OK! Load Data") # logging
 
     # ИСХОДНЫЕ ДАННЫЕ (ДОПОЛНИТЕЛЬНОЕ ФОРМАТИРОВАНИЕ ДЛЯ ПОСТРОЕНИЯ ГРАФИКА VISUAL_ALL):
@@ -311,7 +313,6 @@ try:
     diff_kompl_middle_year = pd.concat([data_kol_real_komp_middle_year, data_kol_vip_kompl_middle_year], axis=1).dropna().transpose().iloc[0]-pd.concat([data_kol_real_komp_middle_year, data_kol_vip_kompl_middle_year], axis=1).dropna().transpose().iloc[1]
 
     logger.info("OK! Calculation Data") # logging
-    logger.info('OK! end initial assignment ') # logging
 
     # ИСХОДНЫЕ ДАННЫЕ (ПЕРЕМЕННЫЕ ШАБЛОНА process_b_7_7):
     #################################################################
@@ -398,6 +399,7 @@ try:
     e_8_1 = round(i_8_2-i_8_1, 2)
     e_8_m_1 = round(i_8_m_2-i_8_m_1, 2)
 
+    logger.info('OK! end initial assignment ') # logging
 
 except ImportError:
     logger.error(f'FAILED! Data_Launch_Error: {sys.exc_info()[:2]}', exc_info=True) # logging
@@ -416,7 +418,7 @@ except:
     logger.error("FAILED! Data_Launch_Error: %s", traceback.format_exc()) # logging
 
 try:
-    @time_of_function
+    #@time_of_function
     class Info(object):
         """
         Класс вывода таблицы на экран для выбора идентификатора
@@ -441,7 +443,7 @@ except Exception:
     logger.error(f'FAILED! Info_Error: {sys.exc_info()[:2]}') # logging
 
 try:
-    @time_of_function
+    #@time_of_function
     class Data_Table(object):
         """
         Класс отображения данных
@@ -489,7 +491,7 @@ except Exception:
     logger.error(f'FAILED! Data_Table_Error: {sys.exc_info()[:2]}') # logging
 
 try:
-    @time_of_function
+    #@time_of_function
     class Statistic_Table(Abstract.Statistic):
         """
         Класс отображения статистических данных
@@ -589,7 +591,6 @@ except Exception:
     logger.error(f'FAILED! Statistic_Error: {sys.exc_info()[:2]}') # logging
 
 try:
-    #@time_of_function
     class Visual_all(Abstract.Graphic):
         """
         График общих результатов выпуска и реализации в виде горизонтальной столбчатой диаграммы
@@ -745,7 +746,7 @@ except Exception:
     logger.error(f'FAILED!Visual_stock_Error: {sys.exc_info()[:2]}') # logging
 
 try:
-    @time_of_function
+    #@time_of_function
     class Comparise(object):
         """
         Класс сравнительного анализа с результатами предыдущего отчётного периода
@@ -778,7 +779,7 @@ except Exception:
     logger.error(f'FAILED! Comparise(): {sys.exc_info()[:2]}') # logging
 
 try:
-    @time_of_function
+    #@time_of_function
     @message_save
     class Save_Data(object):
         """
@@ -799,7 +800,7 @@ try:
 
             # ЗАПИСЬ ДАННЫХ В .xlsx файл
             try:
-                print('Сохранение в файл формата *.xlsx ...')
+                logger.info('Сохранение в файл формата *.xlsx ...')
                 save_data_1 = pd.concat([data_kol_vip_prod_year, data_kol_vip_prod_middle_year, data_kol_real_prod_year, data_kol_real_prod_middle_year,data_kol_real_komp_year, data_kol_real_komp_middle_year,data_ob_vozr_prod_year, data_ur_vip_zak_year, data_ur_vip_zak_middle_year,data_kol_vip_kompl_year,data_kol_vip_kompl_middle_year,data_pret_i_rekl_year,data_pret_i_rekl_middle_year, data_ur_postav_year,data_ur_postav_middle_year], axis=1)
 
                 save_data_2 = pd.concat([data_kol_real_prod_year, data_kol_vip_prod_year], axis=1).dropna()
@@ -810,7 +811,7 @@ try:
 
                 save_data_4 = pd.concat([data_kol_vip_prod_year, data_kol_vip_prod_middle_year, data_kol_real_prod_year, data_kol_real_prod_middle_year,], axis=1).dropna().corr()
 
-                print('...files/record.xlsx')
+                logger.info('...files/record.xlsx')
                 with pd.ExcelWriter(r'files/record.xlsx') as writer:
                     save_data_1.to_excel(
                                         writer, sheet_name='Исходные данные'
@@ -831,8 +832,8 @@ try:
 
             # ЗАПИСЬ СТАТИСТИЧЕСКОЙ ИНФОРМАЦИИ в *.txt файл
             try:
-                print('Сохранение в файл формата *.txt ...')
-                print('...files/*.txt')
+                logger.info('Сохранение в файл формата *.txt ...')
+                logger.info('...files/*.txt')
                 i = 0
                 for i_name in lst_name:
                     x = Statistic_Table(i_name)
@@ -843,11 +844,8 @@ try:
 
             # СОХРАНЕНИЕ ГРАФИКОВ
             try:
-                print('Сохранение в файл формата *.png ...')
-                print('...files/*.png')
-
-                print('Сохранение в файл формата *.png ...')
-                print('...files/*.png')
+                logger.info('Сохранение в файл формата *.png ...')
+                logger.info('...files/*.png')
                 if data_kol_real_prod_year.isin([0]).all(axis=None) == False and data_kol_vip_prod_year.isin([0]).all(axis=None) == False:
                     graphic_1 = Visual_all(sum_lenta, 'Реализованная и выпущенная продукции (лента) с 2010 года')
                     graphic_1.save_graphic(r'files/001')
@@ -945,20 +943,6 @@ except Exception:
     logger.error(f'FAILED! Save_Error: {sys.exc_info()[:2]}') # logging
 
 logger.info(f"OK! Module on {platform.platform()}") # logging
-try:
-    class AllStatistics(Abstract.Statistic):
-        """
-        Класс статистических данных
-        ===========================
-        """
-        def __init__(self,data):
-            super().__init__(data)
-            pass
-
-    logger.info("OK! Load object class") # logging
-
-except Exception:
-    logger.error(f'FAILED! AllStatistics_Error: {sys.exc_info()[:2]}') # logging
 
 if __name__ == '__main__':
 ###########################################################################
@@ -1240,6 +1224,7 @@ if __name__ == '__main__':
                 else:
                     pass
                 plt.show()
+                pylhelp.Gcf().destroy_all() # очистка памяти
                 logger.info("OK! ThreeCommand") # logging
 
             except Exception:

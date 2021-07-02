@@ -31,6 +31,8 @@ logger.info(f'Started on platform {platform.platform()}') # logging
 
 import pandas as pd
 import matplotlib.pyplot as plt
+import matplotlib._pylab_helpers as pylhelp
+# очистка памяти
 import Indicators.Indicators_Process_B_7_5.production as pr
 #import Indicators.Indicators_Process_B_7_2.consumer as cm
 #import Indicators.Indicators_Process_B_7_3.project_and_develop as pad
@@ -86,6 +88,11 @@ try:
     ICON_GRAPHIC_006 = "gui_icon/Chart_icon-icons.com_51184.png" # Icon отображения графиков
     ICON_GRAPHIC_007 = "gui_icon/analytics_business_chart_graph_statistics_icon_127216.png" # Icon отображения графиков
     ICON_GRAPHIC_008 = "gui_icon/bar_chart_analysis_icon_183292.png" # Icon отображения графиков
+    ICON_GRAPHIC_009 = "gui_icon/line_chart_parallel_analysis_icon_183291.png" # Icon отображения графиков
+    ICON_GRAPHIC_010 = "gui_icon/stacked_bar_chart_sorted_analysis_bars_icon_183297.png" # Icon отображения графиков
+    ICON_GRAPHIC_011 = "gui_icon/line_chart_against_icon_183305.png" # Icon отображения графиков
+    ICON_GRAPHIC_012 = "gui_icon/line_chart_dots_icon_183307.png" # Icon отображения графиков
+    ICON_GRAPHIC_013 = "gui_icon/line_chart_analysis_icon_183298.png" # Icon отображения графиков
 
     ICON_SAVE = "gui_icon/save_file_disk_open_searsh_loading_clipboard_1513.png" # Icon сохранения в файл
     ICON_PNG = "gui_icon/File-PNG-icon.png" # Icon сохранения в файл png
@@ -166,6 +173,11 @@ try:
                                                   shortcut=QtGui.QKeySequence(QtCore.Qt.SHIFT + QtCore.Qt.Key_2))
             self.indicators_process_2.triggered.connect(self.on_production)
             process_menu.addAction(self.indicators_process_2)
+
+            self.indicators_process_3 = QtWidgets.QAction(QtGui.QIcon(ICON_CMD),"results.py", self,
+                                                  shortcut=QtGui.QKeySequence(QtCore.Qt.SHIFT + QtCore.Qt.Key_2))
+            self.indicators_process_3.triggered.connect(self.on_results)
+            process_menu.addAction(self.indicators_process_3)
 
 
             fullscreen_action = QtWidgets.QAction(QtGui.QIcon(ICON_FULLSCREEN), "Полноэкранный режим", self,
@@ -577,6 +589,12 @@ try:
             #тестирование данных модулей
             os.chdir('Indicators_Process_B_7_5')
             os.startfile('production.py')
+            sys.exit(app.exec_())
+
+        def on_results(self):
+            #тестирование данных модулей
+            os.chdir('Indicators_Process_B_7_7_and_B_7_5')
+            os.startfile('results.py')
             sys.exit(app.exec_())
 
         def edit_base(self):
@@ -1652,51 +1670,138 @@ try:
             self.logger = logging.getLogger('indicators.gui_module.View_Process_Graphics')
             self.logger.info('__Init__ View_Process_Graphics')
             self.box = QtWidgets.QGroupBox('Процесс Б(7.7) "Сбыт"')
-            self.btn = QtWidgets.QPushButton()
-            self.btn.setIcon(QtGui.QIcon(ICON_GRAPHIC_003))
-            self.btn.setIconSize(QtCore.QSize(32, 32))
-            self.btn_1 = QtWidgets.QPushButton()
-            self.btn_1.setIcon(QtGui.QIcon(ICON_GRAPHIC_003))
-            self.btn_1.setIconSize(QtCore.QSize(32, 32))
-            self.btn_2 = QtWidgets.QPushButton()
-            self.btn_2.setIcon(QtGui.QIcon(ICON_GRAPHIC_003))
-            self.btn_2.setIconSize(QtCore.QSize(32, 32))
-            self.btn_3 = QtWidgets.QPushButton()
-            self.btn_3.setIcon(QtGui.QIcon(ICON_GRAPHIC_003))
-            self.btn_3.setIconSize(QtCore.QSize(32, 32))
-            self.btn_4 = QtWidgets.QPushButton()
-            self.btn_4.setIcon(QtGui.QIcon(ICON_GRAPHIC_003))
-            self.btn_4.setIconSize(QtCore.QSize(32, 32))
-            self.btn_5 = QtWidgets.QPushButton()
-            self.btn_5.setIcon(QtGui.QIcon(ICON_GRAPHIC_003))
-            self.btn_5.setIconSize(QtCore.QSize(32, 32))
-            self.btn_6 = QtWidgets.QPushButton()
-            self.btn_6.setIcon(QtGui.QIcon(ICON_GRAPHIC_003))
-            self.btn_6.setIconSize(QtCore.QSize(32, 32))
-            self.btn_7 = QtWidgets.QPushButton()
-            self.btn_7.setIcon(QtGui.QIcon(ICON_GRAPHIC_003))
-            self.btn_7.setIconSize(QtCore.QSize(32, 32))
-            self.btn_8 = QtWidgets.QPushButton()
-            self.btn_8.setIcon(QtGui.QIcon(ICON_GRAPHIC_003))
-            self.btn_8.setIconSize(QtCore.QSize(32, 32))
-            self.btn_9 = QtWidgets.QPushButton()
-            self.btn_9.setIcon(QtGui.QIcon(ICON_GRAPHIC_003))
-            self.btn_9.setIconSize(QtCore.QSize(32, 32))
+
+            # Кнопки отображения графиков
+            # Выпуск и реализация п/б ленты по годам
+            self.b_7_7 = QtWidgets.QPushButton()
+            self.b_7_7.setIcon(QtGui.QIcon(ICON_GRAPHIC_009))
+            self.b_7_7.setIconSize(QtCore.QSize(32, 32))
+            self.b_7_7.setToolTip("Выпуск и реализация п/б ленты по годам")
+            self.b_7_7.setStatusTip('Выпуск и реализация п/б ленты по годам')
+            self.b_7_7.clicked.connect(self.on_clicked_b_7_7)
+
+            # Выпуск и реализация комплектов по годам
+            self.b_7_7_1 = QtWidgets.QPushButton()
+            self.b_7_7_1.setIcon(QtGui.QIcon(ICON_GRAPHIC_011))
+            self.b_7_7_1.setIconSize(QtCore.QSize(32, 32))
+            self.b_7_7_1.setToolTip("Выпуск и реализация комплектов по годам")
+            self.b_7_7_1.setStatusTip('Выпуск и реализация комплектов по годам')
+            self.b_7_7_1.clicked.connect(self.on_clicked_b_7_7_1)
+
+            # Реализованная и выпущенная продукции (лента) с 2010 года
+            self.b_7_7_2 = QtWidgets.QPushButton()
+            self.b_7_7_2.setIcon(QtGui.QIcon(ICON_GRAPHIC_009))
+            self.b_7_7_2.setIconSize(QtCore.QSize(32, 32))
+            self.b_7_7_2.setToolTip("Реализованная и выпущенная продукции (лента) с 2010 года")
+            self.b_7_7_2.setStatusTip('Реализованная и выпущенная продукции (лента) с 2010 года')
+            self.b_7_7_2.clicked.connect(self.on_clicked_b_7_7_2)
+
+            # Реализованная и выпущенная продукции (комплекты) с 2017 года
+            self.b_7_7_3 = QtWidgets.QPushButton()
+            self.b_7_7_3.setIcon(QtGui.QIcon(ICON_GRAPHIC_011))
+            self.b_7_7_3.setIconSize(QtCore.QSize(32, 32))
+            self.b_7_7_3.setToolTip("Реализованная и выпущенная продукции (комплекты) с 2017 года")
+            self.b_7_7_3.setStatusTip('Реализованная и выпущенная продукции (комплекты) с 2017 года')
+            self.b_7_7_3.clicked.connect(self.on_clicked_b_7_7_3)
+
+            # Реализация и выпуск п/б ленты по годам
+            self.b_7_7_4 = QtWidgets.QPushButton()
+            self.b_7_7_4.setIcon(QtGui.QIcon(ICON_GRAPHIC_009))
+            self.b_7_7_4.setIconSize(QtCore.QSize(32, 32))
+            self.b_7_7_4.setToolTip("Реализация и выпуск п/б ленты по годам")
+            self.b_7_7_4.setStatusTip('Реализация и выпуск п/б ленты по годам')
+            self.b_7_7_4.clicked.connect(self.on_clicked_b_7_7_4)
+
+            # Реализация и выпуск комплектов по годам
+            self.b_7_7_5 = QtWidgets.QPushButton()
+            self.b_7_7_5.setIcon(QtGui.QIcon(ICON_GRAPHIC_011))
+            self.b_7_7_5.setIconSize(QtCore.QSize(32, 32))
+            self.b_7_7_5.setToolTip("Реализация и выпуск комплектов по годам")
+            self.b_7_7_5.setStatusTip('Реализация и выпуск комплектов по годам')
+            self.b_7_7_5.clicked.connect(self.on_clicked_b_7_7_5)
+
+            # Используемые запасы и перевыпуск п/б лент(тонн) по годам
+            self.b_7_7_6 = QtWidgets.QPushButton()
+            self.b_7_7_6.setIcon(QtGui.QIcon(ICON_GRAPHIC_009))
+            self.b_7_7_6.setIconSize(QtCore.QSize(32, 32))
+            self.b_7_7_6.setToolTip("Используемые запасы и перевыпуск п/б лент(тонн) по годам")
+            self.b_7_7_6.setStatusTip('Используемые запасы и перевыпуск п/б лент(тонн) по годам')
+            self.b_7_7_6.clicked.connect(self.on_clicked_b_7_7_6)
+
+            # Используемые запасы и перевыпуск комплектов (шт.) по годам
+            self.b_7_7_7 = QtWidgets.QPushButton()
+            self.b_7_7_7.setIcon(QtGui.QIcon(ICON_GRAPHIC_011))
+            self.b_7_7_7.setIconSize(QtCore.QSize(32, 32))
+            self.b_7_7_7.setToolTip("Используемые запасы и перевыпуск комплектов (шт.) по годам")
+            self.b_7_7_7.setStatusTip('Используемые запасы и перевыпуск комплектов (шт.) по годам')
+            self.b_7_7_7.clicked.connect(self.on_clicked_b_7_7_7)
+
+            # Выпуск и реализация п/б ленты по полугодиям
+            self.b_7_7_8 = QtWidgets.QPushButton()
+            self.b_7_7_8.setIcon(QtGui.QIcon(ICON_GRAPHIC_012))
+            self.b_7_7_8.setIconSize(QtCore.QSize(32, 32))
+            self.b_7_7_8.setToolTip("Выпуск и реализация п/б ленты по полугодиям")
+            self.b_7_7_8.setStatusTip('Выпуск и реализация п/б ленты по полугодиям')
+            self.b_7_7_8.clicked.connect(self.on_clicked_b_7_7_8)
+
+            # Выпуск и реализация комплектов по полугодиям
+            self.b_7_7_9 = QtWidgets.QPushButton()
+            self.b_7_7_9.setIcon(QtGui.QIcon(ICON_GRAPHIC_013))
+            self.b_7_7_9.setIconSize(QtCore.QSize(32, 32))
+            self.b_7_7_9.setToolTip("Выпуск и реализация комплектов по полугодиям")
+            self.b_7_7_9.setStatusTip('Выпуск и реализация комплектов по полугодиям')
+            self.b_7_7_9.clicked.connect(self.on_clicked_b_7_7_9)
+
+            # Реализация и выпуск п/б ленты по полугодиям
+            self.b_7_7_10 = QtWidgets.QPushButton()
+            self.b_7_7_10.setIcon(QtGui.QIcon(ICON_GRAPHIC_012))
+            self.b_7_7_10.setIconSize(QtCore.QSize(32, 32))
+            self.b_7_7_10.setToolTip("Реализация и выпуск п/б ленты по полугодиям")
+            self.b_7_7_10.setStatusTip('Реализация и выпуск п/б ленты по полугодиям')
+            self.b_7_7_10.clicked.connect(self.on_clicked_b_7_7_10)
+
+            # Реализация и выпуск комплектов по полугодиям
+            self.b_7_7_11 = QtWidgets.QPushButton()
+            self.b_7_7_11.setIcon(QtGui.QIcon(ICON_GRAPHIC_013))
+            self.b_7_7_11.setIconSize(QtCore.QSize(32, 32))
+            self.b_7_7_11.setToolTip("Реализация и выпуск комплектов по полугодиям")
+            self.b_7_7_11.setStatusTip('Реализация и выпуск комплектов по полугодиям')
+            self.b_7_7_11.clicked.connect(self.on_clicked_b_7_7_11)
+
+            # Используемые запасы и перевыпуск п/б лент(тонн) по полугодиям
+            self.b_7_7_12 = QtWidgets.QPushButton()
+            self.b_7_7_12.setIcon(QtGui.QIcon(ICON_GRAPHIC_012))
+            self.b_7_7_12.setIconSize(QtCore.QSize(32, 32))
+            self.b_7_7_12.setToolTip("Используемые запасы и перевыпуск п/б лент(тонн) по полугодиям")
+            self.b_7_7_12.setStatusTip('Используемые запасы и перевыпуск п/б лент(тонн) по полугодиям')
+            self.b_7_7_12.clicked.connect(self.on_clicked_b_7_7_12)
+
+            # Используемые запасы и перевыпуск комплектов(шт.) по полугодиям
+            self.b_7_7_13 = QtWidgets.QPushButton()
+            self.b_7_7_13.setIcon(QtGui.QIcon(ICON_GRAPHIC_013))
+            self.b_7_7_13.setIconSize(QtCore.QSize(32, 32))
+            self.b_7_7_13.setToolTip("Используемые запасы и перевыпуск комплектов(шт.) по полугодиям")
+            self.b_7_7_13.setStatusTip('Используемые запасы и перевыпуск комплектов(шт.) по полугодиям')
+            self.b_7_7_13.clicked.connect(self.on_clicked_b_7_7_13)
+
             self.bbox = QtWidgets.QHBoxLayout()
-            self.bbox.addWidget(self.btn)
-            self.bbox.addWidget(self.btn_1)
-            self.bbox.addWidget(self.btn_2)
-            self.bbox.addWidget(self.btn_3)
-            self.bbox.addWidget(self.btn_4)
-            self.bbox.addWidget(self.btn_5)
-            self.bbox.addWidget(self.btn_6)
-            self.bbox.addWidget(self.btn_7)
-            self.bbox.addWidget(self.btn_8)
-            self.bbox.addWidget(self.btn_9)
+            self.bbox.addWidget(self.b_7_7)
+            self.bbox.addWidget(self.b_7_7_1)
+            self.bbox.addWidget(self.b_7_7_2)
+            self.bbox.addWidget(self.b_7_7_3)
+            self.bbox.addWidget(self.b_7_7_4)
+            self.bbox.addWidget(self.b_7_7_5)
+            self.bbox.addWidget(self.b_7_7_6)
+            self.bbox.addWidget(self.b_7_7_7)
+            self.bbox.addWidget(self.b_7_7_8)
+            self.bbox.addWidget(self.b_7_7_9)
+            self.bbox.addWidget(self.b_7_7_10)
+            self.bbox.addWidget(self.b_7_7_11)
+            self.bbox.addWidget(self.b_7_7_12)
+            self.bbox.addWidget(self.b_7_7_13)
             self.box.setLayout(self.bbox)
 
             self.box_1 = QtWidgets.QGroupBox('Процесс Б(7.5) "Производство продукции"')
-
             # Кнопки отображения графиков
             # Количество выпущенной продукции по годам
             self.b_7_5 = QtWidgets.QPushButton()
@@ -1828,7 +1933,7 @@ try:
 
             self.box_1.setLayout(self.bbox_1)
 
-            self.box_2 = QtWidgets.QGroupBox("Наименование показателя_2")
+            self.box_2 = QtWidgets.QGroupBox("Процесс Б(7.2) Связь с потребителем")
             self.btn_2 = QtWidgets.QPushButton("Отобразить график процесса")
             self.bbox_2 = QtWidgets.QHBoxLayout()
             self.bbox_2.addWidget(self.btn_2)
@@ -1881,6 +1986,7 @@ try:
             """
             a = pr.Graphics_Number_Production(pr.data_number_year, name= 'Количество выпущенной п/б ленты  по годам')
             plt.show()
+            pylhelp.Gcf().destroy_all() # очистка памяти
 
         def on_clicked_b_7_5_1(self):
             """
@@ -1888,6 +1994,7 @@ try:
             """
             b = pr.Graphics_Indicators_Production(pr.data_ur_neispr_obor_year, name= 'Уровень неисправности оборудования по годам')
             plt.show()
+            pylhelp.Gcf().destroy_all() # очистка памяти
 
         def on_clicked_b_7_5_2(self):
             """
@@ -1895,6 +2002,7 @@ try:
             """
             с = pr.Graphics_Indicators_Production(pr.data_ur_nesoot_prod_year, name= 'Уровень несоответствующей продукции по годам')
             plt.show()
+            pylhelp.Gcf().destroy_all() # очистка памяти
 
         def on_clicked_b_7_5_3(self):
             """
@@ -1902,6 +2010,7 @@ try:
             """
             d = pr.Graphics_Indicators_Production(pr.data_ur_teh_oth_year, name= 'Уровень техотходов по годам', critery=2)
             plt.show()
+            pylhelp.Gcf().destroy_all() # очистка памяти
 
         def on_clicked_b_7_5_4(self):
             """
@@ -1909,6 +2018,7 @@ try:
             """
             e = pr.Graphics_Indicators_Production(pr.data_ur_otkl_prod_year, name= 'Уровень отклонений продукции Котк по годам')
             plt.show()
+            pylhelp.Gcf().destroy_all() # очистка памяти
 
         def on_clicked_b_7_5_5(self):
             """
@@ -1916,6 +2026,7 @@ try:
             """
             f = pr.Graphics_Indicators_Production(pr.data_ur_prost_kach_year, name= 'Уровень простоя оборудования из-за несоответствующего качества расходных материалов Кпр кач')
             plt.show()
+            pylhelp.Gcf().destroy_all() # очистка памяти
 
         def on_clicked_b_7_5_6(self):
             """
@@ -1923,6 +2034,7 @@ try:
             """
             g = pr.Graphics_Indicators_Production(pr.data_ur_prost_nepost_year, name= 'Уровень простоя оборудования из-за непоставки расходных материалов Кпр кол')
             plt.show()
+            pylhelp.Gcf().destroy_all() # очистка памяти
 
         def on_clicked_b_7_5_7(self):
             """
@@ -1930,6 +2042,7 @@ try:
             """
             a = pr.Graphics_Number_Production(pr.data_number_middle_year, name= 'Количество выпущенной п/б ленты  по полугодиям')
             plt.show()
+            pylhelp.Gcf().destroy_all() # очистка памяти
 
         def on_clicked_b_7_5_8(self):
             """
@@ -1937,6 +2050,7 @@ try:
             """
             b = pr.Graphics_Indicators_Production(pr. data_ur_neispr_obor_middle_year, name= 'Уровень неисправности оборудования по полугодиям')
             plt.show()
+            pylhelp.Gcf().destroy_all() # очистка памяти
 
         def on_clicked_b_7_5_9(self):
             """
@@ -1951,6 +2065,7 @@ try:
             """
             d = pr.Graphics_Indicators_Production(pr.data_ur_teh_oth_middle_year, name= 'Уровень техотходов по полугодиям', critery=2)
             plt.show()
+            pylhelp.Gcf().destroy_all() # очистка памяти
 
         def on_clicked_b_7_5_11(self):
             """
@@ -1958,6 +2073,7 @@ try:
             """
             e = pr.Graphics_Indicators_Production(pr.data_ur_otkl_prod_middle_year, name= 'Уровень отклонений продукции Котк по полугодиям')
             plt.show()
+            pylhelp.Gcf().destroy_all() # очистка памяти
 
         def on_clicked_b_7_5_12(self):
             """
@@ -1965,6 +2081,7 @@ try:
             """
             f = pr.Graphics_Indicators_Production(pr.data_ur_prost_kach_middle_year, name= 'Уровень простоя оборудования из-за несоответствующего качества расходных материалов Кпр кач по полугодиям')
             plt.show()
+            pylhelp.Gcf().destroy_all() # очистка памяти
 
         def on_clicked_b_7_5_13(self):
             """
@@ -1972,6 +2089,123 @@ try:
             """
             g = pr.Graphics_Indicators_Production(pr.data_ur_prost_nepost_middle_year, name= 'Уровень простоя оборудования из-за непоставки расходных материалов Кпр кол по полугодиям')
             plt.show()
+            pylhelp.Gcf().destroy_all() # очистка памяти
+
+        def on_clicked_b_7_7(self):
+            """
+            Функция запуска отображения диаграммы _
+            """
+            graphic_three = rs.LinearGraphics(rs.sum_lenta_year, name = 'Выпуск и реализация п/б ленты по годам')
+            graphic_three.maximum_minimum_text()
+            plt.show()
+            pylhelp.Gcf().destroy_all() # очистка памяти
+
+        def on_clicked_b_7_7_1(self):
+            """
+            Функция запуска отображения диаграммы _
+            """
+            graphic_five = rs.LinearGraphics(rs.sum_kompl_year, name = 'Выпуск и реализация комплектов по годам')
+            graphic_five.maximum_minimum_text()
+            plt.show()
+            pylhelp.Gcf().destroy_all() # очистка памяти
+
+        def on_clicked_b_7_7_2(self):
+            """
+            Функция запуска отображения диаграммы _
+            """
+            graphic_one = rs.Visual_all(rs.sum_lenta, 'Реализованная и выпущенная продукции (лента) с 2010 года')
+            plt.show()
+            pylhelp.Gcf().destroy_all() # очистка памяти
+
+        def on_clicked_b_7_7_3(self):
+            """
+            Функция запуска отображения диаграммы _
+            """
+            graphic_two = rs.Visual_all(rs.sum_kompl, 'Реализованная и выпущенная продукции (комплекты) с 2017 года')
+            plt.show()
+            pylhelp.Gcf().destroy_all() # очистка памяти
+
+        def on_clicked_b_7_7_4(self):
+            """
+            Функция запуска отображения диаграммы _
+            """
+            graphic_seven = rs.Visual_difference(rs.sum_lenta_year, name = 'Реализация и выпуск п/б ленты по годам')
+            plt.show()
+            pylhelp.Gcf().destroy_all() # очистка памяти
+
+        def on_clicked_b_7_7_5(self):
+            """
+            Функция запуска отображения диаграммы _
+            """
+            graphic_nine = rs.Visual_difference(rs.sum_kompl_year, name = 'Реализация и выпуск комплектов по годам')
+            plt.show()
+            pylhelp.Gcf().destroy_all() # очистка памяти
+
+        def on_clicked_b_7_7_6(self):
+            """
+            Функция запуска отображения диаграммы _
+            """
+            graphic_eleven = rs.Visual_stock(rs.diff_lenta_year, name='Используемые запасы и перевыпуск п/б лент(тонн) по годам')
+            plt.show()
+            pylhelp.Gcf().destroy_all() # очистка памяти
+
+        def on_clicked_b_7_7_7(self):
+            """
+            Функция запуска отображения диаграммы _
+            """
+            graphic_thirteen = rs.Visual_stock(rs.diff_kompl_year, name='Используемые запасы и перевыпуск комплектов (шт.) по годам')
+            plt.show()
+            pylhelp.Gcf().destroy_all() # очистка памяти
+
+        def on_clicked_b_7_7_8(self):
+            """
+            Функция запуска отображения диаграммы _
+            """
+            graphic_four = rs.LinearGraphics(rs.sum_lenta_middle_year, name = 'Выпуск и реализация п/б ленты по полугодиям')
+            graphic_four.maximum_minimum_text()
+            plt.show()
+            pylhelp.Gcf().destroy_all() # очистка памяти
+
+        def on_clicked_b_7_7_9(self):
+            """
+            Функция запуска отображения диаграммы _
+            """
+            graphic_six = rs.LinearGraphics(rs.sum_kompl_middle_year, name = 'Выпуск и реализация комплектов по полугодиям')
+            graphic_six.maximum_minimum_text()
+            plt.show()
+            pylhelp.Gcf().destroy_all() # очистка памяти
+
+        def on_clicked_b_7_7_10(self):
+            """
+            Функция запуска отображения диаграммы _
+            """
+            graphic_eight = rs.Visual_difference(rs.sum_lenta_middle_year,name = 'Реализация и выпуск п/б ленты по полугодиям')
+            plt.show()
+            pylhelp.Gcf().destroy_all() # очистка памяти
+
+        def on_clicked_b_7_7_11(self):
+            """
+            Функция запуска отображения диаграммы _
+            """
+            graphic_ten = rs.Visual_difference(rs.sum_kompl_middle_year, name = 'Реализация и выпуск комплектов по полугодиям')
+            plt.show()
+            pylhelp.Gcf().destroy_all() # очистка памяти
+
+        def on_clicked_b_7_7_12(self):
+            """
+            Функция запуска отображения диаграммы _
+            """
+            graphic_twelve = rs.Visual_stock(rs.diff_lenta_middle_year, name='Используемые запасы и перевыпуск п/б лент(тонн) по полугодиям')
+            plt.show()
+            pylhelp.Gcf().destroy_all() # очистка памяти
+
+        def on_clicked_b_7_7_13(self):
+            """
+            Функция запуска отображения диаграммы _
+            """
+            graphic_fourteen = rs.Visual_stock(rs.diff_kompl_middle_year, name='Используемые запасы и перевыпуск комплектов(шт.) по полугодиям')
+            plt.show()
+            pylhelp.Gcf().destroy_all() # очистка памяти
 
     logger.info("OK! Load object class") # logging
 

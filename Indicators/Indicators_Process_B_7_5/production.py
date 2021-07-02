@@ -741,7 +741,7 @@ try:
             super().__init__(data)
             self.logger = logging.getLogger('indicators.production.Graphics_Indicators_Production')
             self.logger.info('__Init__ Graphics_Indicators_Production')
-            self.__class__.num_instances += 1 # счётчик экземпляров класса
+            #self.__class__.num_instances += 1 # счётчик экземпляров класса
             plt.style.use('bmh')
             fig, ax = plt.subplots(figsize=(12,10), dpi= 80)
             fig.canvas.set_window_title('Процесс Б (7.5) "Производство продукции"')
