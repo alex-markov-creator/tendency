@@ -4651,3 +4651,85 @@
 [30/June/2021 13:43] - indicators.production.Info - INFO - __Init__ Info
 [30/June/2021 13:43] - indicators.production.Comparise - INFO - __Init__ Comparise
 [30/June/2021 13:44] - indicators.production.Comparise - INFO - __Init__ Comparise
+[15/July/2021 13:19] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[15/July/2021 13:19] - indicators.production - INFO - start initial assignment
+[15/July/2021 13:19] - indicators.production - INFO - OK! Load Data
+[15/July/2021 13:19] - indicators.production - INFO - OK! Load Data
+[15/July/2021 13:19] - indicators.production - INFO - OK! Load Data
+[15/July/2021 13:19] - indicators.production - INFO - OK! Calculation Data
+[15/July/2021 13:19] - indicators.production - INFO - OK! Calculation Data
+[15/July/2021 13:19] - indicators.production - INFO - OK! end initial assignment 
+[15/July/2021 13:19] - indicators.production - INFO - OK! Load object class
+[15/July/2021 13:19] - indicators.production - INFO - OK! Load object class
+[15/July/2021 13:19] - indicators.production - INFO - OK! Load object class
+[15/July/2021 13:19] - indicators.production - INFO - OK! Load object class
+[15/July/2021 13:19] - indicators.production - INFO - OK! Load object class
+[15/July/2021 13:19] - indicators.production - INFO - OK! Load object class
+[15/July/2021 13:19] - indicators.production - INFO - OK! Load object class
+[15/July/2021 13:19] - indicators.production - INFO - OK! Load object class
+[15/July/2021 13:19] - indicators.production - INFO - OK! Load object class
+[15/July/2021 13:19] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[15/July/2021 13:19] - indicators.production.Info - INFO - __Init__ Info
+[15/July/2021 13:19] - indicators.production.Data_Table - INFO - __Init__ Data_Table
+[15/July/2021 13:19] - indicators.production.Data_Table - INFO - __Init__ Data_Table
+[15/July/2021 13:35] - indicators.production - INFO - Started on platform Windows-7-6.1.7601-SP1
+[15/July/2021 13:36] - indicators.production - INFO - start initial assignment
+[15/July/2021 13:36] - indicators.production - INFO - OK! Load Data
+[15/July/2021 13:36] - indicators.production - INFO - OK! Load Data
+[15/July/2021 13:36] - indicators.production - INFO - OK! Load Data
+[15/July/2021 13:36] - indicators.production - INFO - OK! Calculation Data
+[15/July/2021 13:36] - indicators.production - INFO - OK! Calculation Data
+[15/July/2021 13:36] - indicators.production - INFO - OK! end initial assignment 
+[15/July/2021 13:36] - indicators.production - INFO - OK! Load object class
+[15/July/2021 13:36] - indicators.production - INFO - OK! Load object class
+[15/July/2021 13:36] - indicators.production - INFO - OK! Load object class
+[15/July/2021 13:36] - indicators.production - INFO - OK! Load object class
+[15/July/2021 13:36] - indicators.production - INFO - OK! Load object class
+[15/July/2021 13:36] - indicators.production - INFO - OK! Load object class
+[15/July/2021 13:36] - indicators.production - INFO - OK! Load object class
+[15/July/2021 13:36] - indicators.production - INFO - OK! Load object class
+[15/July/2021 13:36] - indicators.production - INFO - OK! Load object class
+[15/July/2021 13:36] - indicators.production - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[15/July/2021 13:36] - indicators.production.Save_Data - INFO - __Init__ Save_Data
+[15/July/2021 13:36] - indicators.production - INFO - OK! Save_TO_XLSX
+[15/July/2021 13:36] - indicators.production.Statistic_Table - INFO - __Init__ Statistic_Table
+[15/July/2021 13:36] - indicators.production.Statistic_Table - INFO - __Init__ Statistic_Table
+[15/July/2021 13:36] - indicators.production.Statistic_Table - INFO - __Init__ Statistic_Table
+[15/July/2021 13:36] - indicators.production.Statistic_Table - INFO - __Init__ Statistic_Table
+[15/July/2021 13:36] - indicators.production.Statistic_Table - INFO - __Init__ Statistic_Table
+[15/July/2021 13:36] - indicators.production.Statistic_Table - INFO - __Init__ Statistic_Table
+[15/July/2021 13:36] - indicators.production.Statistic_Table - INFO - __Init__ Statistic_Table
+[15/July/2021 13:36] - indicators.production.Statistic_Table - INFO - __Init__ Statistic_Table
+[15/July/2021 13:36] - indicators.production.Statistic_Table - INFO - __Init__ Statistic_Table
+[15/July/2021 13:36] - indicators.production.Statistic_Table - INFO - __Init__ Statistic_Table
+[15/July/2021 13:36] - indicators.production.Statistic_Table - INFO - __Init__ Statistic_Table
+[15/July/2021 13:36] - indicators.production.Statistic_Table - INFO - __Init__ Statistic_Table
+[15/July/2021 13:36] - indicators.production.Statistic_Table - INFO - __Init__ Statistic_Table
+[15/July/2021 13:36] - indicators.production.Statistic_Table - INFO - __Init__ Statistic_Table
+[15/July/2021 13:36] - indicators.production.Statistic_Table - INFO - __Init__ Statistic_Table
+[15/July/2021 13:36] - indicators.production.Statistic_Table - INFO - __Init__ Statistic_Table
+[15/July/2021 13:36] - indicators.production.Statistic_Table - INFO - __Init__ Statistic_Table
+[15/July/2021 13:36] - indicators.production.Statistic_Table - INFO - __Init__ Statistic_Table
+[15/July/2021 13:36] - indicators.production.Statistic_Table - INFO - __Init__ Statistic_Table
+[15/July/2021 13:36] - indicators.production.Statistic_Table - INFO - __Init__ Statistic_Table
+[15/July/2021 13:36] - indicators.production.Statistic_Table - INFO - __Init__ Statistic_Table
+[15/July/2021 13:36] - indicators.production.Statistic_Table - INFO - __Init__ Statistic_Table
+[15/July/2021 13:36] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[15/July/2021 13:36] - indicators.production - DEBUG - OK! GRAPHICS_1
+[15/July/2021 13:36] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[15/July/2021 13:36] - indicators.production - DEBUG - OK! GRAPHICS_2
+[15/July/2021 13:36] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[15/July/2021 13:36] - indicators.production - DEBUG - OK! GRAPHICS_3
+[15/July/2021 13:36] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[15/July/2021 13:36] - indicators.production - DEBUG - OK! GRAPHICS_4
+[15/July/2021 13:36] - indicators.production.Graphics_Number_Production - INFO - __Init__ Graphics_Number_Production
+[15/July/2021 13:36] - indicators.production - DEBUG - OK! GRAPHICS_7
+[15/July/2021 13:36] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[15/July/2021 13:36] - indicators.production - DEBUG - OK! GRAPHICS_8
+[15/July/2021 13:36] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[15/July/2021 13:36] - indicators.production - DEBUG - OK! GRAPHICS_9
+[15/July/2021 13:36] - indicators.production.Graphics_Indicators_Production - INFO - __Init__ Graphics_Indicators_Production
+[15/July/2021 13:36] - indicators.production - DEBUG - OK! GRAPHICS_10
+[15/July/2021 13:36] - indicators.production.Graphics_Number_Production - INFO - __Init__ Graphics_Number_Production
+[15/July/2021 13:36] - indicators.production - DEBUG - OK! GRAPHICS_14
+[15/July/2021 13:36] - indicators.production - INFO - OK! SAVE_GRAPHICS

@@ -746,8 +746,8 @@ try:
                     template = templateEnv.get_template(TEMPLATE_FILE)
                     x = template.render(
                         NAME_TABLE='Сводные данные за полугодие: Процесс Б(7.5) "Производство продукции"',
-                        PREV_YEAR = pr.prev_year,
-                        NEXT_YEAR = pr.next_year,
+                        PREV_MIDDLE_YEAR = pr.prev_middle_year,
+                        NEXT_MIDDLE_YEAR = pr.next_middle_year,
 
                         n_13 = pr.n_13,# нумерация строк
                         n_14 = pr.n_14,# нумерация строк
@@ -864,8 +864,8 @@ try:
                     template = templateEnv.get_template(TEMPLATE_FILE)
                     x = template.render(
                         NAME_TABLE='Сводные данные за полугодие: Процесс Б(7.5) "Производство продукции"',
-                        PREV_YEAR = rs.prev_year,
-                        NEXT_YEAR = rs.next_year,
+                        PREV_MIDDLE_YEAR = pr.prev_middle_year,
+                        NEXT_MIDDLE_YEAR = pr.next_middle_year,
                         n_4 = rs.n_4,
                         n_5 = rs.n_5,
                         n_6 = rs.n_6,

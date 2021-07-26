@@ -383,6 +383,8 @@ try:
     #################################################################
     prev_year = data_kol_vip_prod_year.index[-2]
     next_year = data_kol_vip_prod_year.index[-1]
+    prev_middle_year = data_kol_vip_prod_middle_year.index[-2]
+    next_middle_year = data_kol_vip_prod_middle_year.index[-1]
 
     n_13 = '13'# нумерация строк
     n_14 = '14'# нумерация строк
@@ -445,9 +447,9 @@ try:
 
     # переменные уровня расхода материала
     i_15_1 = data_ur_rash_mater_year.loc[prev_year].astype(str).apply(lambda x: x + '<br>').to_string(header=False, index=False)
-    i_15_m_1 = data_ur_rash_mater_middle_year.loc[prev_year].astype(str).apply(lambda x: x + '<br>').to_string(header=False, index=False)
+    i_15_m_1 = data_ur_rash_mater_middle_year.loc[prev_middle_year].astype(str).apply(lambda x: x + '<br>').to_string(header=False, index=False)
     i_15_2 = data_ur_rash_mater_year.loc[next_year].astype(str).apply(lambda x: x + '<br>').to_string(header=False, index=False)
-    i_15_m_2 = data_ur_rash_mater_middle_year.loc[next_year].astype(str).apply(lambda x: x + '<br>').to_string(header=False, index=False)
+    i_15_m_2 = data_ur_rash_mater_middle_year.loc[next_middle_year].astype(str).apply(lambda x: x + '<br>').to_string(header=False, index=False)
 
     # переменные уровня технических отходов
     i_16_1 = data_ur_teh_oth_year.tail(2).iloc[0,0]
