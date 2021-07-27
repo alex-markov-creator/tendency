@@ -1,25 +1,53 @@
-#-*- coding: utf-8 -*-
-# version 0.1a
-# author: andrew.bezzubov - 16/11/2020 year
+# -*- coding: utf-8 -*-
+# version 0.2a
+# author: andrew.bezzubov - 02/07/2021 year
+# email: ruizcontrol@yandex.ru, agb2019@list.ru
+# https://github.com/alex-markov-creator/tendency.git
+# GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007
 """
 ===============================================================
-consumer.py - модуль для статистических подсчетов и построения графиков  по показателям качества:
-- Уровень удовлетворенности потребителей (Критерий>=75);
-- Уровень привлечения новых потребителей (Критерий>=5) - соотношение кол-ва "новых" потребителей к общему числу потребителей предшествующего периода, %;
-- Уровень повторных закупок, совершаемых новыми (закупившими продукцию в предшествующем отчётном периоде) потребителями в % (Критерий>=5) - соотношение кол-ва "новых" потребителей, повторно закупивших продукцию в отчётном периоде, к общему количеству новых потребителей в соответствующем периоде прошлого года в %.
+consumer.py - модуль для статистических подсчетов, расчетов сводных данных и построения графиков  по показателям качества:
+- Уровень удовлетворённости потребителей (Критерий>=75%) - методика расчёта в Р СМК (8.2) 001 , %;
+- Уровень привлечения новых потребителей (Критерий>=5%) – соотношение кол-ва «новых» потребителей к общему числу потребителей предшествующего периода, %;
+- Уровень повторных закупок, совершаемых новыми (закупившими продукцию в предшествующем отчётном периоде) потребителями (Критерий>=5%) – соотношение кол-ва «новых» потребителей, повторно закупивших продукцию в отчётном периоде, к общему количеству новых потребителей в соответствующем периоде прошлого года, %;
+- Уровень выполнения заказов (Критерий = 100%) – отношение количества заказов, выполненных в срок, к общему количеству заказов, %;
+- Уровень претензий и рекламаций, Кпр (Критерий-<3) в количественном выражении;
+- Объем возвращённой продукции, Квоз (Критерий-<5% от общего объёма реализованной продукции за год) – отношение количества возвращённой продукции от потребителя к общему количеству реализованной продукции, (в %).
+
+===============================================================
+Процесс Б (7.2) "Связь с потребителем"
+===============================================================
 
 ИСХОДНЫЕ ДАННЫЕ - ФАЙЛ __init__.py в ../Data::
 +--------------------------------------+-----------------------------------+
 |              Переменная              |             Показатель            |
 +--------------------------------------+-----------------------------------+
-|         data_ur_vip_zak_year         | Уровень выполнения заказов по ... |
-|         data_ur_pov_zak_year         | Уровень повторных закупок по г... |
-|      data_ur_priv_new_cons_year      | Уровень привлечения новых потр... |
-|          data_ur_udovl_year          | Уровень удовлетворенности по г... |
-|     data_ur_vip_zak_middle_year      | Уровень выполнения заказов по ... |
-|     data_ur_pov_zak_middle_year      | Уровень повторных закупок по п... |
-|  data_ur_priv_new_cons_middle_year   | Уровень привлечения новых потр... |
+|          data_ur_udovl_year          |      Ур. удовлетв. потреб.        |
+|      data_ur_priv_new_cons_year      | Ур. привлеч. новых потр. по годам |
+|  data_ur_priv_new_cons_middle_year   | Ур. привлеч. новых потр. по полуг |
+|         data_ur_pov_zak_year         |    Ур. повтор. закупок по годам   |
+|     data_ur_pov_zak_middle_year      | Ур. повтор. закупок по полугодиям |
+|         data_ur_vip_zak_year         |    Ур. выполн.заказов по годам    |
+|     data_ur_vip_zak_middle_year      | Ур. выполн. заказов по полугодиям |
+|        data_ob_vozr_prod_year        | Объем возвр. продукции по годам   |
+|     data_ob_vozr_prod_middle_year    | Объем возвр. продукции по полугод.|
+|        data_pret_i_rekl_year         | Уровень прет. и рекл. по годам    |
+|     data_pret_i_rekl_middle_year     | Уровень прет. и рекл. по полгод.  |
 +--------------------------------------+-----------------------------------+
+
+ДАЛЕЕ РЕДАКТИРОВАТЬ!!!
+# ИСХОДНЫЕ ДАННЫЕ (ПЕРЕМЕННЫЕ ШАБЛОНА process_b_7_2):
++-------------------------------------------------------------------------+
+|  Переменная    |                  Данные шаблона                        |
++-------------------------------------------------------------------------+
+|   prev_year    |# переменные предыдущего и отчетного периода            |
+|   next_year    |                                                        |
+|next_middle_year|                                                        |
+|prev_middle_year|                                                        |
+
+
++--------------------------------------+----------------------------------+
+
 Инструкции при импорте:
 -----------------------
 import pandas as pd
@@ -69,7 +97,18 @@ cm.Save_Data()
 """
 import sys
 import os
+import platform # информация о версии оси
+#-------------------------------------------------------
+# модуль для логирования(журналирования)
+import logging
+import logging.config # файл конфигурации
+import logging.handlers # ротация логов
+import traceback # трасировка сообщений об исключениях
+#-------------------------------------------------------
+# модуль для тестирования
+import pytest
 import time
+#-------------------------------------------------------
 sys.path.append(os.path.realpath('../..'))
 # субродительский каталог в sys.path
 import numpy as np
@@ -82,16 +121,51 @@ import Tools.Abstract_Parents as Abstract
 # универсальный модуль для выполнения контракта
 from scipy.stats import linregress
 # модуль для построения линейной регрессии
-from Data import data_ur_vip_zak_year, data_ur_pov_zak_year,data_ur_priv_new_cons_year, data_ur_udovl_year, data_ur_vip_zak_middle_year, data_ur_pov_zak_middle_year, data_ur_priv_new_cons_middle_year
-# импорт DataFrame объектов с исходными данными
 from prettytable import PrettyTable
 # импорт библиотеки для вывода табличных данных в консоли(терминале)
 from abc import ABC, abstractmethod
 # импорт модуля для абстрактных классов
 
+#ЛОГИРОВАНИЕ
+logging.config.fileConfig('logging.conf') # файл конфигурации
+logger = logging.getLogger('indicators.consumer') # возвращает объект логгера
+logger.info(f'Started on platform {platform.platform()}') # logging
+
+#ДЕКОРАТОР ХРОНОМЕТРАЖА
+def time_of_function(function):
+    """
+    #ДЕКОРАТОР  ВРЕМЕНИ ВЫПОЛНЕНИЯ
+    (не применим к классам построения графиков)
+    """
+    def wrapped(*args):
+        start_time = time.perf_counter()
+        start_time_ns = time.perf_counter_ns()
+        res = function(*args)
+        print(f'Время выполнения в секундах: {time.perf_counter() - start_time}')
+        print(f'Время выполнения в наносекундах: {time.perf_counter_ns() - start_time_ns}')
+        return res
+    return wrapped
+
+#ДЕКОРАТОР ВЫВОДА СООБЩЕНИЙ
+def message_save(function):
+    """
+    #ДЕКОРАТОР СООБЩЕНИЙ О СОХРАНЕНИИ файлов
+    """
+    def wrapped(*args):
+        start_time = time.perf_counter()
+        res = function(*args)
+        print('Сохранение...')
+        print(f'Время сохранения файлов в секундах: {time.perf_counter() - start_time}')
+        return res
+    return wrapped
+
 # ИСХОДНЫЕ ДАННЫЕ (ДОПОЛНИТЕЛЬНОЕ ФОРМАТИРОВАНИЕ):
 ##################################################
 try:
+# импорт DataFrame объектов с исходными данными
+    from Data import data_ur_vip_zak_year, data_ur_pov_zak_year,data_ur_priv_new_cons_year, data_ur_udovl_year, data_ur_vip_zak_middle_year, data_ur_pov_zak_middle_year, data_ur_priv_new_cons_middle_year, data_ob_vozr_prod_year, data_ob_vozr_prod_middle_year, data_pret_i_rekl_year, data_pret_i_rekl_middle_year
+    logger.info("start initial assignment") # logging
+
     INDICATOR_NAME = [
                 "Уровень выполнения заказов по годам",
                 "Уровень повторных закупок по годам",
@@ -100,6 +174,10 @@ try:
                 "Уровень выполнения заказов по полугодиям",
                 "Уровень повторных закупок по полугодиям",
                 "Уровень привлечения новых потребителей по полугодиям",
+                "Объем возвращенной продукции по годам",
+                "Объем возвращенной продукции по полугодиям",
+                "Уровень претензий и рекламаций по годам",
+                "Уровень претензий и рекламаций по полугодиям",
                  ]#запись наименований
 
     NAME_INPUT = {
@@ -110,17 +188,34 @@ try:
                     '005':data_ur_vip_zak_middle_year,
                     '006':data_ur_pov_zak_middle_year,
                     '007':data_ur_priv_new_cons_middle_year,
+                    '008':data_ob_vozr_prod_year,
+                    '009':data_ob_vozr_prod_middle_year,
+                    '010':data_pret_i_rekl_year,
+                    '011':data_pret_i_rekl_middle_year,
                     } #идентификатор
+    logger.info("OK! Load Data") # logging
 
     lst_name = [data_ur_vip_zak_year, data_ur_pov_zak_year,data_ur_priv_new_cons_year, data_ur_udovl_year, data_ur_vip_zak_middle_year, data_ur_pov_zak_middle_year, data_ur_priv_new_cons_middle_year]
+    logger.info("OK! Load Data") # logging
 
     # ИСХОДНЫЕ ДАННЫЕ (ДОПОЛНИТЕЛЬНОЕ ФОРМАТИРОВАНИЕ ДЛЯ СОХРАНЕНИЯ):
     #################################################################
     data_add = pd.concat([data_ur_vip_zak_year, data_ur_pov_zak_year,data_ur_priv_new_cons_year, data_ur_udovl_year, data_ur_vip_zak_middle_year, data_ur_pov_zak_middle_year, data_ur_priv_new_cons_middle_year], axis=1)
     # Конкатенация
+    logger.info("OK! Calculation Data") # logging
 
-except Exception:
-    print(time.ctime(), 'Benchmark_Data_Error: ', sys.exc_info()[:2], file = open('log.txt', 'a'))
+except ImportError:
+    logger.error(f'FAILED! Data_Launch_Error: {sys.exc_info()[:2]}', exc_info=True) # logging
+
+except TypeError:
+    def test_add_raises():
+        """Все, что находиться в следующем блоке кода, должно
+        вызвать исключение
+        """
+        with pytest.raises(TypeError):
+            raise TypeError
+
+    logger.error(f'FAILED! Data_Launch_Error: {sys.exc_info()[:2]}', exc_info=True) # logging
 
 try:
     class Info(object):
@@ -168,8 +263,8 @@ try:
             """
             Открытие и запись временного файла для отображения всех значений
             """
-            print(tabulate(self.data, headers = 'keys', tablefmt = 'psql'), file=open(r'temp_data_consumer.txt', 'w', encoding = 'utf-8'))
-            os.system('temp_data_consumer.txt')
+            print(tabulate(self.data, headers = 'keys', tablefmt = 'psql'), file=open(r'data_consumer.temp', 'w', encoding = 'utf-8'))
+            os.system('data_consumer.temp')
 
 except Exception:
     print(time.ctime(), 'Data_Table_Error: ', sys.exc_info()[:2], file = open('log.txt', 'a'))

@@ -50,6 +50,7 @@
 |       data_kol_real_komp_year        | Количество реализованных компл... |
 |    data_kol_real_komp_middle_year    | Количество реализованных компл... |
 |       data_ob_vozr_prod_year         | Объем возвращенной продукции ...  |
+|    data_ob_vozr_prod_middle_year     | Объем возвращенной продукции ...  |
 |       data_ur_vip_zak_year           | Уровень выполнения заказов ...    |
 |      data_ur_vip_zak_middle_year     | Уровень выполенния заказов ...    |
 |        data_pret_i_rekl_year         | Претензии и рекламации от потр... |
@@ -255,6 +256,7 @@ data_kol_real_komp_middle_year = pd.read_csv(parentdir+r'/Data/Показате�
 data_pret_i_rekl_middle_year = pd.read_csv(parentdir+r'/Data/Показатели csv полугодие/Процесс Б(7.7) Сбыт/Претензии и рекламации от потребителей по полугодиям.csv', index_col = 0)
 data_ur_postav_middle_year = pd.read_csv(parentdir+r'/Data/Показатели csv полугодие/Процесс Б(7.7) Сбыт/Уровень поставок по полугодиям.csv', index_col = 0)
 data_ur_vip_zak_middle_year = pd.read_csv(parentdir+r'/Data/Показатели csv полугодие/Процесс Б(7.7) Сбыт/Уровень выполнения заказов по полугодиям.csv', index_col = 0)
+data_ob_vozr_prod_middle_year = pd.read_csv(parentdir+r'/Data/Показатели csv полугодие/Процесс Б(7.7) Сбыт/Объем возвращенной продукции по полугодиям.csv', index_col = 0)
 
 # Процесс О(6.2) Человеческие ресурсы
 # Процесс О(6.2) Человеческие ресурсы (годовые показатели)
@@ -420,6 +422,7 @@ lst_name = [
         data_kol_real_komp_year,
         data_kol_real_komp_middle_year,
         data_ob_vozr_prod_year,
+        data_ob_vozr_prod_middle_year,
         data_ur_vip_zak_year,
         data_ur_vip_zak_middle_year,
         data_ur_pr_obr_kach_mat_middle_year,
