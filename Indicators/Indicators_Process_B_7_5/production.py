@@ -290,7 +290,7 @@ def message_save(function):
     return wrapped
 
 try:
-# импорт DataFrame объектов с исходными данными
+    # импорт DataFrame объектов с исходными данными
     from Data import data_kol_vip_prod_year, data_ur_neispr_obor_year,data_ur_nesoot_prod_year, data_ur_teh_oth_year, data_kol_vip_mufty_year, data_kol_vip_kompl_year, data_kol_narezki_year, data_kol_rezki_pvh_lip_year, data_ur_rash_mater_year, data_ur_otkl_prod_year, data_ur_prost_kach_year,data_ur_prost_nepost_year, data_ur_neispr_obor_middle_year, data_ur_nesoot_prod_middle_year, data_ur_teh_oth_middle_year,data_kol_vip_prod_middle_year, data_kol_vip_mufty_middle_year,data_kol_vip_kompl_middle_year, data_kol_narezki_middle_year,data_kol_rezki_pvh_lip_middle_year, data_ur_rash_mater_middle_year,data_ur_otkl_prod_middle_year, data_ur_prost_kach_middle_year,data_ur_prost_nepost_middle_year
 
 # ИСХОДНЫЕ ДАННЫЕ (ДОПОЛНИТЕЛЬНОЕ ФОРМАТИРОВАНИЕ):
@@ -360,14 +360,17 @@ try:
                     '024': data_ur_prost_nepost_middle_year,
                     } #идентификатор
     logger.info("OK! Load Data") # logging
+
     NAME_INPUT_ADD = {
                     # другой подсчёт статистики
                     '009': data_ur_rash_mater_year,
                     '021': data_ur_rash_mater_middle_year,
                     } #идентификатор
     logger.info("OK! Load Data") # logging
+
     lst_name = [data_kol_vip_prod_year, data_ur_neispr_obor_year,data_ur_nesoot_prod_year, data_ur_teh_oth_year,data_kol_vip_mufty_year, data_kol_vip_kompl_year, data_kol_narezki_year, data_kol_rezki_pvh_lip_year, data_ur_otkl_prod_year,data_ur_prost_kach_year, data_ur_prost_nepost_year,data_ur_neispr_obor_middle_year, data_ur_nesoot_prod_middle_year,data_ur_teh_oth_middle_year, data_kol_vip_prod_middle_year,data_kol_vip_mufty_middle_year, data_kol_vip_kompl_middle_year,data_kol_narezki_middle_year, data_kol_rezki_pvh_lip_middle_year,data_ur_otkl_prod_middle_year, data_ur_prost_kach_middle_year,data_ur_prost_nepost_middle_year] #список для сохранения стаистических расчетов
     logger.info("OK! Load Data") # logging
+
     # ИСХОДНЫЕ ДАННЫЕ (ДОПОЛНИТЕЛЬНОЕ ФОРМАТИРОВАНИЕ ДЛЯ ПОСТРОЕНИЯ ГРАФИКА):
     #########################################################################
     data_number_year = pd.concat([data_kol_vip_prod_year, data_kol_vip_mufty_year,data_kol_vip_kompl_year, data_kol_narezki_year,data_kol_rezki_pvh_lip_year], axis=1)# Конкатенация pd.DataFrame объектов
@@ -645,6 +648,9 @@ try:
         print(x.max())
         print(x.min())
         print(x.st_d())
+        print(x.quantile_25())
+        print(x.quantile_50())
+        print(x.quantile_75())
         """
         def __init__(self, data: pd.DataFrame):
             """

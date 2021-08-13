@@ -34,7 +34,7 @@ import matplotlib.pyplot as plt
 import matplotlib._pylab_helpers as pylhelp
 # очистка памяти
 import Indicators.Indicators_Process_B_7_5.production as pr
-#import Indicators.Indicators_Process_B_7_2.consumer as cm
+import Indicators.Indicators_Process_B_7_2.consumer as cm
 #import Indicators.Indicators_Process_B_7_3.project_and_develop as pad
 #import Indicators.Indicators_Process_B_7_4_and_O_8_2.control_production as cp
 import Indicators.Indicators_Process_B_7_4_and_O_8_2.adhaesio as ad
@@ -93,6 +93,7 @@ try:
     ICON_GRAPHIC_011 = "gui_icon/line_chart_against_icon_183305.png" # Icon отображения графиков
     ICON_GRAPHIC_012 = "gui_icon/line_chart_dots_icon_183307.png" # Icon отображения графиков
     ICON_GRAPHIC_013 = "gui_icon/line_chart_analysis_icon_183298.png" # Icon отображения графиков
+    ICON_GRAPHIC_014 = "gui_icon/area_chart_with_line_analysis_icon_183299.png" # Icon отображения графиков
 
     ICON_SAVE = "gui_icon/save_file_disk_open_searsh_loading_clipboard_1513.png" # Icon сохранения в файл
     ICON_PNG = "gui_icon/File-PNG-icon.png" # Icon сохранения в файл png
@@ -635,6 +636,8 @@ try:
             L.append('Процесс Б(7.5) "Производство продукции" - полугодие')
             L.append('Процесс Б(7.7) "Сбыт"')
             L.append('Процесс Б(7.7) "Сбыт" - полугодие')
+            L.append('Процесс Б(7.2) "Связь с потребителем"')
+            L.append('Процесс Б(7.2) "Связь с потребителем"-полугодие')
             for i in range(5, 23):
                 L.append("Пункт {0}".format(i))
             comboBox.addItems(L)
@@ -890,6 +893,61 @@ try:
                         e_7_m_1 = rs.e_7_m_1,
                         e_7_m_2 = rs.e_7_m_2,
                         e_8_m_1 = rs.e_8_m_1,
+                        )
+                    document = QtGui.QTextDocument()
+                    document.setHtml(x)
+                    self.textEdit.setDocument(document)
+
+                elif v ==6:
+                    templateLoader = jinja2.FileSystemLoader(searchpath='./')
+                    templateEnv = jinja2.Environment(loader=templateLoader)
+                    TEMPLATE_FILE = 'process_b_7_2.html'
+                    template = templateEnv.get_template(TEMPLATE_FILE)
+                    x = template.render(
+                        NAME_TABLE='Сводные данные за год: Процесс Б(7.2) "Связь с потребителем"',
+                        PREV_YEAR = cm.prev_year,
+                        NEXT_YEAR = cm.next_year,
+                        n_1 = cm.n_1,
+                        n_2 = cm.n_2,
+                        n_3 = cm.n_3,
+                        i_1_1_1 = cm.i_1_1_1,
+                        i_1_2_1 = cm.i_1_2_1,
+                        i_2_1_1 = cm.i_2_1_1,
+                        i_2_2_1 = cm.i_2_2_1,
+                        i_3_1_1 = cm.i_3_1_1,
+                        i_3_2_1 = cm.i_3_2_1,
+                        NAME_TABLE_2='Изменение значений за год: Процесс Б(7.2) "Связь с потребителем"',
+                        e_1_1 = cm.e_1_1,
+                        e_2_1 = cm.e_2_1,
+                        e_3_1 = cm.e_3_1,
+
+                        )
+                    document = QtGui.QTextDocument()
+                    document.setHtml(x)
+                    self.textEdit.setDocument(document)
+
+                elif v ==7:
+                    templateLoader = jinja2.FileSystemLoader(searchpath='./')
+                    templateEnv = jinja2.Environment(loader=templateLoader)
+                    TEMPLATE_FILE = 'process_b_7_2.html'
+                    template = templateEnv.get_template(TEMPLATE_FILE)
+                    x = template.render(
+                        NAME_TABLE='Сводные данные за полугодие: Процесс Б(7.2) "Связь с потребителем"',
+                        PREV_MIDDLE_YEAR = cm.prev_middle_year,
+                        NEXT_MIDDLE_YEAR = cm.next_middle_year,
+                        n_1 = cm.n_1,
+                        n_2 = cm.n_2,
+                        n_3 = cm.n_3,
+                        i_1_1_m_1 = '-',
+                        i_1_2_m_1 = '-',
+                        i_2_1_m_1 = cm.i_2_1_m_1,
+                        i_2_2_m_1 = cm.i_2_2_m_1,
+                        i_3_1_m_1 = cm.i_3_1_m_1,
+                        i_3_2_m_1 = cm.i_3_2_m_1,
+                        NAME_TABLE_2='Изменение значений за полугодие: Процесс Б(7.2) "Связь с потребителем"',
+                        e_1_m_1 = cm.e_1_m_1,
+                        e_2_m_1 = cm.e_2_m_1,
+                        e_3_m_1 = cm.e_3_m_1,
                         )
                     document = QtGui.QTextDocument()
                     document.setHtml(x)
@@ -1934,9 +1992,116 @@ try:
             self.box_1.setLayout(self.bbox_1)
 
             self.box_2 = QtWidgets.QGroupBox("Процесс Б(7.2) Связь с потребителем")
-            self.btn_2 = QtWidgets.QPushButton("Отобразить график процесса")
+            # Кнопки отображения графиков
+            # Гисограмма распределения уровня удовлетворенности
+            self.b_7_2 = QtWidgets.QPushButton()
+            self.b_7_2.setIcon(QtGui.QIcon(ICON_GRAPHIC_004))
+            self.b_7_2.setIconSize(QtCore.QSize(32, 32))
+            self.b_7_2.setToolTip("Уровень удовлетворенности по годам (гистограмма)")
+            self.b_7_2.setStatusTip('Уровень удовлетворенности по годам (гистограмма)')
+            self.b_7_2.clicked.connect(self.on_clicked_b_7_2)
+
+            # Уровень удовлетворенности по годам
+            self.b_7_2_1 = QtWidgets.QPushButton()
+            self.b_7_2_1.setIcon(QtGui.QIcon(ICON_GRAPHIC_003))
+            self.b_7_2_1.setIconSize(QtCore.QSize(32, 32))
+            self.b_7_2_1.setToolTip("Уровень удовлетворенности по годам")
+            self.b_7_2_1.setStatusTip('Уровень удовлетворенности по годам')
+            self.b_7_2_1.clicked.connect(self.on_clicked_b_7_2_1)
+
+            # Уровень привлечения новых потребителей по годам
+            self.b_7_2_2 = QtWidgets.QPushButton()
+            self.b_7_2_2.setIcon(QtGui.QIcon(ICON_GRAPHIC_003))
+            self.b_7_2_2.setIconSize(QtCore.QSize(32, 32))
+            self.b_7_2_2.setToolTip("Уровень привлечения новых потребителей по годам")
+            self.b_7_2_2.setStatusTip('Уровень привлечения новых потребителей по годам')
+            self.b_7_2_2.clicked.connect(self.on_clicked_b_7_2_2)
+
+            # Уровень привлечения новых потребителей по полугодиям
+            self.b_7_2_3 = QtWidgets.QPushButton()
+            self.b_7_2_3.setIcon(QtGui.QIcon(ICON_GRAPHIC_014))
+            self.b_7_2_3.setIconSize(QtCore.QSize(32, 32))
+            self.b_7_2_3.setToolTip("Уровень привлечения новых потребителей по полугодиям")
+            self.b_7_2_3.setStatusTip('Уровень привлечения новых потребителей по полугодиям')
+            self.b_7_2_3.clicked.connect(self.on_clicked_b_7_2_3)
+
+            # Уровень повторных закупок по годам
+            self.b_7_2_4 = QtWidgets.QPushButton()
+            self.b_7_2_4.setIcon(QtGui.QIcon(ICON_GRAPHIC_003))
+            self.b_7_2_4.setIconSize(QtCore.QSize(32, 32))
+            self.b_7_2_4.setToolTip("Уровень повторных закупок по годам")
+            self.b_7_2_4.setStatusTip('Уровень повторных закупок по годам')
+            self.b_7_2_4.clicked.connect(self.on_clicked_b_7_2_4)
+
+            # Уровень повторных закупок по полугодиям
+            self.b_7_2_5 = QtWidgets.QPushButton()
+            self.b_7_2_5.setIcon(QtGui.QIcon(ICON_GRAPHIC_014))
+            self.b_7_2_5.setIconSize(QtCore.QSize(32, 32))
+            self.b_7_2_5.setToolTip("Уровень повторных закупок по полугодиям")
+            self.b_7_2_5.setStatusTip('Уровень повторных закупок по полугодиям')
+            self.b_7_2_5.clicked.connect(self.on_clicked_b_7_2_5)
+
+            # Уровень выполнения заказов по годам
+            self.b_7_2_6 = QtWidgets.QPushButton()
+            self.b_7_2_6.setIcon(QtGui.QIcon(ICON_GRAPHIC_003))
+            self.b_7_2_6.setIconSize(QtCore.QSize(32, 32))
+            self.b_7_2_6.setToolTip("Уровень выполнения заказов по годам")
+            self.b_7_2_6.setStatusTip('Уровень выполнения заказов по годам')
+            self.b_7_2_6.clicked.connect(self.on_clicked_b_7_2_6)
+
+            # Уровень выполнения заказов по полугодиям
+            self.b_7_2_7 = QtWidgets.QPushButton()
+            self.b_7_2_7.setIcon(QtGui.QIcon(ICON_GRAPHIC_014))
+            self.b_7_2_7.setIconSize(QtCore.QSize(32, 32))
+            self.b_7_2_7.setToolTip("Уровень выполнения заказов по полугодиям")
+            self.b_7_2_7.setStatusTip('Уровень выполнения заказов по полугодиям')
+            self.b_7_2_7.clicked.connect(self.on_clicked_b_7_2_7)
+
+            # Объем возвращенной продукции по годам
+            self.b_7_2_8 = QtWidgets.QPushButton()
+            self.b_7_2_8.setIcon(QtGui.QIcon(ICON_GRAPHIC_003))
+            self.b_7_2_8.setIconSize(QtCore.QSize(32, 32))
+            self.b_7_2_8.setToolTip("Объем возвращенной продукции по годам")
+            self.b_7_2_8.setStatusTip('Объем возвращенной продукции по годам')
+            self.b_7_2_8.clicked.connect(self.on_clicked_b_7_2_8)
+
+            # Объем возвращенной продукции по полугодиям
+            self.b_7_2_9 = QtWidgets.QPushButton()
+            self.b_7_2_9.setIcon(QtGui.QIcon(ICON_GRAPHIC_014))
+            self.b_7_2_9.setIconSize(QtCore.QSize(32, 32))
+            self.b_7_2_9.setToolTip("Объем возвращенной продукции по полугодиям")
+            self.b_7_2_9.setStatusTip('Объем возвращенной продукции по полугодиям')
+            self.b_7_2_9.clicked.connect(self.on_clicked_b_7_2_9)
+
+            # Кол-во претензий и рекламаций по годам
+            self.b_7_2_10 = QtWidgets.QPushButton()
+            self.b_7_2_10.setIcon(QtGui.QIcon(ICON_GRAPHIC_003))
+            self.b_7_2_10.setIconSize(QtCore.QSize(32, 32))
+            self.b_7_2_10.setToolTip("Кол-во претензий и рекламаций по годам")
+            self.b_7_2_10.setStatusTip('Кол-во претензий и рекламаций по годам')
+            self.b_7_2_10.clicked.connect(self.on_clicked_b_7_2_10)
+
+            # Кол-во претензий и рекламаций по полугодиям
+            self.b_7_2_11 = QtWidgets.QPushButton()
+            self.b_7_2_11.setIcon(QtGui.QIcon(ICON_GRAPHIC_014))
+            self.b_7_2_11.setIconSize(QtCore.QSize(32, 32))
+            self.b_7_2_11.setToolTip("Кол-во претензий и рекламаций по полугодиям")
+            self.b_7_2_11.setStatusTip('Кол-во претензий и рекламаций по полугодиям')
+            self.b_7_2_11.clicked.connect(self.on_clicked_b_7_2_11)
+
             self.bbox_2 = QtWidgets.QHBoxLayout()
-            self.bbox_2.addWidget(self.btn_2)
+            self.bbox_2.addWidget(self.b_7_2)
+            self.bbox_2.addWidget(self.b_7_2_1)
+            self.bbox_2.addWidget(self.b_7_2_2)
+            self.bbox_2.addWidget(self.b_7_2_3)
+            self.bbox_2.addWidget(self.b_7_2_4)
+            self.bbox_2.addWidget(self.b_7_2_5)
+            self.bbox_2.addWidget(self.b_7_2_6)
+            self.bbox_2.addWidget(self.b_7_2_7)
+            self.bbox_2.addWidget(self.b_7_2_8)
+            self.bbox_2.addWidget(self.b_7_2_9)
+            self.bbox_2.addWidget(self.b_7_2_10)
+            self.bbox_2.addWidget(self.b_7_2_11)
             self.box_2.setLayout(self.bbox_2)
 
             self.box_3 = QtWidgets.QGroupBox("Наименование показателя_3")
@@ -2204,6 +2369,102 @@ try:
             Функция запуска отображения диаграммы _
             """
             graphic_fourteen = rs.Visual_stock(rs.diff_kompl_middle_year, name='Используемые запасы и перевыпуск комплектов(шт.) по полугодиям')
+            plt.show()
+            pylhelp.Gcf().destroy_all() # очистка памяти
+
+        def on_clicked_b_7_2(self):
+            """
+            Функция запуска отображения диаграммы _
+            """
+            graphic_year_one = cm.Graphics_Histogram_Consumer(cm.data_ur_udovl_year, name= 'Гистограмма распределения')
+            plt.show()
+            pylhelp.Gcf().destroy_all() # очистка памяти
+
+        def on_clicked_b_7_2_1(self):
+            """
+            Функция запуска отображения диаграммы _
+            """
+            graphic_year_two = cm.Graphics_Indicators_Consumer(cm.data_ur_udovl_year, name= 'Уровень удовлетворенности потребителей', critery=75)
+            plt.show()
+            pylhelp.Gcf().destroy_all() # очистка памяти
+
+        def on_clicked_b_7_2_2(self):
+            """
+            Функция запуска отображения диаграммы _
+            """
+            graphic_year_three = cm.Graphics_Indicators_Consumer_Full(cm.data_ur_priv_new_cons_year, name= 'Уровень привлечения новых потребителей по годам', critery=5)
+            plt.show()
+            pylhelp.Gcf().destroy_all() # очистка памяти
+
+        def on_clicked_b_7_2_3(self):
+            """
+            Функция запуска отображения диаграммы _
+            """
+            graphic_year_four = cm.Graphics_Indicators_Consumer_Full(cm.data_ur_priv_new_cons_middle_year, name= 'Уровень привлечения новых потребителей по полугодиям', critery=5)
+            plt.show()
+            pylhelp.Gcf().destroy_all() # очистка памяти
+
+        def on_clicked_b_7_2_4(self):
+            """
+            Функция запуска отображения диаграммы _
+            """
+            graphic_year_five = cm.Graphics_Indicators_Consumer_Full(cm.data_ur_pov_zak_year, name= 'Уровень повторных закупок по годам', critery=5)
+            plt.show()
+            pylhelp.Gcf().destroy_all() # очистка памяти
+
+        def on_clicked_b_7_2_5(self):
+            """
+            Функция запуска отображения диаграммы _
+            """
+            graphic_year_six = cm.Graphics_Indicators_Consumer_Full(cm.data_ur_pov_zak_middle_year, name= 'Уровень повторных закупок по полугодиям', critery=5)
+            plt.show()
+            pylhelp.Gcf().destroy_all() # очистка памяти
+
+        def on_clicked_b_7_2_6(self):
+            """
+            Функция запуска отображения диаграммы _
+            """
+            graphic_year_seven = cm.Graphics_Indicators_Consumer_Full(cm.data_ur_vip_zak_year, name= 'Уровень выполнения заказов по годам', critery=100)
+            plt.show()
+            pylhelp.Gcf().destroy_all() # очистка памяти
+
+        def on_clicked_b_7_2_7(self):
+            """
+            Функция запуска отображения диаграммы _
+            """
+            graphic_year_eight = cm.Graphics_Indicators_Consumer_Full(cm.data_ur_vip_zak_middle_year, name= 'Уровень выполнения заказов по полугодиям', critery=100)
+            plt.show()
+            pylhelp.Gcf().destroy_all() # очистка памяти
+
+        def on_clicked_b_7_2_8(self):
+            """
+            Функция запуска отображения диаграммы _
+            """
+            graphic_year_nine = cm.Graphics_Indicators_Consumer_Full(cm.data_ob_vozr_prod_year, name= 'Объем возвращенной продукции по годам', critery=5)
+            plt.show()
+            pylhelp.Gcf().destroy_all() # очистка памяти
+
+        def on_clicked_b_7_2_9(self):
+            """
+            Функция запуска отображения диаграммы _
+            """
+            graphic_year_ten = cm.Graphics_Indicators_Consumer_Full(cm.data_ob_vozr_prod_middle_year, name= 'Объем возвращенной продукции по полугодиям', critery=5)
+            plt.show()
+            pylhelp.Gcf().destroy_all() # очистка памяти
+
+        def on_clicked_b_7_2_10(self):
+            """
+            Функция запуска отображения диаграммы _
+            """
+            graphic_year_eleven = cm.Graphics_Indicators_Consumer_Full(cm.data_pret_i_rekl_year, name= 'Кол-во претензий и рекламаций по годам', critery=3)
+            plt.show()
+            pylhelp.Gcf().destroy_all() # очистка памяти
+
+        def on_clicked_b_7_2_11(self):
+            """
+            Функция запуска отображения диаграммы _
+            """
+            graphic_year_twelve = cm.Graphics_Indicators_Consumer_Full(cm.data_pret_i_rekl_middle_year, name= 'Кол-во претензий и рекламаций по полугодиям', critery=3)
             plt.show()
             pylhelp.Gcf().destroy_all() # очистка памяти
 

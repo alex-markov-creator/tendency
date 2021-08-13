@@ -1,0 +1,85 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html">
+<title>Сводные данные по показателям процессов</title>
+</head>
+<body>
+<h3>{{NAME_TABLE}}</h3>
+<table border="1" cellpadding="5"
+style="border-collapse: collapse; border: 1px solid black;">
+    <tr align=center>
+        <th> Наименование показателей, процесс,<br> единица измерения </th>
+        <th> Критерий </th>
+        <th> Факт за {{PREV_YEAR}} год </th>
+        <th> Факт за {{NEXT_YEAR}} год </th>
+    </tr>
+    <tr>
+        <td>{{n_1}} Уровень удовлетворенности потребителей, Б (7.2)<br>
+        Методика расчёта в Р СМК (8.2) 001<br></td>
+
+        <td align=center valign=middle>&gt;=70%</td>
+
+        <td align=center valign=middle>{{i_1_1_1}}{{i_1_1_m_1}}</td>
+
+        <td align=center valign=middle>{{i_1_2_1}}{{i_1_2_m_1}}</td>
+    </tr>
+    <tr>
+        <td>{{n_2}} Уровень привлечения новых потребителей, Б (7.2)<br>
+        Соотношение кол-ва "новых" потребителей к общему<br>
+        числу потребителей предшествующего периода, %</td>
+        <td align=center valign=middle>&gt;=10%</td>
+        <td align=center valign=middle>
+          {{i_2_1_1}}{{i_2_1_m_1}}</td>
+        <td align=center valign=middle>
+          {{i_2_2_1}}{{i_2_2_m_1}}</td>
+    </tr>
+    <tr >
+        <td>{{n_3}} Уровень повторных закупок, совершаемых новыми<br>
+        (закупившими продукцию в предшествующем отчётном<br>
+        периоде) потребителями, Б (7.2), Соотношение кол-ва<br>
+        "новых" потребителей, повторно закупивших продукцию<br>
+        в отчетном периоде, к общему количеству новых <br>
+        потребителей в соответствующем периоде прошлого года,%.</td>
+        <td align=center valign=middle>&gt;=5%</td>
+        <td align=center valign=middle>{{i_3_1_1}}{{i_3_1_m_1}}
+        </td>
+        <td align=center valign=middle>{{i_3_2_1}}{{i_3_2_m_1}}
+        </td>
+    </tr>
+</table>
+
+<h3>{{NAME_TABLE_2}}</h3>
+<table border="1" cellpadding="5"
+style="border-collapse: collapse; border: 1px solid black;">
+  <tr>
+    <th align=center> Наименование показателей, процесс,<br>
+    единица измерения </th>
+    <th align=center> Изменение значений </th>
+  </tr>
+    <tr>
+        <td>{{n_1}} Уровень удовлетворенности потребителей, Б (7.2)<br>
+        Методика расчёта в Р СМК (8.2) 001<br></td>
+        <td align=center valign=middle>{{e_1_1}}{{e_1_m_1}}</td>
+
+    </tr>
+    <tr>
+        <td>{{n_2}} Уровень привлечения новых потребителей, Б (7.2)<br>
+        Соотношение кол-ва "новых" потребителей к общему<br>
+        числу потребителей предшествующего периода, %</td>
+        <td align=center valign=middle>
+          {{e_2_1}}{{e_2_m_1}}</td>
+    </tr>
+    <tr >
+        <td>{{n_3}} Уровень повторных закупок, совершаемых новыми<br>
+        (закупившими продукцию в предшествующем отчётном<br>
+        периоде) потребителями, Б (7.2), Соотношение кол-ва<br>
+        "новых" потребителей, повторно закупивших продукцию<br>
+        в отчетном периоде, к общему количеству новых <br>
+        потребителей в соответствующем периоде прошлого года,%.</td>
+        <td align=center valign=middle>{{e_3_1}}{{e_3_m_1}}
+        </td>
+    </tr>
+</table>
+</body>
+</html>

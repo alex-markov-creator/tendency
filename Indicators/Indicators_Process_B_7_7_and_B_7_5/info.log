@@ -4270,3 +4270,75 @@ NameError: name 'pylhelp' is not defined
 [15/July/2021 13:44] - indicators.results - INFO - Сохранение...
 [15/July/2021 13:44] - indicators.results - INFO - Время сохранения файлов в секундах: 23.002559974999997
 [15/July/2021 13:44] - indicators.results - INFO - OK! FourCommand
+[29/July/2021 10:50] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[29/July/2021 10:50] - indicators.results - INFO - start initial assignment
+[29/July/2021 10:50] - indicators.results - INFO - OK! Load Data
+[29/July/2021 10:50] - indicators.results - INFO - OK! Calculation Data
+[29/July/2021 10:50] - indicators.results - INFO - OK! end initial assignment 
+[29/July/2021 10:50] - indicators.results - INFO - OK! Load object class
+[29/July/2021 10:50] - indicators.results - INFO - OK! Load object class
+[29/July/2021 10:50] - indicators.results - INFO - OK! Load object class
+[29/July/2021 10:50] - indicators.results - INFO - OK! Load object class
+[29/July/2021 10:50] - indicators.results - INFO - OK! Load object class
+[29/July/2021 10:50] - indicators.results - INFO - OK! Load object class
+[29/July/2021 10:50] - indicators.results - INFO - OK! Load object class
+[29/July/2021 10:50] - indicators.results - INFO - OK! Load object class
+[29/July/2021 10:50] - indicators.results - INFO - OK! Load object class
+[29/July/2021 10:50] - indicators.results - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[29/July/2021 10:50] - indicators.results.Info - INFO - __Init__ Info
+[29/July/2021 10:50] - indicators.results - INFO - OK! SecondCommand
+[29/July/2021 10:50] - indicators.results.Info - INFO - __Init__ Info
+[29/July/2021 10:51] - indicators.results - INFO - OK! NAME_INPUT
+[29/July/2021 10:51] - indicators.results.Data_Table - INFO - __Init__ Data_Table
+[29/July/2021 10:51] - indicators.results.Info - INFO - __Init__ Info
+[29/July/2021 10:51] - indicators.results.Comparise - INFO - __Init__ Comparise
+[29/July/2021 10:51] - indicators.results.Comparise - INFO - __Init__ Comparise
+[29/July/2021 10:51] - indicators.results - INFO - OK! FourCommand
+[29/July/2021 12:23] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[29/July/2021 12:23] - indicators.results - INFO - start initial assignment
+[29/July/2021 12:23] - indicators.results - INFO - OK! Load Data
+[29/July/2021 12:23] - indicators.results - INFO - OK! Calculation Data
+[29/July/2021 12:23] - indicators.results - INFO - OK! end initial assignment 
+[29/July/2021 12:23] - indicators.results - INFO - OK! Load object class
+[29/July/2021 12:23] - indicators.results - INFO - OK! Load object class
+[29/July/2021 12:23] - indicators.results - INFO - OK! Load object class
+[29/July/2021 12:23] - indicators.results - INFO - OK! Load object class
+[29/July/2021 12:23] - indicators.results - INFO - OK! Load object class
+[29/July/2021 12:23] - indicators.results - INFO - OK! Load object class
+[29/July/2021 12:23] - indicators.results - INFO - OK! Load object class
+[29/July/2021 12:23] - indicators.results - INFO - OK! Load object class
+[29/July/2021 12:23] - indicators.results - INFO - OK! Load object class
+[29/July/2021 12:23] - indicators.results - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[29/July/2021 12:25] - indicators.results.Info - INFO - __Init__ Info
+[11/August/2021 10:58] - indicators.results - INFO - Started on platform Windows-7-6.1.7601-SP1
+[11/August/2021 10:58] - indicators.results - INFO - start initial assignment
+[11/August/2021 10:58] - indicators.results - INFO - OK! Load Data
+[11/August/2021 10:58] - indicators.results - INFO - OK! Calculation Data
+[11/August/2021 10:58] - indicators.results - INFO - OK! end initial assignment 
+[11/August/2021 10:58] - indicators.results - INFO - OK! Load object class
+[11/August/2021 10:58] - indicators.results - INFO - OK! Load object class
+[11/August/2021 10:58] - indicators.results - INFO - OK! Load object class
+[11/August/2021 10:58] - indicators.results - INFO - OK! Load object class
+[11/August/2021 10:58] - indicators.results - INFO - OK! Load object class
+[11/August/2021 10:58] - indicators.results - INFO - OK! Load object class
+[11/August/2021 10:58] - indicators.results - INFO - OK! Load object class
+[11/August/2021 10:58] - indicators.results - INFO - OK! Load object class
+[11/August/2021 10:58] - indicators.results - INFO - OK! Load object class
+[11/August/2021 10:58] - indicators.results - INFO - OK! Module on Windows-7-6.1.7601-SP1
+[11/August/2021 10:58] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[11/August/2021 10:58] - indicators.results - INFO - OK!
+[11/August/2021 10:58] - indicators.results.Visual_all - INFO - __Init__ Visual_all
+[11/August/2021 10:58] - indicators.results - INFO - OK!
+[11/August/2021 10:58] - indicators.results.LinearGraphics - INFO - __Init__ LinearGraphics
+[11/August/2021 10:59] - indicators.results.LinearGraphics - INFO - __Init__ LinearGraphics
+[11/August/2021 10:59] - indicators.results.LinearGraphics - INFO - __Init__ LinearGraphics
+[11/August/2021 10:59] - indicators.results.Visual_difference - INFO - __Init__ Visual_difference
+[11/August/2021 10:59] - indicators.results.Visual_difference - INFO - __Init__ Visual_difference
+[11/August/2021 10:59] - indicators.results.Visual_difference - INFO - __Init__ Visual_difference
+[11/August/2021 10:59] - indicators.results.Visual_difference - INFO - __Init__ Visual_difference
+[11/August/2021 10:59] - indicators.results.Visual_stock - INFO - __Init__ Visual_stock
+[11/August/2021 10:59] - indicators.results.Visual_stock - INFO - __Init__ Visual_stock
+[11/August/2021 10:59] - indicators.results.Visual_stock - INFO - __Init__ Visual_stock
+[11/August/2021 10:59] - indicators.results.Visual_stock - INFO - __Init__ Visual_stock
+[11/August/2021 10:59] - indicators.results - INFO - OK! ThreeCommand
+[11/August/2021 15:55] - indicators.results - ERROR - FAILED! Run_Error: (<class 'OSError'>, OSError(22, 'Invalid argument'))

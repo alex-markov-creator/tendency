@@ -18,7 +18,7 @@ consumer.py - модуль для статистических подсчето�
 Процесс Б (7.2) "Связь с потребителем"
 ===============================================================
 
-ИСХОДНЫЕ ДАННЫЕ - ФАЙЛ __init__.py в ../Data::
+ИСХОДНЫЕ ДАННЫЕ - ФАЙЛ __init__.py в ../Data:
 +--------------------------------------+-----------------------------------+
 |              Переменная              |             Показатель            |
 +--------------------------------------+-----------------------------------+
@@ -35,7 +35,6 @@ consumer.py - модуль для статистических подсчето�
 |     data_pret_i_rekl_middle_year     | Уровень прет. и рекл. по полгод.  |
 +--------------------------------------+-----------------------------------+
 
-ДАЛЕЕ РЕДАКТИРОВАТЬ!!!
 # ИСХОДНЫЕ ДАННЫЕ (ПЕРЕМЕННЫЕ ШАБЛОНА process_b_7_2):
 +-------------------------------------------------------------------------+
 |  Переменная    |                  Данные шаблона                        |
@@ -44,29 +43,43 @@ consumer.py - модуль для статистических подсчето�
 |   next_year    |                                                        |
 |next_middle_year|                                                        |
 |prev_middle_year|                                                        |
-
-
+|    i_1_1_1     |# Переменные уровня удовлетворенности потребителей      |
+|    i_1_2_1     |                                                        |
+|    i_1_1_m_1   |                                                        |
+|    i_1_2_m_1   |                                                        |
+|    i_2_1_1     |# Переменные уровня привлечения новых потребителей      |
+|    i_2_2_1     |                                                        |
+|    i_2_1_m_1   |                                                        |
+|    i_2_2_m_1   |                                                        |
+|    i_3_1_1     |# Переменные уровня повторных закупок                   |
+|    i_3_2_1     |                                                        |
+|    i_3_1_m_1   |                                                        |
+|    i_3_2_m_1   |                                                        |
+|    e_1_1       |# перем. изм. ур. удовлетворенности потребителей        |
+|    e_1_m_1     |                                                        |
+|    e_2_1       |# перем. изм. ур. привлечения новых потребителей        |
+|    e_2_m_1     |                                                        |
+|    e_3_1       |# перем. изм. ур. повторных закупок                     |
+|    e_3_m_1     |                                                        |
 +--------------------------------------+----------------------------------+
 
 Инструкции при импорте:
 -----------------------
-import pandas as pd
-import matplotlib.pyplot as plt
 import consumer as cm
 
 СПРАВКА
 -------
 print(cm.__doc__)
 
-Вывод исходных данных в виде файла и таблицы
+Вывод исходных данных в виде таблицы
 ---------------------------------------------
-x = cm.Data_Table(cm.data_koef_nov_pri_razr_year)
+x = cm.Data_Table(cm.data_ur_priv_new_cons_year)
 print(x)
 x.open_data()
 
 Данные статистических расчетов
 --------------------------------
-x = cm.Statistic_Table(cm.data_koef_nov_pri_razr_year)
+x = cm.Statistic_Table(cm.data_ur_priv_new_cons_year)
 print(x.score())
 #Экземпляр значений количества проведенных испытаний и номеров партии
 print(x.middle())
@@ -78,18 +91,25 @@ print(x.st_d())
 
 Построение графиков:
 --------------------
-b = cm.First_Graphics(cm.data_ur_udovl_year, name='Уровень удовлетворенности потребителей', critery = 75)
-b.regres_graphic(name='Уровень удовлетворенности потребителей')
-c = cm.Second_Graphics(cm.data_ur_udovl_year, name = 'Гистограмма распределения')
-e = cm.Three_Graphics(cm.data_ur_priv_new_cons_year, name = 'Уровень привлечений новых потребителей по годам', critery=5)
-e.regres_graphic(name='Уровень привлечений новых потребителей по годам')
-g = cm.Three_Graphics(cm.data_ur_priv_new_cons_middle_year, name = 'Уровень привлечения новых потребителей по полугодиям', critery=5)
-g.regres_graphic(name='Уровень привлечения новых потребителей по полугодиям')
-i = cm.Three_Graphics(cm.data_ur_pov_zak_year, name = 'Уровень повторных закупок по годам', critery=5)
-i.regres_graphic(name = 'Уровень повторных закупок по годам')
-k = cm.Three_Graphics(cm.data_ur_pov_zak_middle_year, name = 'Уровень повторных закупок по полугодиям', critery=5)
-k.regres_graphic(name = 'Уровень повторных закупок по полугодиям')
-plt.show()
+a = cm.Graphics_Histogram_Consumer(cm.data_ur_udovl_year, name= 'Гистограмма распределения')
+b = cm.Graphics_Indicators_Consumer(cm.data_ur_udovl_year, name= 'Уровень удовлетворенности потребителей', critery=75)
+c = cm.Graphics_Indicators_Consumer_Full(cm.data_ur_priv_new_cons_year, name= 'Уровень привлечения новых потребителей по годам', critery=5)
+d = cm.Graphics_Indicators_Consumer_Full(cm.data_ur_priv_new_cons_middle_year, name= 'Уровень привлечения новых потребителей по полугодиям', critery=5)
+e = cm.Graphics_Indicators_Consumer_Full(cm.data_ur_pov_zak_year, name= 'Уровень повторных закупок по годам', critery=5)
+f = cm.Graphics_Indicators_Consumer_Full(cm.data_ur_pov_zak_middle_year, name= 'Уровень повторных закупок по полугодиям', critery=5)
+g = cm.Graphics_Indicators_Consumer_Full(cm.data_ur_vip_zak_year, name= 'Уровень выполнения заказов по годам', critery=100)
+h = cm.Graphics_Indicators_Consumer_Full(cm.data_ur_vip_zak_middle_year, name= 'Уровень выполнения заказов по полугодиям', critery=100)
+i = cm.Graphics_Indicators_Consumer_Full(cm.data_ob_vozr_prod_year, name= 'Объем возвращенной продукции по годам', critery=5)
+j = cm.Graphics_Indicators_Consumer_Full(cm.data_ob_vozr_prod_middle_year, name= 'Объем возвращенной продукции по полугодиям', critery=5)
+k = cm.Graphics_Indicators_Consumer_Full(cm.data_pret_i_rekl_year, name= 'Кол-во претензий и рекламаций по годам', critery=3)
+l = cm.Graphics_Indicators_Consumer_Full(cm.data_pret_i_rekl_middle_year, name= 'Кол-во претензий и рекламаций по полугодиям', critery=3)
+cm.plt.show()
+
+СРАВНЕНИЕ значений с предыдущими результатами
+---------------------------------------------
+x = cm.Comparise(cm.data_ur_priv_new_cons_year)
+print(x)
+print(x.score())
 
 СОХРАНЕНИЕ графиков и результатов
 ---------------------------------
@@ -108,23 +128,30 @@ import traceback # трасировка сообщений об исключен
 # модуль для тестирования
 import pytest
 import time
+import pdb
 #-------------------------------------------------------
 sys.path.append(os.path.realpath('../..'))
 # субродительский каталог в sys.path
+#-------------------------------------------------------
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sb
 from tabulate import tabulate
 # модуль для вывода табличных данных
+#-------------------------------------------------------
 import Tools.Abstract_Parents as Abstract
 # универсальный модуль для выполнения контракта
+#-------------------------------------------------------
 from scipy.stats import linregress
 # модуль для построения линейной регрессии
+#-------------------------------------------------------
 from prettytable import PrettyTable
 # импорт библиотеки для вывода табличных данных в консоли(терминале)
+#-------------------------------------------------------
 from abc import ABC, abstractmethod
 # импорт модуля для абстрактных классов
+#-------------------------------------------------------
 
 #ЛОГИРОВАНИЕ
 logging.config.fileConfig('logging.conf') # файл конфигурации
@@ -178,7 +205,7 @@ try:
                 "Объем возвращенной продукции по полугодиям",
                 "Уровень претензий и рекламаций по годам",
                 "Уровень претензий и рекламаций по полугодиям",
-                 ]#запись наименований
+                 ] #запись наименований
 
     NAME_INPUT = {
                     '001':data_ur_vip_zak_year,
@@ -193,7 +220,7 @@ try:
                     '010':data_pret_i_rekl_year,
                     '011':data_pret_i_rekl_middle_year,
                     } #идентификатор
-    logger.info("OK! Load Data") # logging
+    logger.info("OK! Load Data") #logging
 
     lst_name = [data_ur_vip_zak_year, data_ur_pov_zak_year,data_ur_priv_new_cons_year, data_ur_udovl_year, data_ur_vip_zak_middle_year, data_ur_pov_zak_middle_year, data_ur_priv_new_cons_middle_year]
     logger.info("OK! Load Data") # logging
@@ -203,6 +230,47 @@ try:
     data_add = pd.concat([data_ur_vip_zak_year, data_ur_pov_zak_year,data_ur_priv_new_cons_year, data_ur_udovl_year, data_ur_vip_zak_middle_year, data_ur_pov_zak_middle_year, data_ur_priv_new_cons_middle_year], axis=1)
     # Конкатенация
     logger.info("OK! Calculation Data") # logging
+
+    # ИСХОДНЫЕ ДАННЫЕ (ПЕРЕМЕННЫЕ ШАБЛОНА process_b_7_2):
+    #################################################################
+    prev_year = data_ur_priv_new_cons_year.index[-2]
+    next_year = data_ur_priv_new_cons_year.index[-1]
+    prev_middle_year = data_ur_priv_new_cons_middle_year.index[-2]
+    next_middle_year = data_ur_priv_new_cons_middle_year.index[-1]
+
+    n_1 = '1'# нумерация строк
+    n_2 = '2'# нумерация строк
+    n_3 = '3'# нумерация строк
+
+    # Переменные уровня удовлетворенности потребителей
+    i_1_1_1 = data_ur_udovl_year.tail(2).iloc[0,0]
+    i_1_2_1 = data_ur_udovl_year.tail(2).iloc[1,0]
+    i_1_1_m_1 = None
+    i_1_2_m_1 = None
+
+    # Переменные уровня привлечения новых потребителей
+    i_2_1_1 = data_ur_priv_new_cons_year.tail(2).iloc[0,0]
+    i_2_2_1 = data_ur_priv_new_cons_year.tail(2).iloc[1,0]
+    i_2_1_m_1 = data_ur_priv_new_cons_middle_year.tail(2).iloc[0,0]
+    i_2_2_m_1 = data_ur_priv_new_cons_middle_year.tail(2).iloc[1,0]
+
+    # Переменные уровня повторных закупок
+    i_3_1_1 = data_ur_pov_zak_year.tail(2).iloc[0,0]
+    i_3_2_1 = data_ur_pov_zak_year.tail(2).iloc[1,0]
+    i_3_1_m_1 = data_ur_pov_zak_middle_year.tail(2).iloc[0,0]
+    i_3_2_m_1 = data_ur_pov_zak_middle_year.tail(2).iloc[1,0]
+
+    # переменные изменений уровня удовлетворенности потребителей
+    e_1_1 = round(i_1_2_1-i_1_1_1, 2)
+    e_1_m_1 = None
+
+    # переменные изменений уровня привлечения новых потребителей
+    e_2_1 = round(i_2_2_1-i_2_1_1, 2)
+    e_2_m_1 = round(i_2_2_m_1-i_2_1_m_1,2)
+
+    # переменные изменений уровня повторных закупок
+    e_3_1 = round(i_3_2_1-i_3_1_1, 2)
+    e_3_m_1 = round(i_3_2_m_1-i_3_1_m_1,2)
 
 except ImportError:
     logger.error(f'FAILED! Data_Launch_Error: {sys.exc_info()[:2]}', exc_info=True) # logging
@@ -218,11 +286,14 @@ except TypeError:
     logger.error(f'FAILED! Data_Launch_Error: {sys.exc_info()[:2]}', exc_info=True) # logging
 
 try:
+    #@time_of_function
     class Info(object):
         """
         Класс вывода таблицы на экран для выбора идентификатора
         """
         def __init__(self):
+            self.logger = logging.getLogger('indicators.consumer.Info')
+            self.logger.info('__Init__ Info')
             self.x = PrettyTable()
             field_names = ['Идентификатор', 'Наименование']
             self.x.add_column(field_names[1], INDICATOR_NAME)
@@ -231,17 +302,23 @@ try:
         def __str__(self):
             return '{}'.format(self.x)
 
+        def __repr__(self):
+            return f'Class: {self.__class__.__qualname__}\n {self.__class__.__doc__}'
+
+    logger.info("OK! Load object class") # logging
+
 except Exception:
-    print(time.ctime(), 'Info_Error: ', sys.exc_info()[:2], file = open('log.txt', 'a'))
+    logger.error(f'FAILED! Info_Error: {sys.exc_info()[:2]}') # logging
 
 try:
+    #@time_of_function
     class Data_Table(object):
         """
         Класс отображения данных
         #################################
         Пример запуска:
         ---------------
-        #x = Data_Table(data_ur_neispr_obor_year)
+        #x = Data_Table(data_ur_udovl_year)
         #print(x)
         #x.open_data()
         """
@@ -249,8 +326,10 @@ try:
             """
             Параметры:
             ----------
-            data - нименование переменной (см.таблицу выше);
+            data - наименование переменной (см.таблицу выше);
             """
+            self.logger = logging.getLogger('indicators.consumer.Data_Table')
+            self.logger.info('__Init__ Data_Table')
             self.data = data
 
         def __str__(self):
@@ -259,30 +338,42 @@ try:
             """
             return tabulate(self.data, headers = 'keys', tablefmt = 'psql')
 
+        def __repr__(self):
+            return f'Class: {self.__class__.__qualname__}\n {self.__class__.__doc__}'
+
         def open_data(self):
             """
             Открытие и запись временного файла для отображения всех значений
             """
-            print(tabulate(self.data, headers = 'keys', tablefmt = 'psql'), file=open(r'data_consumer.temp', 'w', encoding = 'utf-8'))
-            os.system('data_consumer.temp')
+            if sys.platform == "linux" or sys.platform == "linux2":
+                print(tabulate(self.data, headers = 'keys', tablefmt = 'psql')) # Linux
+            elif sys.platform == "darwin":
+                pass
+            elif sys.platform == "win32":
+                print(tabulate(self.data, headers = 'keys', tablefmt = 'psql'))
+
+    logger.info("OK! Load object class") # logging
 
 except Exception:
-    print(time.ctime(), 'Data_Table_Error: ', sys.exc_info()[:2], file = open('log.txt', 'a'))
+    logger.error(f'FAILED! Data_Table_Error: {sys.exc_info()[:2]}') # logging
 
 try:
+    #@time_of_function
     class Statistic_Table(Abstract.Statistic):
         """
         Класс отображения статистических данных
         #######################################
         Пример запуска:
         ---------------
-        x = Statistic_Table(data_ur_neispr_obor_year)
+        x = Statistic_Table(data_ur_udovl_year)
         print(x.score())
         print(x.middle())
-        print(x.max_min())
         print(x.max())
         print(x.min())
         print(x.st_d())
+        print(x.quantile_25())
+        print(x.quantile_50())
+        print(x.quantile_75())
         """
         def __init__(self, data: pd.DataFrame):
             """
@@ -290,109 +381,207 @@ try:
             ----------
             data - нименование переменной (см.таблицу выше);
             """
+            self.logger = logging.getLogger('indicators.consumer.Statistic_Table')
+            self.logger.info('__Init__ Statistic_Table')
             self.data = data
             self.Ascr = data.count() # количество значений
             self.Asr = data.mean()  # среднее значение df.mean(n), где n - номер оси
             self.Amax = data.max()  # максимальные значения
             self.Amin = data.min()  # минимальные значения
             self.Astd = data.std() # стандартные отклонения
+            self.A25 = data.quantile(0.25) # 25% процентиль
+            self.A50 = data.quantile(0.50) # 50% процентиль
+            self.A75 = data.quantile(0.75) # 75% процентиль
+
+        def name(self):
+            """
+            Метод значений количества проведенных испытаний и номеров партии
+            """
+            return "{}".format(self.data.columns.to_list()[0])
 
         def score(self):
             """
             Метод значений количества проведенных испытаний и номеров партии
             """
-            return "Всего результатов:\n{}".format(self.Ascr)
+            return "Всего результатов: {}".format(self.Ascr.iloc[0])
 
         def middle(self):
             """
             Метод средних значений
             """
-            return "Среднее значение:\n{}".format(self.Asr)
+            return "Среднее значение: {}".format(self.Asr.iloc[0])
 
         def max_min(self):
             """
             Метод максимальных и минимальных значений
             """
-            print("Максимальные значения:\n{}".format(self.Amax))
-            print("Минимальные значения:\n{}".format(self.Amin))
+            print("Максимальные значения: {}".format(self.Amax.iloc[0]))
+            print("Минимальные значения: {}".format(self.Amin.iloc[0]))
 
         def max(self):
             """
             Метод максимальных значений
             """
-            return "Максимальные значения:\n{}".format(self.Amax)
+            return "Максимальные значения: {}".format(self.Amax.iloc[0])
 
         def min(self):
             """
             Метод максимальных значений
             """
-            return "Минимальные значения:\n{}".format(self.Amin)
+            return "Минимальные значения: {}".format(self.Amin.iloc[0])
 
         def st_d(self):
             """
-            Метод для вывода отклонений результатов испытаний
+            Метод для вывода отклонений результатов
             """
-            return "Отклонение результатов:\n{}".format(self.Astd)
+            return "Отклонение результатов: {}".format(self.Astd.iloc[0])
+
+        def quantile_25(self):
+            """
+            Метод для вывода 25% процентиля
+            """
+            return "25% процентиль: {}".format(self.A25.iloc[0])
+
+        def quantile_50(self):
+            """
+            Метод для вывода 50% процентиля
+            """
+            return "50% процентиль: {}".format(self.A50.iloc[0])
+
+        def quantile_75(self):
+            """
+            Метод для вывода 75% процентиля
+            """
+            return "75% процентиль: {}".format(self.A75.iloc[0])
+
+        logger.info("OK! Load object class") # logging
 
 except Exception:
-    print(time.ctime(), 'Statistic_Error: ', sys.exc_info()[:2], file = open('log.txt', 'a'))
+    logger.error(f'FAILED! Statistic_Table_Error: {sys.exc_info()[:2]}') # logging
 
 try:
-    class First_Graphics(Abstract.Graphic):
+    #@time_of_function
+    class Graphics_Indicators_Consumer(Abstract.Graphic):
         """
-        Класс запуска графического отображения
+        Класс запуска графического отображения линейного графика показателя качества уровня удовлетворенности потребителя Процесса Б(7.2) "Связь с потребителем". Линейный график показателя уровня удовлетворенности.
         """
-        # Процесс О(6.2)
-        # Линейный график уровня удовлетворенности
-        def __init__(self, data, name='Связь с потребителем', critery = 0):
+        def __init__(self, data, name='Наименование графика', critery = 0):
             super().__init__(data)
+            self.logger = logging.getLogger('indicators.consumer.Graphics_Indicators_Consumer')
+            self.logger.info('__Init__ Graphics_Indicators_Consumer')
+            x = self.data.index.tolist()
+            x = np.array(x)
+            y = self.data.transpose().iloc[0]
+            y = np.array(y)
+            stats = linregress(x, y)
+            m = stats.slope
+            b = stats.intercept
             self.data.plot(color='blue', marker='o', linestyle='dashed', linewidth=2, alpha=0.5)
-            plt.gcf().canvas.set_window_title('Связь с потребителем')
+            plt.plot(x, b + m * x ,linestyle='dashed', color="blue", label='Линейная регрессия')
             plt.axhline(critery, color ='red', linestyle='dashed', label='Критерий оценки')
             plt.title(name, fontsize=16, y=1.05)
             plt.xlabel('Год')
             plt.legend(fontsize=8, shadow=True, framealpha=1, facecolor='y', edgecolor='r', title='', loc='center')
+            plt.gcf().canvas.set_window_title('Процесс Б(7.2) "Связь с потребителем"')
             plt.grid(axis='both', color='black', linestyle='dotted',linewidth=2, alpha=0.5)
 
-    class Second_Graphics(Abstract.Graphic):
+    logger.info("OK! Load object class") # logging
+
+except Exception:
+    logger.error(f'FAILED! Graphics_Indicators_Consumer: {sys.exc_info()[:2]}') # logging
+
+try:
+    #@time_of_function
+    class Graphics_Histogram_Consumer(Abstract.Graphic):
         """
-        Класс запуска графического отображения
+        Класс запуска графического отображения гистограммы распределения показателя качества уровня удовлетворенности потребителя Процесса Б(7.2) "Связь с потребителем". Гистограмма распределения показателя уровня удовлетворенности.
         """
-        # Процесс О(6.2)
-        # Гистограмма распределения показателя уровня удовлетворенности
-        def __init__(self, data, name='Связь с потребителем'):
+        def __init__(self, data, name='Наименование графика'):
             super().__init__(data)
+            self.logger = logging.getLogger('indicators.consumer.Graphics_Histogram_Consumer')
+            self.logger.info('__Init__ Graphics_Histogram_Consumer')
             fig, ax = plt.subplots()
             sns_plot = sb.distplot(self.data.transpose().iloc[0], label='Показатели')
-            fig.canvas.set_window_title('Гистограмма распределения')
+            fig.canvas.set_window_title('Процесс Б (7.2) "Связь с потребителем"')
             fig = sns_plot.get_figure()
             plt.title(name, fontsize=16, y=1.05)
             plt.xlabel('Уровень удовлетворенности потребителей')
             plt.legend(fontsize=8, shadow=True, framealpha=1, facecolor='y', edgecolor='r', title='Частота распределения')
             plt.grid()
 
-    class Three_Graphics(Abstract.Graphic):
+    logger.info("OK! Load object class") # logging
+
+except Exception:
+    logger.error(f'FAILED! Graphics_Histogram_Consumer: {sys.exc_info()[:2]}') # logging
+
+try:
+    #@time_of_function
+    class Graphics_Indicators_Consumer_Full(Abstract.Graphic):
         """
-        Класс графического отображения
+        Класс запуска графического отображения линейного графика показателей  Процесса Б(7.2) "Связь с потребителем".
+        Линейный график, другой визуальный ряд (с заполнением).
         """
-        # Процесс О(6.2)
-        # Линейный, заполненный график показателей:
-        # - уровень привлечения новых потребителей;
-        # - уровень повторных закупок.
-        def __init__(self, data, name='Связь с потребителем', critery = 0):
+        def __init__(self, data, name='Наименование графика', critery = 0):
             super().__init__(data)
+            self.logger = logging.getLogger('indicators.consumer.Graphics_Indicators_Consumer_Full')
+            self.logger.info('__Init__ Graphics_Indicators_Consumer_Full')
+            x = self.data.index.tolist()
+            x = np.array(x)
+            y = self.data.transpose().iloc[0]
+            y = np.array(y)
+            stats = linregress(x, y)
+            m = stats.slope
+            b = stats.intercept
             self.data.plot.area(color='blue', linestyle='dashed', linewidth=2, alpha=0.3)
-            plt.gcf().canvas.set_window_title('Связь с потребителем')
+            plt.plot(x, b + m * x ,linestyle='dashed', color="blue", label='Линейная регрессия')
             plt.axhline(critery, color ='red', linestyle='dashed', label='Критерий оценки')
+            plt.gcf().canvas.set_window_title('Процесс Б(7.2) "Связь с потребителем')
             plt.title(name, fontsize=16, y=1.05)
             plt.xlabel('Год')
             plt.legend(fontsize=8, shadow=True, framealpha=1, facecolor='y', edgecolor='r', title='', loc='upper left')
             plt.grid(axis='both', color='black', linestyle='dotted',linewidth=2, alpha=0.5)
 
+    logger.info("OK! Load object class") # logging
+
 except Exception:
-    print(time.ctime(), 'Graphics_Error: ', sys.exc_info()[:2], file = open('log.txt', 'a'))
+    logger.error(f'FAILED! Graphics_Indicators_Consumer_Full: {sys.exc_info()[:2]}') # logging
 
 try:
+    @time_of_function
+    class Comparise(object):
+        """
+        Класс сравнительного анализа с результатами предыдущего отчётного периода
+        #################################################################
+        """
+        def __init__(self, data: pd.DataFrame):
+            self.logger = logging.getLogger('indicators.consumer.Comparise')
+            self.logger.info('__Init__ Comparise')
+            self.data = data.tail(2)
+
+        def __str__(self):
+            """
+            Строковое представление данных
+            """
+            return tabulate(self.data, headers = 'keys', tablefmt = 'psql')
+
+        def __repr__(self):
+            return f'Class: {self.__class__.__qualname__}\n {self.__class__.__doc__}'
+
+        def score(self):
+            """
+            Изменение послених двух значений
+            """
+            sc = round(self.data.iloc[1, 0] - self.data.iloc[0, 0], 2)
+            return "Изменение значений c {} года по {} год:\n{}".format(prev_year, next_year, sc)
+
+    logger.info("OK! Load object class") # logging
+
+except Exception:
+    logger.error(f'FAILED! Comparise(): {sys.exc_info()[:2]}') # logging
+
+try:
+    @time_of_function
+    @message_save
     class Save_Data(object):
         """
         Класс сохранения статистических данных и графиков визуализации
@@ -407,53 +596,134 @@ try:
             ----------
             data - наименование переменной (см.таблицу выше);
             """
+            self.logger = logging.getLogger('indicators.consumer.Save_Data')
+            self.logger.info('__Init__ Save_Data')
+
             # ЗАПИСЬ ДАННЫХ В .xlsx файл
-            print('Сохранение в файл формата *.xlsx ...')
-            save_data_1 = data_add
-            print('...files/record.xlsx')
-            with pd.ExcelWriter(r'files/record.xlsx') as writer:
-                save_data_1.to_excel(
-                                    writer, sheet_name='Исходные данные'
-                                    )
+            try:
+                print('Сохранение в файл формата *.xlsx ...')
+                save_data_1 = data_add
+                print('...files/record.xlsx')
+                with pd.ExcelWriter(r'files/record.xlsx') as writer:
+                    save_data_1.to_excel(
+                                        writer, sheet_name='Исходные данные'
+                                        )
+                logger.info("OK! Save_TO_XLSX") # logging
+            except:
+                logger.error(f'Error {traceback.print_exc(file=sys.stdout)}') # logging
+
             # ЗАПИСЬ СТАТИСТИЧЕСКОЙ ИНФОРМАЦИИ в *.txt файл
-            print('Сохранение в файл формата *.txt ...')
-            print('...files/*.txt')
-            for i_name in lst_name:
-                x = Statistic_Table(i_name)
-                print('{}\n{}\n{}\n{}\n{}'.format(x.score(),x.middle(),x.max(), x.min(),x.st_d()), file=open('files/{}.txt'.format(i_name.columns[0]), 'w'))
+            try:
+                print('Сохранение в файл формата *.txt ...')
+                print('...files/*.txt')
+                i = 0
+                for i_name in lst_name:
+                    x = Statistic_Table(i_name)
+                    i +=1
+                    print(f'{x.name()}\n{x.score()}\n{x.middle()}\n{x.max()}\n{x.min()}\n{x.st_d()}\n{x.quantile_25()}\n{x.quantile_50()}\n{x.quantile_75()}\n', file=open('files/{}.txt'.format(i), 'w'))
+            except:
+                logger.error(f'Error {traceback.print_exc(file=sys.stdout)}') # logging
+
             # СОХРАНЕНИЕ ГРАФИКОВ
-            print('Сохранение в файл формата *.png ...')
-            print('...files/*.png')
-            a = First_Graphics(data_ur_udovl_year, name='Уровень удовлетворенности потребителей', critery = 75)
-            a.save_graphic('files/Уровень удовлетворенности потребителей')
-            b = First_Graphics(data_ur_udovl_year, name='Уровень удовлетворенности потребителей', critery = 75)
-            b.regres_graphic(name='Уровень удовлетворенности потребителей')
-            b.save_graphic('files/Линия регрессии уровня удовлетворенности')
-            c = Second_Graphics(data_ur_udovl_year, name = 'Гистограмма распределения')
-            c.save_graphic('files/Диаграмма распределения уровня удовлетворенности')
-            d = Three_Graphics(data_ur_priv_new_cons_year, name = 'Уровень привлечений новых потребителей по годам', critery=5)
-            d.save_graphic('files/Уровень привлечений новых потребителей по годам')
-            e = Three_Graphics(data_ur_priv_new_cons_year, name = 'Уровень привлечений новых потребителей по годам', critery=5)
-            e.regres_graphic(name = 'Уровень привлечений новых потребителей по годам')
-            e.save_graphic('files/Линия регрессии уровня привлечений новых потребителей по годам')
-            f = Three_Graphics(data_ur_priv_new_cons_middle_year, name = 'Уровень привлечения новых потребителей по полугодиям', critery=5)
-            f.save_graphic('files/Уровень привлечений новых потребителей по полугодиям')
-            g = Three_Graphics(data_ur_priv_new_cons_middle_year, name = 'Уровень привлечения новых потребителей по полугодиям', critery=5)
-            g.regres_graphic(name = 'Уровень привлечения новых потребителей по полугодиям')
-            g.save_graphic('files/Линия регресии уровня привлечений новых потребителей по полугодиям')
-            h = Three_Graphics(data_ur_pov_zak_year, name = 'Уровень повторных закупок по годам', critery=5)
-            h.save_graphic('files/Уровень повторных закупок по годам')
-            i = Three_Graphics(data_ur_pov_zak_year, name = 'Уровень повторных закупок по годам', critery=5)
-            i.regres_graphic(name = 'Уровень повторных закупок по годам')
-            i.save_graphic('files/Линия регрессии уровня повторных закупок по годам')
-            j = Three_Graphics(data_ur_pov_zak_middle_year, name = 'Уровень повторных закупок по полугодиям', critery=5)
-            j.save_graphic('files/Уровень повторных закупок по полугодиям')
-            k = Three_Graphics(data_ur_pov_zak_middle_year, name = 'Уровень повторных закупок по полугодиям', critery=5)
-            k.regres_graphic(name = 'Уровень повторных закупок по полугодиям')
-            k.save_graphic('files/Линия регрессии уровня повторных закупок по полугодиям')
+            try:
+                print('Сохранение в файл формата *.png ...')
+                print('...files/*.png')
+
+                if data_ur_udovl_year.isin([0]).all(axis=None) == False:
+                    graphic_year_one = Graphics_Histogram_Consumer(data_ur_udovl_year, name= 'Гистограмма распределения')
+                    graphic_year_one.save_graphic('files/001')
+                    logger.debug("OK! GRAPHICS_1") # logging
+                else:
+                    pass
+
+                if data_ur_udovl_year.isin([0]).all(axis=None) == False:
+                    graphic_year_two = Graphics_Indicators_Consumer(data_ur_udovl_year, name= 'Уровень удовлетворенности потребителей', critery=75)
+                    graphic_year_two.save_graphic('files/002')
+                    logger.debug("OK! GRAPHICS_2") # logging
+                else:
+                    pass
+
+                if data_ur_priv_new_cons_year.isin([0]).all(axis=None) == False:
+                    graphic_year_three = Graphics_Indicators_Consumer_Full(data_ur_priv_new_cons_year, name= 'Уровень привлечения новых потребителей по годам', critery=5)
+                    graphic_year_one.save_graphic('files/003')
+                    logger.debug("OK! GRAPHICS_3") # logging
+                else:
+                    pass
+
+                if data_ur_priv_new_cons_middle_year.isin([0]).all(axis=None) == False:
+                    graphic_year_four = Graphics_Indicators_Consumer_Full(data_ur_priv_new_cons_middle_year, name= 'Уровень привлечения новых потребителей по полугодиям', critery=5)
+                    graphic_year_four.save_graphic('files/004')
+                    logger.debug("OK! GRAPHICS_4") # logging
+                else:
+                    pass
+
+                if data_ur_pov_zak_year.isin([0]).all(axis=None) == False:
+                    graphic_year_five = Graphics_Indicators_Consumer_Full(data_ur_pov_zak_year, name= 'Уровень повторных закупок по годам', critery=5)
+                    graphic_year_five.save_graphic('files/005')
+                    logger.debug("OK! GRAPHICS_5") # logging
+                else:
+                    pass
+
+                if data_ur_pov_zak_middle_year.isin([0]).all(axis=None) == False:
+                    graphic_year_six = Graphics_Indicators_Consumer_Full(data_ur_pov_zak_middle_year, name= 'Уровень повторных закупок по полугодиям', critery=5)
+                    graphic_year_six.save_graphic('files/006')
+                    logger.debug("OK! GRAPHICS_6") # logging
+                else:
+                    pass
+
+                if data_ur_vip_zak_year.isin([0]).all(axis=None) == False:
+                    graphic_year_seven = Graphics_Indicators_Consumer_Full(data_ur_vip_zak_year, name= 'Уровень выполнения заказов по годам', critery=100)
+                    graphic_year_seven.save_graphic('files/007')
+                    logger.debug("OK! GRAPHICS_7") # logging
+                else:
+                    pass
+
+
+                if data_ur_vip_zak_middle_year.isin([0]).all(axis=None) == False:
+                    graphic_year_eight = Graphics_Indicators_Consumer_Full(data_ur_vip_zak_middle_year, name= 'Уровень выполнения заказов по полугодиям', critery=100)
+                    graphic_year_eight.save_graphic('files/008')
+                    logger.debug("OK! GRAPHICS_8") # logging
+                else:
+                    pass
+
+                if data_ob_vozr_prod_year.isin([0]).all(axis=None) == False:
+                    graphic_year_nine = Graphics_Indicators_Consumer_Full(data_ob_vozr_prod_year, name= 'Объем возвращенной продукции по годам', critery=5)
+                    graphic_year_nine.save_graphic('files/009')
+                    logger.debug("OK! GRAPHICS_9") # logging
+                else:
+                    pass
+
+
+                if data_ob_vozr_prod_middle_year.isin([0]).all(axis=None) == False:
+                    graphic_year_ten = Graphics_Indicators_Consumer_Full(data_ob_vozr_prod_middle_year, name= 'Объем возвращенной продукции по полугодиям', critery=5)
+                    graphic_year_ten.save_graphic('files/010')
+                    logger.debug("OK! GRAPHICS_10") # logging
+                else:
+                    pass
+
+                if data_pret_i_rekl_year.isin([0]).all(axis=None) == False:
+                    graphic_year_eleven = Graphics_Indicators_Consumer_Full(data_pret_i_rekl_year, name= 'Кол-во претензий и рекламаций по годам', critery=3)
+                    graphic_year_eleven.save_graphic('files/011')
+                    logger.debug("OK! GRAPHICS_11") # logging
+                else:
+                    pass
+
+                if data_pret_i_rekl_middle_year.isin([0]).all(axis=None) == False:
+                    graphic_year_twelve = Graphics_Indicators_Consumer_Full(data_pret_i_rekl_middle_year, name= 'Кол-во претензий и рекламаций по полугодиям', critery=3)
+                    graphic_year_twelve.save_graphic('files/012')
+                    logger.debug("OK! GRAPHICS_12") # logging
+                else:
+                    pass
+
+                logger.info("OK! SAVE_GRAPHICS") # logging
+            except:
+                logger.error(f'Error {traceback.print_exc(file=sys.stdout)}') # logging
+            logger.info("OK! Load object class") # logging
 
 except Exception:
-    print(time.ctime(), 'Save_Error: ', sys.exc_info()[:2], file = open('log.txt', 'a'))
+    logger.error(f'FAILED! Save_Error: {sys.exc_info()[:2]}') # logging
+
+logger.info(f"OK! Module on {platform.platform()}") # logging
 
 if __name__ == '__main__':
     class New_object(object):  # new_object = New_object()
@@ -515,6 +785,7 @@ if __name__ == '__main__':
                     SecondCommand.label(): SecondCommand,
                     ThreeCommand.label(): ThreeCommand,
                     FourCommand.label(): FourCommand,
+                    FiveCommand.label(): FiveCommand,
                     #NewCommand.label(): NewCommand,
                     # NEW COMMANDs
                     ExitCommand.label(): ExitCommand,
@@ -532,6 +803,7 @@ if __name__ == '__main__':
                     '2': SecondCommand,
                     '3': ThreeCommand,
                     '4': FourCommand,
+                    '5': FiveCommand,
                     '0': NewCommand,
                     # NEW COMMANDs
                     'exit': ExitCommand
@@ -624,6 +896,9 @@ if __name__ == '__main__':
                     print(x.max())
                     print(x.min())
                     print(x.st_d())
+                    print(x.quantile_25())
+                    print(x.quantile_50())
+                    print(x.quantile_75())
                 except KeyboardInterrupt:
                     print('Выход...')
                     break
@@ -635,28 +910,102 @@ if __name__ == '__main__':
             return 'Графики-3'
 
         def perform(self, object, *args, **kwargs):
-            #ГРАФИКИ
-            b = First_Graphics(data_ur_udovl_year, name='Уровень удовлетворенности потребителей', critery = 75)
-            b.regres_graphic(name='Уровень удовлетворенности потребителей')
-            c = Second_Graphics(data_ur_udovl_year, name = 'Гистограмма распределения')
-            e = Three_Graphics(data_ur_priv_new_cons_year, name = 'Уровень привлечений новых потребителей по годам', critery=5)
-            e.regres_graphic(name='Уровень привлечений новых потребителей по годам')
-            g = Three_Graphics(data_ur_priv_new_cons_middle_year, name = 'Уровень привлечения новых потребителей по полугодиям', critery=5)
-            g.regres_graphic(name='Уровень привлечения новых потребителей по полугодиям')
-            i = Three_Graphics(data_ur_pov_zak_year, name = 'Уровень повторных закупок по годам', critery=5)
-            i.regres_graphic(name = 'Уровень повторных закупок по годам')
-            k = Three_Graphics(data_ur_pov_zak_middle_year, name = 'Уровень повторных закупок по полугодиям', critery=5)
-            k.regres_graphic(name = 'Уровень повторных закупок по полугодиям')
+            # Графики Процесса Б(7.2) "Связь с потребителем"
+            # Годовые показатели
+            if data_ur_udovl_year.isin([0]).all(axis=None) == False:
+                graphic_year_one = Graphics_Histogram_Consumer(data_ur_udovl_year, name= 'Гистограмма распределения')
+            else:
+                pass
+
+            if data_ur_udovl_year.isin([0]).all(axis=None) == False:
+                graphic_year_two = Graphics_Indicators_Consumer(data_ur_udovl_year, name= 'Уровень удовлетворенности потребителей', critery=75)
+            else:
+                pass
+
+            if data_ur_priv_new_cons_year.isin([0]).all(axis=None) == False:
+                graphic_year_three = Graphics_Indicators_Consumer_Full(data_ur_priv_new_cons_year, name= 'Уровень привлечения новых потребителей по годам', critery=5)
+            else:
+                pass
+
+            if data_ur_priv_new_cons_middle_year.isin([0]).all(axis=None) == False:
+                graphic_year_four = Graphics_Indicators_Consumer_Full(data_ur_priv_new_cons_middle_year, name= 'Уровень привлечения новых потребителей по полугодиям', critery=5)
+            else:
+                pass
+
+            if data_ur_pov_zak_year.isin([0]).all(axis=None) == False:
+                graphic_year_five = Graphics_Indicators_Consumer_Full(data_ur_pov_zak_year, name= 'Уровень повторных закупок по годам', critery=5)
+            else:
+                pass
+
+            if data_ur_pov_zak_middle_year.isin([0]).all(axis=None) == False:
+                graphic_year_six = Graphics_Indicators_Consumer_Full(data_ur_pov_zak_middle_year, name= 'Уровень повторных закупок по полугодиям', critery=5)
+            else:
+                pass
+
+            if data_ur_vip_zak_year.isin([0]).all(axis=None) == False:
+                graphic_year_seven = Graphics_Indicators_Consumer_Full(data_ur_vip_zak_year, name= 'Уровень выполнения заказов по годам', critery=100)
+            else:
+                pass
+
+
+            if data_ur_vip_zak_middle_year.isin([0]).all(axis=None) == False:
+                graphic_year_eight = Graphics_Indicators_Consumer_Full(data_ur_vip_zak_middle_year, name= 'Уровень выполнения заказов по полугодиям', critery=100)
+            else:
+                pass
+
+            if data_ob_vozr_prod_year.isin([0]).all(axis=None) == False:
+                graphic_year_nine = Graphics_Indicators_Consumer_Full(data_ob_vozr_prod_year, name= 'Объем возвращенной продукции по годам', critery=5)
+            else:
+                pass
+
+
+            if data_ob_vozr_prod_middle_year.isin([0]).all(axis=None) == False:
+                graphic_year_ten = Graphics_Indicators_Consumer_Full(data_ob_vozr_prod_middle_year, name= 'Объем возвращенной продукции по полугодиям', critery=5)
+            else:
+                pass
+
+            if data_pret_i_rekl_year.isin([0]).all(axis=None) == False:
+                graphic_year_eleven = Graphics_Indicators_Consumer_Full(data_pret_i_rekl_year, name= 'Кол-во претензий и рекламаций по годам', critery=3)
+            else:
+                pass
+
+            if data_pret_i_rekl_middle_year.isin([0]).all(axis=None) == False:
+                graphic_year_twelve = Graphics_Indicators_Consumer_Full(data_pret_i_rekl_middle_year, name= 'Кол-во претензий и рекламаций по полугодиям', critery=3)
+            else:
+                pass
             plt.show()
 
     class FourCommand(BaseCommand):
         def label():
-            return 'В файл-4'
+            return 'Сравнение-4'
+
+        def perform(self, object, *args, **kwargs):
+            #СРАВНЕНИЕ
+            info = Info()
+            print(info)
+            while True:
+                try:
+                    a = input("Укажите идентификатор|exit-выход: ")
+                    if a =='exit':
+                        break
+                    reading = NAME_INPUT[a] # ВЫБОР НАИМЕНОВАНИЯ
+                    df = reading
+                    x = Comparise(df)
+                    print(x)
+                    print(x.score())
+                except KeyboardInterrupt:
+                    print('Выход...')
+                    break
+                except:
+                    print("Неправильный идентификатор, попробуйте снова!!!")
+
+    class FiveCommand(BaseCommand):
+        def label():
+            return 'В файл-5'
 
         def perform(self, object, *args, **kwargs):
             #СОХРАНЕНИЕ
             Save_Data()
-
 
     class NewCommand(BaseCommand):
         def label():
